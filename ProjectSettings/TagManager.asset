@@ -47,11 +47,14 @@ TagManager:
   - name: Collision
     uniqueID: 1705685377
     locked: 0
-  - name: Decoration Collision
-    uniqueID: 2513708487
-    locked: 0
   - name: Decoration
     uniqueID: 696323783
+    locked: 0
+  - name: Walkable
+    uniqueID: 3835843305
+    locked: 0
+  - name: Decoration Collision
+    uniqueID: 2513708487
     locked: 0
   - name: Player
     uniqueID: 1927951761
