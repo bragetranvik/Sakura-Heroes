@@ -132,9 +132,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,9 +152,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,9 +172,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,9 +212,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,9 +232,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,9 +252,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 501
+        y: 504
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,9 +272,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,9 +292,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,9 +312,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,9 +332,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,9 +352,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,9 +372,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,9 +392,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 396
+        y: 392
         width: 64
-        height: 105
+        height: 98
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,386 +403,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 74c5bab524c0b084fa9e1fff3db9c3ad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33a21e42a67219b40a9538480b98732b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_15
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45f8cb1eae8edcc46b1d30ca6405a73a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a51cb1d1575c3504a997db33fff2c73b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_17
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4abb64a396dd48142b84359bad5382f0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_18
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fab1da4ea80565b46b62eb75c852b1af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_19
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5260e92ff8f525b45aab31893ec9ef9e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_20
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 291
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c8abeb46e198e24eaee841fa5506b72
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e2a08aac5569a64b82601734b81cb83
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_22
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7363cc17cb25f07408ca1b13c064dc7c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_23
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea260d175b30a4e43b6f78e782bec6c5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_24
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3e47ef582069dc4b85dfab02940310f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_25
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a46ddea1aea42f04b8319375132a22fe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_26
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 186
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76efa7f13aad75344bca7edf5a4b0f63
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_27
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 083ded92d1c314749a0526111a542534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_28
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31961dbd7a3e5b14a877080d91428dc3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_29
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a3ce17e9a405774397370d6158f5237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_30
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ac857a37a7dae842ae889974edaa0a7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_31
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2a8bf7b9202eb9419f6cfc814d3c076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cindy Smith_32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 81
-        width: 64
-        height: 105
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec1bb70ee02089940a0ecee730453f16
       vertices: []
       indices: 
       edges: []
