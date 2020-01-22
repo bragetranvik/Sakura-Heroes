@@ -16805,13 +16805,8 @@ Tilemap:
     m_Data: {fileID: 21300900, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
   - m_RefCount: 51
     m_Data: {fileID: 21300012, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
-<<<<<<< Updated upstream
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-=======
   - m_RefCount: 2
     m_Data: {fileID: 21300902, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
->>>>>>> Stashed changes
   - m_RefCount: 1
     m_Data: {fileID: 21300332, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
   - m_RefCount: 2
