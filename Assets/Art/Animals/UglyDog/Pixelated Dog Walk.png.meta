@@ -1,25 +1,27 @@
 fileFormatVersion: 2
-guid: 1187752a03a391b428ab749944ab9e4a
+guid: 81e60d051a39c934db708fc574198536
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Panda_0
-    21300002: Panda_1
-    21300004: Panda_2
-    21300006: Panda_3
-    21300008: Panda_4
-    21300010: Panda_5
-    21300012: Panda_6
-    21300014: Panda_7
-    21300016: Panda_8
-    21300018: Panda_9
-    21300020: Panda_10
-    21300022: Panda_11
-    21300024: Panda_12
-    21300026: Panda_15
-    21300028: Panda_14
-    21300030: Panda_13
-    21300032: Panda_16
-    21300034: Panda_17
+    21300000: Pixelated Dog Walk_r0
+    21300002: Pixelated Dog Walk_l1
+    21300004: Pixelated Dog Walk_r2
+    21300006: Pixelated Dog Walk_l3
+    21300008: Pixelated Dog Walk_r4
+    21300010: Pixelated Dog Walk_l5
+    21300012: Pixelated Dog Walk_r6
+    21300014: Pixelated Dog Walk_l7
+    21300016: Pixelated Dog Walk_r8
+    21300018: Pixelated Dog Walk_l9
+    21300020: Pixelated Dog Walk_r10
+    21300022: Pixelated Dog Walk_l11
+    21300024: Pixelated Dog Walk_r12
+    21300026: Pixelated Dog Walk_l13
+    21300028: Pixelated Dog Walk_r14
+    21300030: Pixelated Dog Walk_l15
+    21300032: Pixelated Dog Walk_r16
+    21300034: Pixelated Dog Walk_l17
+    21300036: Pixelated Dog Walk_r18
+    21300038: Pixelated Dog Walk_l19
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -113,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Panda_0
+      name: Pixelated Dog Walk_r0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 32
-        height: 32
+        y: 306
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,19 +129,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc82fd2d139f97a47abd4320aa24cc6c
+      spriteID: 4f83b7aad9db46d4dae6b6163a9f5a14
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_1
+      name: Pixelated Dog Walk_l1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
+        x: 54
+        y: 306
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,79 +149,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68c3511c431e185438ec07e9a60fad9f
+      spriteID: f9ced540fbab1fa47a2bd7df2c082e37
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bcb02561b455b64cb9838a22f89fff2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panda_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d13ce5381cd37cf419d5a7011e1ac3bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panda_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98491c5f5638cde4ba0801dbe18faf00
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panda_5
+      name: Pixelated Dog Walk_r2
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 272
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,19 +169,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdce7c62c0dfec741902ec490d381021
+      spriteID: d8078fbb14d29944e8190108416c2fbb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_6
+      name: Pixelated Dog Walk_l3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 54
+        y: 272
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,39 +189,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e1f1f0b4ad20f498a9392a6a4bfe19
+      spriteID: ba3bcc3af31f8e946846b0da73676c94
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f64617cfb5c89334291de1de2e42294d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panda_8
+      name: Pixelated Dog Walk_r4
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 32
-        height: 32
+        y: 238
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ee1f597958042a458520d721fd8e709
+      spriteID: e4ae95235174aec4b95c918a91cabf06
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_9
+      name: Pixelated Dog Walk_l5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 54
+        y: 238
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,39 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 344b2cfc46ca3dc458c066d9e1729e78
+      spriteID: 07dcf042d40bf4e4f9f4bb196a62f0e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2a98210c9d9f834ba24bda2963923f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panda_11
+      name: Pixelated Dog Walk_r6
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 204
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,19 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a28d33083c69443a9cee5c20dc04a6
+      spriteID: 507e503fbc192d94aa943586b1d3ac60
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_12
+      name: Pixelated Dog Walk_l7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 54
+        y: 204
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,19 +269,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906c54509d25d0d459302f5a8cb4653d
+      spriteID: 08a6559c61b96464a9de2e992938674c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_15
+      name: Pixelated Dog Walk_r8
       rect:
         serializedVersion: 2
-        x: 28
-        y: 57
-        width: 32
-        height: 32
+        x: 0
+        y: 170
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,19 +289,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad434e605e861943b2e39add7ddee0f
+      spriteID: 65ae7259fa0b1bf44bd273112e4e13b4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_14
+      name: Pixelated Dog Walk_l9
       rect:
         serializedVersion: 2
-        x: 60
-        y: 57
-        width: 32
-        height: 32
+        x: 54
+        y: 170
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,19 +309,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d869ba1a29f75744b8bf0d53bc95e29
+      spriteID: b0b3f888624533b4aa9ebf1ed54b7c0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_13
+      name: Pixelated Dog Walk_r10
       rect:
         serializedVersion: 2
-        x: 92
-        y: 57
-        width: 32
-        height: 32
+        x: 0
+        y: 136
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,19 +329,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfd1108350a41b468e505f5c903e23a
+      spriteID: 8d24114e3132cbd4c83fd45951e76c14
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_16
+      name: Pixelated Dog Walk_l11
       rect:
         serializedVersion: 2
-        x: 92
-        y: 25
-        width: 32
-        height: 32
+        x: 54
+        y: 136
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,19 +349,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0d4131228d1e6945a5acc08dbba8169
+      spriteID: 8c07a5f17ec7b4949b44fb9e921c52b0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panda_17
+      name: Pixelated Dog Walk_r12
       rect:
         serializedVersion: 2
-        x: 60
-        y: 25
-        width: 32
-        height: 32
+        x: 0
+        y: 102
+        width: 54
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,7 +369,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b868bdbb4d48234483c99e1206f4bf1
+      spriteID: 4a7bf0f40332ff644880cf4754dc9549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_l13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 102
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34319e3fc4fb914099a1f9301003e6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_r14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a4e09dc0bb38943a88e12fcb9af54e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_l15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 68
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f783e3a00410346a3b7b6ea934dc9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_r16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431c25624c3a1e34c9a875aec916d35d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_l17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 34
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3908eeef8dace3c4f9dbd2f06916f9e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_r18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9303baa469d1d7349a3854ffdb0a5354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated Dog Walk_l19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cdecc4cf0e7b0488d561570eb08b57
       vertices: []
       indices: 
       edges: []
@@ -475,7 +517,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 186e9bcf32759124185327e03f76ad8f
+    spriteID: 1fc6f0afd612ec3479c0bcec316036a0
     vertices: []
     indices: 
     edges: []
