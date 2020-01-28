@@ -2334,7 +2334,7 @@ Tilemap:
   - first: {x: -20, y: 4, z: 0}
     second:
       m_TileIndex: 20
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2343,7 +2343,7 @@ Tilemap:
   - first: {x: -19, y: 4, z: 0}
     second:
       m_TileIndex: 18
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3152,14 +3152,14 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5c6c61c984de080468d95e07d533819a, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21301896, guid: c50f87289755ca14d8b726228971aa48, type: 3}
-  - m_RefCount: 7
-    m_Data: {fileID: 21300286, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21301894, guid: c50f87289755ca14d8b726228971aa48, type: 3}
+  - m_RefCount: 7
+    m_Data: {fileID: 21300286, guid: 77ed59dc9f8d302419c8cd6f3a955e86, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 5
     m_Data: {fileID: 21300404, guid: c50f87289755ca14d8b726228971aa48, type: 3}
   - m_RefCount: 1
@@ -43883,7 +43883,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1351335648}
   - component: {fileID: 1351335647}
-  - component: {fileID: 1351335649}
   m_Layer: 0
   m_Name: Scene Transport
   m_TagString: Untagged
@@ -43904,7 +43903,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0057024956, y: -0.71003485}
+  m_Offset: {x: -0.0057024956, y: -0.4162531}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -43915,7 +43914,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4675703, y: 0.73839664}
+  m_Size: {x: 1.4675703, y: 0.71489525}
   m_EdgeRadius: 0
 --- !u!4 &1351335648
 Transform:
@@ -43925,26 +43924,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351335646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.02, y: 4.25, z: -0.14453125}
+  m_LocalPosition: {x: 16.02, y: 4.82, z: -0.14453125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1351335649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351335646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e207f2939bd6ff43962ad08b748f0f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: PlayerShop
-  playerPosition: {x: 4.4, y: -4.4, z: 0}
 --- !u!1 &1402163477
 GameObject:
   m_ObjectHideFlags: 0
