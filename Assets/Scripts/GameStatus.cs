@@ -23,6 +23,7 @@ public class GameStatus : MonoBehaviour {
         
     }
 
+    //OnDestroy is called once the scene has been destroyed
     private void OnDestroy() {
         intoNewScene = true;
     }
