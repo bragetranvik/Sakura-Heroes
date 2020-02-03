@@ -44,8 +44,17 @@ TagManager:
   - name: Ground
     uniqueID: 1119913637
     locked: 0
+  - name: Ground Decoration
+    uniqueID: 2366624317
+    locked: 0
   - name: Collision
     uniqueID: 1705685377
+    locked: 0
+  - name: Collision L2
+    uniqueID: 2717125579
+    locked: 0
+  - name: Collision L3
+    uniqueID: 952472397
     locked: 0
   - name: Decoration
     uniqueID: 696323783
