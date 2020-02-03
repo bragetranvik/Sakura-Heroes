@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102b061187707544aba9049b8fa07d3f, type: 3}
+  m_Name: Waterfall_Big_2M1
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300126, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
+  - {fileID: 21300132, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
+  - {fileID: 21300138, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
+  - {fileID: 21300144, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_TileColliderType: 0
