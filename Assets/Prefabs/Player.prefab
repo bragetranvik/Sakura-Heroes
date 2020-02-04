@@ -69,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300002, guid: f04e6181296e85347bbd31d94f26945d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f04e6181296e85347bbd31d94f26945d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,6 +94,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Cindy Smith
   unitLevel: 5
-  damage: 7
-  maxHP: 35
+  baseAttack: 0
+  baseDefence: 0
+  baseHP: 0
   currentHP: 35
+  baseMP: 0
+  currentMP: 0
+  attack: 0
+  defence: 0
+  maxHP: 35
+  maxMP: 0
