@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameStatus : MonoBehaviour {
+public class GameStatus : MonoBehaviour
+{
 
     public static Vector3 playerPos;
     private static bool intoNewScene = false;
@@ -11,7 +10,8 @@ public class GameStatus : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        if (intoNewScene) {
+        if (intoNewScene)
+        {
             intoNewScene = false;
             player.transform.position = playerPos;
         }
@@ -20,11 +20,12 @@ public class GameStatus : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     //OnDestroy is called once the scene has been destroyed
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         intoNewScene = true;
     }
 }

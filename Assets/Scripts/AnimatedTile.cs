@@ -4,13 +4,15 @@
 using UnityEditor;
 #endif
 
-namespace UnityEngine.Tilemaps {
+namespace UnityEngine.Tilemaps
+{
     /// <summary>
     /// Animated Tiles are tiles which run through and display a list of sprites in sequence.
     /// </summary>
     [Serializable]
     [CreateAssetMenu(fileName = "New Animated Tile", menuName = "Tiles/Animated Tile")]
-    public class AnimatedTile : TileBase {
+    public class AnimatedTile : TileBase
+    {
         /// <summary>
         /// The List of Sprites set for the Animated Tile.
         /// This will be played in sequence.
@@ -42,10 +44,12 @@ namespace UnityEngine.Tilemaps {
         /// <param name="position">Position of the Tile on the Tilemap.</param>
         /// <param name="tilemap">The Tilemap the tile is present on.</param>
         /// <param name="tileData">Data to render the tile.</param>
-        public override void GetTileData(Vector3Int location, ITilemap tileMap, ref TileData tileData) {
+        public override void GetTileData(Vector3Int location, ITilemap tileMap, ref TileData tileData)
+        {
             tileData.transform = Matrix4x4.identity;
             tileData.color = Color.white;
-            if (m_AnimatedSprites != null && m_AnimatedSprites.Length > 0) {
+            if (m_AnimatedSprites != null && m_AnimatedSprites.Length > 0)
+            {
                 tileData.sprite = m_AnimatedSprites[m_AnimatedSprites.Length - 1];
                 tileData.colliderType = m_TileColliderType;
             }
@@ -58,8 +62,10 @@ namespace UnityEngine.Tilemaps {
         /// <param name="tilemap">The Tilemap the tile is present on.</param>
         /// <param name="tileAnimationData">Data to run an animation on the tile.</param>
         /// <returns>Whether the call was successful.</returns>
-        public override bool GetTileAnimationData(Vector3Int location, ITilemap tileMap, ref TileAnimationData tileAnimationData) {
-            if (m_AnimatedSprites.Length > 0) {
+        public override bool GetTileAnimationData(Vector3Int location, ITilemap tileMap, ref TileAnimationData tileAnimationData)
+        {
+            if (m_AnimatedSprites.Length > 0)
+            {
                 tileAnimationData.animatedSprites = m_AnimatedSprites;
                 tileAnimationData.animationSpeed = Random.Range(m_MinSpeed, m_MaxSpeed);
                 tileAnimationData.animationStartTime = m_AnimationStartTime;
@@ -71,16 +77,19 @@ namespace UnityEngine.Tilemaps {
 
 #if UNITY_EDITOR
     [CustomEditor(typeof(AnimatedTile))]
-    public class AnimatedTileEditor : Editor {
+    public class AnimatedTileEditor : Editor
+    {
         private AnimatedTile tile { get { return (target as AnimatedTile); } }
 
-        public override void OnInspectorGUI() {
+        public override void OnInspectorGUI()
+        {
             EditorGUI.BeginChangeCheck();
             int count = EditorGUILayout.DelayedIntField("Number of Animated Sprites", tile.m_AnimatedSprites != null ? tile.m_AnimatedSprites.Length : 0);
             if (count < 0)
                 count = 0;
 
-            if (tile.m_AnimatedSprites == null || tile.m_AnimatedSprites.Length != count) {
+            if (tile.m_AnimatedSprites == null || tile.m_AnimatedSprites.Length != count)
+            {
                 Array.Resize<Sprite>(ref tile.m_AnimatedSprites, count);
             }
 
@@ -90,7 +99,8 @@ namespace UnityEngine.Tilemaps {
             EditorGUILayout.LabelField("Place sprites shown based on the order of animation.");
             EditorGUILayout.Space();
 
-            for (int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++)
+            {
                 tile.m_AnimatedSprites[i] = (Sprite)EditorGUILayout.ObjectField("Sprite " + (i + 1), tile.m_AnimatedSprites[i], typeof(Sprite), false, null);
             }
 
