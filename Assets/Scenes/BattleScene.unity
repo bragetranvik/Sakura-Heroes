@@ -3959,9 +3959,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ac28e3f75dbf54d8aebaeb94a8262c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+  friendly1Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
-  enemyPrefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+  friendly2Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+    type: 3}
+  friendly3Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+    type: 3}
+  enemy1Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+    type: 3}
+  enemy2Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+    type: 3}
+  enemy3Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
     type: 3}
   friendly1BattleStation: {fileID: 2142743789}
   friendly2BattleStation: {fileID: 414948423}

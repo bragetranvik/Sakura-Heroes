@@ -28,13 +28,6 @@ public class BattleSystem : MonoBehaviour
     private Unit enemyUnit2;
     private Unit enemyUnit3;
 
-    Unit playerUnit1;
-    Unit playerUnit2;
-    Unit playerUnit3;
-    Unit enemyUnit1;
-    Unit enemyUnit2;
-    Unit enemyUnit3;
-
     public Text dialogueText;
 
     public StatusHUD FriendlyStatus;
@@ -134,25 +127,25 @@ public class BattleSystem : MonoBehaviour
 
     private void SetupBattle()
     {
-        GameObject friendly1GO = Instantiate(playerPrefab, friendly1BattleStation);
-        playerUnit1 = friendly1GO.GetComponent<Unit>();
-        GameObject friendly2GO = Instantiate(playerPrefab, friendly2BattleStation);
-        playerUnit2 = friendly2GO.GetComponent<Unit>();
-        GameObject friendly3GO = Instantiate(playerPrefab, friendly3BattleStation);
-        playerUnit3 = friendly3GO.GetComponent<Unit>();
+        GameObject friendly1GO = Instantiate(friendly1Prefab, friendly1BattleStation);
+        friendlyUnit1 = friendly1GO.GetComponent<Unit>();
+        GameObject friendly2GO = Instantiate(friendly2Prefab, friendly2BattleStation);
+        friendlyUnit2 = friendly2GO.GetComponent<Unit>();
+        GameObject friendly3GO = Instantiate(friendly3Prefab, friendly3BattleStation);
+        friendlyUnit3 = friendly3GO.GetComponent<Unit>();
 
 
-        GameObject enemy1GO = Instantiate(enemyPrefab, enemy1BattleStation);
+        GameObject enemy1GO = Instantiate(enemy1Prefab, enemy1BattleStation);
         enemyUnit1 = enemy1GO.GetComponent<Unit>();
-        GameObject enemy2GO = Instantiate(enemyPrefab, enemy2BattleStation);
+        GameObject enemy2GO = Instantiate(enemy2Prefab, enemy2BattleStation);
         enemyUnit2 = enemy2GO.GetComponent<Unit>();
-        GameObject enemy3GO = Instantiate(enemyPrefab, enemy3BattleStation);
+        GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation);
         enemyUnit3 = enemy3GO.GetComponent<Unit>();
 
 
         dialogueText.text = "Fight!";
 
-        FriendlyStatus.SetHUD(playerUnit1, playerUnit2, playerUnit3);
+        FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
 
     }
