@@ -22,10 +22,22 @@ public class Unit : MonoBehaviour {
     public int maxHP;
     public int maxMP;
 
+    public bool isDead = false;
+
     private void Start() {
         attack = Convert.ToInt32(baseAttack + (unitLevel * (1+(baseAttack/100))));
         defence = Convert.ToInt32(baseDefence + (unitLevel * (1 + (baseDefence / 100))));
         maxHP = Convert.ToInt32(baseHP + (unitLevel * (1 + (baseHP / 100))));
         maxMP = Convert.ToInt32(baseMP + (unitLevel * (1 + (baseMP / 100))));
+    }
+
+    public bool TakeDamage(int dmg) {
+        bool unitIsDead = false;
+        currentHP -= dmg;
+
+        if(currentHP <= 0) {
+            unitIsDead = true;
+        }
+        return unitIsDead;
     }
 }
