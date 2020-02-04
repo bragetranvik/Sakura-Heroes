@@ -94,6 +94,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Bad guy
   unitLevel: 1
-  damage: 2
-  maxHP: 10
-  currentHP: 10
+  baseAttack: 1
+  baseDefence: 1
+  baseHP: 20
+  currentHP: 40
+  baseMP: 10
+  currentMP: 20
+  attack: 0
+  defence: 1
+  maxHP: 40
+  maxMP: 20
