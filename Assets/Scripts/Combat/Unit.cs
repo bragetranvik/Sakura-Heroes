@@ -16,7 +16,7 @@ public class Unit : MonoBehaviour {
     public int baseMP;
     public int currentMP;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int attack;
     public int defence;
     public int maxHP;

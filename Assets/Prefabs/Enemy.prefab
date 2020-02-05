@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Bad guy
-  unitLevel: 1
-  baseAttack: 1
+  unitLevel: 3
+  baseAttack: 5
   baseDefence: 1
   baseHP: 20
   currentHP: 40
@@ -104,3 +104,4 @@ MonoBehaviour:
   defence: 1
   maxHP: 40
   maxMP: 20
+  isDead: 0
