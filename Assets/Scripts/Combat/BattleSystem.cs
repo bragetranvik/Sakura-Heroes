@@ -177,7 +177,6 @@ public class BattleSystem : MonoBehaviour
 
         FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
-
     }
 
     //
@@ -195,14 +194,12 @@ public class BattleSystem : MonoBehaviour
     private IEnumerator DummyAttack() {
         //Choose a random target. Just for testing
         ChooseRandomTarget(true);
-        bool targetIsDead = target.TakeDamage(unitsTurn.attack);
+        target.TakeDamage(unitsTurn.attack);
 
         EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
         dialogueText.text = "The attack is successful!";
 
         yield return new WaitForSeconds(2f);
-
-        target.isDead = targetIsDead;
     }
 
     //Checks if all anemy units are dead.
@@ -241,12 +238,10 @@ public class BattleSystem : MonoBehaviour
         //yield return new WaitForSeconds(1f);
 
         //Return true if target's health is < 0.
-        bool isDead = target.TakeDamage(unitsTurn.attack);
+        target.TakeDamage(unitsTurn.attack);
 
         FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         //yield return new WaitForSeconds(2f);
-
-        target.isDead = isDead;
     }
 
     //Choose a random target depedning on a roll 1-3.

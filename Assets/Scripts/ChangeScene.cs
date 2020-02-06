@@ -6,10 +6,17 @@ public class ChangeScene : MonoBehaviour
 
     public string sceneToLoad;
     public Vector3 playerPosInNewScene;
+
+    public static Vector3 playerPos;
+    private static bool intoNewScene = false;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-
+        if (intoNewScene) {
+            intoNewScene = false;
+            player.transform.position = playerPos;
+        }
     }
 
     // Update is called once per frame
@@ -25,10 +32,13 @@ public class ChangeScene : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GameStatus.playerPos = playerPosInNewScene;
+            playerPos = playerPosInNewScene;
             SceneManager.LoadScene(sceneToLoad);
         }
     }
 
-
+    //OnDestroy is called once the scene has been destroyed
+    private void OnDestroy() {
+        intoNewScene = true;
+    }
 }
