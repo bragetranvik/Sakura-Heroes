@@ -198,6 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 70123160}
+  - component: {fileID: 70123161}
   m_Layer: 0
   m_Name: AttackButtons
   m_TagString: Untagged
@@ -228,6 +229,18 @@ RectTransform:
   m_AnchoredPosition: {x: 60.5, y: -330}
   m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &70123161
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70123159}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &91265945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2147,6 @@ GameObject:
   - component: {fileID: 659019456}
   - component: {fileID: 659019455}
   - component: {fileID: 659019454}
-  - component: {fileID: 659019457}
   m_Layer: 0
   m_Name: Target3Button
   m_TagString: Untagged
@@ -2197,17 +2209,17 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 659019455}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: NewGame
-        m_Mode: 1
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnTargetButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 659019454}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2248,35 +2260,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659019452}
   m_CullTransparentMesh: 0
---- !u!114 &659019457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659019452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnTargetButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 659019454}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &725994084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,22 +3919,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit1CharNameText: {fileID: 784118390}
-  unit1LevelText: {fileID: 1752122091}
-  unit1HPSlider: {fileID: 648301852}
-  unit1HPText: {fileID: 1917538853}
-  unit1MPSlider: {fileID: 785133062}
-  unit1MPText: {fileID: 1277796215}
   unit2CharNameText: {fileID: 1723122194}
-  unit2LevelText: {fileID: 170337796}
-  unit2HPSlider: {fileID: 934203391}
-  unit2HPText: {fileID: 628048209}
-  unit2MPSlider: {fileID: 918474420}
-  unit2MPText: {fileID: 280149066}
   unit3CharNameText: {fileID: 999181637}
+  unit1LevelText: {fileID: 1752122091}
+  unit2LevelText: {fileID: 170337796}
   unit3LevelText: {fileID: 1515586278}
+  unit1HPSlider: {fileID: 648301852}
+  unit2HPSlider: {fileID: 934203391}
   unit3HPSlider: {fileID: 894170685}
+  unit1HPText: {fileID: 1917538853}
+  unit2HPText: {fileID: 628048209}
   unit3HPText: {fileID: 334768798}
+  unit1MPSlider: {fileID: 785133062}
+  unit2MPSlider: {fileID: 918474420}
   unit3MPSlider: {fileID: 1571391108}
+  unit1MPText: {fileID: 1277796215}
+  unit2MPText: {fileID: 280149066}
   unit3MPText: {fileID: 912252551}
 --- !u!1 &1044664942
 GameObject:
@@ -4389,7 +4372,6 @@ GameObject:
   - component: {fileID: 1101422813}
   - component: {fileID: 1101422812}
   - component: {fileID: 1101422811}
-  - component: {fileID: 1101422814}
   m_Layer: 0
   m_Name: Target1Button
   m_TagString: Untagged
@@ -4452,17 +4434,17 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1101422812}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: OnTargetButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1101422811}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4503,35 +4485,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101422809}
   m_CullTransparentMesh: 0
---- !u!114 &1101422814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101422809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnTargetButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1101422811}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &1120597786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,6 +4753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195178533}
+  - component: {fileID: 1195178534}
   m_Layer: 0
   m_Name: TargetButtons
   m_TagString: Untagged
@@ -4829,6 +4783,18 @@ RectTransform:
   m_AnchoredPosition: {x: 365, y: -330}
   m_SizeDelta: {x: 110, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1195178534
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195178532}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1213767635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,13 +4914,15 @@ MonoBehaviour:
   enemy1BattleStation: {fileID: 1047770021}
   enemy2BattleStation: {fileID: 1120597788}
   enemy3BattleStation: {fileID: 1678772932}
-  attack1Button: {fileID: 0}
-  attack2Button: {fileID: 0}
-  attack3Button: {fileID: 0}
-  attack4Button: {fileID: 0}
+  attack1Button: {fileID: 1044664944}
+  attack2Button: {fileID: 92384027}
+  attack3Button: {fileID: 523059165}
+  attack4Button: {fileID: 2030276921}
   target1Button: {fileID: 1101422811}
   target2Button: {fileID: 2037953797}
-  target3Button: {fileID: 0}
+  target3Button: {fileID: 659019454}
+  targetButtons: {fileID: 1195178534}
+  attackButtons: {fileID: 70123161}
   dialogueText: {fileID: 964826459}
   FriendlyStatus: {fileID: 1973348156}
   EnemyStatus: {fileID: 1043698055}
@@ -7503,22 +7471,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit1CharNameText: {fileID: 1052445511}
-  unit1LevelText: {fileID: 229925239}
-  unit1HPSlider: {fileID: 1641147842}
-  unit1HPText: {fileID: 789012413}
-  unit1MPSlider: {fileID: 1810768589}
-  unit1MPText: {fileID: 1100289022}
   unit2CharNameText: {fileID: 460061928}
-  unit2LevelText: {fileID: 1948358127}
-  unit2HPSlider: {fileID: 606616225}
-  unit2HPText: {fileID: 1831963450}
-  unit2MPSlider: {fileID: 1583712500}
-  unit2MPText: {fileID: 353620392}
   unit3CharNameText: {fileID: 1920588632}
+  unit1LevelText: {fileID: 229925239}
+  unit2LevelText: {fileID: 1948358127}
   unit3LevelText: {fileID: 801144640}
+  unit1HPSlider: {fileID: 1641147842}
+  unit2HPSlider: {fileID: 606616225}
   unit3HPSlider: {fileID: 529742604}
+  unit1HPText: {fileID: 789012413}
+  unit2HPText: {fileID: 1831963450}
   unit3HPText: {fileID: 1263592887}
+  unit1MPSlider: {fileID: 1810768589}
+  unit2MPSlider: {fileID: 1583712500}
   unit3MPSlider: {fileID: 981361246}
+  unit1MPText: {fileID: 1100289022}
+  unit2MPText: {fileID: 353620392}
   unit3MPText: {fileID: 17462635}
 --- !u!1 &1993561167
 GameObject:
@@ -7888,7 +7856,6 @@ GameObject:
   - component: {fileID: 2037953799}
   - component: {fileID: 2037953798}
   - component: {fileID: 2037953797}
-  - component: {fileID: 2037953800}
   m_Layer: 0
   m_Name: Target2Button
   m_TagString: Untagged
@@ -7951,17 +7918,17 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 2037953798}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: NewGame
-        m_Mode: 1
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnTargetButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2037953797}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8002,35 +7969,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037953795}
   m_CullTransparentMesh: 0
---- !u!114 &2037953800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037953795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnTargetButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 2037953797}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &2041159815
 GameObject:
   m_ObjectHideFlags: 0

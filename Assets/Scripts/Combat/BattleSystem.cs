@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY2TURN, FRIENDLY3TURN, ENEMY3TURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
+    
+
     public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
     public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
 
@@ -19,6 +22,7 @@ public class BattleSystem : MonoBehaviour
 
     public Button attack1Button, attack2Button, attack3Button, attack4Button;
     public Button target1Button, target2Button, target3Button;
+    public CanvasGroup targetButtons, attackButtons;
 
     private Unit target;
     private Unit unitsTurn;
@@ -37,6 +41,9 @@ public class BattleSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ///attackButtons = GetComponent<CanvasGroup>();
+        //targetButtons = GetComponent<CanvasGroup>();
+
         state = BattleState.START;
         StartCoroutine(Battle());
     }
@@ -67,6 +74,7 @@ public class BattleSystem : MonoBehaviour
                         state = BattleState.ENEMY1TURN;
                     }
                     enableDisableAttackButtons(false);
+                    enableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY1TURN:
@@ -93,6 +101,7 @@ public class BattleSystem : MonoBehaviour
                         state = BattleState.ENEMY2TURN;
                     }
                     enableDisableAttackButtons(false);
+                    enableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY2TURN:
@@ -120,6 +129,7 @@ public class BattleSystem : MonoBehaviour
                         state = BattleState.ENEMY3TURN;
                     }
                     enableDisableAttackButtons(false);
+                    enableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY3TURN:
@@ -137,12 +147,14 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.LOST:
                     enableDisableAttackButtons(false);
+                    enableDisableTargetButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
 
                 case BattleState.WON:
                     enableDisableAttackButtons(false);
+                    enableDisableTargetButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
@@ -318,6 +330,7 @@ public class BattleSystem : MonoBehaviour
         if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
             whatAbilityButtonPressed = button;
             abilityHasBeenChosen = true;
+            enableDisableTargetButtons(true);
         }
     }
 
@@ -361,20 +374,15 @@ public class BattleSystem : MonoBehaviour
     /// </summary>
     /// <param name="state">What state you want the buttons to be in</param>
     private void enableDisableAttackButtons(bool state) {
-        attack1Button.interactable = state;
-        attack2Button.interactable = state;
-        attack3Button.interactable = state;
-        attack4Button.interactable = state;
-    }
+        attackButtons.interactable = state;
+   }
 
     /// <summary>
     /// Enables or disables the 3 target buttons.
     /// </summary>
     /// <param name="state">What state you want the buttons to be in</param>
     private void enableDisableTargetButtons(bool state) {
-        target1Button.interactable = state;
-        target2Button.interactable = state;
-        target3Button.interactable = state;
+        targetButtons.interactable = state;
     }
 
 }
