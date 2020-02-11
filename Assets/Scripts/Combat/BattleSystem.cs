@@ -37,6 +37,10 @@ public class BattleSystem : MonoBehaviour
     public StatusHUD FriendlyStatus;
     public StatusHUD EnemyStatus;
 
+    private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
+    private Button whatTargetButtonPressed, whatAbilityButtonPressed;
+    private int damageMultiplier = 1; //Just for testing
+
     public BattleState state;
 
     // Start is called before the first frame update
@@ -64,7 +68,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
                     FriendlyTurn();
-                    yield return waitForKeyPress(KeyCode.Space);
+                    yield return WaitForPlayerAction();
                     if(IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     } else {
@@ -76,7 +80,6 @@ public class BattleSystem : MonoBehaviour
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit1;
                     SimpleEnemyAI();
-                    Debug.Log("1");
                     yield return new WaitForSeconds(2f);
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -88,7 +91,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
                     FriendlyTurn();
-                    yield return waitForKeyPress(KeyCode.Space);
+                    yield return WaitForPlayerAction();
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     }
@@ -101,7 +104,6 @@ public class BattleSystem : MonoBehaviour
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit2;
                     SimpleEnemyAI();
-                    Debug.Log("2");
                     yield return new WaitForSeconds(2f);
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -114,7 +116,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
                     FriendlyTurn();
-                    yield return waitForKeyPress(KeyCode.Space);
+                    yield return WaitForPlayerAction();
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     }
@@ -126,7 +128,6 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.ENEMY3TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit3;
-                    Debug.Log("3");
                     SimpleEnemyAI();
                     yield return new WaitForSeconds(2f);
                     if (IsAllFriendlyDead()) {
@@ -192,9 +193,8 @@ public class BattleSystem : MonoBehaviour
     }
 
     private IEnumerator DummyAttack() {
-        //Choose a random target. Just for testing
-        ChooseRandomTarget(true);
-        target.TakeDamage(unitsTurn.attack);
+        Debug.Log("Dummy Attack used");
+        target.TakeDamage(unitsTurn.attack * damageMultiplier);
 
         EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
         dialogueText.text = "The attack is successful!";
@@ -231,7 +231,6 @@ public class BattleSystem : MonoBehaviour
     }
 
     private void SimpleEnemyAI() {
-        Debug.Log("Hello");
         dialogueText.text = unitsTurn.unitName + " attacks!";
         ChooseRandomTarget(false);
 
@@ -244,7 +243,8 @@ public class BattleSystem : MonoBehaviour
         //yield return new WaitForSeconds(2f);
     }
 
-    //Choose a random target depedning on a roll 1-3.
+    ///Choose a random target depedning on a roll 1-3.
+    ///<param name="friendlyIsAttacking"> True if a friendly is attacking false if enemy is attacking.
     private void ChooseRandomTarget(bool friendlyIsAttacking) {
         int randomTarget = RandomNumber(1, 4);
 
@@ -292,4 +292,69 @@ public class BattleSystem : MonoBehaviour
         // now this function returns
     }
 
+    /// <summary>
+    /// Choose the target depending on what target button has been pressed and set targetHasBeen to true.
+    /// </summary>
+    /// <param name="button"></param>
+    public void OnTargetButton(Button button) {
+        if (button.name.Equals("Target1Button")) {
+            target = enemyUnit1;
+            targetHasBeenChosen = true;
+            Debug.Log("1");
+            StartCoroutine(DummyAttack());
+        } else if(button.name.Equals("Target2Button")) {
+            target = enemyUnit2;
+            targetHasBeenChosen = true;
+            Debug.Log("2");
+            StartCoroutine(DummyAttack());
+        } else if(button.name.Equals("Target3Button")) {
+            target = enemyUnit3;
+            targetHasBeenChosen = true;
+            Debug.Log("3");
+            StartCoroutine(DummyAttack());
+        }
+    }
+
+    public void OnAbilityButton(Button button) {
+        if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
+            whatAbilityButtonPressed = button;
+            abilityHasBeenChosen = true;
+        }
+    }
+
+    public void WhatAbilityToUse() {
+        Debug.Log("Pressed button is: " + whatAbilityButtonPressed.name);
+        if(whatAbilityButtonPressed.name.Equals("Attack1Button")) {
+            Debug.Log("Using ability 1");
+            damageMultiplier = 1;
+        } else if(whatAbilityButtonPressed.name.Equals("Attack2Button")) {
+            Debug.Log("Using ability 2");
+            damageMultiplier = 2;
+        } else if(whatAbilityButtonPressed.name.Equals("Attack3Button")) {
+            Debug.Log("Using ability 3");
+            damageMultiplier = 3;
+        } else if(whatAbilityButtonPressed.name.Equals("Attack4Button")) {
+            Debug.Log("Using ability 4");
+            damageMultiplier = 4;
+        }
+    }
+
+    /// <summary>
+    /// Locks the player in a loop until a target button has been pressed.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator WaitForPlayerAction() {
+        bool done = false;
+        while (!done) // essentially a "while true", but with a bool to break out naturally
+        {
+            if (targetHasBeenChosen && abilityHasBeenChosen) {
+                done = true; // breaks the loop
+            }
+            yield return null; // wait until next frame, then continue execution from here (loop continues)
+        }
+        targetHasBeenChosen = false;
+        abilityHasBeenChosen = false;
+
+        // now this function returns
+    }
 }
