@@ -6,27 +6,12 @@ using UnityEngine.UI;
 public class StatusHUD : MonoBehaviour
 {
 
-    public Text unit1CharNameText;
-    public Text unit1LevelText;
-    public Slider unit1HPSlider;
-    public Text unit1HPText;
-    public Slider unit1MPSlider;
-    public Text unit1MPText;
-
-    public Text unit2CharNameText;
-    public Text unit2LevelText;
-    public Slider unit2HPSlider;
-    public Text unit2HPText;
-    public Slider unit2MPSlider;
-    public Text unit2MPText;
-
-    public Text unit3CharNameText;
-    public Text unit3LevelText;
-    public Slider unit3HPSlider;
-    public Text unit3HPText;
-    public Slider unit3MPSlider;
-    public Text unit3MPText;
-
+    public Text unit1CharNameText, unit2CharNameText, unit3CharNameText;
+    public Text unit1LevelText, unit2LevelText, unit3LevelText;
+    public Slider unit1HPSlider, unit2HPSlider, unit3HPSlider;
+    public Text unit1HPText, unit2HPText, unit3HPText;
+    public Slider unit1MPSlider, unit2MPSlider, unit3MPSlider;
+    public Text unit1MPText, unit2MPText, unit3MPText;
 
     public void SetHUD(Unit unit1, Unit unit2, Unit unit3)
     {

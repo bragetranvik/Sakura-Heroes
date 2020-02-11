@@ -8,26 +8,17 @@ public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY
 
 public class BattleSystem : MonoBehaviour
 {
-    public GameObject friendly1Prefab;
-    public GameObject friendly2Prefab;
-    public GameObject friendly3Prefab;
-    public GameObject enemy1Prefab;
-    public GameObject enemy2Prefab;
-    public GameObject enemy3Prefab;
+    public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
+    public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
 
-    public Transform friendly1BattleStation;
-    public Transform friendly2BattleStation;
-    public Transform friendly3BattleStation;
-    public Transform enemy1BattleStation;
-    public Transform enemy2BattleStation;
-    public Transform enemy3BattleStation;
+    public Transform friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
+    public Transform enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
 
-    private Unit friendlyUnit1;
-    private Unit friendlyUnit2;
-    private Unit friendlyUnit3;
-    private Unit enemyUnit1;
-    private Unit enemyUnit2;
-    private Unit enemyUnit3;
+    private Unit friendlyUnit1, friendlyUnit2, friendlyUnit3;
+    private Unit enemyUnit1, enemyUnit2, enemyUnit3;
+
+    public Button attack1Button, attack2Button, attack3Button, attack4Button;
+    public Button target1Button, target2Button, target3Button;
 
     private Unit target;
     private Unit unitsTurn;
@@ -64,12 +55,14 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
                     FriendlyTurn();
+                    enableDisableAttackButtons(true);
                     yield return waitForKeyPress(KeyCode.Space);
                     if(IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     } else {
                         state = BattleState.ENEMY1TURN;
                     }
+                    enableDisableAttackButtons(false);
                     break;
 
                 case BattleState.ENEMY1TURN:
@@ -88,6 +81,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
                     FriendlyTurn();
+                    enableDisableAttackButtons(true);
                     yield return waitForKeyPress(KeyCode.Space);
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -95,6 +89,7 @@ public class BattleSystem : MonoBehaviour
                     else {
                         state = BattleState.ENEMY2TURN;
                     }
+                    enableDisableAttackButtons(false);
                     break;
 
                 case BattleState.ENEMY2TURN:
@@ -114,6 +109,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
                     FriendlyTurn();
+                    enableDisableAttackButtons(true);
                     yield return waitForKeyPress(KeyCode.Space);
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -121,6 +117,7 @@ public class BattleSystem : MonoBehaviour
                     else {
                         state = BattleState.ENEMY3TURN;
                     }
+                    enableDisableAttackButtons(false);
                     break;
 
                 case BattleState.ENEMY3TURN:
@@ -138,11 +135,13 @@ public class BattleSystem : MonoBehaviour
                     break;
 
                 case BattleState.LOST:
+                    enableDisableAttackButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
 
                 case BattleState.WON:
+                    enableDisableAttackButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
@@ -290,6 +289,27 @@ public class BattleSystem : MonoBehaviour
         }
 
         // now this function returns
+    }
+
+    /// <summary>
+    /// Enables or disables the 4 attack buttons.
+    /// </summary>
+    /// <param name="state">What state you want the buttons to be in</param>
+    private void enableDisableAttackButtons(bool state) {
+        attack1Button.interactable = state;
+        attack2Button.interactable = state;
+        attack3Button.interactable = state;
+        attack4Button.interactable = state;
+    }
+
+    /// <summary>
+    /// Enables or disables the 3 target buttons.
+    /// </summary>
+    /// <param name="state">What state you want the buttons to be in</param>
+    private void enableDisableTargetButtons(bool state) {
+        target1Button.interactable = state;
+        target2Button.interactable = state;
+        target3Button.interactable = state;
     }
 
 }
