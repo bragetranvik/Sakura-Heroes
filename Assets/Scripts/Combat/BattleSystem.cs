@@ -34,7 +34,7 @@ public class BattleSystem : MonoBehaviour
 
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
     private Button whatTargetButtonPressed, whatAbilityButtonPressed;
-    private int damageMultiplier = 1; //Just for testing
+    private string highlightedAbility = null;
 
     public BattleState state;
 
@@ -205,7 +205,7 @@ public class BattleSystem : MonoBehaviour
 
     private IEnumerator DummyAttack() {
         Debug.Log("Dummy Attack used");
-        target.TakeDamage(unitsTurn.attack * damageMultiplier);
+        target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier, unitsTurn.GetAbilityArmorPenetration();
 
         EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
         dialogueText.text = "The attack is successful!";
@@ -248,7 +248,7 @@ public class BattleSystem : MonoBehaviour
         //yield return new WaitForSeconds(1f);
 
         //Return true if target's health is < 0.
-        target.TakeDamage(unitsTurn.attack);
+        target.TakeDamage(unitsTurn.attack, 1, 0);
 
         FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         //yield return new WaitForSeconds(2f);
@@ -334,20 +334,21 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    //last I did!
     public void WhatAbilityToUse() {
         Debug.Log("Pressed button is: " + whatAbilityButtonPressed.name);
         if(whatAbilityButtonPressed.name.Equals("Attack1Button")) {
             Debug.Log("Using ability 1");
-            damageMultiplier = 1;
+            highlightedAbility = "ability1";
         } else if(whatAbilityButtonPressed.name.Equals("Attack2Button")) {
             Debug.Log("Using ability 2");
-            damageMultiplier = 2;
+            highlightedAbility = "ability2";
         } else if(whatAbilityButtonPressed.name.Equals("Attack3Button")) {
             Debug.Log("Using ability 3");
-            damageMultiplier = 3;
+            highlightedAbility = "ability3";
         } else if(whatAbilityButtonPressed.name.Equals("Attack4Button")) {
             Debug.Log("Using ability 4");
-            damageMultiplier = 4;
+            highlightedAbility = "ability4";
         }
     }
 

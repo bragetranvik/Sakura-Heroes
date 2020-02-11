@@ -15,6 +15,8 @@ public class Unit : MonoBehaviour {
     public int currentHP;
     public int currentMP;
 
+    public Ability ability1, ability2, ability3, ability4;
+
     [HideInInspector]
     public int attack, defence, maxHP, maxMP;
 
@@ -29,8 +31,8 @@ public class Unit : MonoBehaviour {
         GetStats();
     }
 
-    public void TakeDamage(int dmg) {
-        currentHP -= (dmg*(1-(defence/100)));
+    public void TakeDamage(int dmg, int damageMultiplier, int armorPenetration) {
+        currentHP -= ((dmg*damageMultiplier)*((1-(defence/100))*(100-armorPenetration)));
 
         if(currentHP <= 0) {
             isDead = true;
@@ -46,5 +48,58 @@ public class Unit : MonoBehaviour {
         } else {
             maxMP = Convert.ToInt32(MPConstant + 1 * unitLevel -1);
         }
+    }
+
+    /// <summary>
+    /// Return the ability damage depending on what ability you used.
+    /// </summary>
+    /// <param name="ability">Has to be ability1-4.</param>
+    /// <returns>The damage of the used ability.</returns>
+    public int GetAbilityDamageMultiplier(string ability) {
+        int damage = 0;
+        if(ability.Equals("ability1")) {
+            damage = ability1.GetDamageMultiplier();
+        } else if(ability.Equals("ability2")) {
+            damage = ability2.GetDamageMultiplier();
+        } else if(ability.Equals("ability3")) {
+            damage = ability3.GetDamageMultiplier();
+        } else if(ability.Equals("ability4")) {
+            damage = ability4.GetDamageMultiplier();
+        }
+        return damage;
+    }
+
+    public string GetAbilityName(string ability) {
+        string name = null;
+        if (ability.Equals("ability1")) {
+            name = ability1.GetAbilityName();
+        }
+        else if (ability.Equals("ability2")) {
+            name = ability2.GetAbilityName();
+        }
+        else if (ability.Equals("ability3")) {
+            name = ability3.GetAbilityName();
+        }
+        else if (ability.Equals("ability4")) {
+            name = ability4.GetAbilityName();
+        }
+        return name;
+    }
+
+    public int GetAbilityArmorPenetration(string ability) {
+        int armorPenetration = 0;
+        if (ability.Equals("ability1")) {
+            armorPenetration = ability1.GetArmorPenetration();
+        }
+        else if (ability.Equals("ability2")) {
+            armorPenetration = ability2.GetArmorPenetration();
+        }
+        else if (ability.Equals("ability3")) {
+            armorPenetration = ability3.GetArmorPenetration();
+        }
+        else if (ability.Equals("ability4")) {
+            armorPenetration = ability4.GetArmorPenetration();
+        }
+        return armorPenetration;
     }
 }
