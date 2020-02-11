@@ -15,11 +15,8 @@ public class Unit : MonoBehaviour {
     public int currentHP;
     public int currentMP;
 
-    //[HideInInspector]
-    public int attack;
-    public int defence;
-    public int maxHP;
-    public int maxMP;
+    [HideInInspector]
+    public int attack, defence, maxHP, maxMP;
 
     private readonly int attackConstant = 5;
     private readonly int defenceConstant = 10;
@@ -29,7 +26,7 @@ public class Unit : MonoBehaviour {
     public bool isDead = false;
 
     private void Start() {
-        getStats();
+        GetStats();
     }
 
     public void TakeDamage(int dmg) {
@@ -40,7 +37,7 @@ public class Unit : MonoBehaviour {
         }
     }
 
-    private void getStats() {
+    private void GetStats() {
         attack = Convert.ToInt32(unitLevel * (baseAttack/12) + attackConstant);
         defence = Convert.ToInt32(unitLevel * (baseDefence/20) + defenceConstant);
         maxHP = Convert.ToInt32(unitLevel * baseHP/2 + HPConstant);
