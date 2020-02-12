@@ -33,7 +33,7 @@ public class BattleSystem : MonoBehaviour
     public StatusHUD EnemyStatus;
 
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
-    private Button whatTargetButtonPressed, whatAbilityButtonPressed;
+    private Button whatAbilityButtonPressed;
     private string highlightedAbility = null;
 
     public BattleState state;
@@ -65,6 +65,8 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
+                    RegenMana();
+                    FriendlyStatus.SetAbilityName(friendlyUnit1);
                     FriendlyTurn();
                     enableDisableAttackButtons(true);
                     yield return WaitForPlayerAction();
@@ -91,6 +93,8 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
+                    RegenMana();
+                    FriendlyStatus.SetAbilityName(friendlyUnit1);
                     FriendlyTurn();
                     enableDisableAttackButtons(true);
                     yield return WaitForPlayerAction();
@@ -119,6 +123,8 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
+                    RegenMana();
+                    FriendlyStatus.SetAbilityName(friendlyUnit1);
                     FriendlyTurn();
                     enableDisableAttackButtons(true);
                     yield return WaitForPlayerAction();
@@ -199,16 +205,15 @@ public class BattleSystem : MonoBehaviour
     //Should take in a varible which is the ability
     public void OnAbilityButton1() {
         if ((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
-            StartCoroutine(DummyAttack());
+            StartCoroutine(DoAttack());
         }
     }
 
-    private IEnumerator DummyAttack() {
-        Debug.Log("Dummy Attack used");
-        target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier, unitsTurn.GetAbilityArmorPenetration();
+    private IEnumerator DoAttack() {
+        target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier(highlightedAbility), unitsTurn.GetAbilityArmorPenetration(highlightedAbility));
 
         EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
-        dialogueText.text = "The attack is successful!";
+        dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
 
         yield return new WaitForSeconds(2f);
     }
@@ -309,20 +314,23 @@ public class BattleSystem : MonoBehaviour
     /// <param name="button"></param>
     public void OnTargetButton(Button button) {
         if (button.name.Equals("Target1Button")) {
-            target = enemyUnit1;
-            targetHasBeenChosen = true;
-            Debug.Log("1");
-            StartCoroutine(DummyAttack());
+            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
+                target = enemyUnit1;
+                targetHasBeenChosen = true;
+                StartCoroutine(DoAttack());
+            }
         } else if(button.name.Equals("Target2Button")) {
-            target = enemyUnit2;
-            targetHasBeenChosen = true;
-            Debug.Log("2");
-            StartCoroutine(DummyAttack());
+            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
+                target = enemyUnit2;
+                targetHasBeenChosen = true;
+                StartCoroutine(DoAttack());
+            }
         } else if(button.name.Equals("Target3Button")) {
-            target = enemyUnit3;
-            targetHasBeenChosen = true;
-            Debug.Log("3");
-            StartCoroutine(DummyAttack());
+            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
+                target = enemyUnit3;
+                targetHasBeenChosen = true;
+                StartCoroutine(DoAttack());
+            }
         }
     }
 
@@ -334,20 +342,14 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    //last I did!
     public void WhatAbilityToUse() {
-        Debug.Log("Pressed button is: " + whatAbilityButtonPressed.name);
         if(whatAbilityButtonPressed.name.Equals("Attack1Button")) {
-            Debug.Log("Using ability 1");
             highlightedAbility = "ability1";
         } else if(whatAbilityButtonPressed.name.Equals("Attack2Button")) {
-            Debug.Log("Using ability 2");
             highlightedAbility = "ability2";
         } else if(whatAbilityButtonPressed.name.Equals("Attack3Button")) {
-            Debug.Log("Using ability 3");
             highlightedAbility = "ability3";
         } else if(whatAbilityButtonPressed.name.Equals("Attack4Button")) {
-            Debug.Log("Using ability 4");
             highlightedAbility = "ability4";
         }
     }
@@ -386,4 +388,13 @@ public class BattleSystem : MonoBehaviour
         targetButtons.interactable = state;
     }
 
+    /// <summary>
+    /// Restore 20 mana to the unit which has the turn
+    /// and set the stats of the unit.
+    /// </summary>
+    private void RegenMana() {
+        unitsTurn.GainMana(20);
+        unitsTurn.GetStats();
+        FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
+    }
 }

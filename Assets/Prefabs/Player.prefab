@@ -99,6 +99,13 @@ MonoBehaviour:
   baseHP: 7
   currentHP: 118
   currentMP: 104
+  ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}
+  ability2: {fileID: 4144834772134069016, guid: 3486a3babfa8045478bebdd9b6bb3c4b,
+    type: 3}
+  ability3: {fileID: 2029938116326362136, guid: 3a09d3af65d61134288d31e5e3f58e01,
+    type: 3}
+  ability4: {fileID: 8318344785813710929, guid: ba1e5ba8a5ed6c04f86003b813e6c590,
+    type: 3}
   attack: 12
   defence: 6
   maxHP: 118
