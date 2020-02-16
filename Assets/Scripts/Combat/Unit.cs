@@ -8,12 +8,8 @@ public class Unit : MonoBehaviour {
     public int unitLevel;
 
     //Base stats should only be between 1-12.
-    public int baseAttack;
-    public int baseDefence;
-    public int baseHP;
-
-    public int currentHP;
-    public int currentMP;
+    public int baseAttack, baseDefence, baseHP;
+    public int currentHP, currentMP;
 
     public Ability ability1, ability2, ability3, ability4;
 
@@ -27,10 +23,6 @@ public class Unit : MonoBehaviour {
 
     public bool isDead = false;
 
-    private void Start() {
-        GetStats();
-    }
-
     /// <summary>
     /// Reduce currentHP of the unit by dmg*dmgMultiplier reduced by defence which get reduced again by armorPenetration.
     /// </summary>
@@ -38,7 +30,7 @@ public class Unit : MonoBehaviour {
     /// <param name="damageMultiplier">Multiplies the damage to deal.</param>
     /// <param name="armorPenetration">How many percentage to reduce to defence of the unit.</param>
     public void TakeDamage(int dmg, int damageMultiplier, int armorPenetration) {
-        currentHP -= ((dmg*damageMultiplier)*(1-(defence*(1-(armorPenetration/100))/100)));
+        currentHP -= Convert.ToInt32((dmg*damageMultiplier)*(1f-(defence*(1f-(armorPenetration/100f))/100f)));
 
         if(currentHP <= 0) {
             isDead = true;
@@ -74,12 +66,21 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
+    /// Restore all stats of the unit to full.
+    /// </summary>
+    public void RestoreUnitStats() {
+        isDead = false;
+        currentHP = maxHP;
+        currentMP = maxMP;
+    }
+
+    /// <summary>
     /// Calculates attack, defence, maxHP and maxMP of the unit
     /// and if current HP > maxHP, sets the current HP = maxHP.
     /// </summary>
-    public void GetStats() {
-        attack = Convert.ToInt32(unitLevel * (baseAttack/12) + attackConstant);
-        defence = Convert.ToInt32(unitLevel * (baseDefence/20) + defenceConstant);
+    public void CalculateStats() {
+        attack = Convert.ToInt32(unitLevel * baseAttack/12 + attackConstant);
+        defence = Convert.ToInt32(unitLevel * baseDefence/20 + defenceConstant);
         maxHP = Convert.ToInt32(unitLevel * baseHP/2 + HPConstant);
         if(unitLevel.Equals(99)) {
             maxMP = 200;
@@ -87,7 +88,7 @@ public class Unit : MonoBehaviour {
             maxMP = Convert.ToInt32(MPConstant + 1 * unitLevel -1);
         }
         if(currentHP > maxHP) {
-            currentHP = maxHP;
+            currentHP = Convert.ToInt32(maxHP);
         }
     }
 

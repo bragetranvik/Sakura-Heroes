@@ -2215,7 +2215,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 659019454}
@@ -4444,7 +4444,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1101422811}
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friendly1Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
-  friendly2Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+  friendly2Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
     type: 3}
   friendly3Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
@@ -7932,7 +7932,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2037953797}

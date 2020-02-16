@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Cindy Smith
-  unitLevel: 5
+  unitLevel: 99
   baseAttack: 12
   baseDefence: 6
   baseHP: 7
@@ -106,8 +106,8 @@ MonoBehaviour:
     type: 3}
   ability4: {fileID: 8318344785813710929, guid: ba1e5ba8a5ed6c04f86003b813e6c590,
     type: 3}
-  attack: 12
-  defence: 6
-  maxHP: 118
-  maxMP: 104
+  attack: 0
+  defence: 0
+  maxHP: 0
+  maxMP: 0
   isDead: 0
