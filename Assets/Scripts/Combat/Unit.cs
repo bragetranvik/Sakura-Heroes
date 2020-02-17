@@ -25,6 +25,7 @@ public class Unit : MonoBehaviour {
 
     /// <summary>
     /// Reduce currentHP of the unit by dmg*dmgMultiplier reduced by defence which get reduced again by armorPenetration.
+    /// If target dies from the damage the isDead will be set to true and currentHP will be set to 0.
     /// </summary>
     /// <param name="dmg">The damage to deal.</param>
     /// <param name="damageMultiplier">Multiplies the damage to deal.</param>
@@ -34,6 +35,7 @@ public class Unit : MonoBehaviour {
 
         if(currentHP <= 0) {
             isDead = true;
+            currentHP = 0;
         }
     }
 
