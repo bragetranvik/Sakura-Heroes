@@ -9,7 +9,7 @@ public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY
 
 public class BattleSystem : MonoBehaviour
 {
-    
+    public EventSystem EventSystem;
 
     public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
     public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
@@ -20,6 +20,7 @@ public class BattleSystem : MonoBehaviour
     private Unit friendlyUnit1, friendlyUnit2, friendlyUnit3;
     private Unit enemyUnit1, enemyUnit2, enemyUnit3;
 
+    public GameObject attack1ButtonGameObject;
     public Button attack1Button, attack2Button, attack3Button, attack4Button;
     public Button target1Button, target2Button, target3Button;
     public CanvasGroup targetButtons, attackButtons;
@@ -170,8 +171,15 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Places the friendly and enemy units on their battlestations.
+    /// Sets the dialogue text to "Fight!".
+    /// Gets the unit stats from each unit.
+    /// Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
+    /// </summary>
     private void SetupBattle()
     {
+        // Places the friendly and enemy units on their battlestations.
         GameObject friendly1GO = Instantiate(friendly1Prefab, friendly1BattleStation);
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
         GameObject friendly2GO = Instantiate(friendly2Prefab, friendly2BattleStation);
@@ -187,10 +195,11 @@ public class BattleSystem : MonoBehaviour
         GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation);
         enemyUnit3 = enemy3GO.GetComponent<Unit>();
 
-
+        //Sets the dialogue text to "Fight!".
         dialogueText.text = "Fight!";
 
-        CalculateAllUnitStats();
+        //Gets the unit stats from each unit.
+        GetAllUnitStats();
         //Just for testing to restore health and mana to full before battle.
         friendlyUnit1.RestoreUnitStats();
         friendlyUnit2.RestoreUnitStats();
@@ -199,6 +208,7 @@ public class BattleSystem : MonoBehaviour
         enemyUnit2.RestoreUnitStats();
         enemyUnit3.RestoreUnitStats();
 
+        //Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
         FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
         enableDisableAttackButtons(false);
@@ -342,6 +352,15 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Disables target buttons and sets the ability has been chosen boolean to false
+    /// </summary>
+    public void deselectButtons() {
+        abilityHasBeenChosen = false;
+        targetHasBeenChosen = false;
+        enableDisableTargetButtons(false);
+    }
+
     public void OnAbilityButton(Button button) {
         if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
             whatAbilityButtonPressed = button;
@@ -370,6 +389,9 @@ public class BattleSystem : MonoBehaviour
         bool done = false;
         while (!done) // essentially a "while true", but with a bool to break out naturally
         {
+            if (EventSystem.currentSelectedGameObject == null) {
+                deselectButtons();
+            }
             if (targetHasBeenChosen && abilityHasBeenChosen) {
                 done = true; // breaks the loop
             }
@@ -377,6 +399,8 @@ public class BattleSystem : MonoBehaviour
         }
         targetHasBeenChosen = false;
         abilityHasBeenChosen = false;
+        EventSystem.SetSelectedGameObject(attack1ButtonGameObject);
+
 
         // now this function returns
     }
@@ -408,7 +432,7 @@ public class BattleSystem : MonoBehaviour
     /// <summary>
     /// Calculate the stats of every unit in the battle.
     /// </summary>
-    private void CalculateAllUnitStats() {
+    private void GetAllUnitStats() {
         friendlyUnit1.CalculateStats();
         friendlyUnit2.CalculateStats();
         friendlyUnit3.CalculateStats();
