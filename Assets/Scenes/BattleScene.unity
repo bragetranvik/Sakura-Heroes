@@ -222,7 +222,7 @@ RectTransform:
   - {fileID: 523059164}
   - {fileID: 2030276920}
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -288,7 +288,6 @@ GameObject:
   - component: {fileID: 92384026}
   - component: {fileID: 92384029}
   - component: {fileID: 92384028}
-  - component: {fileID: 92384030}
   - component: {fileID: 92384027}
   m_Layer: 0
   m_Name: Attack2Button
@@ -330,11 +329,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnDown: {fileID: 2030276921}
+    m_SelectOnLeft: {fileID: 1044664944}
+    m_SelectOnRight: {fileID: 1101422811}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -342,7 +341,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.35
+    m_FadeDuration: 0.2
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -357,6 +356,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnAbilityButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 92384027}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1260867564}
         m_MethodName: WhatAbilityToUse
         m_Mode: 1
@@ -403,35 +413,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92384025}
   m_CullTransparentMesh: 0
---- !u!114 &92384030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92384025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnAbilityButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 92384027}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &114186281
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +426,7 @@ GameObject:
   - component: {fileID: 114186284}
   - component: {fileID: 114186283}
   m_Layer: 0
-  m_Name: AttackButtonText
+  m_Name: TargetButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,7 +497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack!
+  m_Text: 
 --- !u!222 &114186285
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1494,7 +1475,6 @@ GameObject:
   - component: {fileID: 523059164}
   - component: {fileID: 523059167}
   - component: {fileID: 523059166}
-  - component: {fileID: 523059168}
   - component: {fileID: 523059165}
   m_Layer: 0
   m_Name: Attack3Button
@@ -1536,11 +1516,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 1044664944}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2030276921}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1548,7 +1528,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.35
+    m_FadeDuration: 0.2
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -1563,6 +1543,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnAbilityButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 523059165}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1260867564}
         m_MethodName: WhatAbilityToUse
         m_Mode: 1
@@ -1609,35 +1600,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523059163}
   m_CullTransparentMesh: 0
---- !u!114 &523059168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523059163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnAbilityButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 523059165}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &529742602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,10 +2149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 2037953797}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 2030276921}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
@@ -2199,7 +2161,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.5
+    m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -2215,7 +2177,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 659019454}
@@ -3936,6 +3898,10 @@ MonoBehaviour:
   unit1MPText: {fileID: 1277796215}
   unit2MPText: {fileID: 280149066}
   unit3MPText: {fileID: 912252551}
+  unitAbility1Name: {fileID: 0}
+  unitAbility2Name: {fileID: 0}
+  unitAbility3Name: {fileID: 0}
+  unitAbility4Name: {fileID: 0}
 --- !u!1 &1044664942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3947,7 +3913,6 @@ GameObject:
   - component: {fileID: 1044664943}
   - component: {fileID: 1044664946}
   - component: {fileID: 1044664945}
-  - component: {fileID: 1044664947}
   - component: {fileID: 1044664944}
   m_Layer: 0
   m_Name: Attack1Button
@@ -3989,11 +3954,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 523059165}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 92384027}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4001,7 +3966,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.35
+    m_FadeDuration: 0.2
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -4016,6 +3981,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnAbilityButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1044664944}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1260867564}
         m_MethodName: WhatAbilityToUse
         m_Mode: 1
@@ -4062,35 +4038,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044664942}
   m_CullTransparentMesh: 0
---- !u!114 &1044664947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044664942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnAbilityButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1044664944}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &1047770019
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,19 +4359,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnDown: {fileID: 2037953797}
+    m_SelectOnLeft: {fileID: 92384027}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.39215687}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.5
+    m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -4440,7 +4387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1101422811}
@@ -4776,7 +4723,7 @@ RectTransform:
   - {fileID: 2037953796}
   - {fileID: 659019453}
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4896,9 +4843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ac28e3f75dbf54d8aebaeb94a8262c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EventSystem: {fileID: 1696646328}
   friendly1Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
-  friendly2Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+  friendly2Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
     type: 3}
   friendly3Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
@@ -4914,6 +4862,7 @@ MonoBehaviour:
   enemy1BattleStation: {fileID: 1047770021}
   enemy2BattleStation: {fileID: 1120597788}
   enemy3BattleStation: {fileID: 1678772932}
+  attack1ButtonGameObject: {fileID: 1044664942}
   attack1Button: {fileID: 1044664944}
   attack2Button: {fileID: 92384027}
   attack3Button: {fileID: 523059165}
@@ -5268,8 +5217,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1951659437}
-  - {fileID: 1195178533}
   - {fileID: 70123160}
+  - {fileID: 1195178533}
   - {fileID: 1518806574}
   - {fileID: 1014934332}
   - {fileID: 964826458}
@@ -5286,8 +5235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 981.16}
+  m_AnchoredPosition: {x: 0.10743, y: 0.0050449}
+  m_SizeDelta: {x: 1919.8, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378178309
 MonoBehaviour:
@@ -6100,7 +6049,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 2
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &1696646328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6790,7 +6739,7 @@ GameObject:
   - component: {fileID: 1869147974}
   - component: {fileID: 1869147973}
   m_Layer: 0
-  m_Name: AttackButtonText
+  m_Name: TargetButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6861,7 +6810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack!
+  m_Text: 
 --- !u!222 &1869147975
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7488,6 +7437,10 @@ MonoBehaviour:
   unit1MPText: {fileID: 1100289022}
   unit2MPText: {fileID: 353620392}
   unit3MPText: {fileID: 17462635}
+  unitAbility1Name: {fileID: 631486179}
+  unitAbility2Name: {fileID: 2104097573}
+  unitAbility3Name: {fileID: 128097655}
+  unitAbility4Name: {fileID: 858291937}
 --- !u!1 &1993561167
 GameObject:
   m_ObjectHideFlags: 0
@@ -7501,7 +7454,7 @@ GameObject:
   - component: {fileID: 1993561170}
   - component: {fileID: 1993561169}
   m_Layer: 0
-  m_Name: AttackButtonText
+  m_Name: TargetButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7572,7 +7525,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack!
+  m_Text: 
 --- !u!222 &1993561171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7664,7 +7617,6 @@ GameObject:
   - component: {fileID: 2030276920}
   - component: {fileID: 2030276923}
   - component: {fileID: 2030276922}
-  - component: {fileID: 2030276924}
   - component: {fileID: 2030276921}
   m_Layer: 0
   m_Name: Attack4Button
@@ -7681,7 +7633,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030276919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5345.2}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 858291935}
@@ -7706,11 +7658,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 92384027}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 523059165}
+    m_SelectOnRight: {fileID: 659019454}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7718,7 +7670,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.35
+    m_FadeDuration: 0.2
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -7733,6 +7685,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1260867564}
+        m_MethodName: OnAbilityButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2030276921}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1260867564}
         m_MethodName: WhatAbilityToUse
         m_Mode: 1
@@ -7779,35 +7742,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030276919}
   m_CullTransparentMesh: 0
---- !u!114 &2030276924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030276919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260867564}
-          m_MethodName: OnAbilityButton
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 2030276921}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1 &2031489221
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,10 +7830,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 1101422811}
+    m_SelectOnDown: {fileID: 659019454}
+    m_SelectOnLeft: {fileID: 92384027}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
@@ -7908,7 +7842,7 @@ MonoBehaviour:
     m_PressedColor: {r: 1, g: 0.98960686, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.5
+    m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -7924,7 +7858,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1260867564}
-        m_MethodName: OnTargetButton
+        m_MethodName: AttackChosenTarget
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2037953797}

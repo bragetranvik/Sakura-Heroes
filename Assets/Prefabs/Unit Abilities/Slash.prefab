@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3284078290932208590
+--- !u!1 &1813472252813733987
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3284078290932208588}
-  - component: {fileID: 3284078290932208591}
+  - component: {fileID: 1467997222896033162}
+  - component: {fileID: 389282457694508274}
   m_Layer: 0
-  m_Name: GameStatus
+  m_Name: Slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3284078290932208588
+--- !u!4 &1467997222896033162
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284078290932208590}
+  m_GameObject: {fileID: 1813472252813733987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.06, y: 1.74, z: -0.5872396}
+  m_LocalPosition: {x: 0.45212597, y: 0.27276754, z: 4.8997397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3284078290932208591
+--- !u!114 &389282457694508274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284078290932208590}
+  m_GameObject: {fileID: 1813472252813733987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763634b9909323649ac57ddccd9e2249, type: 3}
+  m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {x: 4.4, y: 0.4, z: 0}
-  player: {fileID: 0}
+  damageMultiplier: 1
+  armorPenetration: 0
+  manaCost: 0
+  levelToUse: 0
+  abilityName: Slash
+  abilityTooltip: Slash the target and deal 1x damage for 0 mana.

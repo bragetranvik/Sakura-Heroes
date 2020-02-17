@@ -13,6 +13,8 @@ public class StatusHUD : MonoBehaviour
     public Slider unit1MPSlider, unit2MPSlider, unit3MPSlider;
     public Text unit1MPText, unit2MPText, unit3MPText;
 
+    public Text unitAbility1Name, unitAbility2Name, unitAbility3Name, unitAbility4Name;
+
     public void SetHUD(Unit unit1, Unit unit2, Unit unit3)
     {
         unit1CharNameText.text = unit1.unitName;
@@ -57,8 +59,19 @@ public class StatusHUD : MonoBehaviour
         unit2MPSlider.value = unit2.currentMP;
         unit3MPSlider.value = unit3.currentMP;
         unit1MPText.text = "MP: " + unit1.currentMP + "/" + unit1.maxMP;
-        unit2MPText.text = "MP: " + unit2.currentMP + "/" + unit2.maxHP;
-        unit3MPText.text = "MP: " + unit3.currentMP + "/" + unit3.maxHP;
+        unit2MPText.text = "MP: " + unit2.currentMP + "/" + unit2.maxMP;
+        unit3MPText.text = "MP: " + unit3.currentMP + "/" + unit3.maxMP;
+    }
+
+    /// <summary>
+    /// Set the ability names of the unit.
+    /// </summary>
+    /// <param name="unit">The unit to set the ability names of.</param>
+    public void SetAbilityName(Unit unit) {
+        unitAbility1Name.text = unit.GetAbilityName("ability1");
+        unitAbility2Name.text = unit.GetAbilityName("ability2");
+        unitAbility3Name.text = unit.GetAbilityName("ability3");
+        unitAbility4Name.text = unit.GetAbilityName("ability4");
     }
 }
 
