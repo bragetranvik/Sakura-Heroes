@@ -63,12 +63,11 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
-                    RegenMana();
-                    FriendlyStatus.SetAbilityName(friendlyUnit1);
-                    FriendlyTurn();
-                    enableDisableAttackButtons(true);
-                    yield return WaitForPlayerAction();
-                    if(IsAllEnemiesDead()) {
+                    if (!unitsTurn.isDead) {
+                        FriendlyTurn();
+                        yield return WaitForPlayerAction();
+                    }
+                    if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     } else {
                         state = BattleState.ENEMY1TURN;
@@ -80,8 +79,10 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.ENEMY1TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit1;
-                    SimpleEnemyAI();
-                    yield return new WaitForSeconds(2f);
+                    if (!unitsTurn.isDead) {
+                        SimpleEnemyAI();
+                        yield return new WaitForSeconds(2f);
+                    }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
                     } else {
@@ -91,11 +92,10 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
-                    RegenMana();
-                    FriendlyStatus.SetAbilityName(friendlyUnit2);
-                    FriendlyTurn();
-                    enableDisableAttackButtons(true);
-                    yield return WaitForPlayerAction();
+                    if (!unitsTurn.isDead) {
+                        FriendlyTurn();
+                        yield return WaitForPlayerAction();
+                    }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     }
@@ -109,8 +109,10 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.ENEMY2TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit2;
-                    SimpleEnemyAI();
-                    yield return new WaitForSeconds(2f);
+                    if (!unitsTurn.isDead) {
+                        SimpleEnemyAI();
+                        yield return new WaitForSeconds(2f);
+                    }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
                     }
@@ -121,11 +123,10 @@ public class BattleSystem : MonoBehaviour
 
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
-                    RegenMana();
-                    FriendlyStatus.SetAbilityName(friendlyUnit3);
-                    FriendlyTurn();
-                    enableDisableAttackButtons(true);
-                    yield return WaitForPlayerAction();
+                    if (!unitsTurn.isDead) {
+                        FriendlyTurn();
+                        yield return WaitForPlayerAction();
+                    }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     }
@@ -139,8 +140,10 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.ENEMY3TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit3;
-                    SimpleEnemyAI();
-                    yield return new WaitForSeconds(2f);
+                    if (!unitsTurn.isDead) {
+                        SimpleEnemyAI();
+                        yield return new WaitForSeconds(2f);
+                    }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
                     }
@@ -215,28 +218,30 @@ public class BattleSystem : MonoBehaviour
         enableDisableTargetButtons(false);
     }
 
-    //
+    /// <summary>
+    /// Runs all functions for a friendly units turn.
+    /// </summary>
     private void FriendlyTurn() {
         dialogueText.text = unitsTurn.unitName + "'s turn choose an action:";
-    }
-
-    //Should take in a varible which is the ability
-    public void OnAbilityButton1() {
-        if ((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
-            StartCoroutine(DoAttack());
-        }
+        RegenMana();
+        FriendlyStatus.SetAbilityName(unitsTurn);
+        enableDisableAttackButtons(true);
     }
 
     private IEnumerator DoAttack() {
         target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier(highlightedAbility), unitsTurn.GetAbilityArmorPenetration(highlightedAbility));
 
         EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
+        FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
 
         yield return new WaitForSeconds(2f);
     }
 
-    //Checks if all anemy units are dead.
+    /// <summary>
+    /// Checks if all anemy units are dead.
+    /// </summary>
+    /// <returns>True if all enemy units is dead.</returns>
     private bool IsAllEnemiesDead() {
         bool allEnemiesDead = false;
 
@@ -246,7 +251,10 @@ public class BattleSystem : MonoBehaviour
         return allEnemiesDead;
     }
 
-    //Checks if all friendly units are dead.
+    /// <summary>
+    /// Checks if all friendly units are dead.
+    /// </summary>
+    /// <returns>True if all friendly units is dead.</returns>
     private bool IsAllFriendlyDead() {
         bool allFriendlyDead = false;
 
@@ -307,6 +315,12 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Generates a random number between and including min to max and return the number as int.
+    /// </summary>
+    /// <param name="min">The minium value to be rolled as integer.</param>
+    /// <param name="max">The maxium value to be rolled as integer.</param>
+    /// <returns>Return the random number as int.</returns>
     private int RandomNumber(int min, int max) {
         var random = UnityEngine.Random.Range(min, max);
         return Convert.ToInt32(random);
@@ -352,6 +366,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+        enableDisableTargetButtons(false); 
     /// <summary>
     /// Disables target buttons and sets the ability has been chosen boolean to false
     /// </summary>
@@ -361,14 +376,22 @@ public class BattleSystem : MonoBehaviour
         enableDisableTargetButtons(false);
     }
 
+    /// <summary>
+    /// If its the turn of a friendly unit and an ability button is pressed enable the target buttons.
+    /// </summary>
+    /// <param name="button">The ability button.</param>
     public void OnAbilityButton(Button button) {
         if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
             whatAbilityButtonPressed = button;
             abilityHasBeenChosen = true;
             enableDisableTargetButtons(true);
+            EnableTargetButtonsForAliveEnemies();
         }
     }
 
+    /// <summary>
+    /// Sets the global variable highlighedAbility to ability(1-4) depending on what button was pressed.
+    /// </summary>
     public void WhatAbilityToUse() {
         if(whatAbilityButtonPressed.name.Equals("Attack1Button")) {
             highlightedAbility = "ability1";
@@ -418,6 +441,21 @@ public class BattleSystem : MonoBehaviour
     /// <param name="state">What state you want the buttons to be in</param>
     private void enableDisableTargetButtons(bool state) {
         targetButtons.interactable = state;
+    }
+
+    /// <summary>
+    /// Enables the target buttons for enemies which is still alive.
+    /// </summary>
+    private void EnableTargetButtonsForAliveEnemies() {
+        if(enemyUnit1.isDead) {
+            target1Button.interactable = false;
+        }
+        if (enemyUnit2.isDead) {
+            target2Button.interactable = false;
+        }
+        if (enemyUnit3.isDead) {
+            target3Button.interactable = false;
+        }
     }
 
     /// <summary>
