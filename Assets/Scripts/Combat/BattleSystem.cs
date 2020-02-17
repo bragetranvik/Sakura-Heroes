@@ -41,9 +41,6 @@ public class BattleSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ///attackButtons = GetComponent<CanvasGroup>();
-        //targetButtons = GetComponent<CanvasGroup>();
-
         state = BattleState.START;
         StartCoroutine(Battle());
     }
@@ -195,6 +192,8 @@ public class BattleSystem : MonoBehaviour
 
         FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
+        enableDisableAttackButtons(false);
+        enableDisableTargetButtons(false);
     }
 
     //
