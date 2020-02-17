@@ -71,3 +71,6 @@ TagManager:
   - name: Decoration behind
     uniqueID: 2499237067
     locked: 0
+  - name: Signs
+    uniqueID: 3325652961
+    locked: 0
