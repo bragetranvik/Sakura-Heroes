@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Group 1
   productName: Sakura Heroes
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -500,7 +500,8 @@ PlayerSettings:
   webGLCompressionFormat: 1
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: RPGTalk_TMP
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
