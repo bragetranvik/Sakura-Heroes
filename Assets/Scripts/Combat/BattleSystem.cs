@@ -91,7 +91,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
                     RegenMana();
-                    FriendlyStatus.SetAbilityName(friendlyUnit1);
+                    FriendlyStatus.SetAbilityName(friendlyUnit2);
                     FriendlyTurn();
                     enableDisableAttackButtons(true);
                     yield return WaitForPlayerAction();
@@ -121,7 +121,7 @@ public class BattleSystem : MonoBehaviour
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
                     RegenMana();
-                    FriendlyStatus.SetAbilityName(friendlyUnit1);
+                    FriendlyStatus.SetAbilityName(friendlyUnit3);
                     FriendlyTurn();
                     enableDisableAttackButtons(true);
                     yield return WaitForPlayerAction();
@@ -189,6 +189,15 @@ public class BattleSystem : MonoBehaviour
 
 
         dialogueText.text = "Fight!";
+
+        CalculateAllUnitStats();
+        //Just for testing to restore health and mana to full before battle.
+        friendlyUnit1.RestoreUnitStats();
+        friendlyUnit2.RestoreUnitStats();
+        friendlyUnit3.RestoreUnitStats();
+        enemyUnit1.RestoreUnitStats();
+        enemyUnit2.RestoreUnitStats();
+        enemyUnit3.RestoreUnitStats();
 
         FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
@@ -310,8 +319,8 @@ public class BattleSystem : MonoBehaviour
     /// <summary>
     /// Choose the target depending on what target button has been pressed and set targetHasBeen to true.
     /// </summary>
-    /// <param name="button"></param>
-    public void OnTargetButton(Button button) {
+    /// <param name="button">The button to choose the target.</param>
+    public void AttackChosenTarget(Button button) {
         if (button.name.Equals("Target1Button")) {
             if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
                 target = enemyUnit1;
@@ -393,7 +402,18 @@ public class BattleSystem : MonoBehaviour
     /// </summary>
     private void RegenMana() {
         unitsTurn.GainMana(20);
-        unitsTurn.GetStats();
         FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
+    }
+
+    /// <summary>
+    /// Calculate the stats of every unit in the battle.
+    /// </summary>
+    private void CalculateAllUnitStats() {
+        friendlyUnit1.CalculateStats();
+        friendlyUnit2.CalculateStats();
+        friendlyUnit3.CalculateStats();
+        enemyUnit1.CalculateStats();
+        enemyUnit2.CalculateStats();
+        enemyUnit3.CalculateStats();
     }
 }
