@@ -29,9 +29,9 @@ public class ObjectInteraction : MonoBehaviour
                 dialogText.text = dialog;
             }
         }
-        else
+        if (!playerInRange)
         {
-           
+            dialogBox.SetActive(false);
         }
     }
 
