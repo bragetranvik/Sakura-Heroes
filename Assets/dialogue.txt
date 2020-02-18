@@ -1,2 +1,7 @@
-This is dialogue 1 e ohfew oh oifeifowqdlkns d wq  ijwq wqj wqjdwqdndlkjw
-And this is number 2
+[title=cutscene1_start]
+Panda_NPC: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Player: Vestibulum sem mauris, egestas id orci nec, pretium accumsan sapien.
+Panda_NPC: Ut malesuada vulputate augue, a semper quam dignissim in.
+Panda_NPC: Pellentesque mattis, lacus non fringilla vestibulum, diam tortor viverra orci, nec imperdiet ex augue sit amet mi.
+Player: Nullam sollicitudin elit vitae diam tempus, in mattis nisl semper.
+[title=cutscene1_end]

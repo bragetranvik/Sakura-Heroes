@@ -72,8 +72,8 @@ public class BattleSystem : MonoBehaviour
                     } else {
                         state = BattleState.ENEMY1TURN;
                     }
-                    enableDisableAttackButtons(false);
-                    enableDisableTargetButtons(false);
+                    EnableDisableAttackButtons(false);
+                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY1TURN:
@@ -102,8 +102,8 @@ public class BattleSystem : MonoBehaviour
                     else {
                         state = BattleState.ENEMY2TURN;
                     }
-                    enableDisableAttackButtons(false);
-                    enableDisableTargetButtons(false);
+                    EnableDisableAttackButtons(false);
+                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY2TURN:
@@ -133,8 +133,8 @@ public class BattleSystem : MonoBehaviour
                     else {
                         state = BattleState.ENEMY3TURN;
                     }
-                    enableDisableAttackButtons(false);
-                    enableDisableTargetButtons(false);
+                    EnableDisableAttackButtons(false);
+                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY3TURN:
@@ -153,15 +153,15 @@ public class BattleSystem : MonoBehaviour
                     break;
 
                 case BattleState.LOST:
-                    enableDisableAttackButtons(false);
-                    enableDisableTargetButtons(false);
+                    EnableDisableAttackButtons(false);
+                    EnableDisableTargetButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
 
                 case BattleState.WON:
-                    enableDisableAttackButtons(false);
-                    enableDisableTargetButtons(false);
+                    EnableDisableAttackButtons(false);
+                    EnableDisableTargetButtons(false);
                     ongoingBattle = false;
                     EndBattle();
                     break;
@@ -214,8 +214,8 @@ public class BattleSystem : MonoBehaviour
         //Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
         FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
-        enableDisableAttackButtons(false);
-        enableDisableTargetButtons(false);
+        EnableDisableAttackButtons(false);
+        EnableDisableTargetButtons(false);
     }
 
     /// <summary>
@@ -225,7 +225,7 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = unitsTurn.unitName + "'s turn choose an action:";
         RegenMana();
         FriendlyStatus.SetAbilityName(unitsTurn);
-        enableDisableAttackButtons(true);
+        EnableDisableAttackButtons(true);
     }
 
     private IEnumerator DoAttack() {
@@ -327,7 +327,7 @@ public class BattleSystem : MonoBehaviour
     }
 
 
-    private IEnumerator waitForKeyPress(KeyCode key) {
+    private IEnumerator WaitForKeyPress(KeyCode key) {
         bool done = false;
         while (!done) // essentially a "while true", but with a bool to break out naturally
         {
@@ -366,14 +366,13 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-        enableDisableTargetButtons(false); 
     /// <summary>
     /// Disables target buttons and sets the ability has been chosen boolean to false
     /// </summary>
-    public void deselectButtons() {
+    public void DeselectButtons() {
         abilityHasBeenChosen = false;
         targetHasBeenChosen = false;
-        enableDisableTargetButtons(false);
+        EnableDisableTargetButtons(false);
     }
 
     /// <summary>
@@ -384,7 +383,7 @@ public class BattleSystem : MonoBehaviour
         if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
             whatAbilityButtonPressed = button;
             abilityHasBeenChosen = true;
-            enableDisableTargetButtons(true);
+            EnableDisableTargetButtons(true);
             EnableTargetButtonsForAliveEnemies();
         }
     }
@@ -413,7 +412,7 @@ public class BattleSystem : MonoBehaviour
         while (!done) // essentially a "while true", but with a bool to break out naturally
         {
             if (EventSystem.currentSelectedGameObject == null) {
-                deselectButtons();
+                DeselectButtons();
             }
             if (targetHasBeenChosen && abilityHasBeenChosen) {
                 done = true; // breaks the loop
@@ -431,7 +430,7 @@ public class BattleSystem : MonoBehaviour
     /// Enables or disables the 4 attack buttons.
     /// </summary>
     /// <param name="state">What state you want the buttons to be in</param>
-    private void enableDisableAttackButtons(bool state) {
+    private void EnableDisableAttackButtons(bool state) {
         attackButtons.interactable = state;
    }
 
@@ -439,7 +438,7 @@ public class BattleSystem : MonoBehaviour
     /// Enables or disables the 3 target buttons.
     /// </summary>
     /// <param name="state">What state you want the buttons to be in</param>
-    private void enableDisableTargetButtons(bool state) {
+    private void EnableDisableTargetButtons(bool state) {
         targetButtons.interactable = state;
     }
 
