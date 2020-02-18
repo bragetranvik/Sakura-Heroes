@@ -7,8 +7,7 @@ using UnityEngine.EventSystems;
 
 public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY2TURN, FRIENDLY3TURN, ENEMY3TURN, WON, LOST }
 
-public class BattleSystem : MonoBehaviour
-{
+public class BattleSystem : MonoBehaviour {
     public EventSystem EventSystem;
 
     public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
@@ -40,10 +39,15 @@ public class BattleSystem : MonoBehaviour
     public BattleState state;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         state = BattleState.START;
         StartCoroutine(Battle());
+    }
+
+    private void Update() {
+        //Updates the HP and mana in the HUD.
+        FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
+        EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
     }
 
     //Runs in a state loop until either the battle is lost or won.
@@ -211,9 +215,7 @@ public class BattleSystem : MonoBehaviour
         enemyUnit2.RestoreUnitStats();
         enemyUnit3.RestoreUnitStats();
 
-        //Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
-        FriendlyStatus.SetHUD(friendlyUnit1, friendlyUnit2, friendlyUnit3);
-        EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
+        //Disables all the buttons before start.
         EnableDisableAttackButtons(false);
         EnableDisableTargetButtons(false);
     }
@@ -225,14 +227,12 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = unitsTurn.unitName + "'s turn choose an action:";
         RegenMana();
         FriendlyStatus.SetAbilityName(unitsTurn);
-        EnableDisableAttackButtons(true);
+        EnableAbilityButtonsUnitCanUse(unitsTurn);
     }
 
     private IEnumerator DoAttack() {
         target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier(highlightedAbility), unitsTurn.GetAbilityArmorPenetration(highlightedAbility));
 
-        EnemyStatus.SetHPandMP(enemyUnit1, enemyUnit2, enemyUnit3);
-        FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
         dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
 
         yield return new WaitForSeconds(2f);
@@ -276,17 +276,13 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = unitsTurn.unitName + " attacks!";
         ChooseRandomTarget(false);
 
-        //yield return new WaitForSeconds(1f);
-
-        //Return true if target's health is < 0.
         target.TakeDamage(unitsTurn.attack, 1, 0);
-
-        FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
-        //yield return new WaitForSeconds(2f);
     }
 
-    ///Choose a random target depedning on a roll 1-3.
-    ///<param name="friendlyIsAttacking"> True if a friendly is attacking false if enemy is attacking.
+    /// <summary>
+    /// Choose a random target depedning on a roll 1-3.
+    /// </summary>
+    /// <param name="friendlyIsAttacking">True if a friendly is attacking false if enemy is attacking.</param>
     private void ChooseRandomTarget(bool friendlyIsAttacking) {
         int randomTarget = RandomNumber(1, 4);
 
@@ -324,20 +320,6 @@ public class BattleSystem : MonoBehaviour
     private int RandomNumber(int min, int max) {
         var random = UnityEngine.Random.Range(min, max);
         return Convert.ToInt32(random);
-    }
-
-
-    private IEnumerator WaitForKeyPress(KeyCode key) {
-        bool done = false;
-        while (!done) // essentially a "while true", but with a bool to break out naturally
-        {
-            if (Input.GetKeyDown(key)) {
-                done = true; // breaks the loop
-            }
-            yield return null; // wait until next frame, then continue execution from here (loop continues)
-        }
-
-        // now this function returns
     }
 
     /// <summary>
@@ -432,7 +414,11 @@ public class BattleSystem : MonoBehaviour
     /// <param name="state">What state you want the buttons to be in</param>
     private void EnableDisableAttackButtons(bool state) {
         attackButtons.interactable = state;
-   }
+        attack1Button.interactable = state;
+        attack2Button.interactable = state;
+        attack3Button.interactable = state;
+        attack4Button.interactable = state;
+    }
 
     /// <summary>
     /// Enables or disables the 3 target buttons.
@@ -463,7 +449,6 @@ public class BattleSystem : MonoBehaviour
     /// </summary>
     private void RegenMana() {
         unitsTurn.GainMana(20);
-        FriendlyStatus.SetHPandMP(friendlyUnit1, friendlyUnit2, friendlyUnit3);
     }
 
     /// <summary>
@@ -476,5 +461,26 @@ public class BattleSystem : MonoBehaviour
         enemyUnit1.CalculateStats();
         enemyUnit2.CalculateStats();
         enemyUnit3.CalculateStats();
+    }
+
+    /// <summary>
+    /// Enables the ability buttons of abilities the unit got mana and level for.
+    /// </summary>
+    /// <param name="unit">The unit to enable buttons for.</param>
+    private void EnableAbilityButtonsUnitCanUse(Unit unit) {
+        EnableDisableAttackButtons(true);
+        Debug.Log("Level: " + unit.unitLevel + ", Level of ability: " + unit.GetAbilityLevelToUse("ability4"));
+        if ((unit.currentMP < unit.GetAbilityManaCost("ability1")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability1"))) {
+            attack1Button.interactable = false;
+        }
+        if ((unit.currentMP < unit.GetAbilityManaCost("ability2")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability2"))) {
+            attack2Button.interactable = false;
+        }
+        if ((unit.currentMP < unit.GetAbilityManaCost("ability3")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability3"))) {
+            attack3Button.interactable = false;
+        }
+        if ((unit.currentMP < unit.GetAbilityManaCost("ability4")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability4"))) {
+            attack4Button.interactable = false;
+        }
     }
 }

@@ -178,4 +178,26 @@ public class Unit : MonoBehaviour {
         }
         return manaCost;
     }
+
+    /// <summary>
+    /// Return the level to use ability.
+    /// </summary>
+    /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4"</param>
+    /// <returns>Level to use the ability.</returns>
+    public int GetAbilityLevelToUse(string ability) {
+        int levelToUse = 0;
+        if (ability.Equals("ability1")) {
+            levelToUse = ability1.GetLevelToUse();
+        }
+        else if (ability.Equals("ability2")) {
+            levelToUse = ability2.GetLevelToUse();
+        }
+        else if (ability.Equals("ability3")) {
+            levelToUse = ability3.GetLevelToUse();
+        }
+        else if (ability.Equals("ability4")) {
+            levelToUse = ability4.GetLevelToUse();
+        }
+        return levelToUse;
+    }
 }

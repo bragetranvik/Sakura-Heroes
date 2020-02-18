@@ -1306,7 +1306,7 @@ PrefabInstance:
     - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
         type: 3}
       propertyPath: Mute
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
         type: 3}
