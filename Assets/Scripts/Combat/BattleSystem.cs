@@ -231,10 +231,11 @@ public class BattleSystem : MonoBehaviour {
     }
 
     private IEnumerator DoAttack() {
-        target.TakeDamage(unitsTurn.attack, unitsTurn.GetAbilityDamageMultiplier(highlightedAbility), unitsTurn.GetAbilityArmorPenetration(highlightedAbility));
-
-        dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
-
+        if(unitsTurn.UseAbility(highlightedAbility, unitsTurn, target, friendlyUnit1, friendlyUnit2, friendlyUnit3, enemyUnit1, enemyUnit2, enemyUnit3)) {
+            dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
+        } else {
+            dialogueText.text = "The ability " + unitsTurn.GetAbilityName(highlightedAbility) + " failed!";
+        }
         yield return new WaitForSeconds(2f);
     }
 
@@ -328,23 +329,17 @@ public class BattleSystem : MonoBehaviour {
     /// <param name="button">The button to choose the target.</param>
     public void AttackChosenTarget(Button button) {
         if (button.name.Equals("Target1Button")) {
-            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
                 target = enemyUnit1;
                 targetHasBeenChosen = true;
                 StartCoroutine(DoAttack());
-            }
         } else if(button.name.Equals("Target2Button")) {
-            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
                 target = enemyUnit2;
                 targetHasBeenChosen = true;
                 StartCoroutine(DoAttack());
-            }
         } else if(button.name.Equals("Target3Button")) {
-            if (unitsTurn.DrainMana((unitsTurn.GetAbilityManaCost(highlightedAbility)))) {
                 target = enemyUnit3;
                 targetHasBeenChosen = true;
                 StartCoroutine(DoAttack());
-            }
         }
     }
 
@@ -469,7 +464,6 @@ public class BattleSystem : MonoBehaviour {
     /// <param name="unit">The unit to enable buttons for.</param>
     private void EnableAbilityButtonsUnitCanUse(Unit unit) {
         EnableDisableAttackButtons(true);
-        Debug.Log("Level: " + unit.unitLevel + ", Level of ability: " + unit.GetAbilityLevelToUse("ability4"));
         if ((unit.currentMP < unit.GetAbilityManaCost("ability1")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability1"))) {
             attack1Button.interactable = false;
         }

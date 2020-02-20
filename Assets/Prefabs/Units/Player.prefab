@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Cindy Smith
-  unitLevel: 5
+  unitLevel: 99
   baseAttack: 12
   baseDefence: 6
   baseHP: 7

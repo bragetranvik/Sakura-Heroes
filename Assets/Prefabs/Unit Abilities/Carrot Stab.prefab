@@ -43,10 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 2
-  armorPenetration: 50
-  manaCost: 25
+  armorPenetration: 25
+  manaCost: 30
   levelToUse: 30
+  manaDrain: 0
+  damageMultiplier: 2
   abilityName: Carrot Stab
   abilityTooltip: Stab the target with a carrot dealing 2x damage with 50% armor penetration
     for 25 mana.
+  abilityType: simpleDamage

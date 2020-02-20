@@ -43,10 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 2
   armorPenetration: 0
   manaCost: 10
   levelToUse: 10
   manaDrain: 0
+  damageMultiplier: 2
   abilityName: Bite
   abilityTooltip: Bite the target dealing 1.5x damage and costing 10 mana
+  abilityType: simpleDamage
