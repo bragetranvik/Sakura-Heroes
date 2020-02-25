@@ -172,27 +172,23 @@ public class EnemyAI : MonoBehaviour {
 
         while (foundTargetIsDead) {
             int randomTarget = RandomNumber(1, 4);
-            Debug.Log(randomTarget);
 
             if (randomTarget.Equals(1)) {
                 if (!unit1.isDead) {
                     randomUnit = unit1;
                     foundTargetIsDead = false;
-                    Debug.Log("Unit 1 is not dead.");
                 }
             }
             else if (randomTarget.Equals(2)) {
                 if (!unit2.isDead) {
                     randomUnit = unit2;
                     foundTargetIsDead = false;
-                    Debug.Log("Unit 2 is not dead.");
                 }
             }
             else {
                 if (!unit3.isDead) {
                     randomUnit = unit3;
                     foundTargetIsDead = false;
-                    Debug.Log("Unit 3 is not dead.");
                 }
             }
         }

@@ -43,6 +43,10 @@ public class BattleSystem : MonoBehaviour {
 
     public BattleState state;
 
+    //Delay in seconds which happens after an attack.
+    private const float delayAfterFriendlyAttack = 2f;
+    private const float delayAfterEnemyAttack = 2.5f;
+
     // Start is called before the first frame update
     void Start() {
         state = BattleState.START;
@@ -60,9 +64,6 @@ public class BattleSystem : MonoBehaviour {
     //If a unit is missing or dead it will skip that unit and go to the next.
     private IEnumerator Battle() {
         bool ongoingBattle = true;
-        //Delay in seconds
-        float delayAfterFriendlyAttack = 2f;
-        float delayAfterEnemyAttack = 2.5f;
 
         while (ongoingBattle) {
             switch (state) {
@@ -78,17 +79,13 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(enemy3BattleStation);
                     SetBattleStationToLight(friendly1BattleStation);
                     if (!unitsTurn.isDead) {
-                        FriendlyTurn();
-                        yield return WaitForPlayerAction();
-                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
+                        yield return FriendlyTurn();
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
                     } else {
                         state = BattleState.ENEMY1TURN;
                     }
-                    EnableDisableAttackButtons(false);
-                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY1TURN:
@@ -96,8 +93,7 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(friendly1BattleStation);
                     SetBattleStationToLight(enemy1BattleStation);
                     if (!unitsTurn.isDead) {
-                        DoEnemyAI();
-                        yield return new WaitForSeconds(delayAfterEnemyAttack);
+                        yield return DoEnemyAI();
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -111,9 +107,7 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(enemy1BattleStation);
                     SetBattleStationToLight(friendly2BattleStation);
                     if (!unitsTurn.isDead) {
-                        FriendlyTurn();
-                        yield return WaitForPlayerAction();
-                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
+                        yield return FriendlyTurn();
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -121,8 +115,6 @@ public class BattleSystem : MonoBehaviour {
                     else {
                         state = BattleState.ENEMY2TURN;
                     }
-                    EnableDisableAttackButtons(false);
-                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY2TURN:
@@ -130,8 +122,7 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(friendly2BattleStation);
                     SetBattleStationToLight(enemy2BattleStation);
                     if (!unitsTurn.isDead) {
-                        DoEnemyAI();
-                        yield return new WaitForSeconds(delayAfterEnemyAttack);
+                        yield return DoEnemyAI();
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -146,9 +137,7 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(enemy2BattleStation);
                     SetBattleStationToLight(friendly3BattleStation);
                     if (!unitsTurn.isDead) {
-                        FriendlyTurn();
-                        yield return WaitForPlayerAction();
-                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
+                        yield return FriendlyTurn();
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -156,8 +145,6 @@ public class BattleSystem : MonoBehaviour {
                     else {
                         state = BattleState.ENEMY3TURN;
                     }
-                    EnableDisableAttackButtons(false);
-                    EnableDisableTargetButtons(false);
                     break;
 
                 case BattleState.ENEMY3TURN:
@@ -165,8 +152,7 @@ public class BattleSystem : MonoBehaviour {
                     SetBattleStationToDark(friendly3BattleStation);
                     SetBattleStationToLight(enemy3BattleStation);
                     if (!unitsTurn.isDead) {
-                        DoEnemyAI();
-                        yield return new WaitForSeconds(delayAfterEnemyAttack);
+                        yield return DoEnemyAI();
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -252,11 +238,15 @@ public class BattleSystem : MonoBehaviour {
     /// <summary>
     /// Runs all functions for a friendly units turn.
     /// </summary>
-    private void FriendlyTurn() {
+    private IEnumerator FriendlyTurn() {
         dialogueText.text = unitsTurn.unitName + "'s turn choose an action:";
         RegenMana();
         FriendlyStatus.SetAbilityName(unitsTurn);
         EnableAbilityButtonsUnitCanUse(unitsTurn);
+        yield return WaitForPlayerAction();
+        EnableDisableAttackButtons(false);
+        EnableDisableTargetButtons(false);
+        yield return new WaitForSeconds(delayAfterFriendlyAttack);
     }
 
     private void DoAttack() {
@@ -311,9 +301,11 @@ public class BattleSystem : MonoBehaviour {
     /// <summary>
     /// Does what an enemy should do.
     /// </summary>
-    private void DoEnemyAI() {
+    private IEnumerator DoEnemyAI() {
+        RegenMana();
         string abilityUsed = enemyAI.DoEnemyAI(unitsTurn, enemyUnit1, enemyUnit2, enemyUnit3, friendlyUnit1, friendlyUnit2, friendlyUnit3);
         dialogueText.text = unitsTurn.unitName + " use " + unitsTurn.GetAbilityName(abilityUsed) + "!";
+        yield return new WaitForSeconds(delayAfterEnemyAttack);
     }
 
     /// <summary>
