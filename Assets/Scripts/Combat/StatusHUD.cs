@@ -73,6 +73,41 @@ public class StatusHUD : MonoBehaviour
         unitAbility3Name.text = unit.GetAbilityName("ability3");
         unitAbility4Name.text = unit.GetAbilityName("ability4");
     }
+
+    /// <summary>
+    /// Sets the color of the HP slider whenever the value of the slider is updated.
+    /// </summary>
+    /// <param name="hpSlider">The slider that had its value updated, and needs its color updated</param>
+    public void SetHPSliderColor(Slider hpSlider) {
+        // To get values in rgb, times the number by 255. Last digit is alpha(opacity).
+        Color selfGreen = new Color(0, 1, 0, 1);
+        Color selfYellow = new Color(1, 0.92f, 0.016f, 1);
+        Color selfOrange = new Color(1, 0.55f, 0, 1);
+        Color selfRed = new Color(1, 0, 0, 1);
+        Color selfDead = new Color(0, 0, 0, 0);
+
+        if (hpSlider.value > (hpSlider.maxValue* 0.75f) && (hpSlider.value <= (hpSlider.maxValue * 1))) {
+            ColorBlock colorblock = hpSlider.colors;
+            colorblock.disabledColor = selfGreen;
+            hpSlider.GetComponent<Slider>().colors = colorblock;
+        } else if ((hpSlider.value > (hpSlider.maxValue * 0.5f)) && (hpSlider.value <= (hpSlider.maxValue * 0.75))) {
+            ColorBlock colorblock = hpSlider.colors;
+            colorblock.disabledColor = selfYellow;
+            hpSlider.GetComponent<Slider>().colors = colorblock;
+        } else if (hpSlider.value > (hpSlider.maxValue * 0.25f) && (hpSlider.value <= (hpSlider.maxValue * 0.5))) {
+            ColorBlock colorblock = hpSlider.colors;
+            colorblock.disabledColor = selfOrange;
+            hpSlider.GetComponent<Slider>().colors = colorblock;
+        } else if (hpSlider.value > (hpSlider.maxValue * 0) && (hpSlider.value <= (hpSlider.maxValue * 0.25))) {
+            ColorBlock colorblock = hpSlider.colors;
+            colorblock.disabledColor = selfRed;
+            hpSlider.GetComponent<Slider>().colors = colorblock;
+        } else if (hpSlider.value <= (hpSlider.maxValue * 0)) {
+            ColorBlock colorblock = hpSlider.colors;
+            colorblock.disabledColor = selfDead;
+            hpSlider.GetComponent<Slider>().colors = colorblock;
+        }
+    }
 }
 
     
