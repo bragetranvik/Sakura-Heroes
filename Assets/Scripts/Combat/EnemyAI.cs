@@ -18,9 +18,9 @@ public class EnemyAI : MonoBehaviour {
     /// <returns>Ability the unit is gonna use as string. (ability1, 2, 3, 4)</returns>
     public string DoEnemyAI(Unit unit, Unit friendly1, Unit friendly2, Unit friendly3, Unit enemy1, Unit enemy2, Unit enemy3) {
         Unit target = ChooseEnemyTarget(enemy1, enemy2, enemy3);
-        string abilityToUSe = ChooseAbility(unit, target);
-        UseAbilityOnTarget(abilityToUSe, unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3);
-        return abilityToUSe;
+        string abilityToUse = ChooseAbility(unit, target);
+        UseAbilityOnTarget(abilityToUse, unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3);
+        return abilityToUse;
     }
 
     /// <summary>
@@ -36,27 +36,21 @@ public class EnemyAI : MonoBehaviour {
 
         if (EnemyInKillRange(unit, target, unit.ability1)) {
             abilityToUse = "ability1";
-        }
-        else if (EnemyInKillRange(unit, target, unit.ability2) && unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal) {
+        } else if (EnemyInKillRange(unit, target, unit.ability2) && unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal) {
             abilityToUse = "ability2";
-        }
-        else if (EnemyInKillRange(unit, target, unit.ability3) && unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal) {
+        } else if (EnemyInKillRange(unit, target, unit.ability3) && unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal) {
             abilityToUse = "ability3";
-        }
-        else if (EnemyInKillRange(unit, target, unit.ability4) && unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal) {
+        } else if (EnemyInKillRange(unit, target, unit.ability4) && unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal) {
             abilityToUse = "ability4";
         } else if (unit.currentMP >= 130 && !unit.ability4.isHeal) {
             abilityToUse = "ability4";
         } else if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal && abilityRoll.Equals(5)) {
             abilityToUse = "ability4";
-        }
-        else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal && abilityRoll.Equals(4)) {
+        } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal && abilityRoll.Equals(4)) {
             abilityToUse = "ability3";
-        }
-        else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && abilityRoll.Equals(3)) {
+        } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && abilityRoll.Equals(3)) {
             abilityToUse = "ability2";
-        }
-        else {
+        } else {
             abilityToUse = "ability1";
         }
         return abilityToUse;
@@ -77,23 +71,17 @@ public class EnemyAI : MonoBehaviour {
         if (RandomNumber(1, 3).Equals(1)) {
             if ((GetUnitWithLowestHealth(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit1) && !enemyUnit1.isDead) {
                 chosenTarget = enemyUnit1;
-            }
-            else if ((GetUnitWithLowestHealth(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit2) && !enemyUnit2.isDead) {
+            } else if ((GetUnitWithLowestHealth(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit2) && !enemyUnit2.isDead) {
                 chosenTarget = enemyUnit2;
-            }
-            else if ((GetUnitWithLowestHealth(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit3) && !enemyUnit3.isDead) {
+            } else if ((GetUnitWithLowestHealth(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit3) && !enemyUnit3.isDead) {
                 chosenTarget = enemyUnit3;
-            }
-            else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit1) && !enemyUnit1.isDead) {
+            } else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit1) && !enemyUnit1.isDead) {
                 chosenTarget = enemyUnit1;
-            }
-            else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit2) && !enemyUnit2.isDead) {
+            } else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit2) && !enemyUnit2.isDead) {
                 chosenTarget = enemyUnit2;
-            }
-            else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit3) && !enemyUnit3.isDead) {
+            } else if ((GetUnitWithLowestDefence(enemyUnit1, enemyUnit2, enemyUnit3) == enemyUnit3) && !enemyUnit3.isDead) {
                 chosenTarget = enemyUnit3;
-            }
-            else {
+            } else {
                 chosenTarget = GetRandomUnit(enemyUnit1, enemyUnit2, enemyUnit3);
             }
         } else {
@@ -103,11 +91,11 @@ public class EnemyAI : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return true if the parameter ability damage will kill the target.
+    /// Return true if the ability damage will kill the target.
     /// </summary>
     /// <param name="unit">Unit using the ability.</param>
     /// <param name="target">Target of the ability.</param>
-    /// <param name="ability">Ability the unit us gonna check.</param>
+    /// <param name="ability">Ability the unit is gonna check.</param>
     /// <returns>True if the ability will kill the unit.</returns>
     private bool EnemyInKillRange(Unit unit, Unit target, Ability ability) {
         bool unitIsInKillRange = false;
@@ -160,39 +148,57 @@ public class EnemyAI : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return a random unit out of the 3 parameter units.
+    /// Return a random unit which is not dead out of the 3 units.
+    /// If all units are dead this will return unit1.
     /// </summary>
     /// <param name="unit1">First unit.</param>
     /// <param name="unit2">Second unit.</param>
     /// <param name="unit3">Third unit.</param>
-    /// <returns>A random unit out of the 3 parameter units.</returns>
+    /// <returns>Random unit out of the 3 units which is not dead.</returns>
     private Unit GetRandomUnit(Unit unit1, Unit unit2, Unit unit3) {
         Unit randomUnit = unit1;
         bool foundTargetIsDead = true;
 
-        while (foundTargetIsDead) {
-            int randomTarget = RandomNumber(1, 4);
+        if (!AllUnitsAreDead(unit1, unit2, unit3)) {
+            while (foundTargetIsDead) {
+                int randomTarget = RandomNumber(1, 4);
 
-            if (randomTarget.Equals(1)) {
-                if (!unit1.isDead) {
-                    randomUnit = unit1;
-                    foundTargetIsDead = false;
+                if (randomTarget.Equals(1)) {
+                    if (!unit1.isDead) {
+                        randomUnit = unit1;
+                        foundTargetIsDead = false;
+                    }
                 }
-            }
-            else if (randomTarget.Equals(2)) {
-                if (!unit2.isDead) {
-                    randomUnit = unit2;
-                    foundTargetIsDead = false;
+                else if (randomTarget.Equals(2)) {
+                    if (!unit2.isDead) {
+                        randomUnit = unit2;
+                        foundTargetIsDead = false;
+                    }
                 }
-            }
-            else {
-                if (!unit3.isDead) {
-                    randomUnit = unit3;
-                    foundTargetIsDead = false;
+                else {
+                    if (!unit3.isDead) {
+                        randomUnit = unit3;
+                        foundTargetIsDead = false;
+                    }
                 }
             }
         }
         return randomUnit;
+    }
+
+    /// <summary>
+    /// Return true if all the units are dead.
+    /// </summary>
+    /// <param name="unit1">First unit.</param>
+    /// <param name="unit2">Second unit.</param>
+    /// <param name="unit3">Third unit.</param>
+    /// <returns>True if all units are dead.</returns>
+    private bool AllUnitsAreDead(Unit unit1, Unit unit2, Unit unit3) {
+        bool allUnitsAreDead = false;
+        if(unit1.isDead && unit2.isDead && unit3.isDead) {
+            allUnitsAreDead = true;
+        }
+        return allUnitsAreDead;
     }
 
     /// <summary>

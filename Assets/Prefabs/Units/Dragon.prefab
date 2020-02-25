@@ -99,12 +99,13 @@ MonoBehaviour:
   baseHP: 10
   currentHP: 0
   currentMP: 0
-  ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}
-  ability2: {fileID: 7233059451448627035, guid: 4f4282975317105479b13f0a9875b48a,
+  ability1: {fileID: 7233059451448627035, guid: 4f4282975317105479b13f0a9875b48a,
     type: 3}
-  ability3: {fileID: 2029938116326362136, guid: 3a09d3af65d61134288d31e5e3f58e01,
+  ability2: {fileID: 7527890262183082710, guid: 1e0cf3924365e0e478b19d92bb18bb77,
     type: 3}
-  ability4: {fileID: 8318344785813710929, guid: ba1e5ba8a5ed6c04f86003b813e6c590,
+  ability3: {fileID: 2836134091093059200, guid: e9b8e244ec6b3744bb45183e830b2931,
+    type: 3}
+  ability4: {fileID: 9205903935699281884, guid: 457f97c9bdb04f14db36bf5c49408aac,
     type: 3}
   attack: 0
   defence: 0

@@ -47,7 +47,10 @@ MonoBehaviour:
   manaCost: 100
   levelToUse: 50
   manaDrain: 0
-  damageMultiplier: 3
+  damageMultiplier: 2.5
+  percentageAOEDmg: 0
   abilityName: Mind Burst
-  abilityTooltip: Burst the mind of the target dealing 3x damage with 100% armor penetration.
-  abilityType: simpleDamage
+  abilityTooltip: Burst the mind of the target dealing 2.5x damage with 100% armor
+    penetration.
+  abilityType: simpleDmg
+  isHeal: 0

@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain;
-    public float damageMultiplier;
-    public string abilityName, abilityTooltip;
-    [Tooltip("simpleDamage, executeDamage, executeDamageHeal")]
+    public float damageMultiplier, executeDmgMultiplier, pctAOEDmg, pctLifeSteal;
+    public string abilityName;
+    [TextArea(7, 7)]
+    public string abilityTooltip;
+    [Tooltip("simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg")]
     public string abilityType;
     public bool isHeal = false;
 
@@ -31,27 +33,44 @@ public class Ability : MonoBehaviour {
         if (unit.DrainMana(manaCost) && (unit.unitLevel >= levelToUse)) {
             switch (abilityType) {
 
-                case "simpleDamage":
+                case "simpleDmg":
                     target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
                     break;
 
-                case "executeDamage":
-                    //If target has under 25% HP the ability will deal 25 times more damage, if not it will deal normal damage with 0 armor penetration.
+                case "simpleDmgLifeSteal":
+                    unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration)*pctLifeSteal / 100f));
+                    break;
+
+                case "executeDmg":
+                    //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        target.TakeDamage(unit.attack, damageMultiplier * 25f, armorPenetration);
+                        target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
                     }
                     else {
                         target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0);
                     }
                     break;
 
-                case "executeDamageHeal":
-                    //If target has under 25% HP the ability will deal 25 times more damage, if not it will deal normal damage with 0 armor penetration.
+                case "executeDmgLifeSteal":
+                    //If target has under 25% HP the ability will deal x times more damage healing x% of the damage dealt, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        unit.Heal(target.TakeDamage(unit.attack, damageMultiplier * 25f, armorPenetration));
+                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
                     }
                     else {
-                        unit.Heal(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0));
+                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0) * pctLifeSteal / 100f));
+                    }
+                    break;
+
+                case "AOEDmg":
+                    int damageDone = target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
+                    if(!target.Equals(enemy1)) {
+                        enemy1.TakeDamageIgnoreArmor(Convert.ToInt32(damageDone * pctAOEDmg/100f));
+                    }
+                    if (!target.Equals(enemy2)) {
+                        enemy2.TakeDamageIgnoreArmor(Convert.ToInt32(damageDone * pctAOEDmg/100f));
+                    }
+                    if (!target.Equals(enemy3)) {
+                        enemy3.TakeDamageIgnoreArmor(Convert.ToInt32(damageDone * pctAOEDmg/100f));
                     }
                     break;
 

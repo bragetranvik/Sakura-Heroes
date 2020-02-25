@@ -48,6 +48,10 @@ MonoBehaviour:
   levelToUse: 15
   manaDrain: 0
   damageMultiplier: 2
+  executeDmgMultiplier: 0
+  pctAOEDmg: 0
+  pctLifeSteal: 0
   abilityName: Carrot Slam
-  abilityTooltip: Slam a carrot on the targets face dealing 2x.
-  abilityType: simpleDamage
+  abilityTooltip: Slam a carrot on the targets face dealing 2x damage.
+  abilityType: simpleDmg
+  isHeal: 0

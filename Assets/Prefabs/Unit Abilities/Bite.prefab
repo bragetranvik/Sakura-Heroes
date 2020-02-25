@@ -44,10 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armorPenetration: 0
-  manaCost: 10
-  levelToUse: 10
+  manaCost: 0
+  levelToUse: 1
   manaDrain: 0
-  damageMultiplier: 2
+  damageMultiplier: 1.25
+  percentageAOEdmg: 0
   abilityName: Bite
-  abilityTooltip: Bite the target dealing 1.5x damage.
-  abilityType: simpleDamage
+  abilityTooltip: Bite the target dealing 1.25x damage.
+  abilityType: simpleDmg
+  isHeal: 0

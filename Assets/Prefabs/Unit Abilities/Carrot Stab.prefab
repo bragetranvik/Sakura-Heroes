@@ -44,10 +44,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armorPenetration: 25
-  manaCost: 30
+  manaCost: 40
   levelToUse: 30
   manaDrain: 0
   damageMultiplier: 2
+  pctAOEDmg: 0
+  pctLifeSteal: 0
   abilityName: Carrot Stab
   abilityTooltip: Stab the target with a carrot dealing 2x damage with 50% armor penetration.
-  abilityType: simpleDamage
+  abilityType: simpleDmg
+  isHeal: 0

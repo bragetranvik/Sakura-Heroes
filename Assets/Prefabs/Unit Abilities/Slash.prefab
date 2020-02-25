@@ -48,6 +48,8 @@ MonoBehaviour:
   levelToUse: 0
   manaDrain: 0
   damageMultiplier: 1
+  percentageAOEdmg: 0
   abilityName: Slash
   abilityTooltip: Slash the target and deal 1x damage.
-  abilityType: simpleDamage
+  abilityType: simpleDmg
+  isHeal: 0

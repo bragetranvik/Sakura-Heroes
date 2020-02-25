@@ -5411,17 +5411,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventSystem: {fileID: 1696646328}
   BattleHUD: {fileID: 1378178309}
-  friendly1Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+  friendly1Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
     type: 3}
-  friendly2Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
+  friendly2Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}
-  friendly3Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
+  friendly3Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
     type: 3}
-  enemy1Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+  enemy1Prefab: {fileID: 8479425018269602408, guid: 38659b9a4468b4b47bb7930e86cd0f97,
     type: 3}
-  enemy2Prefab: {fileID: 8479425018269602408, guid: 38659b9a4468b4b47bb7930e86cd0f97,
+  enemy2Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
     type: 3}
-  enemy3Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+  enemy3Prefab: {fileID: 8479425018269602408, guid: 38659b9a4468b4b47bb7930e86cd0f97,
     type: 3}
   friendly1BattleStation: {fileID: 2142743787}
   friendly2BattleStation: {fileID: 414948421}
@@ -5766,6 +5766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378178308}
   - component: {fileID: 1378178309}
+  - component: {fileID: 1378178310}
   m_Layer: 0
   m_Name: BattleHUD
   m_TagString: Untagged
@@ -5827,6 +5828,30 @@ MonoBehaviour:
   imageOfCharacter: {fileID: 23592866}
   isPlayerHoveringButton: 0
   hoveredButton: {fileID: 0}
+--- !u!114 &1378178310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378178307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armorPenetration: 0
+  manaCost: 0
+  levelToUse: 0
+  manaDrain: 0
+  damageMultiplier: 0
+  executeDmgMultiplier: 0
+  pctAOEDmg: 0
+  pctLifeSteal: 0
+  abilityName: 
+  abilityTooltip: 
+  abilityType: 
+  isHeal: 0
 --- !u!1 &1452712832
 GameObject:
   m_ObjectHideFlags: 0

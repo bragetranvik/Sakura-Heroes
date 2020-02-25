@@ -43,6 +43,20 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
+    /// Unit takes flat amount of damage ignores armor.
+    /// If target dies from the damage the isDead will be set to true and currentHP will be set to 0.
+    /// </summary>
+    /// <param name="dmg">Damage unit will take.</param>
+    public void TakeDamageIgnoreArmor(int dmg) {
+        currentHP -= dmg;
+
+        if (currentHP <= 0) {
+            isDead = true;
+            currentHP = 0;
+        }
+    }
+
+    /// <summary>
     /// Return the damage a unit would take.
     /// </summary>
     /// <param name="dmg">Attack of the unit using the ability.</param>
@@ -59,7 +73,7 @@ public class Unit : MonoBehaviour {
     /// </summary>
     /// <param name="amountToHeal">The amount to heal the unit.</param>
     public void Heal(int amountToHeal) {
-        currentHP += currentHP + amountToHeal;
+        currentHP += amountToHeal;
         if(currentHP > maxHP) {
             currentHP = maxHP;
         }

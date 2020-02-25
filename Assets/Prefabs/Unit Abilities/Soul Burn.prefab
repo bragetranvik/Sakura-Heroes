@@ -48,8 +48,12 @@ MonoBehaviour:
   levelToUse: 50
   manaDrain: 0
   damageMultiplier: 0.5
+  executeDmgMultiplier: 12.5
+  pctAOEDmg: 0
+  pctLifeSteal: 35
   abilityName: Soul Burn
   abilityTooltip: Burn the targets soul dealing massive damage if they are low on
-    hp and healing the caster for the amount of damage it deals. Deals 0.5x damage,
+    hp and healing the caster 35% of the amount of damage it deals. Deals 0.5x damage,
     but if the target is under 25% hp it will deal 12.5x damage.
-  abilityType: executeDamageHeal
+  abilityType: executeDmgLifeSteal
+  isHeal: 0
