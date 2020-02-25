@@ -1,7 +1,266 @@
 fileFormatVersion: 2
 guid: 6c8f447ab65c4774baf61ab00889f7f1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Wonder Boy in Monster World - Enemies_0
+    21300002: Wonder Boy in Monster World - Enemies_1
+    21300004: Wonder Boy in Monster World - Enemies_2
+    21300006: Wonder Boy in Monster World - Enemies_3
+    21300008: Wonder Boy in Monster World - Enemies_4
+    21300010: Wonder Boy in Monster World - Enemies_5
+    21300012: Wonder Boy in Monster World - Enemies_7
+    21300014: Wonder Boy in Monster World - Enemies_8
+    21300016: Wonder Boy in Monster World - Enemies_9
+    21300018: Wonder Boy in Monster World - Enemies_10
+    21300020: Wonder Boy in Monster World - Enemies_11
+    21300022: Wonder Boy in Monster World - Enemies_12
+    21300024: Wonder Boy in Monster World - Enemies_13
+    21300026: Wonder Boy in Monster World - Enemies_14
+    21300028: Wonder Boy in Monster World - Enemies_15
+    21300030: Wonder Boy in Monster World - Enemies_16
+    21300032: Wonder Boy in Monster World - Enemies_17
+    21300034: Wonder Boy in Monster World - Enemies_18
+    21300036: Wonder Boy in Monster World - Enemies_22
+    21300038: Wonder Boy in Monster World - Enemies_23
+    21300040: Wonder Boy in Monster World - Enemies_24
+    21300042: Wonder Boy in Monster World - Enemies_25
+    21300044: Wonder Boy in Monster World - Enemies_26
+    21300046: Wonder Boy in Monster World - Enemies_27
+    21300048: Wonder Boy in Monster World - Enemies_28
+    21300050: Wonder Boy in Monster World - Enemies_29
+    21300052: Wonder Boy in Monster World - Enemies_30
+    21300054: Wonder Boy in Monster World - Enemies_31
+    21300056: Wonder Boy in Monster World - Enemies_37
+    21300058: Wonder Boy in Monster World - Enemies_38
+    21300060: Wonder Boy in Monster World - Enemies_39
+    21300062: Wonder Boy in Monster World - Enemies_40
+    21300064: Wonder Boy in Monster World - Enemies_41
+    21300066: Wonder Boy in Monster World - Enemies_42
+    21300068: Wonder Boy in Monster World - Enemies_43
+    21300070: Wonder Boy in Monster World - Enemies_44
+    21300072: Wonder Boy in Monster World - Enemies_45
+    21300074: Wonder Boy in Monster World - Enemies_46
+    21300076: Wonder Boy in Monster World - Enemies_47
+    21300078: Wonder Boy in Monster World - Enemies_48
+    21300080: Wonder Boy in Monster World - Enemies_49
+    21300082: Wonder Boy in Monster World - Enemies_50
+    21300084: Wonder Boy in Monster World - Enemies_52
+    21300086: Wonder Boy in Monster World - Enemies_58
+    21300088: Wonder Boy in Monster World - Enemies_59
+    21300090: Wonder Boy in Monster World - Enemies_60
+    21300092: Wonder Boy in Monster World - Enemies_61
+    21300094: Wonder Boy in Monster World - Enemies_62
+    21300096: Wonder Boy in Monster World - Enemies_63
+    21300098: Wonder Boy in Monster World - Enemies_64
+    21300100: Wonder Boy in Monster World - Enemies_65
+    21300102: Wonder Boy in Monster World - Enemies_66
+    21300104: Wonder Boy in Monster World - Enemies_69
+    21300106: Wonder Boy in Monster World - Enemies_70
+    21300108: Wonder Boy in Monster World - Enemies_71
+    21300110: Wonder Boy in Monster World - Enemies_72
+    21300112: Wonder Boy in Monster World - Enemies_73
+    21300114: Wonder Boy in Monster World - Enemies_74
+    21300116: Wonder Boy in Monster World - Enemies_75
+    21300118: Wonder Boy in Monster World - Enemies_76
+    21300120: Wonder Boy in Monster World - Enemies_77
+    21300122: Wonder Boy in Monster World - Enemies_78
+    21300124: Wonder Boy in Monster World - Enemies_79
+    21300126: Wonder Boy in Monster World - Enemies_80
+    21300128: Wonder Boy in Monster World - Enemies_81
+    21300130: Wonder Boy in Monster World - Enemies_82
+    21300132: Wonder Boy in Monster World - Enemies_83
+    21300134: Wonder Boy in Monster World - Enemies_84
+    21300136: Wonder Boy in Monster World - Enemies_85
+    21300138: Wonder Boy in Monster World - Enemies_86
+    21300140: Wonder Boy in Monster World - Enemies_87
+    21300142: Wonder Boy in Monster World - Enemies_88
+    21300144: Wonder Boy in Monster World - Enemies_89
+    21300146: Wonder Boy in Monster World - Enemies_90
+    21300148: Wonder Boy in Monster World - Enemies_91
+    21300150: Wonder Boy in Monster World - Enemies_92
+    21300152: Wonder Boy in Monster World - Enemies_93
+    21300154: Wonder Boy in Monster World - Enemies_94
+    21300156: Wonder Boy in Monster World - Enemies_95
+    21300158: Wonder Boy in Monster World - Enemies_96
+    21300160: Wonder Boy in Monster World - Enemies_97
+    21300162: Wonder Boy in Monster World - Enemies_98
+    21300164: Wonder Boy in Monster World - Enemies_99
+    21300166: Wonder Boy in Monster World - Enemies_100
+    21300168: Wonder Boy in Monster World - Enemies_101
+    21300170: Wonder Boy in Monster World - Enemies_102
+    21300172: Wonder Boy in Monster World - Enemies_103
+    21300174: Wonder Boy in Monster World - Enemies_104
+    21300176: Wonder Boy in Monster World - Enemies_105
+    21300178: Wonder Boy in Monster World - Enemies_108
+    21300180: Wonder Boy in Monster World - Enemies_109
+    21300182: Wonder Boy in Monster World - Enemies_111
+    21300184: Wonder Boy in Monster World - Enemies_112
+    21300186: Wonder Boy in Monster World - Enemies_113
+    21300188: Wonder Boy in Monster World - Enemies_114
+    21300190: Wonder Boy in Monster World - Enemies_115
+    21300192: Wonder Boy in Monster World - Enemies_116
+    21300194: Wonder Boy in Monster World - Enemies_117
+    21300196: Wonder Boy in Monster World - Enemies_118
+    21300198: Wonder Boy in Monster World - Enemies_119
+    21300200: Wonder Boy in Monster World - Enemies_120
+    21300202: Wonder Boy in Monster World - Enemies_121
+    21300204: Wonder Boy in Monster World - Enemies_122
+    21300206: Wonder Boy in Monster World - Enemies_123
+    21300208: Wonder Boy in Monster World - Enemies_124
+    21300210: Wonder Boy in Monster World - Enemies_125
+    21300212: Wonder Boy in Monster World - Enemies_126
+    21300214: Wonder Boy in Monster World - Enemies_127
+    21300216: Wonder Boy in Monster World - Enemies_128
+    21300218: Wonder Boy in Monster World - Enemies_129
+    21300220: Wonder Boy in Monster World - Enemies_130
+    21300222: Wonder Boy in Monster World - Enemies_131
+    21300224: Wonder Boy in Monster World - Enemies_132
+    21300226: Wonder Boy in Monster World - Enemies_133
+    21300228: Wonder Boy in Monster World - Enemies_134
+    21300230: Wonder Boy in Monster World - Enemies_135
+    21300232: Wonder Boy in Monster World - Enemies_136
+    21300234: Wonder Boy in Monster World - Enemies_137
+    21300236: Wonder Boy in Monster World - Enemies_138
+    21300238: Wonder Boy in Monster World - Enemies_139
+    21300240: Wonder Boy in Monster World - Enemies_143
+    21300242: Wonder Boy in Monster World - Enemies_144
+    21300244: Wonder Boy in Monster World - Enemies_145
+    21300246: Wonder Boy in Monster World - Enemies_146
+    21300248: Wonder Boy in Monster World - Enemies_148
+    21300250: Wonder Boy in Monster World - Enemies_149
+    21300252: Wonder Boy in Monster World - Enemies_150
+    21300254: Wonder Boy in Monster World - Enemies_151
+    21300256: Wonder Boy in Monster World - Enemies_152
+    21300258: Wonder Boy in Monster World - Enemies_153
+    21300260: Wonder Boy in Monster World - Enemies_154
+    21300262: Wonder Boy in Monster World - Enemies_155
+    21300264: Wonder Boy in Monster World - Enemies_156
+    21300266: Wonder Boy in Monster World - Enemies_157
+    21300268: Wonder Boy in Monster World - Enemies_158
+    21300270: Wonder Boy in Monster World - Enemies_159
+    21300272: Wonder Boy in Monster World - Enemies_160
+    21300274: Wonder Boy in Monster World - Enemies_169
+    21300276: Wonder Boy in Monster World - Enemies_170
+    21300278: Wonder Boy in Monster World - Enemies_171
+    21300280: Wonder Boy in Monster World - Enemies_172
+    21300282: Wonder Boy in Monster World - Enemies_173
+    21300284: Wonder Boy in Monster World - Enemies_174
+    21300286: Wonder Boy in Monster World - Enemies_175
+    21300288: Wonder Boy in Monster World - Enemies_176
+    21300290: Wonder Boy in Monster World - Enemies_177
+    21300292: Wonder Boy in Monster World - Enemies_178
+    21300294: Wonder Boy in Monster World - Enemies_179
+    21300296: Wonder Boy in Monster World - Enemies_180
+    21300298: Wonder Boy in Monster World - Enemies_181
+    21300300: Wonder Boy in Monster World - Enemies_182
+    21300302: Wonder Boy in Monster World - Enemies_197
+    21300304: Wonder Boy in Monster World - Enemies_198
+    21300306: Wonder Boy in Monster World - Enemies_199
+    21300308: Wonder Boy in Monster World - Enemies_200
+    21300310: Wonder Boy in Monster World - Enemies_201
+    21300312: Wonder Boy in Monster World - Enemies_202
+    21300314: Wonder Boy in Monster World - Enemies_203
+    21300316: Wonder Boy in Monster World - Enemies_204
+    21300318: Wonder Boy in Monster World - Enemies_205
+    21300320: Wonder Boy in Monster World - Enemies_206
+    21300322: Wonder Boy in Monster World - Enemies_207
+    21300324: Wonder Boy in Monster World - Enemies_208
+    21300326: Wonder Boy in Monster World - Enemies_209
+    21300328: Wonder Boy in Monster World - Enemies_210
+    21300330: Wonder Boy in Monster World - Enemies_213
+    21300332: Wonder Boy in Monster World - Enemies_214
+    21300334: Wonder Boy in Monster World - Enemies_215
+    21300336: Wonder Boy in Monster World - Enemies_216
+    21300338: Wonder Boy in Monster World - Enemies_217
+    21300340: Wonder Boy in Monster World - Enemies_218
+    21300342: Wonder Boy in Monster World - Enemies_219
+    21300344: Wonder Boy in Monster World - Enemies_220
+    21300346: Wonder Boy in Monster World - Enemies_221
+    21300348: Wonder Boy in Monster World - Enemies_222
+    21300350: Wonder Boy in Monster World - Enemies_223
+    21300352: Wonder Boy in Monster World - Enemies_224
+    21300354: Wonder Boy in Monster World - Enemies_225
+    21300356: Wonder Boy in Monster World - Enemies_226
+    21300358: Wonder Boy in Monster World - Enemies_227
+    21300360: Wonder Boy in Monster World - Enemies_228
+    21300362: Wonder Boy in Monster World - Enemies_229
+    21300364: Wonder Boy in Monster World - Enemies_230
+    21300366: Wonder Boy in Monster World - Enemies_231
+    21300368: Wonder Boy in Monster World - Enemies_232
+    21300370: Wonder Boy in Monster World - Enemies_233
+    21300372: Wonder Boy in Monster World - Enemies_234
+    21300374: Wonder Boy in Monster World - Enemies_235
+    21300376: Wonder Boy in Monster World - Enemies_236
+    21300378: Wonder Boy in Monster World - Enemies_237
+    21300380: Wonder Boy in Monster World - Enemies_238
+    21300382: Wonder Boy in Monster World - Enemies_239
+    21300384: Wonder Boy in Monster World - Enemies_240
+    21300386: Wonder Boy in Monster World - Enemies_242
+    21300388: Wonder Boy in Monster World - Enemies_243
+    21300390: Wonder Boy in Monster World - Enemies_244
+    21300392: Wonder Boy in Monster World - Enemies_245
+    21300394: Wonder Boy in Monster World - Enemies_246
+    21300396: Wonder Boy in Monster World - Enemies_247
+    21300398: Wonder Boy in Monster World - Enemies_248
+    21300400: Wonder Boy in Monster World - Enemies_249
+    21300402: Wonder Boy in Monster World - Enemies_250
+    21300404: Wonder Boy in Monster World - Enemies_251
+    21300406: Wonder Boy in Monster World - Enemies_252
+    21300408: Wonder Boy in Monster World - Enemies_253
+    21300410: Wonder Boy in Monster World - Enemies_254
+    21300412: Wonder Boy in Monster World - Enemies_255
+    21300414: Wonder Boy in Monster World - Enemies_256
+    21300416: Wonder Boy in Monster World - Enemies_257
+    21300418: Wonder Boy in Monster World - Enemies_258
+    21300420: Wonder Boy in Monster World - Enemies_259
+    21300422: Wonder Boy in Monster World - Enemies_260
+    21300424: Wonder Boy in Monster World - Enemies_261
+    21300426: Wonder Boy in Monster World - Enemies_262
+    21300428: Wonder Boy in Monster World - Enemies_263
+    21300430: Wonder Boy in Monster World - Enemies_264
+    21300432: Wonder Boy in Monster World - Enemies_265
+    21300434: Wonder Boy in Monster World - Enemies_266
+    21300436: Wonder Boy in Monster World - Enemies_270
+    21300438: Wonder Boy in Monster World - Enemies_275
+    21300440: Wonder Boy in Monster World - Enemies_276
+    21300442: Wonder Boy in Monster World - Enemies_277
+    21300444: Wonder Boy in Monster World - Enemies_278
+    21300446: Wonder Boy in Monster World - Enemies_279
+    21300448: Wonder Boy in Monster World - Enemies_280
+    21300450: Wonder Boy in Monster World - Enemies_281
+    21300452: Wonder Boy in Monster World - Enemies_282
+    21300454: Wonder Boy in Monster World - Enemies_283
+    21300456: Wonder Boy in Monster World - Enemies_284
+    21300458: Wonder Boy in Monster World - Enemies_285
+    21300460: Wonder Boy in Monster World - Enemies_286
+    21300462: Wonder Boy in Monster World - Enemies_287
+    21300464: Wonder Boy in Monster World - Enemies_288
+    21300466: Wonder Boy in Monster World - Enemies_289
+    21300468: Wonder Boy in Monster World - Enemies_290
+    21300470: Wonder Boy in Monster World - Enemies_291
+    21300472: Wonder Boy in Monster World - Enemies_292
+    21300474: Wonder Boy in Monster World - Enemies_293
+    21300476: Wonder Boy in Monster World - Enemies_294
+    21300478: Wonder Boy in Monster World - Enemies_295
+    21300480: Wonder Boy in Monster World - Enemies_296
+    21300482: Wonder Boy in Monster World - Enemies_297
+    21300484: Wonder Boy in Monster World - Enemies_298
+    21300486: Wonder Boy in Monster World - Enemies_299
+    21300488: Wonder Boy in Monster World - Enemies_300
+    21300490: Wonder Boy in Monster World - Enemies_301
+    21300492: Wonder Boy in Monster World - Enemies_302
+    21300494: Wonder Boy in Monster World - Enemies_303
+    21300496: Wonder Boy in Monster World - Enemies_304
+    21300498: Wonder Boy in Monster World - Enemies_305
+    21300500: Wonder Boy in Monster World - Enemies_306
+    21300502: Wonder Boy in Monster World - Enemies_307
+    21300504: Wonder Boy in Monster World - Enemies_308
+    21300506: Wonder Boy in Monster World - Enemies_309
+    21300508: Wonder Boy in Monster World - Enemies_310
+    21300510: Wonder Boy in Monster World - Enemies_311
+    21300512: Wonder Boy in Monster World - Enemies_312
+    21300514: Wonder Boy in Monster World - Enemies_313
+    21300516: Wonder Boy in Monster World - Enemies_314
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -20,7 +279,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -40,12 +299,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +322,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -74,7 +333,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +352,5187 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 719
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e705d84b0ce8704aa4e25e9783ff1b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 718
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b38a6b3ea6d4c4bb15288373390ed7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 717
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf7f0ddb7802b84795b33612c0d953b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 717
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56af7ce2b81202e4d9f0fb8c85ea2f55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 707
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222ea2a4254eb5f468c281ea3a8cd376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 707
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07af08af74b71345a1ce1d0a042d2a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 706
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d95aca1a0fa11644a82a92f2d4831be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 705
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce7570d1ffcb644ebd42608d5591425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 700
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43c271ea66aad34bbc1651b727b3585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 700
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0228b60f82114f2459d5608e1111b1fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 700
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08da268a7691444c8109bcd9164e6ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 700
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87124806506f6149ab13ad7c624c260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 701
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae109067144cef4083ac2092121bec9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 700
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460bbb53c745f1d4fb9d6b71c3141361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 688
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2e4e5c1f8b8bd4e8cd8b981689dbf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 687
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74592c1f3446d624eb9ffc37b2f72043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 686
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b1dfde61544f744903b1eecde76c6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 686
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec2aa67bb72a5644ab88bae347a58a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 664
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cb62821a3ba4045a88438f75de618a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d84c59d37388c4fa2f3ac404f308e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22024ce05b88b7c4a963e86866c2a3ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 664
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b754539eb94d4da12ba7465d914b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 664
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3042a58617b1a04683653165a48ad8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 666
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888641e7a67d08441a1924b8518a8516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 666
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0373ded3398867d4385f5e8e8c740b28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 666
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd5a14316e9b684d99015132b7d9a8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 666
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17609fd864749145a761da83d3a6792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 666
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb47161ecdbbeb45af9fdce4de12a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 663
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc816edca6f718419704b479b291ea3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 663
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d61267ff117b64e909131882ba347a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 663
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359bf65cce644864783fff579880c07c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 663
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0f94471243e79489dca4423ad94b64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 663
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19e717c708ada6468c367d6e8660a69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 641
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b9101a29eb3b845b5214e8bac923f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 641
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e09a3dd2dce7e42a81d5c669298602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 641
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b23383a2b1ee364a9768cad2ea5bdd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 641
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ea4d5c6c68fa942b295cd7f9f6a1e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 641
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a98b300a3356b468cdbad02fde1ecd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 637
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28d1c509d890cc4eaa48f1e4dd6fa62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 637
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f936a894cd83cfc45a13f63d7959038b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 637
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f25fc0719f537c42b53946af2e6ec0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 637
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dbe3eff6babd44a9d43bef7a2780f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 642
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf33766797c8c3419d76f95162d3b5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 636
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c594019dcf23544c93714efc65f8ddb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 636
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c95ffdfd95fe934b949b8c03125b053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 616
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85adad69bcf3a174085422d30eb0a0a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 616
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df85b660cc4d6a24b8dbcb545cfff97f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 616
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fb91003ef1c6a43b2a5b3f0a23c947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 616
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c5b39782758b042ad3a1bb765f5783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_64
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 616
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ba5f71c1740c04bafaf77e01ea311b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 616
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce13361dde707948aa01a528815ac79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 616
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678e5c96a14264f438a75c16da3db1d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d580fc42b1edd504eb37fb62da99f6a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc24abc93d9de4a85cccc614a38af4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0318aef64f7744cbbcbc9546cbbfaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db55eae58118d842aab050ac2652083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea44dd694f8dd47805021d68fe5eff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 617
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e00245badbb804ba09393253c53ac9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 588
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855b24981fe7eb44da12ab8ea3a2bb3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 587
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1140a91cd533e4495c61182f2b603d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 587
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbb5aa341afca24fa8ff42b649909af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 586
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa78ca2f16894f145bf1635aff5e39eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 585
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a160394c2f55546a2d6e29ded74599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 583
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456d016dddecf924eb37ee77ed0d8e91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 583
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4c728dae3c7eb4a939eb52a430d4c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 583
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3216804c419d94d9a20c8ed2492f80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 587
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f336faea4fd17ba48ac9d2e9711f9f97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 587
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc384aac024832c46b16350db6266ea1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 587
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37aa0b3004e0254fa8a60a1f39aa3b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 587
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72a2df6e00f3bb469210ac30e7053f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 587
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db886db1bf7efcd4eb45736c62502c60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 587
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0ebbef2ec896c49aaeee322fc27936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 534
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526d9cd4aadf4fd4590e9e793124eed6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 534
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db456330c8f02564283c4406b49ba690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841cc2c637c036b48b81916d9bd3d97b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 533
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61d2b49041037042bca341fb8648806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 533
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faf6dddbe9d9ec44ac929380a337702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 533
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58561fddd79aa44d938b8f8ff494c97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944db3fd862bc314eabf7c22e982eeee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 560
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c8cca8665a40446b0f0504115a488a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26dc8722dde3fa49982f85e72a84e1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 559
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09932f9980eefd4689e58c938ead254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 559
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adc7833a1564ed4ca01a3eca9407138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 550
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa903794bccc54e4aaece57884170a10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 550
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a52499b388d26c47840a740c4f580c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 549
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69ccc6183fead246bb1160c9fc69eaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 549
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e9e9e28f96ceb4a8d8b7d750570b23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 549
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8a408d885d65c45889176811dbf803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 549
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae12f58499df044d842c8b5396ad86c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 547
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f709230adff354ea88926a2a0b70e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 547
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95859628d2adfc745aa0a118906e6a66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 538
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72c0a3984ee6f44f80845cd0514ea29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 537
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3acdbf36d3e63b4db024c7230fa45f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 537
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b74638d80d79e6448b877e2fa366165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 537
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337706811a7638946a7916129f635342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 537
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb27c79416025ec41ae49dfc0540452d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 508
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567894dd30f4d5c4abc26c75047297a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 508
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1506945ce2f7f74ebd2d9fda2997e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 508
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1812231ae27be4f83213a37d0bade2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de295845ecd9dc4ba87daa13ea1812c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 508
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea443bc3a9aecf249a9dfe4119cad2ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 483
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62310087d5141944ebe6cefab50a8b13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 483
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826284d7d28349044aee7c6ea3ca0a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 482
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c37fd1509c108d438135735f40baa8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 482
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6622e014ab7ad947958aa523017fa91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 483
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd296cbc94bec184381df18dda20ebe5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 482
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5466164251193c940acd37d9b519df5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 480
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6cd52153250574986e5908f7311769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 479
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4daef5ef0959a44da9c5345ae23e22f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 508
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e8891fe6d52e548b9b1e02d35d4d02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 508
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bd70cd69c45804aa7372e1c9c4428e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 459
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4086a57f7118b834e82b7f0d54ffcbc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 458
+        width: 93
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d493308cea88da74b8ca2c7a4652ecdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 456
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6672dabae9ad348bb8f6bc504f7890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 454
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6015b45071486cf45b9e4b34939622b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 455
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ae262185e229044b499fb72b0b0927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 476
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f979ad933e7c594b892823e7d150438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 476
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67125d2f98f88ab4daa524e2bf8b5d1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 475
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffec95033e4f15c4f82f14c0a1f685aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 474
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e035e37f5cf47a54492e508bd463956b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 473
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201e315bf5f994e4287ba6fed2ed1a86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 472
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98d9c9301096a542ba24ec9ec980a03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 457
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9bf4790f062d142ac1ca24fdade055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 457
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2cf55901c6f7441a9fe3969e1cf4b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 458
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e0be0431c2b664aa26cb73928dd80d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_149
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 458
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da449f69428e5243b4a5ecaa2c3c97b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_150
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 433
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4098653e4a24bc94f85060f7d11fa3ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_151
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 433
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4b54100e0e4694298c90c6930f2ddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_152
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 433
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c789950c3d277468f0bf520f768de7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_153
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 433
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9a84e7897fce04b963e3b0a9bc96b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_154
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 433
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bff7ca4788beb418174459c29cced8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_155
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 432
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec29736c66d676149aaaad830fd61083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_156
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 432
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c00eae600351b439a92acfc970b95a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_157
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 421
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46dcc8999c2c9b42a841832ae27c4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_158
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 421
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a8934395f058746bb548aab959f16c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_159
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 421
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d81e7a1f9901114ab6ba92a1e2d226b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_160
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 421
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d358c6bc07a5a448a76c39fd9721a6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_169
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 381
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958d53a56837f974cbe7e23bcc86fe73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_170
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 381
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128f5cc3fded5ed4d9bf97cddb6cc4b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_171
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 381
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c7f5bcec61dc43959e7c4ff19eb99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_172
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 381
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87508e41a5c67c04aa1cfc902d24fea6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_173
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 380
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f739be41e456e7540a5256bbb0723eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_174
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 379
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2390a85033788804eb2fc5f949fa1232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_175
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 378
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea163e209332194cad3a9d8c2939223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_176
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 377
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2151c38add8c74f4eb44b3ce9de58d8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_177
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 377
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c812dba9206bb84f9d696bb60e7d5ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_178
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 391
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674965dbc2a91d84dbd246e68c161e55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_179
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 391
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db9f57a8c05d004b9f12a76c64f5dae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_180
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abc26d147720d84096cbe8ab55f3ccd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_181
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 391
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6d06cc9682bbc458e5925ad7c33da3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_182
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 392
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be6a49826c72dc4595478df024a0579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_197
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 358
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72f288e47f6d0546b3a198d48cbe3b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_198
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 357
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899866b2515d16144a2aa6b2f069b90a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_199
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 356
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c0d5c309f9464c901f5ce92a2cd09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_200
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 302
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7f7d1487540004fa94c12e0c3ad549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_201
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 299
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfd1f09bd3421b489da1ee95197ea75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_202
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 300
+        width: 55
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74ba3f4400f1d74aac2592c11079838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_203
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 300
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da26c6f4908ff54994eff8c5b613208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_204
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 298
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aad52650e836084d9461cfcd6f60f40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_205
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 298
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9cc701e28ab754f9b4d144be319f48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_206
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 324
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ed9ddf18893e84bb1c6c87468d7864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_207
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 322
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21aeba9e311ada4caf7c791c5af72de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 322
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec097b13ed2139408f41a588fde6411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_209
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 322
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a990b9cf9f6eef54b8adf707d79c6be4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_210
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 322
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21745901b1549a4c808bacf7eb9bf50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_213
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 287
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00811f94433cde4185820b3c3e78f1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_214
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 287
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab4f55c95740f24ba55bb945a4202db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_215
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 287
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1839b247876a044987eaca5cff95b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_216
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 287
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858b5a92e7c01e64fbf92afed8555a10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_217
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 287
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5342e580ab142d34bb08b8fdc64cc748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_218
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 287
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8089079104445f147af7a3f75587d6f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_219
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 225
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8c54541159f6c418c23760000675e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_220
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 227
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258efd382ff59ce4fb8806c24d0a48ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_221
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 226
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dc205e59c77b24ea65a46024c76d35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_222
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 229
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c9a7d2084c5d84e9837c65dbb14034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_223
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 225
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bd1ace3e7bbd04eab77246a6c96dec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_224
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 262
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e43240c7b87bf247ba465b87d7fdd76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_225
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 262
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48adec8c36a93f44ae4dc6bdec7bb85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_226
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 262
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55352f3600530e24b8e30ac7a5adb930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_227
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 262
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cb022a68431104080ce95ddab8be6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_228
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 262
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fc61bf267a0d548a72d2f04994bbc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_229
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 262
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb445f8211cfa7d4c887ed14516ce64b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_230
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 231
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fb78a29802b6b44860c8ceea294097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_231
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 231
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c2ab16287e7f64ba0820a2baa015b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_232
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 231
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62de747eee2205047914fcdad22a7592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_233
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 230
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5d29c4133e2d14297ce2eb42cd55cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_234
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 229
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c70c81bd968d44da1acc3843bfdd5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_235
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 228
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679d5d6dd5a0349479b7c31826a1ec6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_236
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 229
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8854d83af9b4854781894a73078f1a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_237
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 228
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ddc89c0b01802489a297ed5785dbe6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_238
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 229
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d94f13d4dba07b49b6fa274a7ac3921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_239
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 197
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bc312e65e46b84aaeba8f61e618809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_240
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 197
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63f960bbd3a7dc4ea08b8463fa14460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_242
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 196
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109e05e205c7df54eb082219ff87122d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_243
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 196
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3645104883a37d94892cb8835d173911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_244
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 191
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7b63fe5c834a2479e48e2d808d3d1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_245
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 191
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089f5c051d748f1428d2c38dcb44ad85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_246
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 190
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e88998fd24375245a9010c0695de34e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_247
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 190
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5222efcd66da044963777b94399eab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_248
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 191
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0450583d73002af4c9289742aaac4f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_249
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 165
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f4aa84c41a55b45ac0577a3bd25a5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_250
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 164
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ae7214e9e1b224e877a0569e8fea19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_251
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 164
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dc313fa2aab43478666cb90f15660c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_252
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 164
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474d33e8c78057f4383858d9c62ccc61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_253
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 137
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c04665f9253ca44aa2cca5873b45669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_254
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 137
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20daabfdd502d5438d054004e484931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_255
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 137
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4062b402480ef1945ae77d1315a51498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_256
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 137
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ed02bfc2df61d4db8287bb5776c658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_257
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 137
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7031bc24ff9c046439438840806d6896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_258
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 137
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abf6e1769c7bdb4189a772c4add5abd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_259
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 138
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc2cff7184154b428bc54ef59890a7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_260
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 134
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2650509705eb241b3185d409796caa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_261
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 134
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b67f8d9cb426440988b8464e134fac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_262
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 134
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3d95992f94acf4ba8abebc97d6ae77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_263
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 133
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e89019e145e054baa77bab14d4549d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_264
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 132
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e550b2e561d724640a9b7c2089aadada
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_265
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cab1ac14bd643648a4fef8c7020ce42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_266
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 133
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d10330ace9c5fa4bad9d9981a0bf5f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_270
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 138
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdff00153d9c9b4e9b172a51b772902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_275
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 83
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64729e73b509e04da4ed49d39c6e6fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_276
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 82
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a8c139ed0a5cc49b02f0e02a6c920a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_277
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 81
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7385772769514e3468d84564c0a0206d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_278
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 77
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee1567bd23d0c74986dccf6b5bf0d8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_279
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 96
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ad430de3f75b4468aedfd447913306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_280
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 96
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39611b3210465244288027fbb4a42f4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_281
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9034139e5f9d6d4bb39811d68759324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_282
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 95
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3184ee6f13c8f240a8634dc986540ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_283
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 94
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acccf79bdb30cd4e82a7215f4d7faf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_284
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 94
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5f18e6f6c003b48a083731dd5d19a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_285
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 80
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4dc98b5d88d494496ac22bdd3bdcab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_286
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 80
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44beedb624df92243bea865690551606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_287
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 79
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47db5314dc6def045b8fa0056a8a4d35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_288
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 61
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdfa75817962cf48a0b94023cd87aa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_289
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 61
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb20688cfb7c4d4e85759bb9f0c22be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_290
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 61
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c93a26b4fe72be4ba627f20b6acd1cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_291
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 61
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d429f07028145f4daf5690bc9276abe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_292
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 61
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24b6ae8f3e8f6b4eab9d2f1545bd2ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_293
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 48
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ac70bce4d8ce8428cd869bb2179d46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_294
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 48
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b21393df3557a240b5968ce0d0fb942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_295
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44810d610a5bc304e9bafca7cade9505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_296
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 48
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec49d49f39c49f4ab53345f9d0a5f8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_297
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 48
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02df123e3c5054446a80cbb131a32c70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_298
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 48
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97653dc034dc95c478063a6c9ed922e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_299
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 48
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b624224e0a04e4f8707995d795d567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_300
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 31
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92957dafffa849429be579c105b0382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_301
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 31
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed5a0ef7e978304db3911053007c665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_302
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 31
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23187333745a96d4cb3f7707024e513b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_303
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 31
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54b9eb6f20546545a02418cebaea64a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_304
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 31
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbf0d369a1fed74b94cb90844eb78cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_305
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 31
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e872b6f6a2f4f4e4aaa0e2f5f69800ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_306
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b905a4e08f945e541ae6d3261db54295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_307
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2eeff9998fdbcb4693d17940bc55dde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_308
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064e811a46d7f0046bf0eb5a85c39d7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_309
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 6
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d5c73c5c1b0684cba2310519abfd0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_310
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 6
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9004decc3aa6b4c958de58d3126f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_311
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 5
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48dd0a9e53ba1c4eb6f276890e11d61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_312
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 5
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bbcfbacce648543ad94f99e21461b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_313
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 6
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2f0058e9ec4c44298dded37ec9bdb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wonder Boy in Monster World - Enemies_314
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 5
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727640c0e0a0dad46beed4529d83f8a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -35,6 +35,7 @@ public class BattleSystem : MonoBehaviour {
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
     private Button whatAbilityButtonPressed;
     private string highlightedAbility = null;
+    public EnemyAI enemyAI;
 
     public BattleState state;
 
@@ -55,6 +56,9 @@ public class BattleSystem : MonoBehaviour {
     //If a unit is missing or dead it will skip that unit and go to the next.
     private IEnumerator Battle() {
         bool ongoingBattle = true;
+        //Delay in seconds
+        float delayAfterFriendlyAttack = 2f;
+        float delayAfterEnemyAttack = 2.5f;
 
         while (ongoingBattle) {
             switch (state) {
@@ -70,6 +74,7 @@ public class BattleSystem : MonoBehaviour {
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
+                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -81,11 +86,10 @@ public class BattleSystem : MonoBehaviour {
                     break;
 
                 case BattleState.ENEMY1TURN:
-                    yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit1;
                     if (!unitsTurn.isDead) {
-                        SimpleEnemyAI();
-                        yield return new WaitForSeconds(2f);
+                        DoEnemyAI();
+                        yield return new WaitForSeconds(delayAfterEnemyAttack);
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -99,6 +103,7 @@ public class BattleSystem : MonoBehaviour {
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
+                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -111,11 +116,10 @@ public class BattleSystem : MonoBehaviour {
                     break;
 
                 case BattleState.ENEMY2TURN:
-                    yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit2;
                     if (!unitsTurn.isDead) {
-                        SimpleEnemyAI();
-                        yield return new WaitForSeconds(2f);
+                        DoEnemyAI();
+                        yield return new WaitForSeconds(delayAfterEnemyAttack);
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -130,6 +134,7 @@ public class BattleSystem : MonoBehaviour {
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
+                        yield return new WaitForSeconds(delayAfterFriendlyAttack);
                     }
                     if (IsAllEnemiesDead()) {
                         state = BattleState.WON;
@@ -142,11 +147,10 @@ public class BattleSystem : MonoBehaviour {
                     break;
 
                 case BattleState.ENEMY3TURN:
-                    yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit3;
                     if (!unitsTurn.isDead) {
-                        SimpleEnemyAI();
-                        yield return new WaitForSeconds(2f);
+                        DoEnemyAI();
+                        yield return new WaitForSeconds(delayAfterEnemyAttack);
                     }
                     if (IsAllFriendlyDead()) {
                         state = BattleState.LOST;
@@ -230,13 +234,13 @@ public class BattleSystem : MonoBehaviour {
         EnableAbilityButtonsUnitCanUse(unitsTurn);
     }
 
-    private IEnumerator DoAttack() {
+    private void DoAttack() {
         if(unitsTurn.UseAbility(highlightedAbility, unitsTurn, target, friendlyUnit1, friendlyUnit2, friendlyUnit3, enemyUnit1, enemyUnit2, enemyUnit3)) {
             dialogueText.text = unitsTurn.GetAbilityName(highlightedAbility) + " is successful!";
         } else {
             dialogueText.text = "The ability " + unitsTurn.GetAbilityName(highlightedAbility) + " failed!";
         }
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
     }
 
     /// <summary>
@@ -273,54 +277,12 @@ public class BattleSystem : MonoBehaviour {
         }
     }
 
-    private void SimpleEnemyAI() {
-        dialogueText.text = unitsTurn.unitName + " attacks!";
-        ChooseRandomTarget(false);
-
-        target.TakeDamage(unitsTurn.attack, 1, 0);
-    }
-
     /// <summary>
-    /// Choose a random target depedning on a roll 1-3.
+    /// Does what an enemy should do.
     /// </summary>
-    /// <param name="friendlyIsAttacking">True if a friendly is attacking false if enemy is attacking.</param>
-    private void ChooseRandomTarget(bool friendlyIsAttacking) {
-        int randomTarget = RandomNumber(1, 4);
-
-        if (!friendlyIsAttacking) {
-            if (randomTarget.Equals(1)) {
-                target = friendlyUnit1;
-            }
-            else if (randomTarget.Equals(2)) {
-                target = friendlyUnit2;
-            }
-            else {
-                target = friendlyUnit3;
-            }
-        }
-
-        if (friendlyIsAttacking) {
-            if (randomTarget.Equals(1)) {
-                target = enemyUnit1;
-            }
-            else if (randomTarget.Equals(2)) {
-                target = enemyUnit2;
-            }
-            else {
-                target = enemyUnit3;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Generates a random number between and including min to max and return the number as int.
-    /// </summary>
-    /// <param name="min">The minium value to be rolled as integer.</param>
-    /// <param name="max">The maxium value to be rolled as integer.</param>
-    /// <returns>Return the random number as int.</returns>
-    private int RandomNumber(int min, int max) {
-        var random = UnityEngine.Random.Range(min, max);
-        return Convert.ToInt32(random);
+    private void DoEnemyAI() {
+        string abilityUsed = enemyAI.DoEnemyAI(unitsTurn, enemyUnit1, enemyUnit2, enemyUnit3, friendlyUnit1, friendlyUnit2, friendlyUnit3);
+        dialogueText.text = unitsTurn.unitName + " use " + unitsTurn.GetAbilityName(abilityUsed) + "!";
     }
 
     /// <summary>
@@ -331,15 +293,15 @@ public class BattleSystem : MonoBehaviour {
         if (button.name.Equals("Target1Button")) {
                 target = enemyUnit1;
                 targetHasBeenChosen = true;
-                StartCoroutine(DoAttack());
+                DoAttack();
         } else if(button.name.Equals("Target2Button")) {
                 target = enemyUnit2;
                 targetHasBeenChosen = true;
-                StartCoroutine(DoAttack());
+                DoAttack();
         } else if(button.name.Equals("Target3Button")) {
                 target = enemyUnit3;
                 targetHasBeenChosen = true;
-                StartCoroutine(DoAttack());
+                DoAttack();
         }
     }
 

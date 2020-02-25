@@ -8,6 +8,7 @@ public class Ability : MonoBehaviour {
     public string abilityName, abilityTooltip;
     [Tooltip("simpleDamage, executeDamage, executeDamageHeal")]
     public string abilityType;
+    public bool isHeal = false;
 
     /// <summary>
     /// Uses the global variable abilityType to use the correct type of ability.
@@ -75,6 +76,30 @@ public class Ability : MonoBehaviour {
             targetIsInRange = true;
         }
         return targetIsInRange;
+    }
+
+    /// <summary>
+    /// Return true if the unit got mana for the ability.
+    /// </summary>
+    /// <param name="unit">The unit to check.</param>
+    /// <returns>True if unit got mana for the ability.</returns>
+    public bool UnitGotManaForAbility(Unit unit) {
+        bool unitGotManaForAbility = false;
+
+        if(unit.currentMP >= GetManaCost()) {
+            unitGotManaForAbility = true;
+        }
+        return unitGotManaForAbility;
+    }
+
+    /// <summary>
+    /// Return damage the ability would do.
+    /// </summary>
+    /// <param name="unit">Unit using the ability.</param>
+    /// <param name="target">Target of the ability.</param>
+    /// <returns>Damage the ability would do.</returns>
+    public int GetAbilityDamageOnTargt(Unit unit, Unit target) {
+        return target.GetDamage(unit.attack, this.damageMultiplier, this.armorPenetration);
     }
 
     /// <summary>
