@@ -13,8 +13,12 @@ public class BattleSystem : MonoBehaviour {
     public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
     public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
 
-    public Transform friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
-    public Transform enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
+    public GameObject friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
+    public GameObject enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
+
+
+    public Sprite darkBattleStation;
+    public Sprite lightBattleStation;
 
     private Unit friendlyUnit1, friendlyUnit2, friendlyUnit3;
     private Unit enemyUnit1, enemyUnit2, enemyUnit3;
@@ -67,6 +71,8 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
+                    SetBattleStationToDark(enemy3BattleStation);
+                    SetBattleStationToLight(friendly1BattleStation);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -83,6 +89,8 @@ public class BattleSystem : MonoBehaviour {
                 case BattleState.ENEMY1TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit1;
+                    SetBattleStationToDark(friendly1BattleStation);
+                    SetBattleStationToLight(enemy1BattleStation);
                     if (!unitsTurn.isDead) {
                         SimpleEnemyAI();
                         yield return new WaitForSeconds(2f);
@@ -96,6 +104,8 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
+                    SetBattleStationToDark(enemy1BattleStation);
+                    SetBattleStationToLight(friendly2BattleStation);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -113,6 +123,8 @@ public class BattleSystem : MonoBehaviour {
                 case BattleState.ENEMY2TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit2;
+                    SetBattleStationToDark(friendly2BattleStation);
+                    SetBattleStationToLight(enemy2BattleStation);
                     if (!unitsTurn.isDead) {
                         SimpleEnemyAI();
                         yield return new WaitForSeconds(2f);
@@ -127,6 +139,8 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
+                    SetBattleStationToDark(enemy2BattleStation);
+                    SetBattleStationToLight(friendly3BattleStation);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -144,6 +158,8 @@ public class BattleSystem : MonoBehaviour {
                 case BattleState.ENEMY3TURN:
                     yield return new WaitForSeconds(1f);
                     unitsTurn = enemyUnit3;
+                    SetBattleStationToDark(friendly3BattleStation);
+                    SetBattleStationToLight(enemy3BattleStation);
                     if (!unitsTurn.isDead) {
                         SimpleEnemyAI();
                         yield return new WaitForSeconds(2f);
@@ -180,6 +196,7 @@ public class BattleSystem : MonoBehaviour {
 
     /// <summary>
     /// Places the friendly and enemy units on their battlestations.
+    /// Ensures that the battlestations are using the dark sprite at the start.
     /// Sets the dialogue text to "Fight!".
     /// Gets the unit stats from each unit.
     /// Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
@@ -187,20 +204,28 @@ public class BattleSystem : MonoBehaviour {
     private void SetupBattle()
     {
         // Places the friendly and enemy units on their battlestations.
-        GameObject friendly1GO = Instantiate(friendly1Prefab, friendly1BattleStation);
+        GameObject friendly1GO = Instantiate(friendly1Prefab, friendly1BattleStation.GetComponent<Transform>());
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
-        GameObject friendly2GO = Instantiate(friendly2Prefab, friendly2BattleStation);
+        GameObject friendly2GO = Instantiate(friendly2Prefab, friendly2BattleStation.GetComponent<Transform>());
         friendlyUnit2 = friendly2GO.GetComponent<Unit>();
-        GameObject friendly3GO = Instantiate(friendly3Prefab, friendly3BattleStation);
+        GameObject friendly3GO = Instantiate(friendly3Prefab, friendly3BattleStation.GetComponent<Transform>());
         friendlyUnit3 = friendly3GO.GetComponent<Unit>();
 
-
-        GameObject enemy1GO = Instantiate(enemy1Prefab, enemy1BattleStation);
+        GameObject enemy1GO = Instantiate(enemy1Prefab, enemy1BattleStation.GetComponent<Transform>());
         enemyUnit1 = enemy1GO.GetComponent<Unit>();
-        GameObject enemy2GO = Instantiate(enemy2Prefab, enemy2BattleStation);
+        GameObject enemy2GO = Instantiate(enemy2Prefab, enemy2BattleStation.GetComponent<Transform>());
         enemyUnit2 = enemy2GO.GetComponent<Unit>();
-        GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation);
+        GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation.GetComponent<Transform>());
         enemyUnit3 = enemy3GO.GetComponent<Unit>();
+
+        SetBattleStationToDark(friendly1BattleStation);
+        SetBattleStationToDark(friendly2BattleStation);
+        SetBattleStationToDark(friendly3BattleStation);
+        SetBattleStationToDark(enemy1BattleStation);
+        SetBattleStationToDark(enemy2BattleStation);
+        SetBattleStationToDark(enemy3BattleStation);
+
+
 
         //Sets the dialogue text to "Fight!".
         dialogueText.text = "Fight!";
@@ -271,6 +296,12 @@ public class BattleSystem : MonoBehaviour {
         } else if(state == BattleState.LOST) {
             dialogueText.text = "You were defeted.";
         }
+        SetBattleStationToDark(friendly1BattleStation);
+        SetBattleStationToDark(friendly2BattleStation);
+        SetBattleStationToDark(friendly3BattleStation);
+        SetBattleStationToDark(enemy1BattleStation);
+        SetBattleStationToDark(enemy2BattleStation);
+        SetBattleStationToDark(enemy3BattleStation);
     }
 
     private void SimpleEnemyAI() {
@@ -476,6 +507,13 @@ public class BattleSystem : MonoBehaviour {
         if ((unit.currentMP < unit.GetAbilityManaCost("ability4")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability4"))) {
             attack4Button.interactable = false;
         }
+    }
+
+    private void SetBattleStationToDark(GameObject battleStation) {
+        battleStation.GetComponent<SpriteRenderer>().sprite = darkBattleStation;
+    }
+    private void SetBattleStationToLight(GameObject battleStation) {
+        battleStation.GetComponent<SpriteRenderer>().sprite = lightBattleStation;
     }
 
     public Unit GetUnitsTurn() {

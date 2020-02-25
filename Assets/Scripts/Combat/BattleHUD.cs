@@ -13,6 +13,8 @@ public class BattleHUD : MonoBehaviour {
     public Image tooltipBackground;
     public Text tooltipText;
 
+    private bool isStartupDone = false;
+
     [HideInInspector]
     public Boolean isPlayerHoveringButton;
     [HideInInspector]
@@ -23,6 +25,7 @@ public class BattleHUD : MonoBehaviour {
     {
         tooltipText.enabled = false;
         tooltipBackground.enabled = false;
+        StartCoroutine(CountdownFromStart());
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class BattleHUD : MonoBehaviour {
         // When the player hovers over an ability button, this method will fire and it will
         // wait for two seconds, and if the player is still hovering over the ability button it will
         // display the tooltip of the ability the player is hovering.
+
         Unit unitsTurn = battleSystem.GetUnitsTurn();
         Ability hoveredAbility = GetUnitAbility(unitsTurn, hoveredButton);
         if (isPlayerHoveringButton && (hoveredAbility != dummyAbility)) {
@@ -41,9 +45,19 @@ public class BattleHUD : MonoBehaviour {
     }
   
     /// <summary>
+    /// Function that waits for 2.5seconds before the battle starts. This is used to avoid
+    /// a null reference error if a player is hovering over an ability to get a tooltip when no
+    /// abilities have been set yet.
+    /// </summary>
+    IEnumerator CountdownFromStart() {
+        yield return new WaitForSeconds(2.5f);
+        isStartupDone = true;
+    }
+
+    /// <summary>
     /// Show the tooltip of the hovered ability.
     /// </summary>
-    /// <param name="ability">Ability that the player is currently hovering</param>
+    /// <param name="ability">Ability that the player is currently hovering over</param>
     public void ShowTooltip(Ability ability, Unit unit) {
         //Debug.Log(ability.abilityName + ": " + ability.abilityTooltip);
         tooltipBackground.enabled = true;
@@ -69,18 +83,25 @@ public class BattleHUD : MonoBehaviour {
         hoveredButton = button;
     }
 
+    /// <summary>
+    /// Gets the ability of a given unit depending on the button that is being hovered over by the player
+    /// </summary>
+    /// <param name="unitsTurn">The unit whos turn it currently is</param>
+    /// <param name="hoveredButton">The button the player is hovering over</param>
+    /// <returns></returns>
     public Ability GetUnitAbility(Unit unitsTurn, Button hoveredButton) {
         Ability currentUnitAbility = dummyAbility;
-        if (hoveredButton == attack1Button) {
-            currentUnitAbility = unitsTurn.ability1;
-        } else if (hoveredButton == attack2Button) {
-            currentUnitAbility = unitsTurn.ability2;
-        } else if (hoveredButton == attack3Button) {
-            currentUnitAbility = unitsTurn.ability3;
-        } else if (hoveredButton == attack4Button) {
-            currentUnitAbility = unitsTurn.ability4;
-        } 
-
+        if (isStartupDone) {
+            if ((hoveredButton == attack1Button) && (unitsTurn.ability1 != null)) {
+                currentUnitAbility = unitsTurn.ability1;
+            } else if ((hoveredButton == attack2Button) && (unitsTurn.ability2 != null)) {
+                currentUnitAbility = unitsTurn.ability2;
+            } else if ((hoveredButton == attack3Button) && (unitsTurn.ability3 != null)) {
+                currentUnitAbility = unitsTurn.ability3;
+            } else if ((hoveredButton == attack4Button) && (unitsTurn.ability4 != null)) {
+                currentUnitAbility = unitsTurn.ability4;
+            }
+        }
         return currentUnitAbility;
     }
 }
