@@ -13,6 +13,12 @@ public class BattleHUD : MonoBehaviour {
     public Image tooltipBackground;
     public Text tooltipText;
 
+    public Sprite darkBattleStation;
+    public Sprite lightBattleStation;
+
+    //public SpriteRenderer spriteRendererOfCharacter;
+    public Image imageOfCharacter;
+
     private bool isStartupDone = false;
 
     [HideInInspector]
@@ -103,5 +109,17 @@ public class BattleHUD : MonoBehaviour {
             }
         }
         return currentUnitAbility;
+    }
+
+    public void SetBattleStationToDark(GameObject battleStation) {
+        battleStation.GetComponent<SpriteRenderer>().sprite = darkBattleStation;
+    }
+    public void SetBattleStationToLight(GameObject battleStation) {
+        battleStation.GetComponent<SpriteRenderer>().sprite = lightBattleStation;
+    }
+
+    public void showPortrait(Unit unitsTurn) {
+        //spriteRendererOfCharacter.sprite = unitsTurn.getPortraitPicture();
+        imageOfCharacter.sprite = unitsTurn.getPortraitPicture();
     }
 }

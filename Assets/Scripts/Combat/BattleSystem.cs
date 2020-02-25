@@ -9,16 +9,13 @@ public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY
 
 public class BattleSystem : MonoBehaviour {
     public EventSystem EventSystem;
+    public BattleHUD BattleHUD;
 
     public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
     public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
 
     public GameObject friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
     public GameObject enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
-
-
-    public Sprite darkBattleStation;
-    public Sprite lightBattleStation;
 
     private Unit friendlyUnit1, friendlyUnit2, friendlyUnit3;
     private Unit enemyUnit1, enemyUnit2, enemyUnit3;
@@ -75,8 +72,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY1TURN:
                     unitsTurn = friendlyUnit1;
-                    SetBattleStationToDark(enemy3BattleStation);
-                    SetBattleStationToLight(friendly1BattleStation);
+                    BattleHUD.SetBattleStationToDark(enemy3BattleStation);
+                    BattleHUD.SetBattleStationToLight(friendly1BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -93,8 +91,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.ENEMY1TURN:
                     unitsTurn = enemyUnit1;
-                    SetBattleStationToDark(friendly1BattleStation);
-                    SetBattleStationToLight(enemy1BattleStation);
+                    BattleHUD.SetBattleStationToDark(friendly1BattleStation);
+                    BattleHUD.SetBattleStationToLight(enemy1BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         DoEnemyAI();
                         yield return new WaitForSeconds(delayAfterEnemyAttack);
@@ -108,8 +107,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY2TURN:
                     unitsTurn = friendlyUnit2;
-                    SetBattleStationToDark(enemy1BattleStation);
-                    SetBattleStationToLight(friendly2BattleStation);
+                    BattleHUD.SetBattleStationToDark(enemy1BattleStation);
+                    BattleHUD.SetBattleStationToLight(friendly2BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -127,8 +127,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.ENEMY2TURN:
                     unitsTurn = enemyUnit2;
-                    SetBattleStationToDark(friendly2BattleStation);
-                    SetBattleStationToLight(enemy2BattleStation);
+                    BattleHUD.SetBattleStationToDark(friendly2BattleStation);
+                    BattleHUD.SetBattleStationToLight(enemy2BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         DoEnemyAI();
                         yield return new WaitForSeconds(delayAfterEnemyAttack);
@@ -143,8 +144,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.FRIENDLY3TURN:
                     unitsTurn = friendlyUnit3;
-                    SetBattleStationToDark(enemy2BattleStation);
-                    SetBattleStationToLight(friendly3BattleStation);
+                    BattleHUD.SetBattleStationToDark(enemy2BattleStation);
+                    BattleHUD.SetBattleStationToLight(friendly3BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         FriendlyTurn();
                         yield return WaitForPlayerAction();
@@ -162,8 +164,9 @@ public class BattleSystem : MonoBehaviour {
 
                 case BattleState.ENEMY3TURN:
                     unitsTurn = enemyUnit3;
-                    SetBattleStationToDark(friendly3BattleStation);
-                    SetBattleStationToLight(enemy3BattleStation);
+                    BattleHUD.SetBattleStationToDark(friendly3BattleStation);
+                    BattleHUD.SetBattleStationToLight(enemy3BattleStation);
+                    BattleHUD.showPortrait(unitsTurn);
                     if (!unitsTurn.isDead) {
                         DoEnemyAI();
                         yield return new WaitForSeconds(delayAfterEnemyAttack);
@@ -222,12 +225,12 @@ public class BattleSystem : MonoBehaviour {
         GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation.GetComponent<Transform>());
         enemyUnit3 = enemy3GO.GetComponent<Unit>();
 
-        SetBattleStationToDark(friendly1BattleStation);
-        SetBattleStationToDark(friendly2BattleStation);
-        SetBattleStationToDark(friendly3BattleStation);
-        SetBattleStationToDark(enemy1BattleStation);
-        SetBattleStationToDark(enemy2BattleStation);
-        SetBattleStationToDark(enemy3BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly1BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly2BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly3BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy1BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy2BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy3BattleStation);
 
 
 
@@ -300,12 +303,12 @@ public class BattleSystem : MonoBehaviour {
         } else if(state == BattleState.LOST) {
             dialogueText.text = "You were defeted.";
         }
-        SetBattleStationToDark(friendly1BattleStation);
-        SetBattleStationToDark(friendly2BattleStation);
-        SetBattleStationToDark(friendly3BattleStation);
-        SetBattleStationToDark(enemy1BattleStation);
-        SetBattleStationToDark(enemy2BattleStation);
-        SetBattleStationToDark(enemy3BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly1BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly2BattleStation);
+        BattleHUD.SetBattleStationToDark(friendly3BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy1BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy2BattleStation);
+        BattleHUD.SetBattleStationToDark(enemy3BattleStation);
     }
 
     /// <summary>
@@ -469,13 +472,6 @@ public class BattleSystem : MonoBehaviour {
         if ((unit.currentMP < unit.GetAbilityManaCost("ability4")) || (unit.unitLevel < unit.GetAbilityLevelToUse("ability4"))) {
             attack4Button.interactable = false;
         }
-    }
-
-    private void SetBattleStationToDark(GameObject battleStation) {
-        battleStation.GetComponent<SpriteRenderer>().sprite = darkBattleStation;
-    }
-    private void SetBattleStationToLight(GameObject battleStation) {
-        battleStation.GetComponent<SpriteRenderer>().sprite = lightBattleStation;
     }
 
     public Unit GetUnitsTurn() {

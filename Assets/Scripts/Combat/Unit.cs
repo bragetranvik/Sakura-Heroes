@@ -22,6 +22,7 @@ public class Unit : MonoBehaviour {
     private readonly int MPConstant = 100;
 
     public bool isDead = false;
+    public Sprite portraitPicture;
 
     /// <summary>
     /// Reduce currentHP of the unit by dmg*dmgMultiplier reduced by defence which get reduced again by armorPenetration.
@@ -139,6 +140,14 @@ public class Unit : MonoBehaviour {
             name = ability4.GetAbilityName();
         }
         return name;
+    }
+
+    /// <summary>
+    /// Return the portrait of the unit.
+    /// </summary>
+    /// <returns>Portrait of the unit</returns>
+    public Sprite getPortraitPicture() {
+        return portraitPicture;
     }
 
     /// <summary>
