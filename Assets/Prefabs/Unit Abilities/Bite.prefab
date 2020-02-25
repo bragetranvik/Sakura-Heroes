@@ -49,5 +49,5 @@ MonoBehaviour:
   manaDrain: 0
   damageMultiplier: 2
   abilityName: Bite
-  abilityTooltip: Bite the target dealing 1.5x damage and costing 10 mana
+  abilityTooltip: Bite the target dealing 1.5x damage.
   abilityType: simpleDamage

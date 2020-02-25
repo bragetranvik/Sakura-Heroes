@@ -477,4 +477,8 @@ public class BattleSystem : MonoBehaviour {
             attack4Button.interactable = false;
         }
     }
+
+    public Unit GetUnitsTurn() {
+        return unitsTurn;
+    }
 }

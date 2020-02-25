@@ -49,6 +49,5 @@ MonoBehaviour:
   manaDrain: 0
   damageMultiplier: 2
   abilityName: Carrot Stab
-  abilityTooltip: Stab the target with a carrot dealing 2x damage with 50% armor penetration
-    for 25 mana.
+  abilityTooltip: Stab the target with a carrot dealing 2x damage with 50% armor penetration.
   abilityType: simpleDamage

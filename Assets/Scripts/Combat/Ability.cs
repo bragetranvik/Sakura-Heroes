@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -131,5 +132,13 @@ public class Ability : MonoBehaviour {
     /// <returns>Tooltip of the ability.</returns>
     public string GetAbilityTooltip() {
         return this.abilityTooltip;
+    }
+
+    /// <summary>
+    /// Return name of the ability.
+    /// </summary>
+    /// <returns>Name of the ability.</returns>
+    public int GetAbilityDamage(Unit unit) {
+        return Convert.ToInt32(this.damageMultiplier * unit.attack);
     }
 }

@@ -49,5 +49,5 @@ MonoBehaviour:
   manaDrain: 0
   damageMultiplier: 2
   abilityName: Carrot Slam
-  abilityTooltip: Slam a carrot on the targets face dealing 2x damage for 15 mana.
+  abilityTooltip: Slam a carrot on the targets face dealing 2x.
   abilityType: simpleDamage

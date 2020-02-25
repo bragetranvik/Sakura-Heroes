@@ -189,6 +189,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17462633}
   m_CullTransparentMesh: 0
+--- !u!1 &29952622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29952623}
+  - component: {fileID: 29952625}
+  - component: {fileID: 29952624}
+  m_Layer: 0
+  m_Name: TooltipBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &29952623
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29952622}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 643759480}
+  m_Father: {fileID: 1378178308}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 60.5, y: -126}
+  m_SizeDelta: {x: 520, y: 110}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &29952624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29952622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.49411765}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &29952625
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29952622}
+  m_CullTransparentMesh: 0
 --- !u!1 &70123159
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +362,7 @@ GameObject:
   - component: {fileID: 92384029}
   - component: {fileID: 92384028}
   - component: {fileID: 92384027}
+  - component: {fileID: 92384030}
   m_Layer: 0
   m_Name: Attack2Button
   m_TagString: Untagged
@@ -413,6 +487,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92384025}
   m_CullTransparentMesh: 0
+--- !u!114 &92384030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92384025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetHoveredButton
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 92384027}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &114186281
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,11 +708,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8e98edb2ab0520c4ea782e6cb9828a2c, type: 3}
-    m_FontSize: 64
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 64
+    m_MinSize: 16
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1397,7 +1526,7 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460061926
 GameObject:
@@ -1560,6 +1689,7 @@ GameObject:
   - component: {fileID: 523059167}
   - component: {fileID: 523059166}
   - component: {fileID: 523059165}
+  - component: {fileID: 523059168}
   m_Layer: 0
   m_Name: Attack3Button
   m_TagString: Untagged
@@ -1684,6 +1814,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523059163}
   m_CullTransparentMesh: 0
+--- !u!114 &523059168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523059163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetHoveredButton
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 523059165}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &529742602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,7 +1953,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1973348156}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 529742604}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &546899182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,7 +2121,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1973348156}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 606616225}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &628048207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,11 +2283,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8e98edb2ab0520c4ea782e6cb9828a2c, type: 3}
-    m_FontSize: 64
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 64
+    m_MinSize: 16
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2095,6 +2302,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631486176}
+  m_CullTransparentMesh: 0
+--- !u!1 &643759479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643759480}
+  - component: {fileID: 643759482}
+  - component: {fileID: 643759481}
+  m_Layer: 0
+  m_Name: TooltipText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &643759480
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643759479}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 29952623}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643759481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643759479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8e98edb2ab0520c4ea782e6cb9828a2c, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 16
+    m_MaxSize: 32
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Tooltip here :)
+--- !u!222 &643759482
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643759479}
   m_CullTransparentMesh: 0
 --- !u!1 &648301850
 GameObject:
@@ -2180,7 +2464,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1043698055}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 648301852}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &659019452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,11 +3062,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8e98edb2ab0520c4ea782e6cb9828a2c, type: 3}
-    m_FontSize: 64
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 64
+    m_MinSize: 16
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3015,7 +3310,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1043698055}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 894170685}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &903901816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,7 +3640,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1043698055}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 934203391}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &960229980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,12 +3753,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1378178308}
-  m_RootOrder: 5
+  m_Father: {fileID: 1014934332}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 314}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 900, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964826459
@@ -3782,7 +4099,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 964826458}
   m_Father: {fileID: 1378178308}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3945,7 +4263,7 @@ RectTransform:
   - {fileID: 334768797}
   - {fileID: 912252550}
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3998,6 +4316,7 @@ GameObject:
   - component: {fileID: 1044664946}
   - component: {fileID: 1044664945}
   - component: {fileID: 1044664944}
+  - component: {fileID: 1044664947}
   m_Layer: 0
   m_Name: Attack1Button
   m_TagString: Untagged
@@ -4122,6 +4441,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044664942}
   m_CullTransparentMesh: 0
+--- !u!114 &1044664947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044664942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetHoveredButton
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1044664944}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1047770019
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,7 +4573,7 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052445509
 GameObject:
@@ -4593,7 +4967,7 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137613268
 GameObject:
@@ -5305,7 +5679,6 @@ RectTransform:
   - {fileID: 1195178533}
   - {fileID: 1518806574}
   - {fileID: 1014934332}
-  - {fileID: 964826458}
   - {fileID: 2142743789}
   - {fileID: 414948423}
   - {fileID: 1815973550}
@@ -5314,13 +5687,14 @@ RectTransform:
   - {fileID: 1678772932}
   - {fileID: 1973348155}
   - {fileID: 1043698054}
+  - {fileID: 29952623}
   m_Father: {fileID: 1530778072}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.10743, y: 0.0050449}
-  m_SizeDelta: {x: 1919.8, y: 1080}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378178309
 MonoBehaviour:
@@ -5334,6 +5708,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737f1a135f3307a47ab5e1ebe3314210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleSystem: {fileID: 1260867564}
+  dummyAbility: {fileID: 3800552155062669317, guid: ad2bb56d98f930643a50a88de3a097c9,
+    type: 3}
+  attack1Button: {fileID: 1044664944}
+  attack2Button: {fileID: 92384027}
+  attack3Button: {fileID: 523059165}
+  attack4Button: {fileID: 2030276921}
+  tooltipBackground: {fileID: 29952624}
+  tooltipText: {fileID: 643759481}
+  isPlayerHoveringButton: 0
+  hoveredButton: {fileID: 0}
 --- !u!1 &1464353698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5991,7 +6376,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0.13700747, a: 1}
+    m_NormalColor: {r: 0.15285742, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0, g: 1, b: 0.13725491, a: 1}
@@ -6017,7 +6402,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1973348156}
+        m_MethodName: SetHPSliderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1641147842}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1678772930
 GameObject:
   m_ObjectHideFlags: 0
@@ -6095,7 +6491,7 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696646326
 GameObject:
@@ -6659,7 +7055,7 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831963448
 GameObject:
@@ -7484,7 +7880,7 @@ RectTransform:
   - {fileID: 1263592886}
   - {fileID: 17462634}
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7702,6 +8098,7 @@ GameObject:
   - component: {fileID: 2030276923}
   - component: {fileID: 2030276922}
   - component: {fileID: 2030276921}
+  - component: {fileID: 2030276924}
   m_Layer: 0
   m_Name: Attack4Button
   m_TagString: Untagged
@@ -7826,6 +8223,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030276919}
   m_CullTransparentMesh: 0
+--- !u!114 &2030276924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030276919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetHoveredButton
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2030276921}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378178309}
+          m_MethodName: SetIsPlayerHovering
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &2031489221
 GameObject:
   m_ObjectHideFlags: 0
@@ -8204,11 +8656,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8e98edb2ab0520c4ea782e6cb9828a2c, type: 3}
-    m_FontSize: 64
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 64
+    m_MinSize: 16
+    m_MaxSize: 52
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -8301,5 +8753,5 @@ Transform:
   m_LocalScale: {x: 24.08654, y: 24.08654, z: 24.08654}
   m_Children: []
   m_Father: {fileID: 1378178308}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
