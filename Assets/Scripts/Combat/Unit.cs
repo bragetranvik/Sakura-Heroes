@@ -42,6 +42,17 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
+    /// Return the damage a unit would take.
+    /// </summary>
+    /// <param name="dmg">Attack of the unit using the ability.</param>
+    /// <param name="dmgMultiplier">Ability damage multiplier.</param>
+    /// <param name="armorPenetration">Ability armor penetration.</param>
+    /// <returns>Damage unit would take.</returns>
+    public int GetDamage(int dmg, float dmgMultiplier, int armorPenetration) {
+        return Convert.ToInt32((dmg * dmgMultiplier) * (1f - (defence * (1f - (armorPenetration / 100f)) / 100f)));
+    }
+
+    /// <summary>
     /// Heal the unit. If current HP is greater than max HP current HP will
     /// be set to max HP.
     /// </summary>
@@ -109,25 +120,6 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return the ability damage depending on what ability you used.
-    /// </summary>
-    /// <param name="ability">Has to be ability1-4.</param>
-    /// <returns>The damage of the used ability.</returns>
-    public float GetAbilityDamageMultiplier(string ability) {
-        float damage = 0f;
-        if(ability.Equals("ability1")) {
-            damage = ability1.GetDamageMultiplier();
-        } else if(ability.Equals("ability2")) {
-            damage = ability2.GetDamageMultiplier();
-        } else if(ability.Equals("ability3")) {
-            damage = ability3.GetDamageMultiplier();
-        } else if(ability.Equals("ability4")) {
-            damage = ability4.GetDamageMultiplier();
-        }
-        return damage;
-    }
-
-    /// <summary>
     /// Return the ability name.
     /// </summary>
     /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4".</param>
@@ -147,28 +139,6 @@ public class Unit : MonoBehaviour {
             name = ability4.GetAbilityName();
         }
         return name;
-    }
-
-    /// <summary>
-    /// Return the ability armor penetration.
-    /// </summary>
-    /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4"</param>
-    /// <returns>Returns the armor penetration of the ability as int.</returns>
-    public int GetAbilityArmorPenetration(string ability) {
-        int armorPenetration = 0;
-        if (ability.Equals("ability1")) {
-            armorPenetration = ability1.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability2")) {
-            armorPenetration = ability2.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability3")) {
-            armorPenetration = ability3.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability4")) {
-            armorPenetration = ability4.GetArmorPenetration();
-        }
-        return armorPenetration;
     }
 
     /// <summary>

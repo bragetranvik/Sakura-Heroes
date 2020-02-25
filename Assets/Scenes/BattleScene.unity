@@ -5346,7 +5346,7 @@ MonoBehaviour:
     type: 3}
   enemy1Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
     type: 3}
-  enemy2Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
+  enemy2Prefab: {fileID: 8479425018269602408, guid: 38659b9a4468b4b47bb7930e86cd0f97,
     type: 3}
   enemy3Prefab: {fileID: 8834567656431457926, guid: ffa8f0e800f709547be1359c09cba9c1,
     type: 3}
@@ -5371,6 +5371,7 @@ MonoBehaviour:
   dialogueText: {fileID: 964826459}
   FriendlyStatus: {fileID: 1973348156}
   EnemyStatus: {fileID: 1043698055}
+  enemyAI: {fileID: 1396526114821799561, guid: 3ee327013e3fa6b49a23997ae30b758b, type: 3}
   state: 0
 --- !u!4 &1260867565
 Transform:
