@@ -73,9 +73,11 @@ public class Unit : MonoBehaviour {
     /// </summary>
     /// <param name="amountToHeal">The amount to heal the unit.</param>
     public void Heal(int amountToHeal) {
-        currentHP += amountToHeal;
-        if(currentHP > maxHP) {
-            currentHP = maxHP;
+        if (!isDead) {
+            currentHP += amountToHeal;
+            if (currentHP > maxHP) {
+                currentHP = maxHP;
+            }
         }
     }
 

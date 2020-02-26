@@ -22,8 +22,10 @@ public class BattleSystem : MonoBehaviour {
 
     public GameObject attack1ButtonGameObject;
     public Button attack1Button, attack2Button, attack3Button, attack4Button;
-    public Button target1Button, target2Button, target3Button;
-    public CanvasGroup targetButtons, attackButtons;
+    public Button target1FriendlyButton, target2FriendlyButton, target3FriendlyButton;
+    public Button target1EnemyButton, target2EnemyButton, target3EnemyButton;
+
+    public CanvasGroup targetEnemyButtons, targetFriendlyButtons, attackButtons;
 
     private Unit target;
     private Unit unitsTurn;
@@ -312,22 +314,34 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Choose the target depending on what target button has been pressed and set targetHasBeen to true.
+    /// Choose the target depending on what target button has been pressed and set targetHasBeenChosen to true.
     /// </summary>
     /// <param name="button">The button to choose the target.</param>
     public void AttackChosenTarget(Button button) {
-        if (button.name.Equals("Target1Button")) {
-                target = enemyUnit1;
-                targetHasBeenChosen = true;
-                DoAttack();
-        } else if(button.name.Equals("Target2Button")) {
-                target = enemyUnit2;
-                targetHasBeenChosen = true;
-                DoAttack();
-        } else if(button.name.Equals("Target3Button")) {
-                target = enemyUnit3;
-                targetHasBeenChosen = true;
-                DoAttack();
+        if (button.name.Equals("Target1FriendlyButton")) {
+            target = friendlyUnit1;
+            targetHasBeenChosen = true;
+            DoAttack();
+        } else if(button.name.Equals("Target2FriendlyButton")) {
+            target = friendlyUnit2;
+            targetHasBeenChosen = true;
+            DoAttack();
+        } else if(button.name.Equals("Target3FriendlyButton")) {
+            target = friendlyUnit3;
+            targetHasBeenChosen = true;
+            DoAttack();
+        } else if (button.name.Equals("Target1EnemyButton")) {
+            target = enemyUnit3;
+            targetHasBeenChosen = true;
+            DoAttack();
+        } else if (button.name.Equals("Target2EnemyButton")) {
+            target = enemyUnit3;
+            targetHasBeenChosen = true;
+            DoAttack();
+        } else if (button.name.Equals("Target3EnemyButton")) {
+            target = enemyUnit3;
+            targetHasBeenChosen = true;
+            DoAttack();
         }
     }
 
@@ -408,21 +422,31 @@ public class BattleSystem : MonoBehaviour {
     /// </summary>
     /// <param name="state">What state you want the buttons to be in</param>
     private void EnableDisableTargetButtons(bool state) {
-        targetButtons.interactable = state;
+        targetFriendlyButtons.interactable = state;
+        targetEnemyButtons.interactable = state;
     }
 
     /// <summary>
     /// Enables the target buttons for enemies which is still alive.
     /// </summary>
     private void EnableTargetButtonsForAliveEnemies() {
-        if(enemyUnit1.isDead) {
-            target1Button.interactable = false;
+        if(friendlyUnit1.isDead) {
+            target1FriendlyButton.interactable = false;
+        }
+        if (friendlyUnit2.isDead) {
+            target2FriendlyButton.interactable = false;
+        }
+        if (friendlyUnit3.isDead) {
+            target3FriendlyButton.interactable = false;
+        }
+        if (enemyUnit1.isDead) {
+            target1EnemyButton.interactable = false;
         }
         if (enemyUnit2.isDead) {
-            target2Button.interactable = false;
+            target2EnemyButton.interactable = false;
         }
         if (enemyUnit3.isDead) {
-            target3Button.interactable = false;
+            target3EnemyButton.interactable = false;
         }
     }
 
