@@ -36,7 +36,6 @@ public class BattleSystem : MonoBehaviour {
     public StatusHUD EnemyStatus;
 
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
-    private Button whatAbilityButtonPressed;
     private string highlightedAbility = null;
     public EnemyAI enemyAI;
 
@@ -58,9 +57,26 @@ public class BattleSystem : MonoBehaviour {
         EnemyStatus.SetHUD(enemyUnit1, enemyUnit2, enemyUnit3);
     }
 
-    //Runs in a state loop until either the battle is lost or won.
-    //It will sycle thought each units turn from friendly unit to enemy unit.
-    //If a unit is missing or dead it will skip that unit and go to the next.
+    //Awake is called when the script instance is being loaded.
+    private void Awake() {
+        attack1Button.onClick.AddListener(() => { highlightedAbility = "ability1"; });
+        attack2Button.onClick.AddListener(() => { highlightedAbility = "ability2"; });
+        attack3Button.onClick.AddListener(() => { highlightedAbility = "ability3"; });
+        attack4Button.onClick.AddListener(() => { highlightedAbility = "ability4"; });
+        target1EnemyButton.onClick.AddListener(() => { target = enemyUnit1; AttackChosenTarget(); });
+        target2EnemyButton.onClick.AddListener(() => { target = enemyUnit2; AttackChosenTarget(); });
+        target3EnemyButton.onClick.AddListener(() => { target = enemyUnit3; AttackChosenTarget(); });
+        target1FriendlyButton.onClick.AddListener(() => { target = friendlyUnit1; AttackChosenTarget(); });
+        target2FriendlyButton.onClick.AddListener(() => { target = friendlyUnit2; AttackChosenTarget(); });
+        target3FriendlyButton.onClick.AddListener(() => { target = friendlyUnit3; AttackChosenTarget(); });
+    }
+
+    /// <summary>
+    /// Runs in a state loop until either the battle is lost or won.
+    /// It will sycle thought each units turn from friendly unit to enemy unit.
+    /// If a unit is missing or dead it will skip that unit and go to the next.
+    /// </summary>
+    /// <returns>Not sure.</returns>
     private IEnumerator Battle() {
         bool ongoingBattle = true;
 
@@ -314,35 +330,11 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Choose the target depending on what target button has been pressed and set targetHasBeenChosen to true.
+    /// Sets targetHasBeenChosen to true and attack the chosen target.
     /// </summary>
-    /// <param name="button">The button to choose the target.</param>
-    public void AttackChosenTarget(Button button) {
-        if (button.name.Equals("Target1FriendlyButton")) {
-            target = friendlyUnit1;
-            targetHasBeenChosen = true;
-            DoAttack();
-        } else if(button.name.Equals("Target2FriendlyButton")) {
-            target = friendlyUnit2;
-            targetHasBeenChosen = true;
-            DoAttack();
-        } else if(button.name.Equals("Target3FriendlyButton")) {
-            target = friendlyUnit3;
-            targetHasBeenChosen = true;
-            DoAttack();
-        } else if (button.name.Equals("Target1EnemyButton")) {
-            target = enemyUnit1;
-            targetHasBeenChosen = true;
-            DoAttack();
-        } else if (button.name.Equals("Target2EnemyButton")) {
-            target = enemyUnit2;
-            targetHasBeenChosen = true;
-            DoAttack();
-        } else if (button.name.Equals("Target3EnemyButton")) {
-            target = enemyUnit3;
-            targetHasBeenChosen = true;
-            DoAttack();
-        }
+    private void AttackChosenTarget() {
+        targetHasBeenChosen = true;
+        DoAttack();
     }
 
     /// <summary>
@@ -357,28 +349,11 @@ public class BattleSystem : MonoBehaviour {
     /// <summary>
     /// If its the turn of a friendly unit and an ability button is pressed enable the target buttons.
     /// </summary>
-    /// <param name="button">The ability button.</param>
-    public void OnAbilityButton(Button button) {
+    public void OnAbilityButton() {
         if((state == BattleState.FRIENDLY1TURN) || (state == BattleState.FRIENDLY2TURN) || (state == BattleState.FRIENDLY3TURN)) {
-            whatAbilityButtonPressed = button;
             abilityHasBeenChosen = true;
             EnableDisableTargetButtons(true);
             EnableTargetButtonsForAliveEnemies();
-        }
-    }
-
-    /// <summary>
-    /// Sets the global variable highlighedAbility to ability(1-4) depending on what button was pressed.
-    /// </summary>
-    public void WhatAbilityToUse() {
-        if(whatAbilityButtonPressed.name.Equals("Attack1Button")) {
-            highlightedAbility = "ability1";
-        } else if(whatAbilityButtonPressed.name.Equals("Attack2Button")) {
-            highlightedAbility = "ability2";
-        } else if(whatAbilityButtonPressed.name.Equals("Attack3Button")) {
-            highlightedAbility = "ability3";
-        } else if(whatAbilityButtonPressed.name.Equals("Attack4Button")) {
-            highlightedAbility = "ability4";
         }
     }
 
@@ -432,20 +407,15 @@ public class BattleSystem : MonoBehaviour {
     private void EnableTargetButtonsForAliveEnemies() {
         if(friendlyUnit1.isDead) {
             target1FriendlyButton.interactable = false;
-        }
-        if (friendlyUnit2.isDead) {
+        } if (friendlyUnit2.isDead) {
             target2FriendlyButton.interactable = false;
-        }
-        if (friendlyUnit3.isDead) {
+        } if (friendlyUnit3.isDead) {
             target3FriendlyButton.interactable = false;
-        }
-        if (enemyUnit1.isDead) {
+        } if (enemyUnit1.isDead) {
             target1EnemyButton.interactable = false;
-        }
-        if (enemyUnit2.isDead) {
+        } if (enemyUnit2.isDead) {
             target2EnemyButton.interactable = false;
-        }
-        if (enemyUnit3.isDead) {
+        } if (enemyUnit3.isDead) {
             target3EnemyButton.interactable = false;
         }
     }
@@ -490,6 +460,10 @@ public class BattleSystem : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Return unit which currently has the turn.
+    /// </summary>
+    /// <returns>Unit which has the turn.</returns>
     public Unit GetUnitsTurn() {
         return unitsTurn;
     }

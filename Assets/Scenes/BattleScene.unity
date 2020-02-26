@@ -504,17 +504,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1260867564}
         m_MethodName: OnAbilityButton
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 92384027}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: WhatAbilityToUse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1882,17 +1871,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1260867564}
         m_MethodName: OnAbilityButton
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 523059165}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: WhatAbilityToUse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2677,18 +2655,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 659019455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 659019454}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &659019455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4545,17 +4512,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1260867564}
         m_MethodName: OnAbilityButton
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1044664944}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: WhatAbilityToUse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4869,18 +4825,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1054554269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1054554268}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1054554269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5127,18 +5072,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1101422812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1101422811}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1101422812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6277,18 +6211,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1443311517}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1443311516}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1443311517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6903,18 +6826,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1546378314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1546378313}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1546378314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9116,17 +9028,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1260867564}
         m_MethodName: OnAbilityButton
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2030276921}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: WhatAbilityToUse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9340,18 +9241,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037953798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1260867564}
-        m_MethodName: AttackChosenTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2037953797}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2037953798
 MonoBehaviour:
   m_ObjectHideFlags: 0

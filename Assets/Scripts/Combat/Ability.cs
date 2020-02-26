@@ -123,27 +123,11 @@ public class Ability : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return damage of the ability.
-    /// </summary>
-    /// <returns>Damage of the ability.</returns>
-    public float GetDamageMultiplier() {
-        return this.damageMultiplier;
-    }
-
-    /// <summary>
     /// Return name of the ability.
     /// </summary>
     /// <returns>Name of the ability.</returns>
     public string GetAbilityName() {
         return this.abilityName;
-    }
-
-    /// <summary>
-    /// Return armor penetration of the ability.
-    /// </summary>
-    /// <returns>Armor penetration of the ability.</returns>
-    public int GetArmorPenetration() {
-        return this.armorPenetration;
     }
 
     /// <summary>
@@ -168,14 +152,6 @@ public class Ability : MonoBehaviour {
     /// <returns>Amount of mana the ability drain.</returns>
     public int GetManaDrain() {
         return this.manaDrain;
-    }
-
-    /// <summary>
-    /// Return tooltip of the ability.
-    /// </summary>
-    /// <returns>Tooltip of the ability.</returns>
-    public string GetAbilityTooltip() {
-        return this.abilityTooltip;
     }
 
     /// <summary>
