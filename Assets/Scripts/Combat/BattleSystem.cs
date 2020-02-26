@@ -331,11 +331,11 @@ public class BattleSystem : MonoBehaviour {
             targetHasBeenChosen = true;
             DoAttack();
         } else if (button.name.Equals("Target1EnemyButton")) {
-            target = enemyUnit3;
+            target = enemyUnit1;
             targetHasBeenChosen = true;
             DoAttack();
         } else if (button.name.Equals("Target2EnemyButton")) {
-            target = enemyUnit3;
+            target = enemyUnit2;
             targetHasBeenChosen = true;
             DoAttack();
         } else if (button.name.Equals("Target3EnemyButton")) {
