@@ -113,9 +113,11 @@ public class BattleHUD : MonoBehaviour {
 
     public void SetBattleStationToDark(GameObject battleStation) {
         battleStation.GetComponent<SpriteRenderer>().sprite = darkBattleStation;
+        battleStation.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.6f);
     }
     public void SetBattleStationToLight(GameObject battleStation) {
         battleStation.GetComponent<SpriteRenderer>().sprite = lightBattleStation;
+        battleStation.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.95f);
     }
 
     public void showPortrait(Unit unitsTurn) {
