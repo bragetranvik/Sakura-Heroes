@@ -5614,7 +5614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventSystem: {fileID: 1696646328}
   BattleHUD: {fileID: 1378178309}
-  friendly1Prefab: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
+  friendly1Prefab: {fileID: 3939081366554770880, guid: c170baf7bf5e5ab4d9d355761266b9ed,
     type: 3}
   friendly2Prefab: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
     type: 3}

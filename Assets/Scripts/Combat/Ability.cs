@@ -5,11 +5,17 @@ using UnityEngine;
 
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain;
-    public float damageMultiplier, executeDmgMultiplier, pctAOEDmg, pctLifeSteal;
+    public float damageMultiplier;
+    [Tooltip("Only works with abilityType: executeDmg, executeDmgLifeSteal")]
+    public float executeDmgMultiplier;
+    [Tooltip("Only works with abilityType: AOEDmg")]
+    public float pctAOEDmg;
+    [Tooltip("Only works with abilityType: simpleDmgLifeSteal, executeDmgLifeSteal")]
+    public float pctLifeSteal;
     public string abilityName;
     [TextArea(7, 7)]
     public string abilityTooltip;
-    [Tooltip("simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg")]
+    [Tooltip("simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility")]
     public string abilityType;
     public bool isHeal = false;
 
@@ -27,6 +33,9 @@ public class Ability : MonoBehaviour {
     /// <returns>True if the ability was successfully used.</returns>
     public bool DoAbility(Unit unit, Unit target, Unit friendly1, Unit friendly2, Unit friendly3, Unit enemy1, Unit enemy2, Unit enemy3) {
         bool abilityWasSuccessful = false;
+        bool wasEnemy1Dead = enemy1.isDead;
+        bool wasEnemy2Dead = enemy2.isDead;
+        bool wasEnemy3Dead = enemy3.isDead;
 
         //Ability will only be used if unit got enough mana for it and the correct level for it.
         //Also important that the global variable is correct.
@@ -62,6 +71,7 @@ public class Ability : MonoBehaviour {
                     break;
 
                 case "AOEDmg":
+                    //The two units which didn't take the initial hit will take x% of the damage ingoring all armor.
                     int damageDone = target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
                     if(!target.Equals(enemy1)) {
                         enemy1.TakeDamageIgnoreArmor(Convert.ToInt32(damageDone * pctAOEDmg/100f));
@@ -74,13 +84,58 @@ public class Ability : MonoBehaviour {
                     }
                     break;
 
+                case "bloodAbility":
+                    float bloodHunger = GetBloodHunger(unit);
+                    target.TakeDamage(unit.attack, damageMultiplier * bloodHunger, armorPenetration);
+                    break;
+
                 default:
-                    Debug.Log("Something went wrong with DoAbility!");
+                    Debug.Log("Something went wrong with Ability.DoAbility!");
                     break;
             }
             abilityWasSuccessful = true;
+            IncreaseKillCount(unit, enemy1, enemy2, enemy3, wasEnemy1Dead, wasEnemy2Dead, wasEnemy3Dead);
         }
         return abilityWasSuccessful;
+    }
+
+    /// <summary>
+    /// This will return the units kc * 3, but
+    /// if kc is 0 this will return 1.
+    /// </summary>
+    /// <param name="unit"></param>
+    /// <returns>Units kill count * 3.</returns>
+    private float GetBloodHunger(Unit unit) {
+        float bloodFury = 1;
+        for (int i = 1; i <= unit.GetKillCount(); i++) {
+            bloodFury += 3f;
+            if (bloodFury.Equals(4f)) {
+                bloodFury--;
+            }
+        }
+        return bloodFury;
+    }
+
+    /// <summary>
+    /// Increases the units kc for each enemy which got killed from this turns ability.
+    /// </summary>
+    /// <param name="unit">Unit using the ability</param>
+    /// <param name="enemy1">Enemy1 of the unit.</param>
+    /// <param name="enemy2">Enemy2 of the unit.</param>
+    /// <param name="enemy3">Enemy3 of the unit.</param>
+    /// <param name="wasEnemy1Dead">If enemy1 was dead before the ability.</param>
+    /// <param name="wasEnemy2Dead">If enemy2 was dead before the ability.</param>
+    /// <param name="wasEnemy3Dead">If enemy3 was dead before the ability.</param>
+    private void IncreaseKillCount(Unit unit, Unit enemy1, Unit enemy2, Unit enemy3, bool wasEnemy1Dead, bool wasEnemy2Dead, bool wasEnemy3Dead) {
+        if (enemy1.isDead && !wasEnemy1Dead) {
+            unit.IncreaseKillCount();
+        }
+        if (enemy2.isDead && !wasEnemy2Dead) {
+            unit.IncreaseKillCount();
+        }
+        if (enemy3.isDead && !wasEnemy3Dead) {
+            unit.IncreaseKillCount();
+        }
     }
 
     /// <summary>

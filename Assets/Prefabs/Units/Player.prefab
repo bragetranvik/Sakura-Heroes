@@ -95,8 +95,8 @@ MonoBehaviour:
   unitName: Cindy Smith
   unitLevel: 99
   baseAttack: 12
-  baseDefence: 6
-  baseHP: 7
+  baseDefence: 3
+  baseHP: 10
   currentHP: 118
   currentMP: 104
   ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}

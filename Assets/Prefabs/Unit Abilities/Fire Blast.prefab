@@ -47,10 +47,11 @@ MonoBehaviour:
   manaCost: 100
   levelToUse: 50
   manaDrain: 0
-  damageMultiplier: 2.5
+  damageMultiplier: 3
+  executeDmgMultiplier: 0
   pctAOEDmg: 50
   pctLifeSteal: 0
   abilityName: Fire Blast
-  abilityTooltip: Blast the target dealing 2.5x damage with 50% AOE damage.
+  abilityTooltip: Blast the target dealing 3x damage with 50% AOE damage.
   abilityType: AOEDmg
   isHeal: 0

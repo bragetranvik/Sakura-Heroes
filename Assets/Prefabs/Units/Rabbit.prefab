@@ -92,11 +92,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c20918cee57b04eb3a72ff96b8f4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Rabby
+  unitName: Rabby the tank
   unitLevel: 99
   baseAttack: 5
-  baseDefence: 8
-  baseHP: 12
+  baseDefence: 12
+  baseHP: 8
   currentHP: 100
   currentMP: 100
   ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}

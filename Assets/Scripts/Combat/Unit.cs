@@ -21,6 +21,8 @@ public class Unit : MonoBehaviour {
     private readonly int HPConstant = 100;
     private readonly int MPConstant = 100;
 
+    private int killCount;
+
     public bool isDead = false;
     public Sprite portraitPicture;
 
@@ -136,6 +138,29 @@ public class Unit : MonoBehaviour {
         if(currentHP > maxHP) {
             currentHP = Convert.ToInt32(maxHP);
         }
+        Repent();
+    }
+
+    /// <summary>
+    /// Increases the kill count by 1.
+    /// </summary>
+    public void IncreaseKillCount() {
+        killCount++;
+    }
+
+    /// <summary>
+    /// Return the units kill count.
+    /// </summary>
+    /// <returns>Units kill count.</returns>
+    public int GetKillCount() {
+        return this.killCount;
+    }
+
+    /// <summary>
+    /// Sets the kill count to 0.
+    /// </summary>
+    public void Repent() {
+        killCount = 0;
     }
 
     /// <summary>
