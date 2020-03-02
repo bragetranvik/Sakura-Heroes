@@ -52,7 +52,7 @@ MonoBehaviour:
   pctAOEDmg: 0
   pctLifeSteal: 0
   abilityName: Bloodfury
-  abilityTooltip: As the hunger for blood gets greater this will deal more. Deals
-    3x more damage for each kc this unit has made within the battle.
+  abilityTooltip: As the hunger for blood gets greater this will deal more damage.
+    Deals 3x more damage for each enemy defeated this unit has made within the battle.
   abilityType: bloodAbility
   isHeal: 0
