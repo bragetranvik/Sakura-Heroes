@@ -43,9 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 1
   armorPenetration: 0
   manaCost: 0
   levelToUse: 0
+  manaDrain: 0
+  damageMultiplier: 1
+  percentageAOEdmg: 0
   abilityName: Slash
-  abilityTooltip: Slash the target and deal 1x damage for 0 mana.
+  abilityTooltip: Slash the target and deal 1x damage.
+  abilityType: simpleDmg
+  isHeal: 0

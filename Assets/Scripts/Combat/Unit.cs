@@ -21,7 +21,10 @@ public class Unit : MonoBehaviour {
     private readonly int HPConstant = 100;
     private readonly int MPConstant = 100;
 
+    private int killCount;
+
     public bool isDead = false;
+    public Sprite portraitPicture;
 
     /// <summary>
     /// Reduce currentHP of the unit by dmg*dmgMultiplier reduced by defence which get reduced again by armorPenetration.
@@ -30,12 +33,57 @@ public class Unit : MonoBehaviour {
     /// <param name="dmg">The damage to deal.</param>
     /// <param name="damageMultiplier">Multiplies the damage to deal.</param>
     /// <param name="armorPenetration">How many percentage to reduce to defence of the unit.</param>
-    public void TakeDamage(int dmg, int damageMultiplier, int armorPenetration) {
+    /// <returns>The damage done as int.</returns>
+    public int TakeDamage(int dmg, float damageMultiplier, int armorPenetration) {
         currentHP -= Convert.ToInt32((dmg*damageMultiplier)*(1f-(defence*(1f-(armorPenetration/100f))/100f)));
 
         if(currentHP <= 0) {
             isDead = true;
             currentHP = 0;
+            //Sets the sprite color to be see through. (Hides the sprite)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        }
+        return Convert.ToInt32((dmg * damageMultiplier) * (1f - (defence * (1f - (armorPenetration / 100f)) / 100f)));
+    }
+
+    /// <summary>
+    /// Unit takes flat amount of damage ignores armor.
+    /// If target dies from the damage the isDead will be set to true and currentHP will be set to 0.
+    /// </summary>
+    /// <param name="dmg">Damage unit will take.</param>
+    public void TakeDamageIgnoreArmor(int dmg) {
+        currentHP -= dmg;
+
+        if (currentHP <= 0) {
+            isDead = true;
+            currentHP = 0;
+            //Sets the sprite color to be see through. (Hides the sprite)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        }
+    }
+
+    /// <summary>
+    /// Return the damage a unit would take.
+    /// </summary>
+    /// <param name="dmg">Attack of the unit using the ability.</param>
+    /// <param name="dmgMultiplier">Ability damage multiplier.</param>
+    /// <param name="armorPenetration">Ability armor penetration.</param>
+    /// <returns>Damage unit would take.</returns>
+    public int GetDamage(int dmg, float dmgMultiplier, int armorPenetration) {
+        return Convert.ToInt32((dmg * dmgMultiplier) * (1f - (defence * (1f - (armorPenetration / 100f)) / 100f)));
+    }
+
+    /// <summary>
+    /// Heal the unit. If current HP is greater than max HP current HP will
+    /// be set to max HP.
+    /// </summary>
+    /// <param name="amountToHeal">The amount to heal the unit.</param>
+    public void Heal(int amountToHeal) {
+        if (!isDead) {
+            currentHP += amountToHeal;
+            if (currentHP > maxHP) {
+                currentHP = maxHP;
+            }
         }
     }
 
@@ -92,25 +140,29 @@ public class Unit : MonoBehaviour {
         if(currentHP > maxHP) {
             currentHP = Convert.ToInt32(maxHP);
         }
+        Repent();
     }
 
     /// <summary>
-    /// Return the ability damage depending on what ability you used.
+    /// Increases the kill count by 1.
     /// </summary>
-    /// <param name="ability">Has to be ability1-4.</param>
-    /// <returns>The damage of the used ability.</returns>
-    public int GetAbilityDamageMultiplier(string ability) {
-        int damage = 0;
-        if(ability.Equals("ability1")) {
-            damage = ability1.GetDamageMultiplier();
-        } else if(ability.Equals("ability2")) {
-            damage = ability2.GetDamageMultiplier();
-        } else if(ability.Equals("ability3")) {
-            damage = ability3.GetDamageMultiplier();
-        } else if(ability.Equals("ability4")) {
-            damage = ability4.GetDamageMultiplier();
-        }
-        return damage;
+    public void IncreaseKillCount() {
+        killCount++;
+    }
+
+    /// <summary>
+    /// Return the units kill count.
+    /// </summary>
+    /// <returns>Units kill count.</returns>
+    public int GetKillCount() {
+        return this.killCount;
+    }
+
+    /// <summary>
+    /// Sets the kill count to 0.
+    /// </summary>
+    public void Repent() {
+        killCount = 0;
     }
 
     /// <summary>
@@ -136,25 +188,11 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return the ability armor penetration.
+    /// Return the portrait of the unit.
     /// </summary>
-    /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4"</param>
-    /// <returns>Returns the armor penetration of the ability as int.</returns>
-    public int GetAbilityArmorPenetration(string ability) {
-        int armorPenetration = 0;
-        if (ability.Equals("ability1")) {
-            armorPenetration = ability1.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability2")) {
-            armorPenetration = ability2.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability3")) {
-            armorPenetration = ability3.GetArmorPenetration();
-        }
-        else if (ability.Equals("ability4")) {
-            armorPenetration = ability4.GetArmorPenetration();
-        }
-        return armorPenetration;
+    /// <returns>Portrait of the unit</returns>
+    public Sprite getPortraitPicture() {
+        return portraitPicture;
     }
 
     /// <summary>
@@ -177,5 +215,67 @@ public class Unit : MonoBehaviour {
             manaCost = ability4.GetManaCost();
         }
         return manaCost;
+    }
+
+    /// <summary>
+    /// Return the level to use ability.
+    /// </summary>
+    /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4"</param>
+    /// <returns>Level to use the ability.</returns>
+    public int GetAbilityLevelToUse(string ability) {
+        int levelToUse = 0;
+        if (ability.Equals("ability1")) {
+            levelToUse = ability1.GetLevelToUse();
+        }
+        else if (ability.Equals("ability2")) {
+            levelToUse = ability2.GetLevelToUse();
+        }
+        else if (ability.Equals("ability3")) {
+            levelToUse = ability3.GetLevelToUse();
+        }
+        else if (ability.Equals("ability4")) {
+            levelToUse = ability4.GetLevelToUse();
+        }
+        return levelToUse;
+    }
+
+    /// <summary>
+    /// Do ability 1, 2, 3 or 4 depending on the string ability.
+    /// This function will return false if the ability couldn't be used.
+    /// </summary>
+    /// <param name="ability">Has to be "ability1", "ability2", "ability3" or "ability4"</param>
+    /// <param name="unit">The unit which is using the ability.</param>
+    /// <param name="target">The chosen target.</param>
+    /// <param name="friendly1">Friendly team mate 1.</param>
+    /// <param name="friendly2">Friendly team mate 2.</param>
+    /// <param name="friendly3">Friendly team mate 3.</param>
+    /// <param name="enemy1">Enemy 1.</param>
+    /// <param name="enemy2">Enemy 2.</param>
+    /// <param name="enemy3">Enemy 3.</param>
+    /// <returns>True if ability was successfully used.</returns>
+    public bool UseAbility(string ability, Unit unit, Unit target, Unit friendly1, Unit friendly2, Unit friendly3, Unit enemy1, Unit enemy2, Unit enemy3) {
+        bool abilityWasSuccessful = false;
+
+        if (ability.Equals("ability1")) {
+            if(ability1.DoAbility(unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3)) {
+                abilityWasSuccessful = true;
+            }
+        }
+        else if (ability.Equals("ability2")) {
+            if (ability2.DoAbility(unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3)) {
+                abilityWasSuccessful = true;
+            }
+        }
+        else if (ability.Equals("ability3")) {
+            if (ability3.DoAbility(unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3)) {
+                abilityWasSuccessful = true;
+            }
+        }
+        else if (ability.Equals("ability4")) {
+            if (ability4.DoAbility(unit, target, friendly1, friendly2, friendly3, enemy1, enemy2, enemy3)) {
+                abilityWasSuccessful = true;
+            }
+        }
+        return abilityWasSuccessful;
     }
 }

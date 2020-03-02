@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4144834772134069017
+--- !u!1 &236751448458272019
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,36 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4144834772134068999}
-  - component: {fileID: 4144834772134069016}
+  - component: {fileID: 4036971093617754256}
+  - component: {fileID: 7527890262183082710}
   m_Layer: 0
-  m_Name: Carrot Slam
+  m_Name: Slam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4144834772134068999
+--- !u!4 &4036971093617754256
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4144834772134069017}
+  m_GameObject: {fileID: 236751448458272019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3882555, y: 0.7484695, z: -0.21450365}
+  m_LocalPosition: {x: 0.8750145, y: 0.52352816, z: -0.25390625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4144834772134069016
+--- !u!114 &7527890262183082710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4144834772134069017}
+  m_GameObject: {fileID: 236751448458272019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
@@ -45,13 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   armorPenetration: 0
   manaCost: 15
-  levelToUse: 15
+  levelToUse: 10
   manaDrain: 0
   damageMultiplier: 2
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
-  abilityName: Carrot Slam
-  abilityTooltip: Slam a carrot on the targets face dealing 2x damage.
+  abilityName: Slam
+  abilityTooltip: Slam the target dealing 2x damage.
   abilityType: simpleDmg
   isHeal: 0

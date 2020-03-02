@@ -43,10 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 3
   armorPenetration: 100
   manaCost: 100
   levelToUse: 50
+  manaDrain: 0
+  damageMultiplier: 2.5
+  percentageAOEDmg: 0
   abilityName: Mind Burst
-  abilityTooltip: Burst the mind of the target dealing 3x damage with 100% armor penetration
-    for 100mana.
+  abilityTooltip: Burst the mind of the target dealing 2.5x damage with 100% armor
+    penetration.
+  abilityType: simpleDmg
+  isHeal: 0
