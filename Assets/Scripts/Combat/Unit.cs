@@ -57,6 +57,8 @@ public class Unit : MonoBehaviour {
         if (currentHP <= 0) {
             isDead = true;
             currentHP = 0;
+            //Sets the sprite color to be see through. (Hides the sprite)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         }
     }
 
