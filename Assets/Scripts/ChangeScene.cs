@@ -41,11 +41,4 @@ public class ChangeScene : MonoBehaviour
     private void OnDestroy() {
         intoNewScene = true;
     }
-
-    public void changeSceneTest() {
-        {
-            playerPos = playerPosInNewScene;
-            SceneManager.LoadScene(sceneToLoad);
-        }
-    }
 }
