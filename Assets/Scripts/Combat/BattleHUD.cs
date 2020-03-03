@@ -122,6 +122,6 @@ public class BattleHUD : MonoBehaviour {
 
     public void showPortrait(Unit unitsTurn) {
         //spriteRendererOfCharacter.sprite = unitsTurn.getPortraitPicture();
-        imageOfCharacter.sprite = unitsTurn.getPortraitPicture();
+        imageOfCharacter.sprite = unitsTurn.GetPortraitPicture();
     }
 }

@@ -94927,7 +94927,7 @@ Tilemap:
       - {fileID: 21300168, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300174, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300180, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 17, z: 0}
@@ -95007,7 +95007,7 @@ Tilemap:
       - {fileID: 21300062, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300068, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300074, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: 20, z: 0}
@@ -95197,7 +95197,7 @@ Tilemap:
       - {fileID: 21300132, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300138, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300144, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 22, y: 25, z: 0}
@@ -95357,7 +95357,7 @@ Tilemap:
       - {fileID: 21300034, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300040, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300046, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 20, y: 28, z: 0}
@@ -95447,7 +95447,7 @@ Tilemap:
       - {fileID: 21300010, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300016, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300022, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -112651,7 +112651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071901471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03999996, y: -7.16, z: 0}
+  m_LocalPosition: {x: -0.03999996, y: -7.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 891035691}

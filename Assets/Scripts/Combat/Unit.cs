@@ -26,6 +26,9 @@ public class Unit : MonoBehaviour {
     public bool isDead = false;
     public Sprite portraitPicture;
 
+    public Vector2 unitPosInBattle;
+    public Vector3 unitScaleInBattle;
+
     /// <summary>
     /// Reduce currentHP of the unit by dmg*dmgMultiplier reduced by defence which get reduced again by armorPenetration.
     /// If target dies from the damage the isDead will be set to true and currentHP will be set to 0.
@@ -191,7 +194,7 @@ public class Unit : MonoBehaviour {
     /// Return the portrait of the unit.
     /// </summary>
     /// <returns>Portrait of the unit</returns>
-    public Sprite getPortraitPicture() {
+    public Sprite GetPortraitPicture() {
         return portraitPicture;
     }
 
@@ -237,6 +240,14 @@ public class Unit : MonoBehaviour {
             levelToUse = ability4.GetLevelToUse();
         }
         return levelToUse;
+    }
+
+    public Vector3 GetScale() {
+        return unitScaleInBattle;
+    }
+
+    public Vector2 GetPosition() {
+        return unitPosInBattle;
     }
 
     /// <summary>

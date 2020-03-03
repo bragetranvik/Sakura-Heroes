@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8792155558886238419}
   - component: {fileID: 6600283487746852565}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,3 +112,5 @@ MonoBehaviour:
   maxMP: 0
   isDead: 0
   portraitPicture: {fileID: 21300014, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
+  unitPosInBattle: {x: -2, y: 5}
+  unitScaleInBattle: {x: 1, y: 1, z: 1}

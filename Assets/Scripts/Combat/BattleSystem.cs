@@ -50,8 +50,6 @@ public class BattleSystem : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        SetFriendlyUnits();
-        SetEnemyUnits();
         state = BattleState.START;
         StartCoroutine(Battle());
     }
@@ -219,6 +217,11 @@ public class BattleSystem : MonoBehaviour {
     /// </summary>
     private void SetupBattle()
     {
+        // Sets the friendly and enemy units and GameObjects. Also disables the objects
+        // that were not destroyed on load, and sets the correct position and scale to the units
+        PrepareFriendlyUnits();
+        PrepareEnemyUnits();
+
         // Places the friendly and enemy units on their battlestations.
         GameObject friendly1GO = Instantiate(friendlyUnit1GO, friendly1BattleStation.GetComponent<Transform>());
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
@@ -473,7 +476,12 @@ public class BattleSystem : MonoBehaviour {
         return unitsTurn;
     }
 
-    private void SetFriendlyUnits() {
+    /// <summary>
+    /// When loading this scene from a different scene these two functions will set the
+    /// player and enemy units to the correct ones dependant on what enemy was encountered and
+    /// how the team of the player was built up
+    /// </summary>
+    private void PrepareFriendlyUnits() {
         GameObject friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
         UnitTeam friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
 
@@ -484,8 +492,23 @@ public class BattleSystem : MonoBehaviour {
         friendlyUnit1 = friendlyUnit1GO.GetComponent<Unit>();
         friendlyUnit2 = friendlyUnit2GO.GetComponent<Unit>();
         friendlyUnit3 = friendlyUnit3GO.GetComponent<Unit>();
+        
+        //Ensure that the sprite renderer is enabled
+        friendlyUnit1GO.GetComponent<SpriteRenderer>().enabled = true;
+        friendlyUnit2GO.GetComponent<SpriteRenderer>().enabled = true;
+        friendlyUnit3GO.GetComponent<SpriteRenderer>().enabled = true;
+
+        friendlyUnit1GO.GetComponent<Transform>().localScale = friendlyUnit1.GetScale();
+        friendlyUnit2GO.GetComponent<Transform>().localScale = friendlyUnit2.GetScale();
+        friendlyUnit3GO.GetComponent<Transform>().localScale = friendlyUnit3.GetScale();
+
+        friendlyUnit1GO.GetComponent<Transform>().localPosition = friendlyUnit1.GetPosition();
+        friendlyUnit2GO.GetComponent<Transform>().localPosition = friendlyUnit2.GetPosition();
+        friendlyUnit3GO.GetComponent<Transform>().localPosition = friendlyUnit3.GetPosition();
+
+        friendlyTeamGO.SetActive(false);
     }
-    private void SetEnemyUnits() {
+    private void PrepareEnemyUnits() {
         GameObject enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
         UnitTeam enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
 
@@ -496,5 +519,20 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit1 = enemyUnit1GO.GetComponent<Unit>();
         enemyUnit2 = enemyUnit2GO.GetComponent<Unit>();
         enemyUnit3 = enemyUnit3GO.GetComponent<Unit>();
+
+        //Ensure that the sprite renderer is enabled
+        enemyUnit1GO.GetComponent<SpriteRenderer>().enabled = true;
+        enemyUnit2GO.GetComponent<SpriteRenderer>().enabled = true;
+        enemyUnit3GO.GetComponent<SpriteRenderer>().enabled = true;
+
+        enemyUnit1GO.GetComponent<Transform>().localScale = enemyUnit1.GetScale();
+        enemyUnit2GO.GetComponent<Transform>().localScale = enemyUnit2.GetScale();
+        enemyUnit3GO.GetComponent<Transform>().localScale = enemyUnit3.GetScale();
+
+        enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
+        enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
+        enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
+
+        enemyTeamGO.SetActive(false);
     }
 }
