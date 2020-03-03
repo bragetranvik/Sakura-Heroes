@@ -1,17 +1,33 @@
 fileFormatVersion: 2
 guid: f04e6181296e85347bbd31d94f26945d
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: CindySmithPortrait_0
-    21300002: CindySmithPortrait_1
-    21300004: CindySmithPortrait_2
-    21300006: CindySmithPortrait_3
-    21300008: CindySmithPortrait_4
-    21300010: CindySmithPortrait_5
-    21300012: CindySmithPortrait_6
-    21300014: CindySmithPortrait_7
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: CindySmithPortrait_0
+  - first:
+      213: 21300002
+    second: CindySmithPortrait_1
+  - first:
+      213: 21300004
+    second: CindySmithPortrait_2
+  - first:
+      213: 21300006
+    second: CindySmithPortrait_3
+  - first:
+      213: 21300008
+    second: CindySmithPortrait_4
+  - first:
+      213: 21300010
+    second: CindySmithPortrait_5
+  - first:
+      213: 21300012
+    second: CindySmithPortrait_6
+  - first:
+      213: 21300014
+    second: CindySmithPortrait_7
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,7 +82,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -77,7 +93,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,7 +105,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -99,6 +117,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,6 +137,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2ff83f3b10fd7c04185ce0a2b6177556
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -138,6 +158,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6384993d91ecce642b3a247d1f9f8f75
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -158,6 +179,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b27181aa743e94f4d83fa954fdb63e18
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -178,6 +200,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 74547efcf47eeef41ada02f48a697595
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -198,6 +221,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 85ec6b41b5f01454f98d51c62f7db4c9
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -218,6 +242,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 432d5ee8fe6eb5e4dafb53753938881f
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -238,6 +263,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2703009106182e46bbe15daa43aaa0e
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -258,6 +284,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fe624f728f4b50c4c8a9cb7129129b1b
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -266,10 +293,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: b4e65293c6dacfb4eaa98de821a98a69
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
