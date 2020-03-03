@@ -52,6 +52,6 @@ MonoBehaviour:
   pctAOEDmg: 0
   pctLifeSteal: 0
   abilityName: Slam
-  abilityTooltip: Slam the target dealing 2x damage.
+  abilityTooltip: Slam the target. Deals 2x damage.
   abilityType: simpleDmg
   isHeal: 0
