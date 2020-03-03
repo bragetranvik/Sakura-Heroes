@@ -11,12 +11,15 @@ public class BattleSystem : MonoBehaviour {
     public EventSystem EventSystem;
     public BattleHUD BattleHUD;
 
-    public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
-    public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
+    //public GameObject friendly1Prefab, friendly2Prefab, friendly3Prefab;
+    //public GameObject enemy1Prefab, enemy2Prefab, enemy3Prefab;
 
     public GameObject friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
     public GameObject enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
 
+
+    private GameObject friendlyUnit1GO, friendlyUnit2GO, friendlyUnit3GO;
+    private GameObject enemyUnit1GO, enemyUnit2GO, enemyUnit3GO;
     private Unit friendlyUnit1, friendlyUnit2, friendlyUnit3;
     private Unit enemyUnit1, enemyUnit2, enemyUnit3;
 
@@ -214,19 +217,24 @@ public class BattleSystem : MonoBehaviour {
     /// </summary>
     private void SetupBattle()
     {
+        // Sets the friendly and enemy units and GameObjects. Also disables the objects
+        // that were not destroyed on load, and sets the correct position and scale to the units
+        PrepareFriendlyUnits();
+        PrepareEnemyUnits();
+
         // Places the friendly and enemy units on their battlestations.
-        GameObject friendly1GO = Instantiate(friendly1Prefab, friendly1BattleStation.GetComponent<Transform>());
+        GameObject friendly1GO = Instantiate(friendlyUnit1GO, friendly1BattleStation.GetComponent<Transform>());
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
-        GameObject friendly2GO = Instantiate(friendly2Prefab, friendly2BattleStation.GetComponent<Transform>());
+        GameObject friendly2GO = Instantiate(friendlyUnit2GO, friendly2BattleStation.GetComponent<Transform>());
         friendlyUnit2 = friendly2GO.GetComponent<Unit>();
-        GameObject friendly3GO = Instantiate(friendly3Prefab, friendly3BattleStation.GetComponent<Transform>());
+        GameObject friendly3GO = Instantiate(friendlyUnit3GO, friendly3BattleStation.GetComponent<Transform>());
         friendlyUnit3 = friendly3GO.GetComponent<Unit>();
 
-        GameObject enemy1GO = Instantiate(enemy1Prefab, enemy1BattleStation.GetComponent<Transform>());
+        GameObject enemy1GO = Instantiate(enemyUnit1GO, enemy1BattleStation.GetComponent<Transform>());
         enemyUnit1 = enemy1GO.GetComponent<Unit>();
-        GameObject enemy2GO = Instantiate(enemy2Prefab, enemy2BattleStation.GetComponent<Transform>());
+        GameObject enemy2GO = Instantiate(enemyUnit2GO, enemy2BattleStation.GetComponent<Transform>());
         enemyUnit2 = enemy2GO.GetComponent<Unit>();
-        GameObject enemy3GO = Instantiate(enemy3Prefab, enemy3BattleStation.GetComponent<Transform>());
+        GameObject enemy3GO = Instantiate(enemyUnit3GO, enemy3BattleStation.GetComponent<Transform>());
         enemyUnit3 = enemy3GO.GetComponent<Unit>();
 
         BattleHUD.SetBattleStationToDark(friendly1BattleStation);
@@ -466,5 +474,65 @@ public class BattleSystem : MonoBehaviour {
     /// <returns>Unit which has the turn.</returns>
     public Unit GetUnitsTurn() {
         return unitsTurn;
+    }
+
+    /// <summary>
+    /// When loading this scene from a different scene these two functions will set the
+    /// player and enemy units to the correct ones dependant on what enemy was encountered and
+    /// how the team of the player was built up
+    /// </summary>
+    private void PrepareFriendlyUnits() {
+        GameObject friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
+        UnitTeam friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
+
+        friendlyUnit1GO = friendlyTeam.GetUnit1GO();
+        friendlyUnit2GO = friendlyTeam.GetUnit2GO();
+        friendlyUnit3GO = friendlyTeam.GetUnit3GO();
+
+        friendlyUnit1 = friendlyUnit1GO.GetComponent<Unit>();
+        friendlyUnit2 = friendlyUnit2GO.GetComponent<Unit>();
+        friendlyUnit3 = friendlyUnit3GO.GetComponent<Unit>();
+        
+        //Ensure that the sprite renderer is enabled
+        friendlyUnit1GO.GetComponent<SpriteRenderer>().enabled = true;
+        friendlyUnit2GO.GetComponent<SpriteRenderer>().enabled = true;
+        friendlyUnit3GO.GetComponent<SpriteRenderer>().enabled = true;
+
+        friendlyUnit1GO.GetComponent<Transform>().localScale = friendlyUnit1.GetScale();
+        friendlyUnit2GO.GetComponent<Transform>().localScale = friendlyUnit2.GetScale();
+        friendlyUnit3GO.GetComponent<Transform>().localScale = friendlyUnit3.GetScale();
+
+        friendlyUnit1GO.GetComponent<Transform>().localPosition = friendlyUnit1.GetPosition();
+        friendlyUnit2GO.GetComponent<Transform>().localPosition = friendlyUnit2.GetPosition();
+        friendlyUnit3GO.GetComponent<Transform>().localPosition = friendlyUnit3.GetPosition();
+
+        friendlyTeamGO.SetActive(false);
+    }
+    private void PrepareEnemyUnits() {
+        GameObject enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
+        UnitTeam enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
+
+        enemyUnit1GO = enemyTeam.GetUnit1GO();
+        enemyUnit2GO = enemyTeam.GetUnit2GO();
+        enemyUnit3GO = enemyTeam.GetUnit3GO();
+
+        enemyUnit1 = enemyUnit1GO.GetComponent<Unit>();
+        enemyUnit2 = enemyUnit2GO.GetComponent<Unit>();
+        enemyUnit3 = enemyUnit3GO.GetComponent<Unit>();
+
+        //Ensure that the sprite renderer is enabled
+        enemyUnit1GO.GetComponent<SpriteRenderer>().enabled = true;
+        enemyUnit2GO.GetComponent<SpriteRenderer>().enabled = true;
+        enemyUnit3GO.GetComponent<SpriteRenderer>().enabled = true;
+
+        enemyUnit1GO.GetComponent<Transform>().localScale = enemyUnit1.GetScale();
+        enemyUnit2GO.GetComponent<Transform>().localScale = enemyUnit2.GetScale();
+        enemyUnit3GO.GetComponent<Transform>().localScale = enemyUnit3.GetScale();
+
+        enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
+        enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
+        enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
+
+        enemyTeamGO.SetActive(false);
     }
 }
