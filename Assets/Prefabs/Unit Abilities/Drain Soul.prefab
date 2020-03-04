@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1329223429318572249}
   - component: {fileID: 7604629086963723520}
   m_Layer: 0
-  m_Name: Soul Burn
+  m_Name: Drain Soul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809719002037844975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1871617, y: 2.8101194, z: -0.265625}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,6 +48,7 @@ MonoBehaviour:
   levelToUse: 50
   manaDrain: 0
   damageMultiplier: 0.5
+  abilityType: 3
   executeDmgMultiplier: 12.5
   pctAOEDmg: 0
   pctLifeSteal: 35
@@ -55,5 +56,4 @@ MonoBehaviour:
   abilityTooltip: Drain the targets soul, dealing massive damage if they are too
     weak to resist. Healing the caster 35% of the amount of damage it deals. Deals
     0.5x damage, but if the target is under 25% hp it will deal 12.5x damage.
-  abilityType: executeDmgLifeSteal
   isHeal: 0
