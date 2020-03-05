@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility }
+public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot }
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain;
     public float damageMultiplier;
@@ -14,6 +14,8 @@ public class Ability : MonoBehaviour {
     public float pctAOEDmg;
     [Tooltip("Only works with abilityType: simpleDmgLifeSteal, executeDmgLifeSteal")]
     public float pctLifeSteal;
+    [Tooltip("Only works with abilityType: Dot")]
+    public int roundsDotWillLast;
     public string abilityName;
     [TextArea(7, 7)]
     public string abilityTooltip;
@@ -88,6 +90,11 @@ public class Ability : MonoBehaviour {
                 case AbilityType.bloodAbility:
                     float bloodHunger = GetBloodHunger(unit);
                     target.TakeDamage(unit.attack, damageMultiplier * bloodHunger, armorPenetration);
+                    break;
+
+                case AbilityType.Dot:
+                    target.SetDotDmg(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration));
+                    target.SetDot(roundsDotWillLast);
                     break;
 
                 default:
