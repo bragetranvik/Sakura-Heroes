@@ -7,6 +7,7 @@ namespace Fungus.EditorUtils
 {
     internal partial class FungusEditorResources : ScriptableObject
     {
+#pragma warning disable CS0649
         [SerializeField] private EditorTexture add;
         [SerializeField] private EditorTexture add_small;
         [SerializeField] private EditorTexture delete;
@@ -25,6 +26,7 @@ namespace Fungus.EditorUtils
         [SerializeField] private EditorTexture play_small;
         [SerializeField] private EditorTexture process_node_off;
         [SerializeField] private EditorTexture process_node_on;
+#pragma warning restore CS0649
 
         public static Texture2D Add { get { return Instance.add.Texture2D; } }
         public static Texture2D AddSmall { get { return Instance.add_small.Texture2D; } }
