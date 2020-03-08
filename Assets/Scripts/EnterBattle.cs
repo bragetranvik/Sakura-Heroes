@@ -31,8 +31,8 @@ public class EnterBattle : MonoBehaviour
     }
 
     public void StartBattle() {
-        //DontDestroyOnLoad(player);
-        //DontDestroyOnLoad(enemyTeam);
-        //SceneManager.LoadScene(sceneToLoad);
+        DontDestroyOnLoad(player);
+        DontDestroyOnLoad(enemyTeam);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
