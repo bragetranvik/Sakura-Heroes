@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7292855806654476504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87863064, y: 0.80302566, z: -0.19466305}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,8 +48,10 @@ MonoBehaviour:
   levelToUse: 1
   manaDrain: 0
   damageMultiplier: 1.25
-  percentageAOEdmg: 0
+  abilityType: 0
+  executeDmgMultiplier: 0
+  pctAOEDmg: 0
+  pctLifeSteal: 0
   abilityName: Bite
   abilityTooltip: Bite the target dealing 1.25x damage.
-  abilityType: simpleDmg
   isHeal: 0

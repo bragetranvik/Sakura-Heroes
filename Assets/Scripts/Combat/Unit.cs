@@ -22,6 +22,8 @@ public class Unit : MonoBehaviour {
     private readonly int MPConstant = 100;
 
     private int killCount;
+    private int dotDmg, dotRoundsLeft;
+    private bool dotIsActive = false;
 
     public bool isDead = false;
     public Sprite portraitPicture;
@@ -123,8 +125,57 @@ public class Unit : MonoBehaviour {
     /// </summary>
     public void RestoreUnitStats() {
         isDead = false;
+        dotIsActive = false;
         currentHP = maxHP;
         currentMP = maxMP;
+    }
+
+    /// <summary>
+    /// Sets the dotDmg.
+    /// </summary>
+    /// <param name="dotDmg">The damage the dot will deal every round as long as its active.</param>
+    public void SetDotDmg(int dotDmg) {
+        this.dotDmg = dotDmg;
+    }
+
+    /// <summary>
+    /// Sets "dotIsActive" to true and
+    /// sets "dotRoundsLeft" to the same as the parameter.
+    /// </summary>
+    /// <param name="roundsDotWillLast">The amount of rounds the dot will last.</param>
+    public void SetDot(int roundsDotWillLast) {
+        dotIsActive = true;
+        dotRoundsLeft = roundsDotWillLast;
+    }
+
+    /// <summary>
+    /// Return true if dot is active.
+    /// </summary>
+    /// <returns>True if dot is active.</returns>
+    public bool IsDotActive() {
+        return dotIsActive;
+    }
+
+    /// <summary>
+    /// Damage the unit the dot damage ignoring all armor.
+    /// "dotRoundsLeft" will be set to -1 everytime this function is called.
+    /// If "dotRoundsLeft" equals 0 "dotIsActive" will be set to false.
+    /// </summary>
+    public void TakeDotDmg() {
+        if (dotIsActive) {
+            currentHP -= dotDmg;
+            dotRoundsLeft--;
+            if(dotRoundsLeft.Equals(0)) {
+                dotIsActive = false;
+            }
+        }
+
+        if (currentHP <= 0) {
+            isDead = true;
+            currentHP = 0;
+            //Sets the sprite color to be see through. (Hides the sprite)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        }
     }
 
     /// <summary>

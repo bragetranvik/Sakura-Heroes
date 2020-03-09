@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +58,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -111,7 +113,7 @@ MonoBehaviour:
   defence: 0
   maxHP: 0
   maxMP: 0
-  isDead: 0
+  isDead: 1
   portraitPicture: {fileID: 21300144, guid: 6c8f447ab65c4774baf61ab00889f7f1, type: 3}
   unitPosInBattle: {x: 0.2, y: 1.7}
   unitScaleInBattle: {x: 3, y: 3, z: 3}

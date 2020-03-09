@@ -48,6 +48,8 @@ public class BattleSystem : MonoBehaviour {
     private const float delayAfterFriendlyAttack = 2f;
     private const float delayAfterEnemyAttack = 2.5f;
 
+    private List<Unit> unitList;
+
     // Start is called before the first frame update
     void Start() {
         state = BattleState.START;
@@ -84,6 +86,7 @@ public class BattleSystem : MonoBehaviour {
         bool ongoingBattle = true;
 
         while (ongoingBattle) {
+            CheckForUnitsWithDot();
             switch (state) {
 
                 case BattleState.START:
@@ -262,6 +265,9 @@ public class BattleSystem : MonoBehaviour {
         //Disables all the buttons before start.
         EnableDisableAttackButtons(false);
         EnableDisableTargetButtons(false);
+
+        //Makes a list of all units in the battle.
+        MakeUnitList();
     }
 
     /// <summary>
@@ -474,6 +480,33 @@ public class BattleSystem : MonoBehaviour {
     /// <returns>Unit which has the turn.</returns>
     public Unit GetUnitsTurn() {
         return unitsTurn;
+    }
+
+    /// <summary>
+    /// Checks every unit if they have an active dot and damage them if they do.
+    /// </summary>
+    private void CheckForUnitsWithDot() {
+        if (unitList != null) {
+            foreach (Unit unit in unitList) {
+                if (unit.IsDotActive()) {
+                    unit.TakeDotDmg();
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Makes a unit list with every unit in the battle.
+    /// </summary>
+    private void MakeUnitList() {
+        unitList = new List<Unit> {
+            friendlyUnit1,
+            friendlyUnit2,
+            friendlyUnit3,
+            enemyUnit1,
+            enemyUnit2,
+            enemyUnit3
+        };
     }
 
     /// <summary>
