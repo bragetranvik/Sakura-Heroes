@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UnitTeam : MonoBehaviour
 {
+    public bool deafeted = false;
 
     public GameObject unit1;
     public GameObject unit2;

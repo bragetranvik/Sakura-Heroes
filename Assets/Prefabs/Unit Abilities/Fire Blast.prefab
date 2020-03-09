@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695762961677016242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.962527, y: 0.4610635, z: -0.2734375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,10 +48,10 @@ MonoBehaviour:
   levelToUse: 50
   manaDrain: 0
   damageMultiplier: 3
+  abilityType: 4
   executeDmgMultiplier: 0
   pctAOEDmg: 50
   pctLifeSteal: 0
   abilityName: Fire Blast
   abilityTooltip: Blast the target dealing 3x damage with 50% AOE damage.
-  abilityType: AOEDmg
   isHeal: 0

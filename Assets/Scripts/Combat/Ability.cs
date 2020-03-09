@@ -3,21 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot }
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain;
     public float damageMultiplier;
+    public AbilityType abilityType;
     [Tooltip("Only works with abilityType: executeDmg, executeDmgLifeSteal")]
     public float executeDmgMultiplier;
     [Tooltip("Only works with abilityType: AOEDmg")]
     public float pctAOEDmg;
     [Tooltip("Only works with abilityType: simpleDmgLifeSteal, executeDmgLifeSteal")]
     public float pctLifeSteal;
+    [Tooltip("Only works with abilityType: Dot")]
+    public int roundsDotWillLast;
     public string abilityName;
     [TextArea(7, 7)]
     public string abilityTooltip;
-    [Tooltip("simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility")]
-    public string abilityType;
     public bool isHeal = false;
+
 
     /// <summary>
     /// Uses the global variable abilityType to use the correct type of ability.
@@ -42,15 +45,15 @@ public class Ability : MonoBehaviour {
         if (unit.DrainMana(manaCost) && (unit.unitLevel >= levelToUse)) {
             switch (abilityType) {
 
-                case "simpleDmg":
+                case AbilityType.simpleDmg:
                     target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
                     break;
 
-                case "simpleDmgLifeSteal":
+                case AbilityType.simpleDmgLifeSteal:
                     unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration)*pctLifeSteal / 100f));
                     break;
 
-                case "executeDmg":
+                case AbilityType.executeDmg:
                     //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
                         target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
@@ -60,7 +63,7 @@ public class Ability : MonoBehaviour {
                     }
                     break;
 
-                case "executeDmgLifeSteal":
+                case AbilityType.executeDmgLifeSteal:
                     //If target has under 25% HP the ability will deal x times more damage healing x% of the damage dealt, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
                         unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
@@ -70,7 +73,7 @@ public class Ability : MonoBehaviour {
                     }
                     break;
 
-                case "AOEDmg":
+                case AbilityType.AOEDmg:
                     //The two units which didn't take the initial hit will take x% of the damage ingoring all armor.
                     int damageDone = target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
                     if(!target.Equals(enemy1)) {
@@ -84,9 +87,14 @@ public class Ability : MonoBehaviour {
                     }
                     break;
 
-                case "bloodAbility":
+                case AbilityType.bloodAbility:
                     float bloodHunger = GetBloodHunger(unit);
                     target.TakeDamage(unit.attack, damageMultiplier * bloodHunger, armorPenetration);
+                    break;
+
+                case AbilityType.Dot:
+                    target.SetDotDmg(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration));
+                    target.SetDot(roundsDotWillLast);
                     break;
 
                 default:
