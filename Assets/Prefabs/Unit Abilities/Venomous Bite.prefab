@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4144834772134069017
+--- !u!1 &6699635309661720054
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4144834772134068999}
-  - component: {fileID: 4144834772134069016}
+  - component: {fileID: 8210780679728592321}
+  - component: {fileID: 2062755836313189726}
   m_Layer: 0
-  m_Name: Carrot Slam
+  m_Name: Venomous Bite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4144834772134068999
+--- !u!4 &8210780679728592321
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4144834772134069017}
+  m_GameObject: {fileID: 6699635309661720054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.605174, y: -0.8105358, z: -0.41210938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4144834772134069016
+--- !u!114 &2062755836313189726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4144834772134069017}
+  m_GameObject: {fileID: 6699635309661720054}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   armorPenetration: 0
-  manaCost: 15
-  levelToUse: 15
+  manaCost: 40
+  levelToUse: 30
   manaDrain: 0
-  damageMultiplier: 2
-  abilityType: 0
+  damageMultiplier: 0.35
+  abilityType: 6
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
-  abilityName: Carrot Slam
-  abilityTooltip: Slam a carrot on the targets face dealing 2x damage.
+  roundsDotWillLast: 10
+  abilityName: Venomous Bite
+  abilityTooltip: Bite the target with a venomous bite dealing 0.35% damage over
+    10 turns.
   isHeal: 0

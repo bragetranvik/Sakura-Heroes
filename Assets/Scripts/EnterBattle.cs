@@ -8,6 +8,7 @@ public class EnterBattle : MonoBehaviour
     public string sceneToLoad;
     public GameObject player;
     public GameObject enemyTeam;
+    public bool enemyUnit = true;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,16 @@ public class EnterBattle : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player") && enemyUnit) {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(enemyTeam);
             SceneManager.LoadScene(sceneToLoad);
         }
+    }
+
+    public void StartBattle() {
+        DontDestroyOnLoad(player);
+        DontDestroyOnLoad(enemyTeam);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

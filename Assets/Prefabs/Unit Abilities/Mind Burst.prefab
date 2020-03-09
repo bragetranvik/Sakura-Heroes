@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8028025908555953281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3882555, y: 0.7484695, z: -0.21450365}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,9 +48,11 @@ MonoBehaviour:
   levelToUse: 50
   manaDrain: 0
   damageMultiplier: 2.5
-  percentageAOEDmg: 0
+  abilityType: 0
+  executeDmgMultiplier: 0
+  pctAOEDmg: 0
+  pctLifeSteal: 0
   abilityName: Mind Burst
   abilityTooltip: Burst the mind of the target dealing 2.5x damage with 100% armor
     penetration.
-  abilityType: simpleDmg
   isHeal: 0

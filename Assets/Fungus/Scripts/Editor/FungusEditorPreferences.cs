@@ -27,8 +27,10 @@ namespace Fungus
                 LoadOnScriptLoad();
             }
 
+#pragma warning disable CS0618
             // Add preferences section named "My Preferences" to the Preferences Window
             [PreferenceItem("Fungus")]
+#pragma warning restore CS0618
             public static void PreferencesGUI()
             {
                 // Load the preferences
