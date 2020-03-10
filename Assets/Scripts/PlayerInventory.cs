@@ -42,7 +42,7 @@ public class PlayerInventory : MonoBehaviour {
     /// </summary>
     /// <returns>Xp the player need for the next level.</returns>
     private int CalculateXpToNextLevel() {
-        return Convert.ToInt32(Mathf.Floor(((level + 1f) - 1 + 300 * Mathf.Pow(2, ((level + 1f) - 1f) / 7)) / 4));
+        return Convert.ToInt32(Mathf.Floor(((level + 1f) - 1f + 300f * Mathf.Pow(2, ((level + 1f) - 1f) / 7f)) / 4f));
     }
 
     /// <summary>

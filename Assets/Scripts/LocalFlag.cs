@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LocalFlag : MonoBehaviour{
-    public ArrayList defeatedTeams = new ArrayList();
+    public static ArrayList defeatedTeams = new ArrayList();
 
     private void Start() {
-        GameObject[] enemiesOnScene = FindObjectsOfType<GameObject>();
-
-        foreach (GameObject team in enemiesOnScene) {
-                if(team.CompareTag("Enemy")) {
-                if(team.GetComponent<UnitTeam>().defeated) {
-                    defeatedTeams.Add(team);
-                    team.SetActive(false);
-                }
-            }
-        }
+       //GameObject[] enemiesOnScene = FindObjectsOfType<GameObject>();
+       //
+       //foreach (GameObject team in enemiesOnScene) {
+       //        if(team.CompareTag("Enemy")) {
+       //        if(team.GetComponent<UnitTeam>().defeated) {
+       //            defeatedTeams.Add(team);
+       //            team.SetActive(false);
+       //        }
+       //    }
+       //}
     }
 
     /// <summary>
@@ -24,9 +24,29 @@ public class LocalFlag : MonoBehaviour{
     /// </summary>
     public void ResetAllEnemies() {
         foreach(GameObject team in defeatedTeams) {
-            team.GetComponent<UnitTeam>().defeated = false;
             team.SetActive(true);
             defeatedTeams.Remove(team);
         }
+    }
+
+    /// <summary>
+    /// If the team is in the defeatedTeams list the team
+    /// will be hidden from scene.
+    /// </summary>
+    /// <param name="team">GameObject team to hide from scene.</param>
+    public void IsMyTeamDefeated(GameObject team) {
+        foreach(GameObject teamInList in defeatedTeams) {
+            if(teamInList.Equals(team)) {
+                team.SetActive(false);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Add a team to the defeatedTeams list.
+    /// </summary>
+    /// <param name="team">GameObject team to add to the list.</param>
+    public void AddDefeatedTeamToList(GameObject team) {
+        defeatedTeams.Add(team);
     }
 }

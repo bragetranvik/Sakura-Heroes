@@ -3562,6 +3562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeated: 0
+  playerTeam: 1
   unit1: {fileID: 1482508852}
   unit2: {fileID: 1257167637}
   unit3: {fileID: 1466918275}
@@ -47617,18 +47618,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -18.211277, y: -7.014257}
+  scrollPos: {x: 40.668236, y: 57.62623}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 404
-  zoom: 0.8800001
+  zoom: 0.8499997
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1531048246}
   selectedCommands: []
   variables:
   - {fileID: 1531048262}
@@ -48179,6 +48181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeated: 0
+  playerTeam: 0
   unit1: {fileID: 721093955}
   unit2: {fileID: 1472919443}
   unit3: {fileID: 1264307737}
