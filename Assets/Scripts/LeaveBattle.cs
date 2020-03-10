@@ -46,7 +46,7 @@ public class LeaveBattle : MonoBehaviour
     }
 
     private void setEnemyDefeated(UnitTeam enemyTeamGO) {
-        enemyTeam.deafeted = true;
+        enemyTeam.defeated = true;
     }
 
     private void setPlayerAndEnemyActive() {

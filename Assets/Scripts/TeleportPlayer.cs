@@ -16,6 +16,7 @@ public class TeleportPlayer : MonoBehaviour
     {
         playerIsInCollider = true;
         player = other;
+        boxText.text = dialog;
         dialogBox.SetActive(true);
     }
 
@@ -38,7 +39,6 @@ public class TeleportPlayer : MonoBehaviour
     }
 
     private void Start() {
-        dialogBox.SetActive(false);
-        boxText.text = dialog;
+        dialogBox.SetActive(false);   
     }
 }
