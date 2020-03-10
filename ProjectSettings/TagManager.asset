@@ -6,6 +6,7 @@ TagManager:
   tags:
   - npcCollisionTag
   - Enemy
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -81,4 +82,7 @@ TagManager:
     locked: 0
   - name: Signs
     uniqueID: 3325652961
+    locked: 0
+  - name: UI
+    uniqueID: 2726449299
     locked: 0
