@@ -17,6 +17,11 @@ public class BattleSystem : MonoBehaviour {
     public GameObject friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
     public GameObject enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
 
+    public GameObject friendlyTeamGO;
+    public UnitTeam friendlyTeam;
+
+    public GameObject enemyTeamGO;
+    public UnitTeam enemyTeam;
 
     private GameObject friendlyUnit1GO, friendlyUnit2GO, friendlyUnit3GO;
     private GameObject enemyUnit1GO, enemyUnit2GO, enemyUnit3GO;
@@ -41,6 +46,7 @@ public class BattleSystem : MonoBehaviour {
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
     private string highlightedAbility = null;
     public EnemyAI enemyAI;
+    public LeaveBattle leaveBattle;
 
     public BattleState state;
 
@@ -193,14 +199,14 @@ public class BattleSystem : MonoBehaviour {
                     EnableDisableAttackButtons(false);
                     EnableDisableTargetButtons(false);
                     ongoingBattle = false;
-                    EndBattle();
+                    yield return EndBattle();
                     break;
 
                 case BattleState.WON:
                     EnableDisableAttackButtons(false);
                     EnableDisableTargetButtons(false);
                     ongoingBattle = false;
-                    EndBattle();
+                    yield return EndBattle();
                     break;
 
                 default:
@@ -266,6 +272,8 @@ public class BattleSystem : MonoBehaviour {
         EnableDisableAttackButtons(false);
         EnableDisableTargetButtons(false);
 
+        hideImportedObjects();
+
         //Makes a list of all units in the battle.
         MakeUnitList();
     }
@@ -319,18 +327,16 @@ public class BattleSystem : MonoBehaviour {
         return allFriendlyDead;
     }
 
-    private void EndBattle() {
+    private IEnumerator EndBattle() {
         if(state == BattleState.WON) {
             dialogueText.text = "You won the battle!";
+            yield return new WaitForSeconds(2f);
+            leaveBattle.changeSceneToPrevious();
         } else if(state == BattleState.LOST) {
-            dialogueText.text = "You were defeted.";
+            dialogueText.text = "You were defeated.";
+            yield return new WaitForSeconds(2f);
+            leaveBattle.changeSceneToStartHub();
         }
-        BattleHUD.SetBattleStationToDark(friendly1BattleStation);
-        BattleHUD.SetBattleStationToDark(friendly2BattleStation);
-        BattleHUD.SetBattleStationToDark(friendly3BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy1BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy2BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy3BattleStation);
     }
 
     /// <summary>
@@ -515,8 +521,8 @@ public class BattleSystem : MonoBehaviour {
     /// how the team of the player was built up
     /// </summary>
     private void PrepareFriendlyUnits() {
-        GameObject friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
-        UnitTeam friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
+        friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
+        friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
 
         friendlyUnit1GO = friendlyTeam.GetUnit1GO();
         friendlyUnit2GO = friendlyTeam.GetUnit2GO();
@@ -538,12 +544,10 @@ public class BattleSystem : MonoBehaviour {
         friendlyUnit1GO.GetComponent<Transform>().localPosition = friendlyUnit1.GetPosition();
         friendlyUnit2GO.GetComponent<Transform>().localPosition = friendlyUnit2.GetPosition();
         friendlyUnit3GO.GetComponent<Transform>().localPosition = friendlyUnit3.GetPosition();
-
-        friendlyTeamGO.SetActive(false);
     }
     private void PrepareEnemyUnits() {
-        GameObject enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
-        UnitTeam enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
+        enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
+        enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
 
         enemyUnit1GO = enemyTeam.GetUnit1GO();
         enemyUnit2GO = enemyTeam.GetUnit2GO();
@@ -565,7 +569,15 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
         enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
         enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
+    }
 
+    private void hideImportedObjects() {
+        friendlyTeamGO.SetActive(false);
         enemyTeamGO.SetActive(false);
+    }
+
+    public void enablePlayerAndEnemyObjects() {
+        friendlyTeamGO.SetActive(true);
+        enemyTeamGO.SetActive(true);
     }
 }

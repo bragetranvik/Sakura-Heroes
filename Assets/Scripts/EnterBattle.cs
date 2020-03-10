@@ -26,6 +26,8 @@ public class EnterBattle : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && enemyUnit) {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(enemyTeam);
+            player.GetComponent<UnitTeam>().setPreviousScene();
+            enemyTeam.GetComponent<UnitTeam>().setPreviousScene();
             SceneManager.LoadScene(sceneToLoad);
         }
     }
@@ -33,6 +35,8 @@ public class EnterBattle : MonoBehaviour
     public void StartBattle() {
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(enemyTeam);
+        player.GetComponent<UnitTeam>().setPreviousScene();
+        enemyTeam.GetComponent<UnitTeam>().setPreviousScene();
         SceneManager.LoadScene(sceneToLoad);
     }
 }
