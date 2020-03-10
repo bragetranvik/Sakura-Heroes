@@ -17,38 +17,23 @@ public class ObjectInteraction : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown("e") && playerInRange)
-        {
-            if (dialogBox.activeInHierarchy)
-            {
-                dialogBox.SetActive(false);
-            }
-            else
-            {
+        if(Input.GetKeyDown("e") && playerInRange) {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
-            }
-        }
-        if (!playerInRange)
-        {
-            dialogBox.SetActive(false);
         }
     }
 
     //OnTriggerEnter is called once the player is inside the collider area
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player")) {
             playerInRange = true;
         }
     }
 
     //OnTriggerExit is called once the player has left the collider area
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Player")) {
+            dialogBox.SetActive(false);
             playerInRange = false;
         }
     }
