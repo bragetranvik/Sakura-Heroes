@@ -272,7 +272,7 @@ public class BattleSystem : MonoBehaviour {
         EnableDisableAttackButtons(false);
         EnableDisableTargetButtons(false);
 
-        hideImportedObjects();
+        HideImportedObjects();
 
         //Makes a list of all units in the battle.
         MakeUnitList();
@@ -330,12 +330,13 @@ public class BattleSystem : MonoBehaviour {
     private IEnumerator EndBattle() {
         if(state == BattleState.WON) {
             dialogueText.text = "You won the battle!";
+            enemyTeam.AddToDefeatedList();
             yield return new WaitForSeconds(2f);
-            leaveBattle.changeSceneToPrevious();
+            leaveBattle.ChangeSceneToPrevious();
         } else if(state == BattleState.LOST) {
             dialogueText.text = "You were defeated.";
             yield return new WaitForSeconds(2f);
-            leaveBattle.changeSceneToStartHub();
+            leaveBattle.ChangeSceneToStartHub();
         }
     }
 
@@ -571,12 +572,12 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
     }
 
-    private void hideImportedObjects() {
+    private void HideImportedObjects() {
         friendlyTeamGO.SetActive(false);
         enemyTeamGO.SetActive(false);
     }
 
-    public void enablePlayerAndEnemyObjects() {
+    public void EnablePlayerAndEnemyObjects() {
         friendlyTeamGO.SetActive(true);
         enemyTeamGO.SetActive(true);
     }

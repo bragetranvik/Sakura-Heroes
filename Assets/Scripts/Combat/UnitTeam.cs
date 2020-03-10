@@ -13,14 +13,26 @@ public class UnitTeam : MonoBehaviour
     public GameObject unit2;
     public GameObject unit3;
 
+    public LocalFlag defeatedTeamList;
+    public GameObject thisTeam;
+
 
     private void Start() {
+        Debug.Log("Start in unitTeam has been run");
         if(playerTeam.Equals(false)) {
             unit1.GetComponent<SpriteRenderer>().flipX = true;
             unit2.GetComponent<SpriteRenderer>().flipX = true;
             unit3.GetComponent<SpriteRenderer>().flipX = true;
+        } else {
+            unit1.GetComponent<SpriteRenderer>().flipX = false;
+            unit2.GetComponent<SpriteRenderer>().flipX = false;
+            unit3.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
+    private void Update() { 
+    
+    }
+    
 
     public GameObject GetUnit1GO() {
         return unit1;
@@ -32,7 +44,16 @@ public class UnitTeam : MonoBehaviour
         return unit3;
     }
 
-    public void setPreviousScene() {
+    public void SetPreviousScene() {
         previousScene = SceneManager.GetActiveScene().name;
+    }
+
+    public void AddToDefeatedList() {
+        defeatedTeamList.AddDefeatedTeamToList(thisTeam);
+        defeatedTeamList.PrintList();
+    }
+
+    public void CheckIfDefeated() {
+        defeatedTeamList.IsMyTeamDefeated(thisTeam);
     }
 }

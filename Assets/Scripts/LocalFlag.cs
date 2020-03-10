@@ -36,6 +36,7 @@ public class LocalFlag : MonoBehaviour{
     /// <param name="team">GameObject team to hide from scene.</param>
     public void IsMyTeamDefeated(GameObject team) {
         foreach(GameObject teamInList in defeatedTeams) {
+            //Debug.Log(teamInList.name);
             if(teamInList.Equals(team)) {
                 team.SetActive(false);
             }
@@ -48,5 +49,11 @@ public class LocalFlag : MonoBehaviour{
     /// <param name="team">GameObject team to add to the list.</param>
     public void AddDefeatedTeamToList(GameObject team) {
         defeatedTeams.Add(team);
+    }
+
+    public void PrintList() {
+        foreach (GameObject teamInList in defeatedTeams) {
+            Debug.Log(teamInList.name);
+        }
     }
 }

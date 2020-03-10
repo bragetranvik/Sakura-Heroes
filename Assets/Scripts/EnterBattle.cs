@@ -9,6 +9,7 @@ public class EnterBattle : MonoBehaviour
     public GameObject player;
     public GameObject enemyTeam;
     public bool enemyUnit = true;
+    public LocalFlag defeatedEnemyList;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +24,12 @@ public class EnterBattle : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && enemyUnit) {
+        if (other.gameObject.CompareTag("Player") && enemyUnit && !(enemyTeam.GetComponent<UnitTeam>().defeated)) {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(enemyTeam);
-            player.GetComponent<UnitTeam>().setPreviousScene();
-            enemyTeam.GetComponent<UnitTeam>().setPreviousScene();
+            DontDestroyOnLoad(defeatedEnemyList);
+            player.GetComponent<UnitTeam>().SetPreviousScene();
+            enemyTeam.GetComponent<UnitTeam>().SetPreviousScene();
             SceneManager.LoadScene(sceneToLoad);
         }
     }
@@ -35,8 +37,9 @@ public class EnterBattle : MonoBehaviour
     public void StartBattle() {
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(enemyTeam);
-        player.GetComponent<UnitTeam>().setPreviousScene();
-        enemyTeam.GetComponent<UnitTeam>().setPreviousScene();
+        DontDestroyOnLoad(defeatedEnemyList);
+        player.GetComponent<UnitTeam>().SetPreviousScene();
+        enemyTeam.GetComponent<UnitTeam>().SetPreviousScene();
         SceneManager.LoadScene(sceneToLoad);
     }
 }

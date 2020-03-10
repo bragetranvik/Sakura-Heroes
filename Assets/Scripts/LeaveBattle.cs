@@ -10,46 +10,47 @@ public class LeaveBattle : MonoBehaviour
     public UnitTeam playerTeam, enemyTeam;
     public string sceneToLoad;
 
-    public void changeSceneToPrevious() {
-        setBattleSystem();
-        setPlayerTeam();
-        setPlayerAndEnemyActive();
-        setEnemyTeam();
-        setEnemyDefeated(enemyTeam);
+    public void ChangeSceneToPrevious() {
+        SetBattleSystem();
+        SetPlayerTeam();
+        SetPlayerAndEnemyActive();
+        SetEnemyTeam();
+        SetEnemyDefeated(enemyTeam);
         Destroy(enemyTeamGO);
-        setSceneToLoad();
+        SetSceneToLoad();
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    public void changeSceneToStartHub() {
-        setBattleSystem();
-        setPlayerTeam();
-        setPlayerAndEnemyActive();
-        setEnemyTeam();
+    public void ChangeSceneToStartHub() {
+        SetBattleSystem();
+        SetPlayerTeam();
+        SetPlayerAndEnemyActive();
+        SetEnemyTeam();
         Destroy(enemyTeamGO);
-        setSceneToLoad();
+        SetSceneToLoad();
         SceneManager.LoadScene("StartHub");
     }
 
-    private void setPlayerTeam() {
+    private void SetPlayerTeam() {
         playerTeam = battleSystem.friendlyTeamGO.GetComponent<UnitTeam>();
     }
-    private void setEnemyTeam() {
+    private void SetEnemyTeam() {
         enemyTeamGO = battleSystem.enemyTeamGO;
         enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
     }
-    private void setSceneToLoad() {
+    private void SetSceneToLoad() {
         sceneToLoad = playerTeam.previousScene;
     }
-    private void setBattleSystem() {
+    private void SetBattleSystem() {
         battleSystem = FindObjectOfType<BattleSystem>();
     }
 
-    private void setEnemyDefeated(UnitTeam enemyTeamGO) {
+    private void SetEnemyDefeated(UnitTeam enemyTeamGO) {
         enemyTeam.defeated = true;
+        enemyTeam.AddToDefeatedList();
     }
 
-    private void setPlayerAndEnemyActive() {
-        battleSystem.enablePlayerAndEnemyObjects();
+    private void SetPlayerAndEnemyActive() {
+        battleSystem.EnablePlayerAndEnemyObjects();
     }
 }
