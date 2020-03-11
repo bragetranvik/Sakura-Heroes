@@ -8,6 +8,8 @@ public class UnitTeam : MonoBehaviour
     public bool defeated = false;
     public bool playerTeam = false;
     public string previousScene;
+    private static bool aTeamHasBeenDefeated = false;
+    public string teamName;
 
     public GameObject unit1;
     public GameObject unit2;
@@ -18,7 +20,6 @@ public class UnitTeam : MonoBehaviour
 
 
     private void Start() {
-        Debug.Log("Start in unitTeam has been run");
         if(playerTeam.Equals(false)) {
             unit1.GetComponent<SpriteRenderer>().flipX = true;
             unit2.GetComponent<SpriteRenderer>().flipX = true;
@@ -29,8 +30,15 @@ public class UnitTeam : MonoBehaviour
             unit3.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
+
+    /// <summary>
+    /// This need to change!
+    /// </summary>
     private void Update() { 
-    
+        if(playerTeam.Equals(false) && aTeamHasBeenDefeated.Equals(true)) {
+            defeatedTeamList.RemoveDefeatedTeams();
+            aTeamHasBeenDefeated = false;
+        }
     }
     
 
@@ -44,12 +52,22 @@ public class UnitTeam : MonoBehaviour
         return unit3;
     }
 
+    public void SetAnEnemyTeamHasBeenDefeated(bool state) {
+        Debug.Log("Bool was set to " + state);
+        aTeamHasBeenDefeated = state;
+        Debug.Log("The bool is now " + aTeamHasBeenDefeated);
+    }
+
+    public bool GetAnEnemyTeamHasBeenDefeated() {
+        return aTeamHasBeenDefeated;
+    }
+
     public void SetPreviousScene() {
         previousScene = SceneManager.GetActiveScene().name;
     }
 
     public void AddToDefeatedList() {
-        defeatedTeamList.AddDefeatedTeamToList(thisTeam);
+        defeatedTeamList.AddDefeatedTeamToList(teamName);
         defeatedTeamList.PrintList();
     }
 

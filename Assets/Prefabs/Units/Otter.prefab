@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Otty the Otter
   unitLevel: 99
-  baseAttack: 10
+  baseAttack: 9999
   baseDefence: 3
   baseHP: 12
   currentHP: 0

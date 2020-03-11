@@ -24,7 +24,8 @@ public class EnterBattle : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && enemyUnit && !(enemyTeam.GetComponent<UnitTeam>().defeated)) {
+        if (other.gameObject.CompareTag("Player") && enemyUnit && !(enemyTeam.GetComponent<UnitTeam>().GetAnEnemyTeamHasBeenDefeated())) {
+            Debug.Log(enemyTeam.GetComponent<UnitTeam>().GetAnEnemyTeamHasBeenDefeated());
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(enemyTeam);
             DontDestroyOnLoad(defeatedEnemyList);

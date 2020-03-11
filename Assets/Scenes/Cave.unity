@@ -95947,7 +95947,7 @@ Tilemap:
       - {fileID: 21300166, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300172, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300178, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 21, y: 24, z: 0}
@@ -96227,7 +96227,7 @@ Tilemap:
       - {fileID: 21300008, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300014, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300020, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 18, y: 29, z: 0}
@@ -113566,7 +113566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071901471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.41, y: -7.63, z: 0}
+  m_LocalPosition: {x: 3.33, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 891035691}
@@ -113633,6 +113633,7 @@ MonoBehaviour:
   defeated: 0
   playerTeam: 0
   previousScene: 
+  teamName: Test
   unit1: {fileID: 1932023651}
   unit2: {fileID: 2055722746}
   unit3: {fileID: 1916102038}
@@ -113670,6 +113671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226236887822029038, guid: c170baf7bf5e5ab4d9d355761266b9ed,
+        type: 3}
+      propertyPath: baseAttack
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3939081366554770880, guid: c170baf7bf5e5ab4d9d355761266b9ed,
         type: 3}

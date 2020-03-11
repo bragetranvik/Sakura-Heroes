@@ -199,14 +199,14 @@ public class BattleSystem : MonoBehaviour {
                     EnableDisableAttackButtons(false);
                     EnableDisableTargetButtons(false);
                     ongoingBattle = false;
-                    yield return EndBattle();
+                    EndBattle();
                     break;
 
                 case BattleState.WON:
                     EnableDisableAttackButtons(false);
                     EnableDisableTargetButtons(false);
                     ongoingBattle = false;
-                    yield return EndBattle();
+                    EndBattle();
                     break;
 
                 default:
@@ -327,15 +327,17 @@ public class BattleSystem : MonoBehaviour {
         return allFriendlyDead;
     }
 
-    private IEnumerator EndBattle() {
+    private void EndBattle() {
         if(state == BattleState.WON) {
+            Debug.Log("Test123");
             dialogueText.text = "You won the battle!";
             enemyTeam.AddToDefeatedList();
-            yield return new WaitForSeconds(2f);
+            enemyTeam.SetAnEnemyTeamHasBeenDefeated(true);
+            //yield return new WaitForSeconds(2f);
             leaveBattle.ChangeSceneToPrevious();
         } else if(state == BattleState.LOST) {
             dialogueText.text = "You were defeated.";
-            yield return new WaitForSeconds(2f);
+            //yield return new WaitForSeconds(2f);
             leaveBattle.ChangeSceneToStartHub();
         }
     }
