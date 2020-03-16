@@ -15,6 +15,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (intoNewScene) {
             intoNewScene = false;
+            player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = playerPos;
         }
     }

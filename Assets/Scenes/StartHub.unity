@@ -3376,6 +3376,7 @@ GameObject:
   - component: {fileID: 255727966}
   - component: {fileID: 255727967}
   - component: {fileID: 255727968}
+  - component: {fileID: 255727969}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3563,9 +3564,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defeated: 0
   playerTeam: 1
+  previousScene: 
+  teamName: 
   unit1: {fileID: 1482508852}
   unit2: {fileID: 1257167637}
   unit3: {fileID: 1466918275}
+  defeatedTeamList: {fileID: 0}
+  thisTeam: {fileID: 0}
+--- !u!114 &255727969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255727960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818a3d78e176af649874b0d6dad6d2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObject: {fileID: 255727960}
 --- !u!1 &311584300
 GameObject:
   m_ObjectHideFlags: 0
@@ -48182,9 +48200,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defeated: 0
   playerTeam: 0
+  previousScene: 
+  teamName: 
   unit1: {fileID: 721093955}
   unit2: {fileID: 1472919443}
   unit3: {fileID: 1264307737}
+  defeatedTeamList: {fileID: 0}
+  thisTeam: {fileID: 0}
 --- !u!114 &1531048264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48201,6 +48223,7 @@ MonoBehaviour:
   player: {fileID: 255727960}
   enemyTeam: {fileID: 1531048232}
   enemyUnit: 0
+  defeatedEnemyList: {fileID: 0}
 --- !u!1 &1580028255
 GameObject:
   m_ObjectHideFlags: 0
