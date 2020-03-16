@@ -16,6 +16,7 @@ public class ChangeScene : MonoBehaviour
         if (intoNewScene) {
             intoNewScene = false;
             player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<UnitTeam>().SetPreviousScene();
             player.transform.position = playerPos;
         }
     }
@@ -34,12 +35,8 @@ public class ChangeScene : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerPos = playerPosInNewScene;
+            intoNewScene = true;
             SceneManager.LoadScene(sceneToLoad);
         }
-    }
-
-    //OnDestroy is called once the scene has been destroyed
-    private void OnDestroy() {
-        intoNewScene = true;
     }
 }

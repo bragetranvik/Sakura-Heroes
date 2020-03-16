@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnterBattle : MonoBehaviour
 {
     public string sceneToLoad;
-    public GameObject player;
+    private GameObject player;
     public GameObject enemyTeam;
     public bool enemyUnit = true;
     public LocalFlag defeatedEnemyList;
@@ -14,7 +14,7 @@ public class EnterBattle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
