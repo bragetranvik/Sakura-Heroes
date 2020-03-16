@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour {
     public GameObject player;
     private static int currentXP;
     public int level = 1;
-
-    public Image UICharacterIcon;
-    public Text UIMoneyCounter;
-    public Text UILevelCounter;
 
     // Start is called before the first frame update
     void Start() {
@@ -21,7 +16,6 @@ public class PlayerInventory : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         SetPetLevelsToPlayerLevel();
-        UpdateUI();
     }
 
     /// <summary>
@@ -74,14 +68,5 @@ public class PlayerInventory : MonoBehaviour {
         if (playerTeam.unit3 != null) {
             playerTeam.unit3.GetComponent<Unit>().unitLevel = level;
         }
-    }
-
-    private void UpdateUI()
-    {
-        Debug.Log("UpdateUI called");
-        // Set money in UI (Not implemented yet)
-        UIMoneyCounter.text = "Money: " + Convert.ToString(37);
-        // Set level in UI
-        UILevelCounter.text = "Level: " + Convert.ToString(level);
     }
 }
