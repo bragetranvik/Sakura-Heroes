@@ -179,9 +179,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeated: 0
+  playerTeam: 0
+  previousScene: 
+  teamName: 
   unit1: {fileID: 0}
   unit2: {fileID: 0}
   unit3: {fileID: 0}
+  defeatedTeamList: {fileID: 0}
+  thisTeam: {fileID: 0}
 --- !u!114 &-2891843559243623779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,4 +200,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2871708526557659350}
-  currentXP: 0
+  level: 99

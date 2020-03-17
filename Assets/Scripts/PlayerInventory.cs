@@ -7,6 +7,7 @@ public class PlayerInventory : MonoBehaviour {
     public GameObject player;
     private static int currentXP;
     public int level = 1;
+    public List<GameObject> questList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start() {
@@ -67,6 +68,50 @@ public class PlayerInventory : MonoBehaviour {
         }
         if (playerTeam.unit3 != null) {
             playerTeam.unit3.GetComponent<Unit>().unitLevel = level;
+        }
+    }
+
+    /// <summary>
+    /// Add a quest to the quest list.
+    /// </summary>
+    /// <param name="quest">Quest to add to the list.</param>
+    /// <returns>True if quest was successfully added to the list.</returns>
+    public bool AddQuestToQuestList(GameObject quest) {
+        bool questWasAdded = false;
+
+        if(!IsQuestAlreadyInList(quest)) {
+            questList.Add(quest);
+            questWasAdded = true;
+        }
+        return questWasAdded;
+    }
+
+    /// <summary>
+    /// Check if the quest is already in the list. 
+    /// </summary>
+    /// <param name="quest">The quest to check for.</param>
+    /// <returns>True if the quest is already in the list.</returns>
+    public bool IsQuestAlreadyInList(GameObject quest) {
+        bool questIsInList = false;
+
+        foreach (GameObject questInList in questList) {
+            Debug.Log("Quest in list: " + questInList.GetComponent<Quest>().questName);
+            if (questInList.GetComponent<Quest>().questName.Equals(quest.GetComponent<Quest>().questName)) {
+                questIsInList = true;
+            }
+        }
+        return questIsInList;
+    }
+
+    /// <summary>
+    /// Check if a quest is completed and complete it if it is.
+    /// </summary>
+    /// <param name="objective">Example the name of the enemyTeam or an area.</param>
+    public void CheckForCompletedQuest(string objective) {
+        foreach(GameObject questInList in questList) {
+            if(questInList.GetComponent<Quest>().requirement.Equals(objective) && !questInList.GetComponent<Quest>().questCompleted) {
+                questInList.GetComponent<Quest>().CompleteQuest(objective);
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ public class LeaveBattle : MonoBehaviour
         SetEnemyDefeated(enemyTeam);
         Destroy(enemyTeamGO);
         SetSceneToLoad();
+        CheckIfQuestIsCompleted(enemyTeam.teamName);
         SceneManager.LoadScene(sceneToLoad);
     }
 
@@ -52,5 +53,14 @@ public class LeaveBattle : MonoBehaviour
 
     private void SetPlayerAndEnemyActive() {
         battleSystem.EnablePlayerAndEnemyObjects();
+    }
+
+    /// <summary>
+    /// Find the player with tag and try to complete the quest.
+    /// </summary>
+    /// <param name="objective">Example the name of the enemyTeam or an area.</param>
+    private void CheckIfQuestIsCompleted(string objective) {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerInventory>().CheckForCompletedQuest(objective);
     }
 }
