@@ -329,10 +329,13 @@ public class BattleSystem : MonoBehaviour {
 
     private void EndBattle() {
         if(state == BattleState.WON) {
-            Debug.Log("Test123");
+            //Debug.Log("Battle won STATE");
             dialogueText.text = "You won the battle!";
             enemyTeam.AddToDefeatedList();
             enemyTeam.SetAnEnemyTeamHasBeenDefeated(true);
+            PlayerInventory playerInventory = friendlyTeamGO.GetComponent<PlayerInventory>();
+            playerInventory.GainXPFromEnemies(enemyUnit2.unitLevel);
+            playerInventory.EarnMoney(playerInventory.CalculateHowMuchMoneyToEarn(enemyUnit2.unitLevel));
             //yield return new WaitForSeconds(2f);
             leaveBattle.ChangeSceneToPrevious();
         } else if(state == BattleState.LOST) {

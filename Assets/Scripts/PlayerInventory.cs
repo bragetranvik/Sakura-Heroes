@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour {
@@ -8,6 +8,7 @@ public class PlayerInventory : MonoBehaviour {
     private static int currentXP;
     public int level = 1;
     public List<GameObject> questList = new List<GameObject>();
+    public int totalMoney;
 
     // Start is called before the first frame update
     void Start() {
@@ -113,5 +114,20 @@ public class PlayerInventory : MonoBehaviour {
                 questInList.GetComponent<Quest>().CompleteQuest(objective);
             }
         }
+    }
+
+    /// <summary>
+    /// Calculate what the new total money will be
+    /// </summary>
+    /// <param name="moneyEarned">How much money the player just earned</param>
+    public void EarnMoney(int moneyEarned)
+    {
+        totalMoney += moneyEarned;
+    }
+
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel)
+    {
+        int howMuchToEarn = Convert.ToInt32(enemyLevel + 50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+        return howMuchToEarn;
     }
 }
