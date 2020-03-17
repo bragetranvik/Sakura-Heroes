@@ -7,6 +7,7 @@ public class PlayerInventory : MonoBehaviour {
     public GameObject player;
     private static int currentXP;
     public int level = 1;
+    public int totalMoney;
 
     // Start is called before the first frame update
     void Start() {
@@ -68,5 +69,20 @@ public class PlayerInventory : MonoBehaviour {
         if (playerTeam.unit3 != null) {
             playerTeam.unit3.GetComponent<Unit>().unitLevel = level;
         }
+    }
+
+    /// <summary>
+    /// Calculate what the new total money will be
+    /// </summary>
+    /// <param name="moneyEarned">How much money the player just earned</param>
+    public void EarnMoney(int moneyEarned)
+    {
+        totalMoney += moneyEarned;
+    }
+
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel)
+    {
+        int howMuchToEarn = Convert.ToInt32(enemyLevel + 50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+        return howMuchToEarn;
     }
 }

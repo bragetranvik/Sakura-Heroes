@@ -28,7 +28,7 @@ public class UIController : MonoBehaviour
     private void UpdateUI()
     {
         // Set money in UI (Not implemented yet)
-        UIMoneyCounter.text = "Money: " + Convert.ToString(37);
+        UIMoneyCounter.text = "Money: " + Convert.ToString(playerInventory.totalMoney);
         // Set level in UI
         UILevelCounter.text = "Level: " + Convert.ToString(playerInventory.level);
     }
