@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2871708526557659368}
   - component: {fileID: 7424425351036488913}
   - component: {fileID: -2891843559243623779}
-  - component: {fileID: 8392567239016573013}
+  - component: {fileID: 8996840570198114064}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -201,9 +201,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2871708526557659350}
-  level: 1
+  level: 99
+  questList: []
   totalMoney: 0
---- !u!114 &8392567239016573013
+--- !u!114 &8996840570198114064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

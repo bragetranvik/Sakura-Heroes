@@ -70,5 +70,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a080ff5f190762438443c63d41fde67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraChange: {x: 0, y: 0}
+  cameraChangeMax: {x: 0, y: 0}
+  cameraChangeMin: {x: 0, y: 0}
   playerChange: {x: 0, y: 0, z: 0}

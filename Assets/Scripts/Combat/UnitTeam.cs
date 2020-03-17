@@ -53,9 +53,7 @@ public class UnitTeam : MonoBehaviour
     }
 
     public void SetAnEnemyTeamHasBeenDefeated(bool state) {
-        Debug.Log("Bool was set to " + state);
         aTeamHasBeenDefeated = state;
-        Debug.Log("The bool is now " + aTeamHasBeenDefeated);
     }
 
     public bool GetAnEnemyTeamHasBeenDefeated() {
@@ -68,7 +66,6 @@ public class UnitTeam : MonoBehaviour
 
     public void AddToDefeatedList() {
         defeatedTeamList.AddDefeatedTeamToList(teamName);
-        defeatedTeamList.PrintList();
     }
 
     public void CheckIfDefeated() {
