@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6453d7d551cce742a9d88e5b7434d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 255727962}
+  target: {fileID: 0}
   smoothing: 1
   maxPosition: {x: 18, y: 14}
   minPosition: {x: -24, y: -17}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 141396896}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3384,7 +3384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &255727961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3597,11 +3597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11061bed1ee31be45bc0dd395dd8fb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  level: 1
-  UICharacterIcon: {fileID: 0}
-  UIMoneyCounter: {fileID: 0}
-  UILevelCounter: {fileID: 0}
+  player: {fileID: 255727960}
+  level: 99
+  totalMoney: 0
 --- !u!1 &311584300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7194,6 +7192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904568413103378227, guid: 1dbae3317e869aa4ca76ac13926e62f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4904568413103378236, guid: 1dbae3317e869aa4ca76ac13926e62f3,
         type: 3}

@@ -75,14 +75,12 @@ public class PlayerInventory : MonoBehaviour {
     /// Calculate what the new total money will be
     /// </summary>
     /// <param name="moneyEarned">How much money the player just earned</param>
-    public void EarnMoney(int moneyEarned)
-    {
+    public void EarnMoney(int moneyEarned) {
         totalMoney += moneyEarned;
     }
 
-    public int CalculateHowMuchMoneyToEarn(int enemyLevel)
-    {
-        int howMuchToEarn = Convert.ToInt32(enemyLevel + 50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
+        int howMuchToEarn = Convert.ToInt32(50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
         return howMuchToEarn;
     }
 }
