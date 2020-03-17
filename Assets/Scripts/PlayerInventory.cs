@@ -40,6 +40,20 @@ public class PlayerInventory : MonoBehaviour {
     }
 
     /// <summary>
+    /// Increase the players current xp. If the xp is greater than
+    /// the xp needed for next level the players level will increase by one,
+    /// and then set the remaining xp to current xp.
+    /// </summary>
+    /// <param name="xpToGain">Xp to gain from quest.</param>
+    private void GainXpFromQuest(int xpToGain) {
+        currentXP += xpToGain;
+        if (currentXP >= CalculateXpToNextLevel()) {
+            currentXP -= CalculateXpToNextLevel();
+            level++;
+        }
+    }
+
+    /// <summary>
     /// Calculate xp the player need for the next level.
     /// </summary>
     /// <returns>Xp the player need for the next level.</returns>
@@ -116,18 +130,26 @@ public class PlayerInventory : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Calculate what the new total money will be
-    /// </summary>
+    /// <summary>
+    /// Calculate what the new total money will be
+    /// </summary>
     /// <param name="moneyEarned">How much money the player just earned</param>
-    public void EarnMoney(int moneyEarned)
-    {
-        totalMoney += moneyEarned;
+    public void EarnMoney(int moneyEarned) {
+        totalMoney += moneyEarned;
     }
 
-    public int CalculateHowMuchMoneyToEarn(int enemyLevel)
-    {
-        int howMuchToEarn = Convert.ToInt32(enemyLevel + 50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
-        return howMuchToEarn;
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
+        int howMuchToEarn = Convert.ToInt32(enemyLevel + 50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+        return howMuchToEarn;
+    }
+
+    /// <summary>
+    /// Gain the quest reward.
+    /// </summary>
+    /// <param name="xpReward">Xp to get from the quest.</param>
+    /// <param name="moneyReward">Money to get from the quest.</param>
+    public void GetQuestReward(int xpReward, int moneyReward) {
+        GainXpFromQuest(xpReward);
+        EarnMoney(moneyReward);
     }
 }

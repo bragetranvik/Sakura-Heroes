@@ -48,5 +48,6 @@ MonoBehaviour:
   questType: 0
   requirement: Test
   questCompleted: 0
+  rewardHasBeenClaimed: 0
   questXpReward: 100
-  questMoneyReward: 20
+  questMoneyReward: 100
