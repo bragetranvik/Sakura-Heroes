@@ -15,7 +15,7 @@ public class LeaveBattle : MonoBehaviour
         SetPlayerTeam();
         SetPlayerAndEnemyActive();
         SetEnemyTeam();
-        SetEnemyDefeated(enemyTeam);
+        SetEnemyDefeated();
         Destroy(enemyTeamGO);
         SetSceneToLoad();
         CheckIfQuestIsCompleted(enemyTeam.teamName);
@@ -46,7 +46,7 @@ public class LeaveBattle : MonoBehaviour
         battleSystem = FindObjectOfType<BattleSystem>();
     }
 
-    private void SetEnemyDefeated(UnitTeam enemyTeamGO) {
+    private void SetEnemyDefeated() {
         enemyTeam.defeated = true;
         enemyTeam.AddToDefeatedList();
     }

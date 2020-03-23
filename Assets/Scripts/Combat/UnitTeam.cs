@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum TeamType { enemyTeam, playerTeam, npcTeam }
 public class UnitTeam : MonoBehaviour
 {
     public bool defeated = false;
-    public bool playerTeam = false;
+    public TeamType teamType;
+    [HideInInspector]
     public string previousScene;
     private static bool aTeamHasBeenDefeated = false;
     public string teamName;
@@ -20,7 +22,7 @@ public class UnitTeam : MonoBehaviour
 
 
     private void Start() {
-        if(playerTeam.Equals(false)) {
+        if(teamType != TeamType.playerTeam) {
             unit1.GetComponent<SpriteRenderer>().flipX = true;
             unit2.GetComponent<SpriteRenderer>().flipX = true;
             unit3.GetComponent<SpriteRenderer>().flipX = true;
@@ -35,7 +37,7 @@ public class UnitTeam : MonoBehaviour
     /// This need to change!
     /// </summary>
     private void Update() { 
-        if(playerTeam.Equals(false) && aTeamHasBeenDefeated.Equals(true)) {
+        if(teamType != TeamType.playerTeam && aTeamHasBeenDefeated.Equals(true)) {
             defeatedTeamList.RemoveDefeatedTeams();
             aTeamHasBeenDefeated = false;
         }

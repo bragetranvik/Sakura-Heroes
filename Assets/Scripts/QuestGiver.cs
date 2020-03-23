@@ -7,8 +7,25 @@ public class QuestGiver : MonoBehaviour {
     public GameObject quest2;
     public GameObject quest3;
 
+    /// <summary>
+    /// Adds quest1 to player inventory.
+    /// </summary>
     public void AcceptQuestOne() {
         AddQuestToPlayerList(quest1);
+    }
+
+    /// <summary>
+    /// Adds quest2 to player inventory.
+    /// </summary>
+    public void AcceptQuestTwo() {
+        AddQuestToPlayerList(quest2);
+    }
+
+    /// <summary>
+    /// Adds quest3 to player inventory.
+    /// </summary>
+    public void AcceptQuestThree() {
+        AddQuestToPlayerList(quest3);
     }
 
     /// <summary>

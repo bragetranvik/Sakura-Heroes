@@ -84,7 +84,7 @@ public class BattleSystem : MonoBehaviour {
 
     /// <summary>
     /// Runs in a state loop until either the battle is lost or won.
-    /// It will sycle thought each units turn from friendly unit to enemy unit.
+    /// It will cycle thought each units turn from friendly unit to enemy unit.
     /// If a unit is missing or dead it will skip that unit and go to the next.
     /// </summary>
     /// <returns>Not sure.</returns>
@@ -218,8 +218,8 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Places the friendly and enemy units on their battlestations.
-    /// Ensures that the battlestations are using the dark sprite at the start.
+    /// Places the friendly and enemy units on their battle stations.
+    /// Ensures that the battle stations are using the dark sprite at the start.
     /// Sets the dialogue text to "Fight!".
     /// Gets the unit stats from each unit.
     /// Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
@@ -231,7 +231,7 @@ public class BattleSystem : MonoBehaviour {
         PrepareFriendlyUnits();
         PrepareEnemyUnits();
 
-        // Places the friendly and enemy units on their battlestations.
+        // Places the friendly and enemy units on their battle stations.
         GameObject friendly1GO = Instantiate(friendlyUnit1GO, friendly1BattleStation.GetComponent<Transform>());
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
         GameObject friendly2GO = Instantiate(friendlyUnit2GO, friendly2BattleStation.GetComponent<Transform>());
@@ -302,7 +302,7 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Checks if all anemy units are dead.
+    /// Checks if all enemy units are dead.
     /// </summary>
     /// <returns>True if all enemy units is dead.</returns>
     private bool IsAllEnemiesDead() {
@@ -331,8 +331,10 @@ public class BattleSystem : MonoBehaviour {
         if(state == BattleState.WON) {
             //Debug.Log("Battle won STATE");
             dialogueText.text = "You won the battle!";
-            enemyTeam.AddToDefeatedList();
-            enemyTeam.SetAnEnemyTeamHasBeenDefeated(true);
+            if (!enemyTeam.teamType.Equals(TeamType.npcTeam)) {
+                enemyTeam.AddToDefeatedList();
+                enemyTeam.SetAnEnemyTeamHasBeenDefeated(true);
+            }
             PlayerInventory playerInventory = friendlyTeamGO.GetComponent<PlayerInventory>();
             playerInventory.GainXPFromEnemies(enemyUnit2.unitLevel);
             playerInventory.EarnMoney(playerInventory.CalculateHowMuchMoneyToEarn(enemyUnit2.unitLevel));
@@ -523,7 +525,7 @@ public class BattleSystem : MonoBehaviour {
 
     /// <summary>
     /// When loading this scene from a different scene these two functions will set the
-    /// player and enemy units to the correct ones dependant on what enemy was encountered and
+    /// player and enemy units to the correct ones dependent on what enemy was encountered and
     /// how the team of the player was built up
     /// </summary>
     private void PrepareFriendlyUnits() {
@@ -575,6 +577,9 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
         enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
         enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
+        if (enemyTeam.teamType.Equals(TeamType.npcTeam)) {
+            //enemyTeamGO.GetComponent<Fungus.>();
+        }
     }
 
     private void HideImportedObjects() {

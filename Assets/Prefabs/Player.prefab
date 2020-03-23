@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeated: 0
-  playerTeam: 0
+  teamType: 1
   previousScene: 
   teamName: 
   unit1: {fileID: 0}

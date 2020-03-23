@@ -6,7 +6,7 @@ public class LocalFlag : MonoBehaviour{
     public static ArrayList defeatedTeams = new ArrayList();
 
     /// <summary>
-    /// Removes all teams in the defetedTeams list, set defeted in UnitTeam to false
+    /// Removes all teams in the defetedTeams list, set defeated in UnitTeam to false
     /// and set the team as active.
     /// </summary>
     public void ResetAllEnemies() {
