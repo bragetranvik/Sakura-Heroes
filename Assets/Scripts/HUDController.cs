@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class UIController : MonoBehaviour
+public class HUDController : MonoBehaviour
 {
-    public GameObject HUD;
     public Image UICharacterIcon;
     public Text UIMoneyCounter;
     public Text UILevelCounter;

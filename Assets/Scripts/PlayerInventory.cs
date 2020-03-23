@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour {
@@ -134,13 +135,18 @@ public class PlayerInventory : MonoBehaviour {
     /// Calculate what the new total money will be
     /// </summary>
     /// <param name="moneyEarned">How much money the player just earned</param>
-    public void EarnMoney(int moneyEarned) {
-        totalMoney += moneyEarned;
+    public void EarnMoney(int moneyEarned) {
+
+        totalMoney += moneyEarned;
+
     }
 
-    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
-        int howMuchToEarn = Convert.ToInt32(50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
-        return howMuchToEarn;
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
+
+        int howMuchToEarn = Convert.ToInt32(50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+
+        return howMuchToEarn;
+
     }
 
     /// <summary>
