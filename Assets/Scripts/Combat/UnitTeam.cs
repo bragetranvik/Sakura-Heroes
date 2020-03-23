@@ -10,7 +10,6 @@ public class UnitTeam : MonoBehaviour
     public TeamType teamType;
     [HideInInspector]
     public string previousScene;
-    private static bool aTeamHasBeenDefeated = false;
     public string teamName;
 
     public GameObject unit1;
@@ -31,18 +30,7 @@ public class UnitTeam : MonoBehaviour
             unit2.GetComponent<SpriteRenderer>().flipX = false;
             unit3.GetComponent<SpriteRenderer>().flipX = false;
         }
-    }
-
-    /// <summary>
-    /// This need to change!
-    /// </summary>
-    private void Update() { 
-        if(teamType != TeamType.playerTeam && aTeamHasBeenDefeated.Equals(true)) {
-            defeatedTeamList.RemoveDefeatedTeams();
-            aTeamHasBeenDefeated = false;
-        }
-    }
-    
+    } 
 
     public GameObject GetUnit1GO() {
         return unit1;
@@ -52,14 +40,6 @@ public class UnitTeam : MonoBehaviour
     }
     public GameObject GetUnit3GO() {
         return unit3;
-    }
-
-    public void SetAnEnemyTeamHasBeenDefeated(bool state) {
-        aTeamHasBeenDefeated = state;
-    }
-
-    public bool GetAnEnemyTeamHasBeenDefeated() {
-        return aTeamHasBeenDefeated;
     }
 
     public void SetPreviousScene() {
