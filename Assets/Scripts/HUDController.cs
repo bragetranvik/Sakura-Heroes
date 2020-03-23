@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class HUDController : MonoBehaviour
 {
-    public Image UICharacterIcon;
-    public Text UIMoneyCounter;
-    public Text UILevelCounter;
+    public GameObject thisHUD;
+    public Image HUDCharacterIcon;
+    public Text HUDMoneyCounter;
+    public Text HUDLevelCounter;
 
     private PlayerInventory playerInventory;
 
@@ -21,14 +22,30 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateUI();   
+        UpdateHUD();   
     }
 
-    private void UpdateUI()
+    private void UpdateHUD()
     {
         // Set money in UI (Not implemented yet)
-        UIMoneyCounter.text = "Money: " + Convert.ToString(playerInventory.totalMoney);
+        HUDMoneyCounter.text = "Money: " + Convert.ToString(playerInventory.totalMoney);
         // Set level in UI
-        UILevelCounter.text = "Level: " + Convert.ToString(playerInventory.level);
+        HUDLevelCounter.text = "Level: " + Convert.ToString(playerInventory.level);
+    }
+
+    public void HideUI()
+    {
+        thisHUD.GetComponent<Image>().enabled = false;
+        HUDCharacterIcon.enabled = false;
+        HUDMoneyCounter.enabled = false;
+        HUDLevelCounter.enabled = false;
+    }
+
+    public void ShowUI()
+    {
+        thisHUD.GetComponent<Image>().enabled = false;
+        HUDCharacterIcon.enabled = false;
+        HUDMoneyCounter.enabled = false;
+        HUDLevelCounter.enabled = false;
     }
 }

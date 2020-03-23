@@ -364,6 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6831bcc3c5987694ebb3526179623f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICharacterIcon: {fileID: 4153636209573502449}
-  UIMoneyCounter: {fileID: 4153636209417406871}
-  UILevelCounter: {fileID: 4153636209340125840}
+  thisHUD: {fileID: 4153636210509150586}
+  HUDCharacterIcon: {fileID: 4153636209573502449}
+  HUDMoneyCounter: {fileID: 4153636209417406871}
+  HUDLevelCounter: {fileID: 4153636209340125840}
