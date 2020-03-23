@@ -20,14 +20,9 @@ public class MainMenu : MonoBehaviour
     
     public void NewGame()
     {
-        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Flag"));
         SceneManager.LoadScene("StartHub");
         playerGO.GetComponent<SpriteRenderer>().enabled = true;
         playerGO.GetComponent<Transform>().position = new Vector3(4.5f, -0.3f, 0f);
-    }
-
-    private void DontDestroyOnLoad() {
-        throw new NotImplementedException();
     }
 
     public void QuitToDesktop()
