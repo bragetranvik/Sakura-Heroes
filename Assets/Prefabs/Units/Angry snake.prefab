@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3939081366554770880
+--- !u!1 &6300243097466293549
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6826453977277639175}
-  - component: {fileID: 147778926764711130}
-  - component: {fileID: 2226236887822029038}
+  - component: {fileID: 6300243097466293548}
+  - component: {fileID: 2192885641085528741}
+  - component: {fileID: 1015980623296846268}
   m_Layer: 0
-  m_Name: Otter
+  m_Name: Angry snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6826453977277639175
+--- !u!4 &6300243097466293548
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939081366554770880}
+  m_GameObject: {fileID: 6300243097466293549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.055, y: 0.43, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &147778926764711130
+--- !u!212 &2192885641085528741
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939081366554770880}
+  m_GameObject: {fileID: 6300243097466293549}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -62,7 +62,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
+  m_StitchLightmapSeams: 1
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -70,49 +70,50 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300008, guid: ecc36bf631dddbc4abfe5dde89c62b32, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300452, guid: 6c8f447ab65c4774baf61ab00889f7f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6875, y: 1.28125}
+  m_Size: {x: 0.96875, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2226236887822029038
+--- !u!114 &1015980623296846268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939081366554770880}
+  m_GameObject: {fileID: 6300243097466293549}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3c20918cee57b04eb3a72ff96b8f4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Otty the Otter
+  unitName: Angry snake
   unitLevel: 99
-  baseAttack: 9999
-  baseDefence: 3
-  baseHP: 12
+  baseAttack: 12
+  baseDefence: 7
+  baseHP: 6
   currentHP: 0
   currentMP: 0
-  ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}
-  ability2: {fileID: 7527890262183082710, guid: 1e0cf3924365e0e478b19d92bb18bb77,
+  ability1: {fileID: 7233059451448627035, guid: 4f4282975317105479b13f0a9875b48a,
     type: 3}
-  ability3: {fileID: 3351736876704300939, guid: 3e57fdcc56a83434aa6ce8d31ac35367,
+  ability2: {fileID: 7050020113640471639, guid: 4311a5d1a70773f40a2b8ff309124966,
     type: 3}
-  ability4: {fileID: 6492035084676698311, guid: 756301c2ea5627b4d8eff35ddc7f99e0,
+  ability3: {fileID: 3092426496009188694, guid: 149d0cf44b9419a47b40d94537c1ac86,
+    type: 3}
+  ability4: {fileID: 2062755836313189726, guid: 996e87745a51b0a41b0909efdf76deb6,
     type: 3}
   attack: 0
   defence: 0
   maxHP: 0
   maxMP: 0
   isDead: 0
-  portraitPicture: {fileID: 21300002, guid: ecc36bf631dddbc4abfe5dde89c62b32, type: 3}
-  unitPosInBattle: {x: 0.055, y: 0.43}
-  unitScaleInBattle: {x: 2.5, y: 2.5, z: 2.5}
+  portraitPicture: {fileID: 21300452, guid: 6c8f447ab65c4774baf61ab00889f7f1, type: 3}
+  unitPosInBattle: {x: -0.15, y: 1.5}
+  unitScaleInBattle: {x: 5, y: 5, z: 5}

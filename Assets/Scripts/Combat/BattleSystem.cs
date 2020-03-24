@@ -17,6 +17,11 @@ public class BattleSystem : MonoBehaviour {
     public GameObject friendly1BattleStation, friendly2BattleStation, friendly3BattleStation;
     public GameObject enemy1BattleStation, enemy2BattleStation, enemy3BattleStation;
 
+    public GameObject friendlyTeamGO;
+    public UnitTeam friendlyTeam;
+
+    public GameObject enemyTeamGO;
+    public UnitTeam enemyTeam;
 
     private GameObject friendlyUnit1GO, friendlyUnit2GO, friendlyUnit3GO;
     private GameObject enemyUnit1GO, enemyUnit2GO, enemyUnit3GO;
@@ -41,6 +46,7 @@ public class BattleSystem : MonoBehaviour {
     private bool targetHasBeenChosen = false, abilityHasBeenChosen = false;
     private string highlightedAbility = null;
     public EnemyAI enemyAI;
+    public LeaveBattle leaveBattle;
 
     public BattleState state;
 
@@ -78,7 +84,7 @@ public class BattleSystem : MonoBehaviour {
 
     /// <summary>
     /// Runs in a state loop until either the battle is lost or won.
-    /// It will sycle thought each units turn from friendly unit to enemy unit.
+    /// It will cycle thought each units turn from friendly unit to enemy unit.
     /// If a unit is missing or dead it will skip that unit and go to the next.
     /// </summary>
     /// <returns>Not sure.</returns>
@@ -212,8 +218,8 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Places the friendly and enemy units on their battlestations.
-    /// Ensures that the battlestations are using the dark sprite at the start.
+    /// Places the friendly and enemy units on their battle stations.
+    /// Ensures that the battle stations are using the dark sprite at the start.
     /// Sets the dialogue text to "Fight!".
     /// Gets the unit stats from each unit.
     /// Sets up the HUD for the friendly and enemy side in the battleHUD, and disables all the buttons before start.
@@ -225,7 +231,7 @@ public class BattleSystem : MonoBehaviour {
         PrepareFriendlyUnits();
         PrepareEnemyUnits();
 
-        // Places the friendly and enemy units on their battlestations.
+        // Places the friendly and enemy units on their battle stations.
         GameObject friendly1GO = Instantiate(friendlyUnit1GO, friendly1BattleStation.GetComponent<Transform>());
         friendlyUnit1 = friendly1GO.GetComponent<Unit>();
         GameObject friendly2GO = Instantiate(friendlyUnit2GO, friendly2BattleStation.GetComponent<Transform>());
@@ -266,6 +272,8 @@ public class BattleSystem : MonoBehaviour {
         EnableDisableAttackButtons(false);
         EnableDisableTargetButtons(false);
 
+        HideImportedObjects();
+
         //Makes a list of all units in the battle.
         MakeUnitList();
     }
@@ -294,7 +302,7 @@ public class BattleSystem : MonoBehaviour {
     }
 
     /// <summary>
-    /// Checks if all anemy units are dead.
+    /// Checks if all enemy units are dead.
     /// </summary>
     /// <returns>True if all enemy units is dead.</returns>
     private bool IsAllEnemiesDead() {
@@ -321,16 +329,21 @@ public class BattleSystem : MonoBehaviour {
 
     private void EndBattle() {
         if(state == BattleState.WON) {
+            //Debug.Log("Battle won STATE");
             dialogueText.text = "You won the battle!";
+            if (!enemyTeam.teamType.Equals(TeamType.npcTeam)) {
+                enemyTeam.AddToDefeatedList();
+            }
+            PlayerInventory playerInventory = friendlyTeamGO.GetComponent<PlayerInventory>();
+            playerInventory.GainXPFromEnemies(enemyUnit2.unitLevel);
+            playerInventory.EarnMoney(playerInventory.CalculateHowMuchMoneyToEarn(enemyUnit2.unitLevel));
+            //yield return new WaitForSeconds(2f);
+            leaveBattle.ChangeSceneToPrevious();
         } else if(state == BattleState.LOST) {
-            dialogueText.text = "You were defeted.";
+            dialogueText.text = "You were defeated.";
+            //yield return new WaitForSeconds(2f);
+            leaveBattle.ChangeSceneToStartHub();
         }
-        BattleHUD.SetBattleStationToDark(friendly1BattleStation);
-        BattleHUD.SetBattleStationToDark(friendly2BattleStation);
-        BattleHUD.SetBattleStationToDark(friendly3BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy1BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy2BattleStation);
-        BattleHUD.SetBattleStationToDark(enemy3BattleStation);
     }
 
     /// <summary>
@@ -511,12 +524,12 @@ public class BattleSystem : MonoBehaviour {
 
     /// <summary>
     /// When loading this scene from a different scene these two functions will set the
-    /// player and enemy units to the correct ones dependant on what enemy was encountered and
+    /// player and enemy units to the correct ones dependent on what enemy was encountered and
     /// how the team of the player was built up
     /// </summary>
     private void PrepareFriendlyUnits() {
-        GameObject friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
-        UnitTeam friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
+        friendlyTeamGO = GameObject.FindGameObjectWithTag("Player");
+        friendlyTeam = friendlyTeamGO.GetComponent<UnitTeam>();
 
         friendlyUnit1GO = friendlyTeam.GetUnit1GO();
         friendlyUnit2GO = friendlyTeam.GetUnit2GO();
@@ -538,12 +551,10 @@ public class BattleSystem : MonoBehaviour {
         friendlyUnit1GO.GetComponent<Transform>().localPosition = friendlyUnit1.GetPosition();
         friendlyUnit2GO.GetComponent<Transform>().localPosition = friendlyUnit2.GetPosition();
         friendlyUnit3GO.GetComponent<Transform>().localPosition = friendlyUnit3.GetPosition();
-
-        friendlyTeamGO.SetActive(false);
     }
     private void PrepareEnemyUnits() {
-        GameObject enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
-        UnitTeam enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
+        enemyTeamGO = GameObject.FindGameObjectWithTag("Enemy");
+        enemyTeam = enemyTeamGO.GetComponent<UnitTeam>();
 
         enemyUnit1GO = enemyTeam.GetUnit1GO();
         enemyUnit2GO = enemyTeam.GetUnit2GO();
@@ -565,7 +576,18 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
         enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
         enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
+        if (enemyTeam.teamType.Equals(TeamType.npcTeam)) {
+            //enemyTeamGO.GetComponent<Fungus.>();
+        }
+    }
 
+    private void HideImportedObjects() {
+        friendlyTeamGO.SetActive(false);
         enemyTeamGO.SetActive(false);
+    }
+
+    public void EnablePlayerAndEnemyObjects() {
+        friendlyTeamGO.SetActive(true);
+        enemyTeamGO.SetActive(true);
     }
 }
