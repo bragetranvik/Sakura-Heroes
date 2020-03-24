@@ -10,6 +10,7 @@ public class PlayerInventory : MonoBehaviour {
     public int level = 1;
     public List<GameObject> questList = new List<GameObject>();
     public int totalMoney;
+    public List<GameObject> petList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start() {
@@ -156,5 +157,16 @@ public class PlayerInventory : MonoBehaviour {
     public void GetQuestReward(int xpReward, int moneyReward) {
         GainXpFromQuest(xpReward);
         EarnMoney(moneyReward);
+    }
+
+    public void AddPetToList(GameObject petToAdd)
+    {
+        petList.Add(petToAdd);
+    }
+
+    public GameObject GetPetInList(int index)
+    {
+        GameObject petInIndex = petList[index];
+        return petInIndex;
     }
 }
