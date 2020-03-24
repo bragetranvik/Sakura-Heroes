@@ -5,6 +5,10 @@ using UnityEngine;
 public class LocalFlag : MonoBehaviour{
     public static ArrayList defeatedTeams = new ArrayList();
 
+    private void Awake() {
+        RemoveDefeatedTeams();
+    }
+
     /// <summary>
     /// Removes all teams in the defetedTeams list, set defeated in UnitTeam to false
     /// and set the team as active.
@@ -33,8 +37,8 @@ public class LocalFlag : MonoBehaviour{
         GameObject[] enemiesOnScene = FindObjectsOfType<GameObject>();
         foreach (GameObject teamInScene in enemiesOnScene) {
             if(teamInScene.CompareTag("Enemy")) {
-                foreach (string teamName in defeatedTeams) {
-                    if(teamInScene.GetComponent<UnitTeam>().teamName.Equals(teamName)) {
+                foreach (string defeatedTeam in defeatedTeams) {
+                    if(teamInScene.GetComponent<UnitTeam>().teamName.Equals(defeatedTeam)) {
                         teamInScene.SetActive(false);
                     }
                 }

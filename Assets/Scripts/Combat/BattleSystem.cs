@@ -333,7 +333,6 @@ public class BattleSystem : MonoBehaviour {
             dialogueText.text = "You won the battle!";
             if (!enemyTeam.teamType.Equals(TeamType.npcTeam)) {
                 enemyTeam.AddToDefeatedList();
-                enemyTeam.SetAnEnemyTeamHasBeenDefeated(true);
             }
             PlayerInventory playerInventory = friendlyTeamGO.GetComponent<PlayerInventory>();
             playerInventory.GainXPFromEnemies(enemyUnit2.unitLevel);

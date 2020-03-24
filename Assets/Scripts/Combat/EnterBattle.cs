@@ -17,14 +17,8 @@ public class EnterBattle : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && enemyUnit && !(enemyTeam.GetComponent<UnitTeam>().GetAnEnemyTeamHasBeenDefeated())) {
+        if (other.gameObject.CompareTag("Player") && enemyUnit) {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(enemyTeam);
             DontDestroyOnLoad(defeatedEnemyList);
