@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public enum TeamType { enemyTeam, playerTeam, npcTeam }
 public class UnitTeam : MonoBehaviour
 {
+    [HideInInspector]
     public bool defeated = false;
     public TeamType teamType;
     [HideInInspector]

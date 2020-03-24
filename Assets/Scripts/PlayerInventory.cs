@@ -110,7 +110,6 @@ public class PlayerInventory : MonoBehaviour {
         bool questIsInList = false;
 
         foreach (GameObject questInList in questList) {
-            Debug.Log("Quest in list: " + questInList.GetComponent<Quest>().questName);
             if (questInList.GetComponent<Quest>().questName.Equals(quest.GetComponent<Quest>().questName)) {
                 questIsInList = true;
             }

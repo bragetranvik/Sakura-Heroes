@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour {
 
     //Base stats should only be between 1-12.
     public int baseAttack, baseDefence, baseHP;
+    [HideInInspector]
     public int currentHP, currentMP;
 
     public Ability ability1, ability2, ability3, ability4;
@@ -25,6 +26,7 @@ public class Unit : MonoBehaviour {
     private int dotDmg, dotRoundsLeft;
     private bool dotIsActive = false;
 
+    [HideInInspector]
     public bool isDead = false;
     public Sprite portraitPicture;
 

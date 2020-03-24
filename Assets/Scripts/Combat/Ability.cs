@@ -19,6 +19,7 @@ public class Ability : MonoBehaviour {
     public string abilityName;
     [TextArea(7, 7)]
     public string abilityTooltip;
+    [HideInInspector]
     public bool isHeal = false;
 
 
