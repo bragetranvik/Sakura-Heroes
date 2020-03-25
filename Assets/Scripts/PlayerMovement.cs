@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
-    private bool canMove = true;
+    public static bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetCanMoveFalse() {
         canMove = false;
+        Debug.Log("Can move false");
     }
 
     public void SetCanMoveTrue() {

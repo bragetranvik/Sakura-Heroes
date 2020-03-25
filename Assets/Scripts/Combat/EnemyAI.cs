@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour {
-
     /// <summary>
     /// 
     /// </summary>
@@ -58,7 +57,7 @@ public class EnemyAI : MonoBehaviour {
 
     /// <summary>
     /// If roll is 1, chosen target will be the enemy with lowest health,
-    /// if all units got the same current health it will be the unit with the lowst defence,
+    /// if all units got the same current health it will be the unit with the lowest defence,
     /// if all units got the same defence it will be a random out of the 3.
     /// If roll is 2 a random target will be chosen.
     /// </summary>

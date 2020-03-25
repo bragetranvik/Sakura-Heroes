@@ -185,9 +185,9 @@ public class Unit : MonoBehaviour {
     /// and if current HP > maxHP, sets the current HP = maxHP.
     /// </summary>
     public void CalculateStats() {
-        attack = Convert.ToInt32(unitLevel * baseAttack/12 + attackConstant);
-        defence = Convert.ToInt32(unitLevel * baseDefence/20 + defenceConstant);
-        maxHP = Convert.ToInt32(unitLevel * baseHP/2 + HPConstant);
+        attack = Convert.ToInt32(unitLevel * baseAttack/12f + attackConstant);
+        defence = Convert.ToInt32(unitLevel * baseDefence/20f + defenceConstant);
+        maxHP = Convert.ToInt32(unitLevel * baseHP/2f + HPConstant);
         if(unitLevel.Equals(99)) {
             maxMP = 200;
         } else {

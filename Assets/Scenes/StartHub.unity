@@ -47546,9 +47546,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1531048247}
-  selectedCommands:
-  - {fileID: 1531048245}
+  - {fileID: 1531048256}
+  selectedCommands: []
   variables:
   - {fileID: 1531048262}
   description: 
@@ -47645,8 +47644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 398.96918
-    y: 147.88239
+    x: 426.0281
+    y: 143.17651
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -47904,14 +47903,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 246.04372
-    y: 86.0558
-    width: 120
+    x: 244.86725
+    y: 87.23227
+    width: 159.4118
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 29
-  blockName: New Block
+  blockName: Talking with doggo
   description: 
   eventHandler: {fileID: 1531048250}
   commandList:
@@ -48082,7 +48081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 2871708526557659350, guid: 7ae42c59884f5704fa16e9d761c0ba9e,
+    type: 3}
   methodName: SetCanMoveFalse
   delay: 0
 --- !u!114 &1531048262

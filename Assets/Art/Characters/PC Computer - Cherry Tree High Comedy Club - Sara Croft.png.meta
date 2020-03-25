@@ -1,0 +1,778 @@
+fileFormatVersion: 2
+guid: b9ca3aeeedf80ba4dac503e0b113447c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9079252780603393003
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_0
+  - first:
+      213: -3769888141867990606
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_1
+  - first:
+      213: 6182169806461377708
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_2
+  - first:
+      213: 2696188385309543806
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_3
+  - first:
+      213: 4737722651900504813
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_4
+  - first:
+      213: -2404766262062454430
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_5
+  - first:
+      213: -1930388314068018656
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_6
+  - first:
+      213: 2024675148398482182
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_7
+  - first:
+      213: -4184364342518104916
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_8
+  - first:
+      213: -3598572364930988777
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_9
+  - first:
+      213: -7909690340042394475
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_10
+  - first:
+      213: 7752089073700966572
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_11
+  - first:
+      213: 3754327192189099666
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_12
+  - first:
+      213: 6080283127664224151
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_13
+  - first:
+      213: -2871709763550388440
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_14
+  - first:
+      213: -5158964073527478302
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_15
+  - first:
+      213: -212458485269856069
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_16
+  - first:
+      213: -1059065950027000631
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_17
+  - first:
+      213: 6313514879373907261
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_18
+  - first:
+      213: -312585049032700707
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_19
+  - first:
+      213: 6031260469104306651
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_20
+  - first:
+      213: -2386741684780337583
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_21
+  - first:
+      213: 5727840780993056413
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_22
+  - first:
+      213: 1105669052583973333
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_23
+  - first:
+      213: -7681771376205670607
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_24
+  - first:
+      213: -1400070028657181558
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_25
+  - first:
+      213: 2845176105036201562
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_26
+  - first:
+      213: -2863211641267596676
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_27
+  - first:
+      213: 5065702495678853894
+    second: PC Computer - Cherry Tree High Comedy Club - Sara Croft_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 475
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3c7ddcc4cfffd70800000000000000
+      internalID: 9079252780603393003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 475
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1400d65baaeabc0800000000000000
+      internalID: -3769888141867990606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 475
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac96473faa7bc550800000000000000
+      internalID: 6182169806461377708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 475
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dc8e92d09ca6520800000000000000
+      internalID: 2696188385309543806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 380
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deae9de76a5cfb140800000000000000
+      internalID: 4737722651900504813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 380
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2696ced53dd80aed0800000000000000
+      internalID: -2404766262062454430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 380
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a19655e02e535e0800000000000000
+      internalID: -1930388314068018656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 44
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6035addf157191c10800000000000000
+      internalID: 2024675148398482182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 285
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacb569dcc62ee5c0800000000000000
+      internalID: -4184364342518104916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 285
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71540c9008d4f0ec0800000000000000
+      internalID: -3598572364930988777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 285
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5943f660b822b3290800000000000000
+      internalID: -7909690340042394475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 285
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca01221b0f3f49b60800000000000000
+      internalID: 7752089073700966572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 285
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e5505a0bc0a1430800000000000000
+      internalID: 3754327192189099666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 190
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fde8d5f23a528d0800000000000000
+      internalID: -2871709763550388440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 190
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7746c228da768b0800000000000000
+      internalID: -5158964073527478302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 190
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb009ff12223d0df0800000000000000
+      internalID: -212458485269856069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 190
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4ddee21217d41f0800000000000000
+      internalID: -1059065950027000631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 190
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d359935155c1e9750800000000000000
+      internalID: 6313514879373907261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcce46dd8979abf0800000000000000
+      internalID: -312585049032700707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 95
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd961d0117753b350800000000000000
+      internalID: 6031260469104306651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_21
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 95
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156fc0c451790eed0800000000000000
+      internalID: -2386741684780337583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 95
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e4619c7d06d7f40800000000000000
+      internalID: 5727840780993056413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 95
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1196e2520285f00800000000000000
+      internalID: 1105669052583973333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1375f7312add46590800000000000000
+      internalID: -7681771376205670607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cb7311ab3f19ce0800000000000000
+      internalID: -1400070028657181558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_26
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ebc18d7981c7720800000000000000
+      internalID: 2845176105036201562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c725b75ae24d348d0800000000000000
+      internalID: -2863211641267596676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Cherry Tree High Comedy Club - Sara Croft_28
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6037fb0a49dfc4640800000000000000
+      internalID: 5065702495678853894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
