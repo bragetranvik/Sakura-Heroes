@@ -21394,8 +21394,14 @@ PrefabInstance:
     - target: {fileID: 3021443755037544713, guid: 38659b9a4468b4b47bb7930e86cd0f97,
         type: 3}
       propertyPath: unitLevel
-      value: 90
+      value: 99
       objectReference: {fileID: 0}
+    - target: {fileID: 3021443755037544713, guid: 38659b9a4468b4b47bb7930e86cd0f97,
+        type: 3}
+      propertyPath: ability3
+      value: 
+      objectReference: {fileID: 6492035084676698311, guid: 756301c2ea5627b4d8eff35ddc7f99e0,
+        type: 3}
     - target: {fileID: 5925928618424138264, guid: 38659b9a4468b4b47bb7930e86cd0f97,
         type: 3}
       propertyPath: m_LocalPosition.x

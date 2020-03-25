@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot }
+public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot, Heal }
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain;
     public float damageMultiplier;
@@ -75,7 +75,7 @@ public class Ability : MonoBehaviour {
                     break;
 
                 case AbilityType.AOEDmg:
-                    //The two units which didn't take the initial hit will take x% of the damage ingoring all armor.
+                    //The two units which didn't take the initial hit will take x% of the damage ignoring all armor.
                     int damageDone = target.TakeDamage(unit.attack, damageMultiplier, armorPenetration);
                     if(!target.Equals(enemy1)) {
                         enemy1.TakeDamageIgnoreArmor(Convert.ToInt32(damageDone * pctAOEDmg/100f));
@@ -183,7 +183,91 @@ public class Ability : MonoBehaviour {
     /// <param name="target">Target of the ability.</param>
     /// <returns>Damage the ability would do.</returns>
     public int GetAbilityDamageOnTargt(Unit unit, Unit target) {
-        return target.GetDamage(unit.attack, this.damageMultiplier, this.armorPenetration);
+        int damageDone;
+        switch (abilityType) {
+
+            case AbilityType.executeDmg:
+                //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
+                if (IsTargetInExecuteRange(target, 25)) {
+                    damageDone = target.GetDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
+                }
+                else {
+                    damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);
+                }
+                break;
+
+            case AbilityType.executeDmgLifeSteal:
+                if (IsTargetInExecuteRange(target, 25)) {
+                    damageDone = target.GetDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
+                }
+                else {
+                    damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);
+                }
+                break;
+
+            case AbilityType.bloodAbility:
+                float bloodHunger = GetBloodHunger(unit);
+                damageDone = target.GetDamage(unit.attack, damageMultiplier * bloodHunger, armorPenetration);
+                break;
+
+            case AbilityType.Heal:
+                damageDone = 0;
+                break;
+
+            default:
+                damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration);
+                break;
+        }
+        return damageDone;
+    }
+
+    /// <summary>
+    /// Return true if the special requirements for the ability to deal damage to deal damage is fulfilled.
+    /// </summary>
+    /// <returns>Return true if the special requirements for the ability to deal damage to deal damage is fulfilled.</returns>
+    public bool IsAbilityRequirementfulfilled(Unit unit, Unit target) {
+        bool isAbilityRequirementfulfilled = false;
+
+        switch (abilityType) {
+
+            case AbilityType.executeDmg:
+                //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
+                if (IsTargetInExecuteRange(target, 25)) {
+                    isAbilityRequirementfulfilled = true;
+                }
+                break;
+
+            case AbilityType.executeDmgLifeSteal:
+                if (IsTargetInExecuteRange(target, 25)) {
+                    isAbilityRequirementfulfilled = true;
+                }
+                break;
+
+            case AbilityType.bloodAbility:
+                if(GetBloodHunger(unit) > 0) {
+                    isAbilityRequirementfulfilled = true;
+                }
+                break;
+
+            default:
+                isAbilityRequirementfulfilled = true;
+                break;
+        }
+        return isAbilityRequirementfulfilled;
+    }
+
+    /// <summary>
+    /// Return true if the ability got any requirements to deal damage.
+    /// </summary>
+    /// <returns>True if the ability got any requirements to deal damage.</returns>
+    public bool IsSpecialAbility() {
+        bool isSpecialAbility = false;
+        if(abilityType.Equals(AbilityType.bloodAbility) ||
+            abilityType.Equals(AbilityType.executeDmg) ||
+            abilityType.Equals(AbilityType.executeDmgLifeSteal)) {
+            isSpecialAbility = true;
+        }
+        return isSpecialAbility;
     }
 
     /// <summary>
@@ -191,7 +275,7 @@ public class Ability : MonoBehaviour {
     /// </summary>
     /// <returns>Name of the ability.</returns>
     public string GetAbilityName() {
-        return this.abilityName;
+        return abilityName;
     }
 
     /// <summary>
@@ -199,7 +283,7 @@ public class Ability : MonoBehaviour {
     /// </summary>
     /// <returns>Mana cost of the ability.</returns>
     public int GetManaCost() {
-        return this.manaCost;
+        return manaCost;
     }
 
     /// <summary>
@@ -207,7 +291,7 @@ public class Ability : MonoBehaviour {
     /// </summary>
     /// <returns>Level to use the ability.</returns>
     public int GetLevelToUse() {
-        return this.levelToUse;
+        return levelToUse;
     }
 
     /// <summary>
@@ -215,7 +299,7 @@ public class Ability : MonoBehaviour {
     /// </summary>
     /// <returns>Amount of mana the ability drain.</returns>
     public int GetManaDrain() {
-        return this.manaDrain;
+        return manaDrain;
     }
 
     /// <summary>
@@ -223,6 +307,6 @@ public class Ability : MonoBehaviour {
     /// </summary>
     /// <returns>Name of the ability.</returns>
     public int GetAbilityDamage(Unit unit) {
-        return Convert.ToInt32(this.damageMultiplier * unit.attack);
+        return Convert.ToInt32(damageMultiplier * unit.attack);
     }
 }
