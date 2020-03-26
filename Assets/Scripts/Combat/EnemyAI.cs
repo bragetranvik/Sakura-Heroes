@@ -42,11 +42,11 @@ public class EnemyAI : MonoBehaviour {
             abilityToUse = "ability4";
         } else if (unit.currentMP >= 130 && !unit.ability4.abilityType.Equals(AbilityType.Heal)) {
             abilityToUse = "ability4";
-        } else if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal && abilityRoll.Equals(5)) {
+        } else if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(5)) {
             abilityToUse = "ability4";
-        } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal && abilityRoll.Equals(4)) {
+        } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(4)) {
             abilityToUse = "ability3";
-        } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && abilityRoll.Equals(3)) {
+        } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(3)) {
             abilityToUse = "ability2";
         } else {
             abilityToUse = "ability1";
@@ -76,48 +76,49 @@ public class EnemyAI : MonoBehaviour {
             abilityToUse = "ability3";
         } else if (EnemyInKillRange(unit, target, unit.ability4) && unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && unit.ability4.IsAbilityRequirementfulfilled(unit, target)) {
             abilityToUse = "ability4";
-        } else if(unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && unit.ability4.IsAbilityRequirementfulfilled(unit, target) && unit.ability4.IsSpecialAbility()) {
+        } else if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && unit.ability4.IsAbilityRequirementfulfilled(unit, target) && unit.ability4.IsSpecialAbility()) {
             abilityToUse = "ability4";
-        } else if(unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && unit.ability3.IsAbilityRequirementfulfilled(unit, target) && unit.ability3.IsSpecialAbility()) {
+        } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && unit.ability3.IsAbilityRequirementfulfilled(unit, target) && unit.ability3.IsSpecialAbility()) {
             abilityToUse = "ability3";
-        } else if(unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && unit.ability2.IsAbilityRequirementfulfilled(unit, target) && unit.ability2.IsSpecialAbility()) {
+        } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && unit.ability2.IsAbilityRequirementfulfilled(unit, target) && unit.ability2.IsSpecialAbility()) {
             abilityToUse = "ability2";
-        } else if(unit.currentMP >= 130 && !unit.ability4.abilityType.Equals(AbilityType.Heal) && unit.ability4.IsAbilityRequirementfulfilled(unit, target)) {
+        } else if (unit.currentMP >= 130 && !unit.ability4.abilityType.Equals(AbilityType.Heal) && unit.ability4.IsAbilityRequirementfulfilled(unit, target)) {
             abilityToUse = "ability4";
+        } else if (unit.currentMP >= 130 && !unit.ability3.abilityType.Equals(AbilityType.Heal) && unit.ability3.IsAbilityRequirementfulfilled(unit, target)) {
+            abilityToUse = "ability3";
         } else {
             if (unit.ability4.IsSpecialAbility()) {
-                if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal && abilityRoll >= 4) {
+                if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && abilityRoll >= 4) {
                     abilityToUse = "ability3";
-                }
-                else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && abilityRoll.Equals(3)) {
+                } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(3)) {
                     abilityToUse = "ability2";
                 } else {
                     abilityToUse = "ability1";
                 }
-            } else if(unit.ability3.IsSpecialAbility()) {
-                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal && abilityRoll.Equals(5)) {
+            } else if (unit.ability3.IsSpecialAbility()) {
+                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(5)) {
                     abilityToUse = "ability4";
                 }
-                else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && (abilityRoll.Equals(3) || abilityRoll.Equals(4))) {
+                else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && (abilityRoll.Equals(3) || abilityRoll.Equals(4))) {
                     abilityToUse = "ability2";
                 }
                 else {
                     abilityToUse = "ability1";
                 }
             } else if (unit.ability2.IsSpecialAbility()) {
-                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal && abilityRoll.Equals(5)) {
+                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(5)) {
                     abilityToUse = "ability4";
-                } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && (abilityRoll.Equals(3) || abilityRoll.Equals(4))) {
+                } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && (abilityRoll.Equals(3) || abilityRoll.Equals(4))) {
                     abilityToUse = "ability3";
                 } else {
                     abilityToUse = "ability1";
                 }
             } else {
-                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.isHeal && abilityRoll.Equals(5)) {
+                if (unit.ability4.UnitGotManaForAbility(unit) && !unit.ability4.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(5)) {
                     abilityToUse = "ability4";
-                } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.isHeal && abilityRoll.Equals(4)) {
+                } else if (unit.ability3.UnitGotManaForAbility(unit) && !unit.ability3.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(4)) {
                     abilityToUse = "ability3";
-                } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.isHeal && abilityRoll.Equals(3)) {
+                } else if (unit.ability2.UnitGotManaForAbility(unit) && !unit.ability2.abilityType.Equals(AbilityType.Heal) && abilityRoll.Equals(3)) {
                     abilityToUse = "ability2";
                 } else {
                     abilityToUse = "ability1";
@@ -162,6 +163,18 @@ public class EnemyAI : MonoBehaviour {
         return chosenTarget;
     }
 
+    /// <summary>
+    /// Choose the target to attack or heal depending on some requirements and
+    /// a random roll.
+    /// </summary>
+    /// <param name="unit">The attacker.</param>
+    /// <param name="enemyUnit1">Enemy unit 1.</param>
+    /// <param name="enemyUnit2">Enemy unit 2.</param>
+    /// <param name="enemyUnit3">Enemy unit 3.</param>
+    /// <param name="friendly1">Friendly unit 1.</param>
+    /// <param name="friendly2">Friendly unit 2.</param>
+    /// <param name="friendly3">Friendly unit 3.</param>
+    /// <returns>Chosen target to attack.</returns>
     private Unit ChooseTarget(Unit unit, Unit enemyUnit1, Unit enemyUnit2, Unit enemyUnit3, Unit friendly1, Unit friendly2, Unit friendly3) {
         Unit chosenTarget;
 

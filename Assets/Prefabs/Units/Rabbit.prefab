@@ -106,7 +106,7 @@ MonoBehaviour:
     type: 3}
   ability3: {fileID: 2029938116326362136, guid: 3a09d3af65d61134288d31e5e3f58e01,
     type: 3}
-  ability4: {fileID: 2062755836313189726, guid: 996e87745a51b0a41b0909efdf76deb6,
+  ability4: {fileID: 6416144001938308987, guid: 14e198bbb54501a49af229a02f69fc3d,
     type: 3}
   attack: 0
   defence: 0

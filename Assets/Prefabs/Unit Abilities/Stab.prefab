@@ -47,12 +47,13 @@ MonoBehaviour:
   manaCost: 15
   levelToUse: 15
   manaDrain: 0
-  damageMultiplier: 1
+  manaToRestore: 0
+  damageMultiplier: 1.25
   abilityType: 0
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
   roundsDotWillLast: 0
+  amountToHeal: 0
   abilityName: Stab
-  abilityTooltip: Stab the target dealing 1x damage with 50% armor penetration.
-  isHeal: 0
+  abilityTooltip: Stab the target dealing 1.25x damage with 50% armor penetration.

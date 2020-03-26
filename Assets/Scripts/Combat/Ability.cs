@@ -5,7 +5,7 @@ using UnityEngine;
 
 public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot, Heal }
 public class Ability : MonoBehaviour {
-    public int armorPenetration, manaCost, levelToUse, manaDrain;
+    public int armorPenetration, manaCost, levelToUse, manaDrain, manaToRestore;
     public float damageMultiplier;
     public AbilityType abilityType;
     [Tooltip("Only works with abilityType: executeDmg, executeDmgLifeSteal")]
@@ -16,11 +16,11 @@ public class Ability : MonoBehaviour {
     public float pctLifeSteal;
     [Tooltip("Only works with abilityType: Dot")]
     public int roundsDotWillLast;
+    [Tooltip("Only works with abilityType: Heal")]
+    public int amountToHeal;
     public string abilityName;
     [TextArea(7, 7)]
     public string abilityTooltip;
-    [HideInInspector]
-    public bool isHeal = false;
 
 
     /// <summary>
@@ -36,7 +36,7 @@ public class Ability : MonoBehaviour {
     /// <param name="enemy3">Enemy 3.</param>
     /// <returns>True if the ability was successfully used.</returns>
     public bool DoAbility(Unit unit, Unit target, Unit friendly1, Unit friendly2, Unit friendly3, Unit enemy1, Unit enemy2, Unit enemy3) {
-        bool abilityWasSuccessful = false;
+        bool abilityWasSuccessful = true;
         bool wasEnemy1Dead = enemy1.isDead;
         bool wasEnemy2Dead = enemy2.isDead;
         bool wasEnemy3Dead = enemy3.isDead;
@@ -93,6 +93,10 @@ public class Ability : MonoBehaviour {
                     target.TakeDamage(unit.attack, damageMultiplier * bloodHunger, armorPenetration);
                     break;
 
+                case AbilityType.Heal:
+                    target.Heal(amountToHeal);
+                    break;
+
                 case AbilityType.Dot:
                     target.SetDotDmg(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration));
                     target.SetDot(roundsDotWillLast);
@@ -100,10 +104,13 @@ public class Ability : MonoBehaviour {
 
                 default:
                     Debug.Log("Something went wrong with Ability.DoAbility!");
+                    abilityWasSuccessful = false;
                     break;
             }
-            abilityWasSuccessful = true;
             IncreaseKillCount(unit, enemy1, enemy2, enemy3, wasEnemy1Dead, wasEnemy2Dead, wasEnemy3Dead);
+            if (abilityWasSuccessful) {
+                unit.GainMana(manaToRestore);
+            }
         }
         return abilityWasSuccessful;
     }
@@ -244,7 +251,7 @@ public class Ability : MonoBehaviour {
                 break;
 
             case AbilityType.bloodAbility:
-                if(GetBloodHunger(unit) > 0) {
+                if(GetBloodHunger(unit) > 1) {
                     isAbilityRequirementfulfilled = true;
                 }
                 break;
@@ -303,10 +310,26 @@ public class Ability : MonoBehaviour {
     }
 
     /// <summary>
-    /// Return name of the ability.
+    /// Return damage of the ability.
     /// </summary>
-    /// <returns>Name of the ability.</returns>
+    /// <returns>Damage of the ability.</returns>
     public int GetAbilityDamage(Unit unit) {
-        return Convert.ToInt32(damageMultiplier * unit.attack);
+        int damageDone;
+        switch (abilityType) {
+
+            case AbilityType.bloodAbility:
+                float bloodHunger = GetBloodHunger(unit);
+                damageDone = Convert.ToInt32(unit.attack * damageMultiplier * bloodHunger);
+                break;
+
+            case AbilityType.Heal:
+                damageDone = 0;
+                break;
+
+            default:
+                damageDone = Convert.ToInt32(damageMultiplier * unit.attack);
+                break;
+        }
+        return damageDone;
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1813472252813733987
+--- !u!1 &950881512858417546
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1467997222896033162}
-  - component: {fileID: 389282457694508274}
+  - component: {fileID: 5790759560730483279}
+  - component: {fileID: 6416144001938308987}
   m_Layer: 0
-  m_Name: Slash
+  m_Name: Give Carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1467997222896033162
+--- !u!4 &5790759560730483279
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813472252813733987}
+  m_GameObject: {fileID: 950881512858417546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.9169042, y: 0.49214998, z: -8.6796875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &389282457694508274
+--- !u!114 &6416144001938308987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813472252813733987}
+  m_GameObject: {fileID: 950881512858417546}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   armorPenetration: 0
-  manaCost: 0
-  levelToUse: 0
+  manaCost: 100
+  levelToUse: 50
   manaDrain: 0
-  manaToRestore: 2
-  damageMultiplier: 1
-  abilityType: 0
+  manaToRestore: 0
+  damageMultiplier: 0
+  abilityType: 7
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
   roundsDotWillLast: 0
-  amountToHeal: 0
-  abilityName: Slash
-  abilityTooltip: Slash the target. Deals 1x damage and restore 2 mana.
+  amountToHeal: 150
+  abilityName: Give Carrot
+  abilityTooltip: Give a carrot to the target which heal him for 150HP.
+  restoreMana: 0
