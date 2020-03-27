@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6761113222538375135
+--- !u!1 &6590190703071138914
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,53 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7955050947185757940}
-  - component: {fileID: 3092426496009188694}
+  - component: {fileID: 907477621283118397}
+  - component: {fileID: 6469551480912378260}
   m_Layer: 0
-  m_Name: Crush
+  m_Name: Tail Stab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7955050947185757940
+--- !u!4 &907477621283118397
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761113222538375135}
+  m_GameObject: {fileID: 6590190703071138914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.8924603, y: -4.486319, z: -8.6796875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3092426496009188694
+--- !u!114 &6469551480912378260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761113222538375135}
+  m_GameObject: {fileID: 6590190703071138914}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armorPenetration: 35
-  manaCost: 50
-  levelToUse: 30
+  armorPenetration: 40
+  manaCost: 100
+  levelToUse: 50
   manaDrain: 0
   manaToRestore: 0
-  damageMultiplier: 2.4
-  abilityType: 0
+  damageMultiplier: 0.65
+  abilityType: 6
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
-  roundsDotWillLast: 0
+  roundsDotWillLast: 5
   amountToHeal: 0
-  abilityName: Crush
-  abilityTooltip: Crush your target whith high force dealing 2.4x damage with 35%
-    armor penetration.
+  abilityName: Tail Stab
+  abilityTooltip: Stab the target with a venomous sting dealing 0.65x damage for
+    5 rounds with 40% armor penetration.

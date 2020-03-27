@@ -57,7 +57,7 @@ public class Ability : MonoBehaviour {
                 case AbilityType.executeDmg:
                     //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
+                        target.TakeDamage(unit.attack, executeDmgMultiplier, armorPenetration);
                     }
                     else {
                         target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0);
@@ -67,7 +67,7 @@ public class Ability : MonoBehaviour {
                 case AbilityType.executeDmgLifeSteal:
                     //If target has under 25% HP the ability will deal x times more damage healing x% of the damage dealt, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
+                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, executeDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
                     }
                     else {
                         unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0) * pctLifeSteal / 100f));
@@ -196,7 +196,7 @@ public class Ability : MonoBehaviour {
             case AbilityType.executeDmg:
                 //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                 if (IsTargetInExecuteRange(target, 25)) {
-                    damageDone = target.GetDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
+                    damageDone = target.GetDamage(unit.attack, executeDmgMultiplier, armorPenetration);
                 }
                 else {
                     damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);
@@ -205,7 +205,7 @@ public class Ability : MonoBehaviour {
 
             case AbilityType.executeDmgLifeSteal:
                 if (IsTargetInExecuteRange(target, 25)) {
-                    damageDone = target.GetDamage(unit.attack, damageMultiplier * executeDmgMultiplier, armorPenetration);
+                    damageDone = target.GetDamage(unit.attack, executeDmgMultiplier, armorPenetration);
                 }
                 else {
                     damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);

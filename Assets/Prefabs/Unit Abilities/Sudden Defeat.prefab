@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6761113222538375135
+--- !u!1 &657798763129634323
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7955050947185757940}
-  - component: {fileID: 3092426496009188694}
+  - component: {fileID: 7462278917056472146}
+  - component: {fileID: 7846497048671373335}
   m_Layer: 0
-  m_Name: Crush
+  m_Name: Sudden Defeat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7955050947185757940
+--- !u!4 &7462278917056472146
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761113222538375135}
+  m_GameObject: {fileID: 657798763129634323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,30 +31,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3092426496009188694
+--- !u!114 &7846497048671373335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761113222538375135}
+  m_GameObject: {fileID: 657798763129634323}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armorPenetration: 35
-  manaCost: 50
+  armorPenetration: 100
+  manaCost: 60
   levelToUse: 30
   manaDrain: 0
   manaToRestore: 0
-  damageMultiplier: 2.4
-  abilityType: 0
-  executeDmgMultiplier: 0
+  damageMultiplier: 0.5
+  abilityType: 2
+  executeDmgMultiplier: 5
   pctAOEDmg: 0
   pctLifeSteal: 0
   roundsDotWillLast: 0
   amountToHeal: 0
-  abilityName: Crush
-  abilityTooltip: Crush your target whith high force dealing 2.4x damage with 35%
-    armor penetration.
+  abilityName: Sudden Defeat
+  abilityTooltip: Hit a weak target hard dealing massive damage if the target is
+    under 25% HP. Deals 0.5x damage, but if target is under 25% HP this will deal
+    5x damage with 100% armor penetration.
