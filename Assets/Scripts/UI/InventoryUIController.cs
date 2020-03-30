@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InventoryUIController : MonoBehaviour
 {
     public GameObject InventoryUIControllerGO;
-    public PlayerInventory playerInventory;
     public Image portraitPicture;
 
     public Text unitName;
@@ -21,10 +20,11 @@ public class InventoryUIController : MonoBehaviour
     public Button abilityButton3;
     public Button abilityButton4;
 
+    private PlayerInventory playerInventory;
     private int selectedPetIndex = 0;
     private GameObject selectedPet;
     private Button selectedAbilityButton;
-    // private bool isPlayerHoveringButton = false;
+
     public Ability dummyAbility;
 
     public Button BattlePetSlot0, BattlePetSlot1, BattlePetSlot2;
@@ -33,17 +33,17 @@ public class InventoryUIController : MonoBehaviour
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
     public List<Button> selectPetButtonList;
 
-    public GameObject pet0;
-    public GameObject pet1;
-    public GameObject pet2;
-
     // Start is called before the first frame update
     void Start()
     {
         AddButtonsToList();
-        playerInventory.AddPetToList(pet0);
-        playerInventory.AddPetToList(pet1);
-        playerInventory.AddPetToList(pet2);
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        //Under here is purely for testing purposes, and should be removed when the player is assigned a team normally!!!
+        if (playerInventory.petList.Count < 1) {
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit1);
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit2);
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit3);
+        }
     }
 
     // Update is called once per frame
@@ -52,7 +52,18 @@ public class InventoryUIController : MonoBehaviour
         selectedPet = playerInventory.GetPetInList(selectedPetIndex);
         UpdateUI(selectedPet);
     }
+    // Awake is called when the object is loaded
+    private void Awake()
+    {
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        //Under here is purely for testing purposes, and should be removed when the player is assigned a team normally!!!
+       
+    }
 
+    /// <summary>
+    /// Update all the different UI components
+    /// </summary>
+    /// <param name="unitGO">The unit GameObject that has been selected by the player</param>
     private void UpdateUI(GameObject unitGO)
     {
         Unit unit = unitGO.GetComponent<Unit>();
