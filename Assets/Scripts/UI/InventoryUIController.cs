@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class InventoryUIController : MonoBehaviour
 {
+    public GameObject InventoryUIControllerGO;
     public PlayerInventory playerInventory;
-
     public Image portraitPicture;
 
     public Text unitName;
@@ -52,12 +52,6 @@ public class InventoryUIController : MonoBehaviour
         selectedPet = playerInventory.GetPetInList(selectedPetIndex);
         UpdateUI(selectedPet);
     }
-
-    //private Unit GetCurrentlySelectedUnit()
-    //{
-    //    Unit unit = playerInventory.petList[1].GetComponent<Unit>();
-    //    return unit;
-    //}
 
     private void UpdateUI(GameObject unitGO)
     {

@@ -8274,6 +8274,7 @@ MonoBehaviour:
   questList: []
   totalMoney: 37
   petList: []
+  battlePetList: []
 --- !u!114 &283612752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8306,6 +8307,7 @@ MonoBehaviour:
   unit1: {fileID: 1599935630}
   unit2: {fileID: 1601593853}
   unit3: {fileID: 476984085}
+  test: {fileID: 0}
   defeatedTeamList: {fileID: 0}
   thisTeam: {fileID: 283612750}
 --- !u!114 &283612754
@@ -9951,7 +9953,7 @@ GameObject:
   - component: {fileID: 623115146}
   - component: {fileID: 623115149}
   m_Layer: 5
-  m_Name: Player
+  m_Name: BattleSlot1
   m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10083,7 +10085,7 @@ GameObject:
   - component: {fileID: 626741234}
   - component: {fileID: 626741237}
   m_Layer: 5
-  m_Name: CurrentPet2
+  m_Name: BattleSlot2
   m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11790,7 +11792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1025127962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11860,6 +11862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14bd33250074a164ba8ba9a9a6df15b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InventoryUIControllerGO: {fileID: 1025127961}
   playerInventory: {fileID: 283612751}
   portraitPicture: {fileID: 1245251680}
   unitName: {fileID: 1521441475}
@@ -11874,6 +11877,9 @@ MonoBehaviour:
   abilityButton4: {fileID: 2086381854}
   dummyAbility: {fileID: 3800552155062669317, guid: ad2bb56d98f930643a50a88de3a097c9,
     type: 3}
+  BattlePetSlot0: {fileID: 1642605009}
+  BattlePetSlot1: {fileID: 623115146}
+  BattlePetSlot2: {fileID: 626741234}
   selectPetButton0: {fileID: 1119657009}
   selectPetButton1: {fileID: 890643897}
   selectPetButton2: {fileID: 1955664962}
@@ -16849,7 +16855,7 @@ GameObject:
   - component: {fileID: 1642605009}
   - component: {fileID: 1642605012}
   m_Layer: 5
-  m_Name: CurrentPet1
+  m_Name: BattleSlot0
   m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18898,6 +18904,7 @@ GameObject:
   - component: {fileID: 1939296946}
   - component: {fileID: 1939296945}
   - component: {fileID: 1939296944}
+  - component: {fileID: 1939296948}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: UI
@@ -18987,6 +18994,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1939296948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939296943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryUIControllerGO: {fileID: 1025127961}
 --- !u!1001 &1953097142
 PrefabInstance:
   m_ObjectHideFlags: 0
