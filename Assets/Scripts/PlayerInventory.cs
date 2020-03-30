@@ -18,6 +18,14 @@ public class PlayerInventory : MonoBehaviour {
         SetPetLevelsToPlayerLevel();
     }
 
+    // Update is called once per frame
+    void Start()
+    {
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit1);
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit2);
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit3);
+    }
+
     /// <summary>
     /// Increase the players current xp. If the xp is greater than
     /// the xp needed for next level the players level will increase by one,

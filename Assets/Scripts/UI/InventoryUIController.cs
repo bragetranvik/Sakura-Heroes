@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class InventoryUIController : MonoBehaviour
 {
-    public PlayerInventory playerInventory;
-
+    public GameObject InventoryUIControllerGO;
     public Image portraitPicture;
 
     public Text unitName;
@@ -21,25 +20,30 @@ public class InventoryUIController : MonoBehaviour
     public Button abilityButton3;
     public Button abilityButton4;
 
+    private PlayerInventory playerInventory;
     private int selectedPetIndex = 0;
     private GameObject selectedPet;
     private Button selectedAbilityButton;
-    // private bool isPlayerHoveringButton = false;
+
     public Ability dummyAbility;
+
+    public Button BattlePetSlot0, BattlePetSlot1, BattlePetSlot2;
 
     public Button selectPetButton0, selectPetButton1, selectPetButton2, selectPetButton3, selectPetButton4, selectPetButton5;
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
-
-    public GameObject pet0;
-    public GameObject pet1;
-    public GameObject pet2;
+    public List<Button> selectPetButtonList;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerInventory.AddPetToList(pet0);
-        playerInventory.AddPetToList(pet1);
-        playerInventory.AddPetToList(pet2);
+        AddButtonsToList();
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        //Under here is purely for testing purposes, and should be removed when the player is assigned a team normally!!!
+        if (playerInventory.petList.Count < 1) {
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit1);
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit2);
+            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit3);
+        }
     }
 
     // Update is called once per frame
@@ -48,13 +52,18 @@ public class InventoryUIController : MonoBehaviour
         selectedPet = playerInventory.GetPetInList(selectedPetIndex);
         UpdateUI(selectedPet);
     }
+    // Awake is called when the object is loaded
+    private void Awake()
+    {
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        //Under here is purely for testing purposes, and should be removed when the player is assigned a team normally!!!
+       
+    }
 
-    //private Unit GetCurrentlySelectedUnit()
-    //{
-    //    Unit unit = playerInventory.petList[1].GetComponent<Unit>();
-    //    return unit;
-    //}
-
+    /// <summary>
+    /// Update all the different UI components
+    /// </summary>
+    /// <param name="unitGO">The unit GameObject that has been selected by the player</param>
     private void UpdateUI(GameObject unitGO)
     {
         Unit unit = unitGO.GetComponent<Unit>();
@@ -62,8 +71,9 @@ public class InventoryUIController : MonoBehaviour
         UpdateStats(unit);
         UpdatePortrait(unit);
         UpdateAbilityButtons(unit);
+        UpdateBattlePetSlots();
         UpdatePetSelectButtonImages();
-        EnablePetSelectButtons(playerInventory.petList.Count);
+        EnablePetSelectButtons();
         Ability selectedAbility = GetUnitAbility(selectedPet.GetComponent<Unit>(), selectedAbilityButton);
         if (selectedAbility != dummyAbility)
         {
@@ -128,23 +138,28 @@ public class InventoryUIController : MonoBehaviour
         return currentUnitAbility;
     }
 
-    private void EnablePetSelectButtons(int buttonToEnable) {
-        //List<Button> selectPetButtonList = new List<Button>();
-        //selectPetButtonList = GameObject.FindGameObjectsWithTag("SelectButtonList");
-        //selectPetButtonList.Add(GameObject.FindGameObjectsWithTag("SelectUnitButton"));
-        //for (int i = 0; i < 11 ; i++)
-        //{
-            //GameObject buttonGO = GameObject.FindGameObjectsWithTag("SelectUnitButton");
-            //selectPetButtonList.Add(buttonGO.GetComponent<Button>());
-        //}
-
+    private void EnablePetSelectButtons() {
+        for (int i = 11; i >= playerInventory.petList.Count; i--)
+        {
+            selectPetButtonList[i].enabled = false;
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
+               // transform.Find("Image").GetComponent<Image>().enabled = false;
+        }
     }
 
     private void UpdatePetSelectButtonImages()
     {
-        selectPetButton0.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[0].GetComponent<Unit>().portraitPicture;
-        selectPetButton1.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[1].GetComponent<Unit>().portraitPicture;
-        selectPetButton1.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[1].GetComponent<Unit>().portraitPicture;
+        for(int i = 0; i < playerInventory.petList.Count; i++)
+        {
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
+
+        }
+    }
+    private void UpdateBattlePetSlots()
+    {
+        BattlePetSlot0.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[0].GetComponent<Unit>().portraitPicture;
+        BattlePetSlot1.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[1].GetComponent<Unit>().portraitPicture;
+        BattlePetSlot2.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[2].GetComponent<Unit>().portraitPicture;
     }
 
     public void SelectedPetIndex(int selectedPetIndex)
@@ -157,8 +172,22 @@ public class InventoryUIController : MonoBehaviour
         selectedAbilityButton = button;
     }
 
-    // TODO
-    // Buttons need to be enabled depending on how many pets you have, and disable the rest
-    // Images need to match the correct pet in the correct slot. --> Find a solution for checking how many pets/buttons you are going to change
-
+    public void AddButtonsToList()
+    {
+        selectPetButtonList = new List<Button>()
+        {
+            selectPetButton0,
+            selectPetButton1,
+            selectPetButton2,
+            selectPetButton3,
+            selectPetButton4,
+            selectPetButton5,
+            selectPetButton6,
+            selectPetButton7,
+            selectPetButton8,
+            selectPetButton9,
+            selectPetButton10,
+            selectPetButton11
+        };
+    }
 }
