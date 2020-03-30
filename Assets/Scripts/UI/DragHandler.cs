@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
-    private Camera camera;
+    private new Camera camera;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
 
@@ -13,11 +13,12 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
     }
 
     // Update is called once per frame

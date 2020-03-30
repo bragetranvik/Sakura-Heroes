@@ -27,6 +27,8 @@ public class InventoryUIController : MonoBehaviour
     // private bool isPlayerHoveringButton = false;
     public Ability dummyAbility;
 
+    public Button BattlePetSlot0, BattlePetSlot1, BattlePetSlot2;
+
     public Button selectPetButton0, selectPetButton1, selectPetButton2, selectPetButton3, selectPetButton4, selectPetButton5;
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
     public List<Button> selectPetButtonList;
@@ -64,6 +66,7 @@ public class InventoryUIController : MonoBehaviour
         UpdateStats(unit);
         UpdatePortrait(unit);
         UpdateAbilityButtons(unit);
+        UpdateBattlePetSlots();
         UpdatePetSelectButtonImages();
         EnablePetSelectButtons();
         Ability selectedAbility = GetUnitAbility(selectedPet.GetComponent<Unit>(), selectedAbilityButton);
@@ -146,8 +149,12 @@ public class InventoryUIController : MonoBehaviour
             selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
 
         }
-
-        //selectPetButton0.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[0].GetComponent<Unit>().portraitPicture;
+    }
+    private void UpdateBattlePetSlots()
+    {
+        BattlePetSlot0.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[0].GetComponent<Unit>().portraitPicture;
+        BattlePetSlot1.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[1].GetComponent<Unit>().portraitPicture;
+        BattlePetSlot2.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[2].GetComponent<Unit>().portraitPicture;
     }
 
     public void SelectedPetIndex(int selectedPetIndex)
@@ -178,9 +185,4 @@ public class InventoryUIController : MonoBehaviour
             selectPetButton11
         };
     }
-
-    // TODO
-    // Buttons need to be enabled depending on how many pets you have, and disable the rest
-    // Images need to match the correct pet in the correct slot. --> Find a solution for checking how many pets/buttons you are going to change
-
 }
