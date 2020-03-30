@@ -29,6 +29,7 @@ public class InventoryUIController : MonoBehaviour
 
     public Button selectPetButton0, selectPetButton1, selectPetButton2, selectPetButton3, selectPetButton4, selectPetButton5;
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
+    public List<Button> selectPetButtonList;
 
     public GameObject pet0;
     public GameObject pet1;
@@ -37,6 +38,7 @@ public class InventoryUIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AddButtonsToList();
         playerInventory.AddPetToList(pet0);
         playerInventory.AddPetToList(pet1);
         playerInventory.AddPetToList(pet2);
@@ -63,7 +65,7 @@ public class InventoryUIController : MonoBehaviour
         UpdatePortrait(unit);
         UpdateAbilityButtons(unit);
         UpdatePetSelectButtonImages();
-        EnablePetSelectButtons(playerInventory.petList.Count);
+        EnablePetSelectButtons();
         Ability selectedAbility = GetUnitAbility(selectedPet.GetComponent<Unit>(), selectedAbilityButton);
         if (selectedAbility != dummyAbility)
         {
@@ -128,23 +130,24 @@ public class InventoryUIController : MonoBehaviour
         return currentUnitAbility;
     }
 
-    private void EnablePetSelectButtons(int buttonToEnable) {
-        //List<Button> selectPetButtonList = new List<Button>();
-        //selectPetButtonList = GameObject.FindGameObjectsWithTag("SelectButtonList");
-        //selectPetButtonList.Add(GameObject.FindGameObjectsWithTag("SelectUnitButton"));
-        //for (int i = 0; i < 11 ; i++)
-        //{
-            //GameObject buttonGO = GameObject.FindGameObjectsWithTag("SelectUnitButton");
-            //selectPetButtonList.Add(buttonGO.GetComponent<Button>());
-        //}
-
+    private void EnablePetSelectButtons() {
+        for (int i = 11; i >= playerInventory.petList.Count; i--)
+        {
+            selectPetButtonList[i].enabled = false;
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
+               // transform.Find("Image").GetComponent<Image>().enabled = false;
+        }
     }
 
     private void UpdatePetSelectButtonImages()
     {
-        selectPetButton0.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[0].GetComponent<Unit>().portraitPicture;
-        selectPetButton1.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[1].GetComponent<Unit>().portraitPicture;
-        selectPetButton1.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[1].GetComponent<Unit>().portraitPicture;
+        for(int i = 0; i < playerInventory.petList.Count; i++)
+        {
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
+
+        }
+
+        //selectPetButton0.transform.Find("Image").GetComponent<Image>().sprite = playerInventory.petList[0].GetComponent<Unit>().portraitPicture;
     }
 
     public void SelectedPetIndex(int selectedPetIndex)
@@ -155,6 +158,25 @@ public class InventoryUIController : MonoBehaviour
     public void SetSelectedAbilityButton(Button button)
     {
         selectedAbilityButton = button;
+    }
+
+    public void AddButtonsToList()
+    {
+        selectPetButtonList = new List<Button>()
+        {
+            selectPetButton0,
+            selectPetButton1,
+            selectPetButton2,
+            selectPetButton3,
+            selectPetButton4,
+            selectPetButton5,
+            selectPetButton6,
+            selectPetButton7,
+            selectPetButton8,
+            selectPetButton9,
+            selectPetButton10,
+            selectPetButton11
+        };
     }
 
     // TODO

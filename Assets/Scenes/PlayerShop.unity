@@ -7972,8 +7972,10 @@ GameObject:
   - component: {fileID: 108523406}
   - component: {fileID: 108523408}
   - component: {fileID: 108523407}
+  - component: {fileID: 108523409}
+  - component: {fileID: 108523410}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8034,6 +8036,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108523405}
   m_CullTransparentMesh: 0
+--- !u!114 &108523409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108523405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &108523410
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108523405}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &159940059
 GameObject:
   m_ObjectHideFlags: 0
@@ -8118,8 +8144,10 @@ GameObject:
   - component: {fileID: 277034284}
   - component: {fileID: 277034286}
   - component: {fileID: 277034285}
+  - component: {fileID: 277034287}
+  - component: {fileID: 277034288}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8180,6 +8208,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277034283}
   m_CullTransparentMesh: 0
+--- !u!114 &277034287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277034283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &277034288
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277034283}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &283612750
 GameObject:
   m_ObjectHideFlags: 0
@@ -8248,14 +8300,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeated: 0
-  teamType: 0
+  teamType: 1
   previousScene: 
   teamName: 
   unit1: {fileID: 1599935630}
   unit2: {fileID: 1601593853}
   unit3: {fileID: 476984085}
   defeatedTeamList: {fileID: 0}
-  thisTeam: {fileID: 0}
+  thisTeam: {fileID: 283612750}
 --- !u!114 &283612754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8749,8 +8801,10 @@ GameObject:
   - component: {fileID: 359600413}
   - component: {fileID: 359600415}
   - component: {fileID: 359600414}
+  - component: {fileID: 359600416}
+  - component: {fileID: 359600417}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8811,6 +8865,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359600412}
   m_CullTransparentMesh: 0
+--- !u!114 &359600416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359600412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &359600417
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359600412}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &362776895
 GameObject:
   m_ObjectHideFlags: 0
@@ -9339,8 +9417,10 @@ GameObject:
   - component: {fileID: 464611192}
   - component: {fileID: 464611194}
   - component: {fileID: 464611193}
+  - component: {fileID: 464611195}
+  - component: {fileID: 464611196}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9401,6 +9481,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464611191}
   m_CullTransparentMesh: 0
+--- !u!114 &464611195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464611191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &464611196
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464611191}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &476984085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5498294923190648287, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
@@ -9745,8 +9849,10 @@ GameObject:
   - component: {fileID: 617551858}
   - component: {fileID: 617551860}
   - component: {fileID: 617551859}
+  - component: {fileID: 617551861}
+  - component: {fileID: 617551862}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9807,6 +9913,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617551857}
   m_CullTransparentMesh: 0
+--- !u!114 &617551861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617551857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &617551862
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617551857}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &623115144
 GameObject:
   m_ObjectHideFlags: 0
@@ -9819,6 +9949,7 @@ GameObject:
   - component: {fileID: 623115148}
   - component: {fileID: 623115147}
   - component: {fileID: 623115146}
+  - component: {fileID: 623115149}
   m_Layer: 5
   m_Name: Player
   m_TagString: UI
@@ -9925,6 +10056,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623115144}
   m_CullTransparentMesh: 0
+--- !u!114 &623115149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623115144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4ab02d2f6278e42827c3c1eea7321c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisGameObject: {fileID: 623115144}
 --- !u!1 &626741232
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,6 +10081,7 @@ GameObject:
   - component: {fileID: 626741236}
   - component: {fileID: 626741235}
   - component: {fileID: 626741234}
+  - component: {fileID: 626741237}
   m_Layer: 5
   m_Name: CurrentPet2
   m_TagString: UI
@@ -10043,6 +10188,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626741232}
   m_CullTransparentMesh: 0
+--- !u!114 &626741237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626741232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4ab02d2f6278e42827c3c1eea7321c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisGameObject: {fileID: 626741232}
 --- !u!1 &678894147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,6 +11886,7 @@ MonoBehaviour:
   selectPetButton9: {fileID: 897568872}
   selectPetButton10: {fileID: 2059218243}
   selectPetButton11: {fileID: 1836723813}
+  selectPetButtonList: []
   pet0: {fileID: 1601593853}
   pet1: {fileID: 1599935630}
   pet2: {fileID: 476984085}
@@ -11742,8 +11901,10 @@ GameObject:
   - component: {fileID: 1037217241}
   - component: {fileID: 1037217243}
   - component: {fileID: 1037217242}
+  - component: {fileID: 1037217244}
+  - component: {fileID: 1037217245}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11804,6 +11965,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037217240}
   m_CullTransparentMesh: 0
+--- !u!114 &1037217244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037217240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1037217245
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037217240}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1113665370
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,8 +13146,10 @@ GameObject:
   - component: {fileID: 1226349731}
   - component: {fileID: 1226349733}
   - component: {fileID: 1226349732}
+  - component: {fileID: 1226349734}
+  - component: {fileID: 1226349735}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13023,6 +13210,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226349730}
   m_CullTransparentMesh: 0
+--- !u!114 &1226349734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226349730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1226349735
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226349730}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1240698208
 GameObject:
   m_ObjectHideFlags: 0
@@ -16549,6 +16760,7 @@ GameObject:
   - component: {fileID: 1638239166}
   - component: {fileID: 1638239168}
   - component: {fileID: 1638239167}
+  - component: {fileID: 1638239169}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -16611,6 +16823,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638239165}
   m_CullTransparentMesh: 0
+--- !u!225 &1638239169
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638239165}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1642605007
 GameObject:
   m_ObjectHideFlags: 0
@@ -16623,6 +16847,7 @@ GameObject:
   - component: {fileID: 1642605011}
   - component: {fileID: 1642605010}
   - component: {fileID: 1642605009}
+  - component: {fileID: 1642605012}
   m_Layer: 5
   m_Name: CurrentPet1
   m_TagString: UI
@@ -16729,6 +16954,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642605007}
   m_CullTransparentMesh: 0
+--- !u!114 &1642605012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642605007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4ab02d2f6278e42827c3c1eea7321c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisGameObject: {fileID: 1642605007}
 --- !u!1 &1653542937
 GameObject:
   m_ObjectHideFlags: 0
@@ -16740,8 +16978,10 @@ GameObject:
   - component: {fileID: 1653542938}
   - component: {fileID: 1653542940}
   - component: {fileID: 1653542939}
+  - component: {fileID: 1653542941}
+  - component: {fileID: 1653542942}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16802,6 +17042,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653542937}
   m_CullTransparentMesh: 0
+--- !u!114 &1653542941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653542937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1653542942
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653542937}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1752020093
 GameObject:
   m_ObjectHideFlags: 0
@@ -18461,8 +18725,10 @@ GameObject:
   - component: {fileID: 1866396109}
   - component: {fileID: 1866396111}
   - component: {fileID: 1866396110}
+  - component: {fileID: 1866396112}
+  - component: {fileID: 1866396113}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18523,6 +18789,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866396108}
   m_CullTransparentMesh: 0
+--- !u!114 &1866396112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866396108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1866396113
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866396108}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1868063847
 GameObject:
   m_ObjectHideFlags: 0
@@ -19040,8 +19330,10 @@ GameObject:
   - component: {fileID: 2013401616}
   - component: {fileID: 2013401618}
   - component: {fileID: 2013401617}
+  - component: {fileID: 2013401619}
+  - component: {fileID: 2013401620}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19102,6 +19394,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013401615}
   m_CullTransparentMesh: 0
+--- !u!114 &2013401619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013401615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &2013401620
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013401615}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2037650143
 GameObject:
   m_ObjectHideFlags: 0
@@ -19179,8 +19495,10 @@ GameObject:
   - component: {fileID: 2054272470}
   - component: {fileID: 2054272472}
   - component: {fileID: 2054272471}
+  - component: {fileID: 2054272473}
+  - component: {fileID: 2054272474}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pet11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19241,6 +19559,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054272469}
   m_CullTransparentMesh: 0
+--- !u!114 &2054272473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054272469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &2054272474
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054272469}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2055701072
 GameObject:
   m_ObjectHideFlags: 0
@@ -19789,8 +20131,10 @@ GameObject:
   - component: {fileID: 2133949625}
   - component: {fileID: 2133949627}
   - component: {fileID: 2133949626}
-  m_Layer: 5
-  m_Name: Image
+  - component: {fileID: 2133949628}
+  - component: {fileID: 2133949630}
+  m_Layer: 8
+  m_Name: Pet0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19851,6 +20195,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133949624}
   m_CullTransparentMesh: 0
+--- !u!114 &2133949628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133949624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d599934e1ec4a4c9de6015a28548e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &2133949630
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133949624}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &4153636209614742869
 PrefabInstance:
   m_ObjectHideFlags: 0
