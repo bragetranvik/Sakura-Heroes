@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1653886546701499471
+--- !u!1 &1473430512846529893
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5780393110905212831}
-  - component: {fileID: 2138584753493250750}
+  - component: {fileID: 3270213690273234478}
+  - component: {fileID: 7296030160065113670}
   m_Layer: 0
-  m_Name: Inner Focus
+  m_Name: Super Nova
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5780393110905212831
+--- !u!4 &3270213690273234478
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653886546701499471}
+  m_GameObject: {fileID: 1473430512846529893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,29 +31,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2138584753493250750
+--- !u!114 &7296030160065113670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653886546701499471}
+  m_GameObject: {fileID: 1473430512846529893}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b704e35e1b0234140bafb79c308c8a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armorPenetration: 0
-  manaCost: 0
-  levelToUse: 15
+  armorPenetration: 100
+  manaCost: 130
+  levelToUse: 50
   manaDrain: 0
-  manaToRestore: 25
-  damageMultiplier: 0
-  abilityType: 0
+  manaToRestore: 0
+  damageMultiplier: 2
+  abilityType: 4
   specialDmgMultiplier: 0
-  pctAOEDmg: 0
+  pctAOEDmg: 50
   pctLifeSteal: 0
   roundsDotWillLast: 0
   amountToHeal: 0
-  abilityName: Inner Focus
-  abilityTooltip: Focus your mind restoring 25 mana.
+  abilityName: Super Nova
+  abilityTooltip: Summon a supernova to blast the enemies to oblivion dealing 2x
+    damage with 50% AOE damage and 100% armor penetration.

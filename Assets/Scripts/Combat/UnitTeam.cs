@@ -17,8 +17,6 @@ public class UnitTeam : MonoBehaviour
     public GameObject unit2;
     public GameObject unit3;
 
-    public GameObject test;
-
     public LocalFlag defeatedTeamList;
     public GameObject thisTeam;
 
