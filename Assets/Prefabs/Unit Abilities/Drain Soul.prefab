@@ -50,7 +50,7 @@ MonoBehaviour:
   manaToRestore: 0
   damageMultiplier: 0.5
   abilityType: 3
-  executeDmgMultiplier: 8
+  specialDmgMultiplier: 8
   pctAOEDmg: 0
   pctLifeSteal: 35
   roundsDotWillLast: 0

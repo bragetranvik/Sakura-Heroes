@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot, Heal }
+public enum AbilityType { simpleDmg, simpleDmgLifeSteal, executeDmg, executeDmgLifeSteal, AOEDmg, bloodAbility, Dot, Heal, DesperateDmg, DesperateDmgSacrifice }
 public class Ability : MonoBehaviour {
     public int armorPenetration, manaCost, levelToUse, manaDrain, manaToRestore;
     public float damageMultiplier;
     public AbilityType abilityType;
-    [Tooltip("Only works with abilityType: executeDmg, executeDmgLifeSteal")]
-    public float executeDmgMultiplier;
+    [Tooltip("Only works with abilityType: executeDmg, executeDmgLifeSteal, DesperateDmg, DesperateDmgSacrifice")]
+    public float specialDmgMultiplier;
     [Tooltip("Only works with abilityType: AOEDmg")]
     public float pctAOEDmg;
     [Tooltip("Only works with abilityType: simpleDmgLifeSteal, executeDmgLifeSteal")]
@@ -57,7 +57,7 @@ public class Ability : MonoBehaviour {
                 case AbilityType.executeDmg:
                     //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        target.TakeDamage(unit.attack, executeDmgMultiplier, armorPenetration);
+                        target.TakeDamage(unit.attack, specialDmgMultiplier, armorPenetration);
                     }
                     else {
                         target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0);
@@ -67,7 +67,7 @@ public class Ability : MonoBehaviour {
                 case AbilityType.executeDmgLifeSteal:
                     //If target has under 25% HP the ability will deal x times more damage healing x% of the damage dealt, if not it will deal normal damage with 0 armor penetration.
                     if (IsTargetInExecuteRange(target, 25)) {
-                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, executeDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
+                        unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, specialDmgMultiplier, armorPenetration) * pctLifeSteal / 100f));
                     }
                     else {
                         unit.Heal(Convert.ToInt32(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration * 0) * pctLifeSteal / 100f));
@@ -100,6 +100,24 @@ public class Ability : MonoBehaviour {
                 case AbilityType.Dot:
                     target.SetDotDmg(target.TakeDamage(unit.attack, damageMultiplier, armorPenetration));
                     target.SetDot(roundsDotWillLast);
+                    break;
+
+                case AbilityType.DesperateDmg:
+                    if(unit.currentHP <= unit.maxHP * (25f / 100f)) {
+                        target.TakeDamage(unit.attack, specialDmgMultiplier, armorPenetration);
+                    } else {
+                        target.TakeDamage(unit.attack, damageMultiplier, 0);
+                    }
+                    break;
+
+                case AbilityType.DesperateDmgSacrifice:
+                    if (unit.currentHP <= unit.maxHP * (25f / 100f)) {
+                        target.TakeDamage(unit.attack, specialDmgMultiplier, armorPenetration);
+                        unit.SetHP(0);
+                    }
+                    else {
+                        target.TakeDamage(unit.attack, damageMultiplier, 0);
+                    }
                     break;
 
                 default:
@@ -196,7 +214,7 @@ public class Ability : MonoBehaviour {
             case AbilityType.executeDmg:
                 //If target has under 25% HP the ability will deal x times more damage, if not it will deal normal damage with 0 armor penetration.
                 if (IsTargetInExecuteRange(target, 25)) {
-                    damageDone = target.GetDamage(unit.attack, executeDmgMultiplier, armorPenetration);
+                    damageDone = target.GetDamage(unit.attack, specialDmgMultiplier, armorPenetration);
                 }
                 else {
                     damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);
@@ -205,7 +223,7 @@ public class Ability : MonoBehaviour {
 
             case AbilityType.executeDmgLifeSteal:
                 if (IsTargetInExecuteRange(target, 25)) {
-                    damageDone = target.GetDamage(unit.attack, executeDmgMultiplier, armorPenetration);
+                    damageDone = target.GetDamage(unit.attack, specialDmgMultiplier, armorPenetration);
                 }
                 else {
                     damageDone = target.GetDamage(unit.attack, damageMultiplier, armorPenetration * 0);
@@ -219,6 +237,15 @@ public class Ability : MonoBehaviour {
 
             case AbilityType.Heal:
                 damageDone = 0;
+                break;
+
+            case AbilityType.DesperateDmg | AbilityType.DesperateDmgSacrifice:
+                if (unit.currentHP <= unit.maxHP * (25f / 100f)) {
+                    damageDone = target.GetDamage(unit.attack, specialDmgMultiplier, armorPenetration);
+                }
+                else {
+                    damageDone = target.GetDamage(unit.attack, damageMultiplier, 0);
+                }
                 break;
 
             default:
@@ -256,6 +283,12 @@ public class Ability : MonoBehaviour {
                 }
                 break;
 
+            case AbilityType.DesperateDmg | AbilityType.DesperateDmgSacrifice:
+                if (unit.currentHP <= unit.maxHP * (25f / 100f)) {
+                    isAbilityRequirementfulfilled = true;
+                }
+                break;
+
             default:
                 isAbilityRequirementfulfilled = true;
                 break;
@@ -271,7 +304,9 @@ public class Ability : MonoBehaviour {
         bool isSpecialAbility = false;
         if(abilityType.Equals(AbilityType.bloodAbility) ||
             abilityType.Equals(AbilityType.executeDmg) ||
-            abilityType.Equals(AbilityType.executeDmgLifeSteal)) {
+            abilityType.Equals(AbilityType.executeDmgLifeSteal) ||
+            abilityType.Equals(AbilityType.DesperateDmg) ||
+            abilityType.Equals(AbilityType.DesperateDmgSacrifice)) {
             isSpecialAbility = true;
         }
         return isSpecialAbility;
