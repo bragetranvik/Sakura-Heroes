@@ -47,13 +47,14 @@ MonoBehaviour:
   manaCost: 50
   levelToUse: 30
   manaDrain: 0
-  damageMultiplier: 3
+  manaToRestore: 0
+  damageMultiplier: 2.4
   abilityType: 0
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
   roundsDotWillLast: 0
+  amountToHeal: 0
   abilityName: Crush
-  abilityTooltip: Crush your target whith high force dealing 3x damage with 35% armor
-    penetration.
-  isHeal: 0
+  abilityTooltip: Crush your target whith high force dealing 2.4x damage with 35%
+    armor penetration.

@@ -47,12 +47,14 @@ MonoBehaviour:
   manaCost: 40
   levelToUse: 30
   manaDrain: 0
+  manaToRestore: 0
   damageMultiplier: 2
   abilityType: 4
   executeDmgMultiplier: 0
-  pctAOEDmg: 50
+  pctAOEDmg: 25
   pctLifeSteal: 0
+  roundsDotWillLast: 0
+  amountToHeal: 0
   abilityName: Tsunami
-  abilityTooltip: 'Drown the enemies in a tsunami dealing 2x damage with 50% AOE
+  abilityTooltip: 'Drown the enemies in a tsunami dealing 2x damage with 25% AOE
     damage. '
-  isHeal: 0

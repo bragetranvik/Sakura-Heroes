@@ -47,13 +47,15 @@ MonoBehaviour:
   manaCost: 100
   levelToUse: 50
   manaDrain: 0
+  manaToRestore: 0
   damageMultiplier: 0.5
   abilityType: 3
-  executeDmgMultiplier: 12.5
+  specialDmgMultiplier: 8
   pctAOEDmg: 0
   pctLifeSteal: 35
+  roundsDotWillLast: 0
+  amountToHeal: 0
   abilityName: Drain Soul
   abilityTooltip: Drain the targets soul, dealing massive damage if they are too
     weak to resist. Healing the caster 35% of the amount of damage it deals. Deals
-    0.5x damage, but if the target is under 25% hp it will deal 12.5x damage.
-  isHeal: 0
+    0.5x damage, but if the target is under 25% hp it will deal 8x damage.

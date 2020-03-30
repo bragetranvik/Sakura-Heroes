@@ -81,7 +81,7 @@ public class BattleHUD : MonoBehaviour {
         tooltipText.text = "This should be hidden";
     }
 
-    public void SetIsPlayerHovering(Boolean hovering) {
+    public void SetIsPlayerHovering(bool hovering) {
         isPlayerHoveringButton = hovering;
     }
 
