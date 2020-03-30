@@ -11,11 +11,7 @@ public class PlayerInventory : MonoBehaviour {
     public List<GameObject> questList = new List<GameObject>();
     public int totalMoney;
     public List<GameObject> petList = new List<GameObject>();
-
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
+    public List<GameObject> battlePetList = new List<GameObject>();
 
     // Update is called once per frame
     void Update() {
