@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour {
@@ -9,15 +10,20 @@ public class PlayerInventory : MonoBehaviour {
     public int level = 1;
     public List<GameObject> questList = new List<GameObject>();
     public int totalMoney;
-
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
+    public List<GameObject> petList = new List<GameObject>();
+    public List<GameObject> battlePetList = new List<GameObject>();
 
     // Update is called once per frame
     void Update() {
         SetPetLevelsToPlayerLevel();
+    }
+
+    // Update is called once per frame
+    void Start()
+    {
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit1);
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit2);
+        battlePetList.Add(player.GetComponent<UnitTeam>().unit3);
     }
 
     /// <summary>
@@ -133,13 +139,18 @@ public class PlayerInventory : MonoBehaviour {
     /// Calculate what the new total money will be
     /// </summary>
     /// <param name="moneyEarned">How much money the player just earned</param>
-    public void EarnMoney(int moneyEarned) {
-        totalMoney += moneyEarned;
+    public void EarnMoney(int moneyEarned) {
+
+        totalMoney += moneyEarned;
+
     }
 
-    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
-        int howMuchToEarn = Convert.ToInt32(50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
-        return howMuchToEarn;
+    public int CalculateHowMuchMoneyToEarn(int enemyLevel) {
+
+        int howMuchToEarn = Convert.ToInt32(50f * Mathf.Pow(1.7f, (enemyLevel / 7f)));
+
+        return howMuchToEarn;
+
     }
 
     /// <summary>
@@ -150,5 +161,16 @@ public class PlayerInventory : MonoBehaviour {
     public void GetQuestReward(int xpReward, int moneyReward) {
         GainXpFromQuest(xpReward);
         EarnMoney(moneyReward);
+    }
+
+    public void AddPetToList(GameObject petToAdd)
+    {
+        petList.Add(petToAdd);
+    }
+
+    public GameObject GetPetInList(int index)
+    {
+        GameObject petInIndex = petList[index];
+        return petInIndex;
     }
 }

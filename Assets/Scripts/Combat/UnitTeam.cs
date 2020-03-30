@@ -31,7 +31,37 @@ public class UnitTeam : MonoBehaviour
             unit2.GetComponent<SpriteRenderer>().flipX = false;
             unit3.GetComponent<SpriteRenderer>().flipX = false;
         }
-    } 
+    }
+
+    private void Update() {
+        AddPlayerPetsToUnitTeam();
+    }
+
+    /// <summary>
+    /// Adds pets from battlePetList instead of pets added via inspector.
+    /// </summary>
+    private void AddPlayerPetsToUnitTeam() {
+        if (teamType.Equals(TeamType.playerTeam)) {
+            foreach (GameObject pet in GetComponentInParent<PlayerInventory>().battlePetList) {
+                switch (GetComponentInParent<PlayerInventory>().battlePetList.IndexOf(pet)) {
+                    case 0:
+                        unit1 = pet;
+                        break;
+
+                    case 1:
+                        unit2 = pet;
+                        break;
+
+                    case 2:
+                        unit3 = pet;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        }
+    }
 
     public GameObject GetUnit1GO() {
         return unit1;
