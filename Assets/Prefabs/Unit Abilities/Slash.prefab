@@ -47,11 +47,13 @@ MonoBehaviour:
   manaCost: 0
   levelToUse: 0
   manaDrain: 0
+  manaToRestore: 4
   damageMultiplier: 1
   abilityType: 0
   executeDmgMultiplier: 0
   pctAOEDmg: 0
   pctLifeSteal: 0
+  roundsDotWillLast: 0
+  amountToHeal: 0
   abilityName: Slash
-  abilityTooltip: Slash the target. Deals 1x damage.
-  isHeal: 0
+  abilityTooltip: Slash the target. Deals 1x damage and restore 4 mana.

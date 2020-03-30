@@ -703,6 +703,11 @@ PrefabInstance:
       propertyPath: baseAttack
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2226236887822029038, guid: c170baf7bf5e5ab4d9d355761266b9ed,
+        type: 3}
+      propertyPath: baseHP
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3939081366554770880, guid: c170baf7bf5e5ab4d9d355761266b9ed,
         type: 3}
       propertyPath: m_Name
@@ -1244,6 +1249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rabbit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566007101388703535, guid: 16c1e1fa171dfbf448dcfdb754ec9016,
+        type: 3}
+      propertyPath: baseHP
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16c1e1fa171dfbf448dcfdb754ec9016, type: 3}

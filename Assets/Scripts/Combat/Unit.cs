@@ -70,6 +70,21 @@ public class Unit : MonoBehaviour {
     }
 
     /// <summary>
+    /// Set the units HP equal to the parameter.
+    /// </summary>
+    /// <param name="hpToSet">Amount to set HP equal to.</param>
+    public void SetHP(int hpToSet) {
+        currentHP = hpToSet;
+
+        if (currentHP <= 0) {
+            isDead = true;
+            currentHP = 0;
+            //Sets the sprite color to be see through. (Hides the sprite)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        }
+    }
+
+    /// <summary>
     /// Return the damage a unit would take.
     /// </summary>
     /// <param name="dmg">Attack of the unit using the ability.</param>
@@ -185,9 +200,9 @@ public class Unit : MonoBehaviour {
     /// and if current HP > maxHP, sets the current HP = maxHP.
     /// </summary>
     public void CalculateStats() {
-        attack = Convert.ToInt32(unitLevel * baseAttack/12 + attackConstant);
-        defence = Convert.ToInt32(unitLevel * baseDefence/20 + defenceConstant);
-        maxHP = Convert.ToInt32(unitLevel * baseHP/2 + HPConstant);
+        attack = Convert.ToInt32(unitLevel * baseAttack/12f + attackConstant);
+        defence = Convert.ToInt32(unitLevel * baseDefence/20f + defenceConstant);
+        maxHP = Convert.ToInt32(unitLevel * baseHP/2f + HPConstant);
         if(unitLevel.Equals(99)) {
             maxMP = 200;
         } else {
