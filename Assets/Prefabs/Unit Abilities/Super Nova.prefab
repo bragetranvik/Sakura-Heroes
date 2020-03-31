@@ -48,7 +48,7 @@ MonoBehaviour:
   levelToUse: 50
   manaDrain: 0
   manaToRestore: 0
-  damageMultiplier: 2
+  damageMultiplier: 1.75
   abilityType: 4
   specialDmgMultiplier: 0
   pctAOEDmg: 50
@@ -56,5 +56,5 @@ MonoBehaviour:
   roundsDotWillLast: 0
   amountToHeal: 0
   abilityName: Super Nova
-  abilityTooltip: Summon a supernova to blast the enemies to oblivion dealing 2x
+  abilityTooltip: Summon a supernova to blast the enemies to oblivion dealing 1.75x
     damage with 50% AOE damage and 100% armor penetration.

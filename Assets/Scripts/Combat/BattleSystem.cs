@@ -328,6 +328,7 @@ public class BattleSystem : MonoBehaviour {
     }
 
     private void EndBattle() {
+        SetFriendlySprite(false);
         if(state == BattleState.WON) {
             //Debug.Log("Battle won STATE");
             dialogueText.text = "You won the battle!";
@@ -538,11 +539,9 @@ public class BattleSystem : MonoBehaviour {
         friendlyUnit1 = friendlyUnit1GO.GetComponent<Unit>();
         friendlyUnit2 = friendlyUnit2GO.GetComponent<Unit>();
         friendlyUnit3 = friendlyUnit3GO.GetComponent<Unit>();
-        
+
         //Ensure that the sprite renderer is enabled
-        friendlyUnit1GO.GetComponent<SpriteRenderer>().enabled = true;
-        friendlyUnit2GO.GetComponent<SpriteRenderer>().enabled = true;
-        friendlyUnit3GO.GetComponent<SpriteRenderer>().enabled = true;
+        SetFriendlySprite(true);
 
         friendlyUnit1GO.GetComponent<Transform>().localScale = friendlyUnit1.GetScale();
         friendlyUnit2GO.GetComponent<Transform>().localScale = friendlyUnit2.GetScale();
@@ -589,5 +588,15 @@ public class BattleSystem : MonoBehaviour {
     public void EnablePlayerAndEnemyObjects() {
         friendlyTeamGO.SetActive(true);
         enemyTeamGO.SetActive(true);
+    }
+
+    /// <summary>
+    /// Sets the state of the friendly units sprite renderer.
+    /// </summary>
+    /// <param name="state">State to set the friendly sprite renderer.</param>
+    public void SetFriendlySprite(bool state) {
+        friendlyUnit1GO.GetComponent<SpriteRenderer>().enabled = state;
+        friendlyUnit2GO.GetComponent<SpriteRenderer>().enabled = state;
+        friendlyUnit3GO.GetComponent<SpriteRenderer>().enabled = state;
     }
 }

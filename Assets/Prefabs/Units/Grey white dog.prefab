@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3317377625374882496
+--- !u!1 &316313266685746853
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5546335384450284476}
-  - component: {fileID: 1780750068883496300}
-  - component: {fileID: 3542227730658313112}
+  - component: {fileID: 480427390703000955}
+  - component: {fileID: 137404920613267106}
+  - component: {fileID: 5467612368775840761}
   m_Layer: 0
-  m_Name: Maw
+  m_Name: Grey white dog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5546335384450284476
+--- !u!4 &480427390703000955
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3317377625374882496}
+  m_GameObject: {fileID: 316313266685746853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 2, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1780750068883496300
+--- !u!212 &137404920613267106
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3317377625374882496}
+  m_GameObject: {fileID: 316313266685746853}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,50 +71,50 @@ SpriteRenderer:
   m_SortingLayerID: 1725538213
   m_SortingLayer: 11
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a356e09ead40a7a4cacc6c641dd5e084, type: 3}
+  m_Sprite: {fileID: 2404117764267108573, guid: faa5605337212a34d9de3c6909260344,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.6, y: 7.19}
+  m_Size: {x: 2.65625, y: 2.03125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3542227730658313112
+--- !u!114 &5467612368775840761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3317377625374882496}
+  m_GameObject: {fileID: 316313266685746853}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3c20918cee57b04eb3a72ff96b8f4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Maw
+  unitName: Roland
   unitLevel: 99
-  unitPriceInShop: 30
-  baseAttack: 12
-  baseDefence: 8
-  baseHP: 8
+  baseAttack: 9
+  baseDefence: 7
+  baseHP: 9
   currentHP: 0
   currentMP: 0
-  ability1: {fileID: 3762513254345359451, guid: 958dafad45e48fa4fa98a250c5db9227,
+  ability1: {fileID: 7233059451448627035, guid: 4f4282975317105479b13f0a9875b48a,
     type: 3}
-  ability2: {fileID: 2138584753493250750, guid: f1201fedd8ce5464594ce1dfb0c5c66a,
+  ability2: {fileID: 6301123275996839345, guid: 90abf34c80cf57d4a85ccb0a29c6a8d9,
     type: 3}
-  ability3: {fileID: 2836134091093059200, guid: e9b8e244ec6b3744bb45183e830b2931,
-    type: 3}
-  ability4: {fileID: 7296030160065113670, guid: da68eee192378e7438947069ac845bc8,
+  ability3: {fileID: 32451269940155461, guid: ca53375c425eb0542a0ecc4f558cbc50, type: 3}
+  ability4: {fileID: 5121266954617053356, guid: 1681069364c68174b89ee0f60a5e4c32,
     type: 3}
   attack: 0
   defence: 0
   maxHP: 0
   maxMP: 0
   isDead: 0
-  portraitPicture: {fileID: 21300000, guid: a356e09ead40a7a4cacc6c641dd5e084, type: 3}
-  unitPosInBattle: {x: -0.5, y: 2}
-  unitScaleInBattle: {x: 1.2, y: 1.2, z: 1.2}
+  portraitPicture: {fileID: 2404117764267108573, guid: faa5605337212a34d9de3c6909260344,
+    type: 3}
+  unitPosInBattle: {x: 0, y: 1}
+  unitScaleInBattle: {x: 2.5, y: 2.5, z: 2.5}
