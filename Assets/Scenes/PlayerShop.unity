@@ -7986,7 +7986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &283612751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10745,9 +10745,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToOpenAndClose: {fileID: 6168862036314647370}
   keyToOpenAndClose: 27
+  notOpenAnywhere: 1
 --- !u!114 &1205916220
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10764,7 +10765,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1205916221
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -15301,6 +15302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToOpenAndClose: {fileID: 1025127961}
   keyToOpenAndClose: 105
+  notOpenAnywhere: 0
 --- !u!1001 &1953097142
 PrefabInstance:
   m_ObjectHideFlags: 0

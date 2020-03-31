@@ -7,6 +7,7 @@ public class OpenAndCloseUI : MonoBehaviour
     public GameObject objectToOpenAndClose;
     public KeyCode keyToOpenAndClose;
     private bool uiState = false;
+    public bool notOpenAnywhere;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,11 @@ public class OpenAndCloseUI : MonoBehaviour
 
     // Update is called once per frame
     void Update() { 
-        if (Input.GetKeyDown(keyToOpenAndClose) && uiState)
+        if (Input.GetKeyDown(keyToOpenAndClose) && !uiState && !notOpenAnywhere)
+        {
+            OpenUI();
+        }
+        else if (Input.GetKeyDown(keyToOpenAndClose) && uiState)
         {
             CloseUI();
         }
