@@ -55,7 +55,7 @@ public class InventoryUIController : MonoBehaviour
     // Awake is called when the object is loaded
     private void Awake()
     {
-        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        //playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
     }
 
     /// <summary>
@@ -157,10 +157,10 @@ public class InventoryUIController : MonoBehaviour
     /// Enable the different select pet buttons depending on how many pets the player has.
     /// </summary>
     private void EnablePetSelectButtons() {
-        for (int i = 11; i >= playerInventory.petList.Count; i--)
+        for (int i = 0; i < playerInventory.petList.Count; i++)
         {
-            selectPetButtonList[i].enabled = false;
-            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
+            selectPetButtonList[i].enabled = true;
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().enabled = true;
         }
     }
 
@@ -171,8 +171,8 @@ public class InventoryUIController : MonoBehaviour
     {
         for(int i = 0; i < playerInventory.petList.Count; i++)
         {
+            Debug.Log("updateImages " + i);
             selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
-
         }
     }
 
