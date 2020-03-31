@@ -56,5 +56,5 @@ MonoBehaviour:
   roundsDotWillLast: 0
   amountToHeal: 0
   abilityName: Super Nova
-  abilityTooltip: Summon a supernova to blast the enemies to oblivion dealing 1.75x
+  abilityTooltip: Summon a supernova to blast the enemies into oblivion dealing 1.75x
     damage with 50% AOE damage and 100% armor penetration.
