@@ -427,14 +427,12 @@ PrefabInstance:
         type: 3}
       propertyPath: unit1
       value: 
-      objectReference: {fileID: 3317377625374882496, guid: a667d0788e3cf2e40885096caf243047,
-        type: 3}
+      objectReference: {fileID: 391817091}
     - target: {fileID: 3762159575067133573, guid: c68ee2b86b1a9724a9a5e19cc1eb4a2a,
         type: 3}
       propertyPath: unit3
       value: 
-      objectReference: {fileID: 3317377625374882496, guid: a667d0788e3cf2e40885096caf243047,
-        type: 3}
+      objectReference: {fileID: 392731204}
     - target: {fileID: 6876173765899732926, guid: c68ee2b86b1a9724a9a5e19cc1eb4a2a,
         type: 3}
       propertyPath: m_Sprite
@@ -15272,6 +15270,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688f8ddb3fe341e4fa3867e59e07ee12, type: 3}
+--- !u!1 &391817091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6300243097466293549, guid: 688f8ddb3fe341e4fa3867e59e07ee12,
+    type: 3}
+  m_PrefabInstance: {fileID: 391817090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &392731203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15351,6 +15355,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5a29bdceb8f02e478e5b2c1b1c0d64f, type: 3}
+--- !u!1 &392731204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7124683623246228616, guid: f5a29bdceb8f02e478e5b2c1b1c0d64f,
+    type: 3}
+  m_PrefabInstance: {fileID: 392731203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &426798483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6826453977277639175, guid: c170baf7bf5e5ab4d9d355761266b9ed,
@@ -29779,6 +29789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153636210509150586, guid: 94d40004a621f4c44b18cc904521868a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94d40004a621f4c44b18cc904521868a, type: 3}
@@ -114528,7 +114543,6 @@ MonoBehaviour:
   unit1: {fileID: 1932023651}
   unit2: {fileID: 2055722746}
   unit3: {fileID: 1916102038}
-  test: {fileID: 0}
   defeatedTeamList: {fileID: 5766046287311689863, guid: 7bb109c810c163f45accabe9ddf90700,
     type: 3}
   thisTeam: {fileID: 2071901471}
