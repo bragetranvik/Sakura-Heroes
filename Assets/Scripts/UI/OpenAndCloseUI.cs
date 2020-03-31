@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OpenAndCloseUI : MonoBehaviour
 {
-    public GameObject InventoryUIControllerGO;
+    public GameObject objectToOpenAndClose;
+    public KeyCode keyToOpenAndClose;
     private bool uiState = false;
 
     // Start is called before the first frame update
@@ -16,11 +17,11 @@ public class OpenAndCloseUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && !uiState)
+        if (Input.GetKeyDown(keyToOpenAndClose) && !uiState)
         {
             OpenUI();
         }
-        else if (Input.GetKeyDown(KeyCode.I) && uiState)
+        else if (Input.GetKeyDown(keyToOpenAndClose) && uiState)
         {
             CloseUI();
         }
@@ -28,13 +29,13 @@ public class OpenAndCloseUI : MonoBehaviour
 
     void OpenUI()
     {
-        InventoryUIControllerGO.SetActive(true);
+        objectToOpenAndClose.SetActive(true);
         uiState = true;
     }
 
     void CloseUI()
     {
-        InventoryUIControllerGO.SetActive(false);
+        objectToOpenAndClose.SetActive(false);
         uiState = false;
     }
 }

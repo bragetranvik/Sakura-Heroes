@@ -6018,7 +6018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryUIControllerGO: {fileID: 148913948}
+  objectToOpenAndClose: {fileID: 148913948}
+  keyToOpenAndClose: 105
 --- !u!114 &480413005
 MonoBehaviour:
   m_ObjectHideFlags: 0

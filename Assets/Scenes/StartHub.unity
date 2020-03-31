@@ -335,7 +335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryUIControllerGO: {fileID: 1105915776}
+  objectToOpenAndClose: {fileID: 1105915776}
+  keyToOpenAndClose: 105
 --- !u!1 &164355226
 GameObject:
   m_ObjectHideFlags: 0
@@ -48488,7 +48489,6 @@ MonoBehaviour:
   unit1: {fileID: 721093955}
   unit2: {fileID: 1472919443}
   unit3: {fileID: 1264307737}
-  test: {fileID: 0}
   defeatedTeamList: {fileID: 5766046287311689863, guid: 7bb109c810c163f45accabe9ddf90700,
     type: 3}
   thisTeam: {fileID: 1531048232}

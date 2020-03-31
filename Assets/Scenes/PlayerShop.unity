@@ -14556,6 +14556,7 @@ GameObject:
   - component: {fileID: 1939296945}
   - component: {fileID: 1939296944}
   - component: {fileID: 1939296948}
+  - component: {fileID: 1939296949}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: UI
@@ -14658,7 +14659,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryUIControllerGO: {fileID: 1025127961}
+  objectToOpenAndClose: {fileID: 1025127961}
+  keyToOpenAndClose: 105
+--- !u!114 &1939296949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939296943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToOpenAndClose: {fileID: 6168862036314647370}
+  keyToOpenAndClose: 111
 --- !u!1001 &1953097142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15371,6 +15387,7 @@ GameObject:
   - component: {fileID: 6168862036314647375}
   - component: {fileID: 6168862036314647368}
   - component: {fileID: 6168862036314647371}
+  - component: {fileID: 6168862036314647372}
   m_Layer: 5
   m_Name: PlayerShopUI
   m_TagString: UI
@@ -15424,6 +15441,20 @@ MonoBehaviour:
   selectPetButton10: {fileID: 6168862037293821968}
   selectPetButton11: {fileID: 6168862037650535222}
   selectPetButtonList: []
+--- !u!114 &6168862036314647372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6168862036314647370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToOpenAndClose: {fileID: 6168862036314647370}
+  keyToOpenAndClose: 0
 --- !u!222 &6168862036314647375
 CanvasRenderer:
   m_ObjectHideFlags: 0

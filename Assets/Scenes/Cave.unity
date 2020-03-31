@@ -576,7 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryUIControllerGO: {fileID: 1334838013}
+  objectToOpenAndClose: {fileID: 1334838013}
+  keyToOpenAndClose: 105
 --- !u!1001 &298960002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96369,7 +96370,7 @@ Tilemap:
       - {fileID: 21300168, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300174, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300180, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 17, z: 0}
@@ -96749,7 +96750,7 @@ Tilemap:
       - {fileID: 21300062, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300068, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300074, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 21, y: 27, z: 0}
