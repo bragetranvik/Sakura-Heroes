@@ -232,6 +232,7 @@ public class PlayerShopUIController : MonoBehaviour
 
     public void PlayerBoughtPet()
     {
+        string feedbackText = "empty";
         bool doesNotHavePet = true;
         foreach (GameObject petInInventory in playerInventory.petList)
         {
@@ -243,25 +244,22 @@ public class PlayerShopUIController : MonoBehaviour
 
         if (playerInventory.totalMoney < chosenBattlePet.GetComponent<Unit>().unitPriceInShop)
         {
-            string feedbackText = "Not enough gold!";
-            StartCoroutine(playFeedbackText(feedbackText));
+            feedbackText = "Not enough gold!";
         } else if (playerInventory.petList.Count >= 12)
         {
-            string feedbackText = "You have too many pets!";
-            StartCoroutine(playFeedbackText(feedbackText));
+            feedbackText = "You have too many pets!";
         } else if (!doesNotHavePet)
         {
-            string feedbackText = "You already have that pet!";
-            StartCoroutine(playFeedbackText(feedbackText));
+            feedbackText = "You already have that pet!";
         } else
         {
+            feedbackText = chosenBattlePet.name + " purchased!";
             playerInventory.petList.Add(chosenBattlePet);
             playerInventory.totalMoney -= chosenBattlePet.GetComponent<Unit>().unitPriceInShop;
-            string feedbackText = chosenBattlePet.name + " purchased!";
-            StartCoroutine(playFeedbackText(feedbackText));
             playerShopInventory.petShopList.Remove(chosenBattlePet);
             chosenBattlePet = playerShopInventory.petShopList[0];
         }
+        StartCoroutine(playFeedbackText(feedbackText));
     }
 
     private IEnumerator playFeedbackText(string stringToPlay)

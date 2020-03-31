@@ -15,13 +15,8 @@ public class OpenAndCloseUI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(keyToOpenAndClose) && !uiState)
-        {
-            OpenUI();
-        }
-        else if (Input.GetKeyDown(keyToOpenAndClose) && uiState)
+    void Update() { 
+        if (Input.GetKeyDown(keyToOpenAndClose) && uiState)
         {
             CloseUI();
         }

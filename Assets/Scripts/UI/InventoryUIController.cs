@@ -171,7 +171,6 @@ public class InventoryUIController : MonoBehaviour
     {
         for(int i = 0; i < playerInventory.petList.Count; i++)
         {
-            Debug.Log("updateImages " + i);
             selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
         }
     }
