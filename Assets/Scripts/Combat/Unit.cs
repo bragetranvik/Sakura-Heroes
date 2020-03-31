@@ -6,6 +6,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour {
     public string unitName;
     public int unitLevel;
+    public int unitPriceInShop;
 
     //Base stats should only be between 1-12.
     public int baseAttack, baseDefence, baseHP;

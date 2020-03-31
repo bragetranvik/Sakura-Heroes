@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropHandler : MonoBehaviour, IDropHandler
+public class DropHandlerShop : MonoBehaviour, IDropHandler
 {
-
     public GameObject thisGameObject;
     private new Camera camera;
     private PlayerInventory playerInventory;
+    public PlayerShopInventory playerShopInventory;
+    public PlayerShopUIController playerShopUIController;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -25,56 +26,45 @@ public class DropHandler : MonoBehaviour, IDropHandler
                 switch (nameOfDraggedPet)
                 {
                     case "Pet0":
-                        Debug.Log("Pet0 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[0];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[0];
                         break;
                     case "Pet1":
-                        Debug.Log("Pet1 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[1];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[1];
                         break;
                     case "Pet2":
-                        Debug.Log("Pet2 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[2];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[2];
                         break;
                     case "Pet3":
-                        Debug.Log("Pet3 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[3];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[3];
                         break;
                     case "Pet4":
-                        Debug.Log("Pet4 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[4];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[4];
                         break;
                     case "Pet5":
-                        Debug.Log("Pet5 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[5];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[5];
                         break;
                     case "Pet6":
-                        Debug.Log("Pet6 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[6];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[6];
                         break;
                     case "Pet7":
-                        Debug.Log("Pet7 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[7];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[7];
                         break;
                     case "Pet8":
-                        Debug.Log("Pet8 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[8];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[8];
                         break;
                     case "Pet9":
-                        Debug.Log("Pet9 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[9];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[9];
                         break;
                     case "Pet10":
-                        Debug.Log("Pet10 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[10];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[10];
                         break;
                     case "Pet11":
-                        Debug.Log("Pet11 dropped on slot " + battleSlot);
-                        playerInventory.battlePetList[battleSlot] = playerInventory.petList[11];
+                        playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[11];
                         break;
                 }
             }
         }
+
     }
     void Awake()
     {
@@ -88,10 +78,12 @@ public class DropHandler : MonoBehaviour, IDropHandler
         if (slotString == "BattleSlot0")
         {
             returnValue = 0;
-        } else if (slotString == "BattleSlot1")
+        }
+        else if (slotString == "BattleSlot1")
         {
             returnValue = 1;
-        } else if (slotString == "BattleSlot2")
+        }
+        else if (slotString == "BattleSlot2")
         {
             returnValue = 2;
         }

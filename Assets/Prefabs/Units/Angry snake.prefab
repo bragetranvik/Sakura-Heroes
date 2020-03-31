@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Angry snake
   unitLevel: 99
+  unitPriceInShop: 10
   baseAttack: 12
   baseDefence: 7
   baseHP: 6

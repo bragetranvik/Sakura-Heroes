@@ -28,7 +28,7 @@ public class HUDController : MonoBehaviour
     private void UpdateHUD()
     {
         // Set money in UI (Not implemented yet)
-        HUDMoneyCounter.text = "Money: " + Convert.ToString(playerInventory.totalMoney);
+        HUDMoneyCounter.text = "Gold: " + Convert.ToString(playerInventory.totalMoney);
         // Set level in UI
         HUDLevelCounter.text = "Level: " + Convert.ToString(playerInventory.level);
     }

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryUIController : MonoBehaviour
+public class PlayerShopUIController : MonoBehaviour
 {
     public GameObject InventoryUIControllerGO;
+    public PlayerShopInventory playerShopInventory;
+
     public Image portraitPicture;
 
     public Text unitName;
@@ -24,22 +26,28 @@ public class InventoryUIController : MonoBehaviour
     private int selectedPetIndex = 0;
     private GameObject selectedPet;
     private Button selectedAbilityButton;
+    public GameObject chosenBattlePet;
+    public Text petCostText;
+    public Text feedbackText;
+    public Text feedbackTextBorder;
 
     public Ability dummyAbility;
 
-    public Button battlePetSlot0, battlePetSlot1, battlePetSlot2;
+    public Button buySlot0;
+    public Button buyButton;
 
     public Button selectPetButton0, selectPetButton1, selectPetButton2, selectPetButton3, selectPetButton4, selectPetButton5;
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
     public List<Button> selectPetButtonList;
-
+    
     // Start is called before the first frame update
     void Start()
     {
         AddButtonsToList();
         playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
         // Purely for testing purposes, and should be removed when the player is assigned a team normally!!!
-        if (playerInventory.petList.Count < 1) {
+        if (playerInventory.petList.Count < 1)
+        {
             playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit1);
             playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit2);
             playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit3);
@@ -49,7 +57,7 @@ public class InventoryUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        selectedPet = playerInventory.GetPetInList(selectedPetIndex);
+        selectedPet = playerShopInventory.GetPetInShopList(selectedPetIndex);
         UpdateUI(selectedPet);
     }
     // Awake is called when the object is loaded
@@ -77,6 +85,7 @@ public class InventoryUIController : MonoBehaviour
         {
             UpdateTooltip(selectedAbility, unit);
         }
+        UpdatePetCost(chosenBattlePet.GetComponent<Unit>());
     }
 
     /// <summary>
@@ -134,30 +143,31 @@ public class InventoryUIController : MonoBehaviour
     public Ability GetUnitAbility(Unit unit, Button selectedButton)
     {
         Ability currentUnitAbility = dummyAbility;
-            if ((selectedButton == abilityButton1) && (unit.ability1 != null))
-            {
-                currentUnitAbility = unit.ability1;
-            }
-            else if ((selectedButton == abilityButton2) && (unit.ability2 != null))
-            {
-                currentUnitAbility = unit.ability2;
-            }
-            else if ((selectedButton == abilityButton3) && (unit.ability3 != null))
-            {
-                currentUnitAbility = unit.ability3;
-            }
-            else if ((selectedButton == abilityButton4) && (unit.ability4 != null))
-            {
-                currentUnitAbility = unit.ability4;
-            }
+        if ((selectedButton == abilityButton1) && (unit.ability1 != null))
+        {
+            currentUnitAbility = unit.ability1;
+        }
+        else if ((selectedButton == abilityButton2) && (unit.ability2 != null))
+        {
+            currentUnitAbility = unit.ability2;
+        }
+        else if ((selectedButton == abilityButton3) && (unit.ability3 != null))
+        {
+            currentUnitAbility = unit.ability3;
+        }
+        else if ((selectedButton == abilityButton4) && (unit.ability4 != null))
+        {
+            currentUnitAbility = unit.ability4;
+        }
         return currentUnitAbility;
     }
 
     /// <summary>
     /// Enable the different select pet buttons depending on how many pets the player has.
     /// </summary>
-    private void EnablePetSelectButtons() {
-        for (int i = 11; i >= playerInventory.petList.Count; i--)
+    private void EnablePetSelectButtons()
+    {
+        for (int i = 11; i >= playerShopInventory.petShopList.Count; i--)
         {
             selectPetButtonList[i].enabled = false;
             selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
@@ -169,10 +179,9 @@ public class InventoryUIController : MonoBehaviour
     /// </summary>
     private void UpdatePetSelectButtonImages()
     {
-        for(int i = 0; i < playerInventory.petList.Count; i++)
+        for (int i = 0; i < playerShopInventory.petShopList.Count; i++)
         {
-            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.petList[i].GetComponent<Unit>().portraitPicture;
-
+            selectPetButtonList[i].transform.GetChild(0).GetComponent<Image>().sprite = playerShopInventory.petShopList[i].GetComponent<Unit>().portraitPicture;
         }
     }
 
@@ -181,9 +190,12 @@ public class InventoryUIController : MonoBehaviour
     /// </summary>
     private void UpdateBattlePetSlots()
     {
-        battlePetSlot0.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[0].GetComponent<Unit>().portraitPicture;
-        battlePetSlot1.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[1].GetComponent<Unit>().portraitPicture;
-        battlePetSlot2.transform.GetChild(0).GetComponent<Image>().sprite = playerInventory.battlePetList[2].GetComponent<Unit>().portraitPicture;
+        buySlot0.transform.GetChild(0).GetComponent<Image>().sprite = chosenBattlePet.GetComponent<Unit>().portraitPicture;
+    }
+
+    private void UpdatePetCost(Unit unit)
+    {
+        petCostText.text = "Costs " + unit.unitPriceInShop + " gold";
     }
 
     public void SelectedPetIndex(int selectedPetIndex)
@@ -197,7 +209,7 @@ public class InventoryUIController : MonoBehaviour
     }
 
     /// <summary>
-    /// Used to add the select pet buttons into a 
+    /// Used to add the select pet buttons into a list
     /// </summary>
     public void AddButtonsToList()
     {
@@ -216,5 +228,56 @@ public class InventoryUIController : MonoBehaviour
             selectPetButton10,
             selectPetButton11
         };
+    }
+
+    public void PlayerBoughtPet()
+    {
+        bool doesNotHavePet = true;
+        foreach (GameObject petInInventory in playerInventory.petList)
+        {
+            if (petInInventory == chosenBattlePet)
+            {
+                doesNotHavePet = false;
+            }
+        }
+
+        if (playerInventory.totalMoney < chosenBattlePet.GetComponent<Unit>().unitPriceInShop)
+        {
+            string feedbackText = "Not enough gold!";
+            StartCoroutine(playFeedbackText(feedbackText));
+        } else if (playerInventory.petList.Count >= 12)
+        {
+            string feedbackText = "You have too many pets!";
+            StartCoroutine(playFeedbackText(feedbackText));
+        } else if (!doesNotHavePet)
+        {
+            string feedbackText = "You already have that pet!";
+            StartCoroutine(playFeedbackText(feedbackText));
+        } else
+        {
+            playerInventory.petList.Add(chosenBattlePet);
+            playerInventory.totalMoney -= chosenBattlePet.GetComponent<Unit>().unitPriceInShop;
+            string feedbackText = chosenBattlePet.name + " purchased!";
+            StartCoroutine(playFeedbackText(feedbackText));
+            playerShopInventory.petShopList.Remove(chosenBattlePet);
+            chosenBattlePet = playerShopInventory.petShopList[0];
+        }
+    }
+
+    private IEnumerator playFeedbackText(string stringToPlay)
+    {
+        feedbackText.color = new Color(0.1960784f, 0.1960784f, 0.1960784f, 1);
+        feedbackText.text = stringToPlay;
+        feedbackTextBorder.color = new Color(1f, 1f, 1f, 1f);
+        feedbackTextBorder.text = stringToPlay;
+
+        for (float i = 1; i >= 0; i -= 0.01f)
+        {
+            Color newColorForText = new Color(0.1960784f, 0.1960784f, 0.1960784f, i);
+            feedbackText.color = newColorForText;
+            Color newColorForBorder = new Color(1f, 1f, 1f, i);
+            feedbackTextBorder.color = newColorForBorder;
+            yield return new WaitForSeconds(0.022f);
+        }
     }
 }
