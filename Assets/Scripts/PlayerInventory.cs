@@ -8,7 +8,7 @@ public class PlayerInventory : MonoBehaviour {
     public GameObject player;
     private static int currentXP;
     public int level = 1;
-    public List<GameObject> questList = new List<GameObject>();
+    public List<Quest> questList = new List<Quest>();
     public int totalMoney;
     public List<GameObject> petList = new List<GameObject>();
     public List<GameObject> battlePetList = new List<GameObject>();
@@ -97,7 +97,7 @@ public class PlayerInventory : MonoBehaviour {
     /// </summary>
     /// <param name="quest">Quest to add to the list.</param>
     /// <returns>True if quest was successfully added to the list.</returns>
-    public bool AddQuestToQuestList(GameObject quest) {
+    public bool AddQuestToQuestList(Quest quest) {
         bool questWasAdded = false;
 
         if(!IsQuestAlreadyInList(quest)) {
@@ -112,11 +112,11 @@ public class PlayerInventory : MonoBehaviour {
     /// </summary>
     /// <param name="quest">The quest to check for.</param>
     /// <returns>True if the quest is already in the list.</returns>
-    public bool IsQuestAlreadyInList(GameObject quest) {
+    public bool IsQuestAlreadyInList(Quest quest) {
         bool questIsInList = false;
 
-        foreach (GameObject questInList in questList) {
-            if (questInList.GetComponent<Quest>().questName.Equals(quest.GetComponent<Quest>().questName)) {
+        foreach (Quest questInList in questList) {
+            if (questInList.questName.Equals(quest.questName)) {
                 questIsInList = true;
             }
         }
@@ -128,9 +128,9 @@ public class PlayerInventory : MonoBehaviour {
     /// </summary>
     /// <param name="objective">Example the name of the enemyTeam or an area.</param>
     public void CheckForCompletedQuest(string objective) {
-        foreach(GameObject questInList in questList) {
-            if(questInList.GetComponent<Quest>().requirement.Equals(objective) && !questInList.GetComponent<Quest>().questCompleted) {
-                questInList.GetComponent<Quest>().CompleteQuest(objective);
+        foreach(Quest questInList in questList) {
+            if(questInList.requirement.Equals(objective) && !questInList.questCompleted) {
+                questInList.CompleteQuest(objective);
             }
         }
     }

@@ -43,11 +43,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984376b3f61693a488019bed7da13022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Test
-  questDescription: Defeat Aleksander!
+  questName: WANTED! Dragon Lord Hans
+  questDescription: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+    dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+    ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
   questType: 0
   requirement: Test
   questCompleted: 0
   rewardHasBeenClaimed: 0
-  questXpReward: 100
-  questMoneyReward: 100
+  questXpReward: 150000
+  questMoneyReward: 50000

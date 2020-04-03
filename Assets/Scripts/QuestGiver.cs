@@ -3,67 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestGiver : MonoBehaviour {
-    public GameObject quest1;
-    public GameObject quest2;
-    public GameObject quest3;
+    public Quest quest1;
+    public Quest quest2;
+    public Quest quest3;
+    public GameObject questUI, completeQuestUI;
 
     /// <summary>
-    /// Adds quest1 to player inventory.
+    /// Opens the quest GUI for quest3.
     /// </summary>
-    public void AcceptQuestOne() {
-        AddQuestToPlayerList(quest1);
+    public void OpenQuestOneUI() {
+        questUI.GetComponent<QuestUIController>().OpenQuestUI(quest1);
     }
 
     /// <summary>
-    /// Adds quest2 to player inventory.
+    /// Opens the quest GUI for quest3.
     /// </summary>
-    public void AcceptQuestTwo() {
-        AddQuestToPlayerList(quest2);
+    public void OpenQuestTwoUI() {
+        questUI.GetComponent<QuestUIController>().OpenQuestUI(quest2);
     }
 
     /// <summary>
-    /// Adds quest3 to player inventory.
+    /// Opens the quest GUI for quest3.
     /// </summary>
-    public void AcceptQuestThree() {
-        AddQuestToPlayerList(quest3);
+    public void OpenQuestThreeUI() {
+        questUI.GetComponent<QuestUIController>().OpenQuestUI(quest3);
     }
 
     /// <summary>
-    /// Adds the quest to the player quest list
-    /// if the quest is not null and the player don't already have the quest.
+    /// Open the quest reward GUI for quest1.
     /// </summary>
-    /// <param name="quest">Quest to add to the list.</param>
-    private void AddQuestToPlayerList(GameObject quest) {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (quest != null && !player.GetComponent<PlayerInventory>().IsQuestAlreadyInList(quest)) {
-            DontDestroyOnLoad(quest);
-            player.GetComponent<PlayerInventory>().AddQuestToQuestList(quest);
-        }
+    public void CompleteQuestOne() {
+        completeQuestUI.GetComponent<QuestUIController>().OpenQuestRewardUI(quest1);
     }
 
     /// <summary>
-    /// Checks if the player has completed any of the quests the quest giver have and its not been completed already.
-    /// If thats the case the player will gain the xp and money from all the quests.
+    /// Open the quest reward GUI for quest2.
     /// </summary>
-    public void CompleteQuest() {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (quest1 != null) {
-            if (quest1.GetComponent<Quest>().questCompleted && !quest1.GetComponent<Quest>().rewardHasBeenClaimed) {
-                player.GetComponent<PlayerInventory>().GetQuestReward(quest1.GetComponent<Quest>().questXpReward, quest1.GetComponent<Quest>().questMoneyReward);
-                quest1.GetComponent<Quest>().rewardHasBeenClaimed = true;
-            }
-        }
-        if (quest2 != null) {
-            if (quest2.GetComponent<Quest>().questCompleted && !quest2.GetComponent<Quest>().rewardHasBeenClaimed) {
-                player.GetComponent<PlayerInventory>().GetQuestReward(quest2.GetComponent<Quest>().questXpReward, quest2.GetComponent<Quest>().questMoneyReward);
-                quest2.GetComponent<Quest>().rewardHasBeenClaimed = true;
-            }
-        }
-        if (quest3 != null) {
-            if (quest3.GetComponent<Quest>().questCompleted && !quest3.GetComponent<Quest>().rewardHasBeenClaimed) {
-                player.GetComponent<PlayerInventory>().GetQuestReward(quest3.GetComponent<Quest>().questXpReward, quest3.GetComponent<Quest>().questMoneyReward);
-                quest3.GetComponent<Quest>().rewardHasBeenClaimed = true;
-            }
-        }
+    public void CompleteQuestTwo() {
+        completeQuestUI.GetComponent<QuestUIController>().OpenQuestRewardUI(quest2);
+    }
+
+    /// <summary>
+    /// Open the quest reward GUI for quest3.
+    /// </summary>
+    public void CompleteQuestThree() {
+        completeQuestUI.GetComponent<QuestUIController>().OpenQuestRewardUI(quest3);
     }
 }

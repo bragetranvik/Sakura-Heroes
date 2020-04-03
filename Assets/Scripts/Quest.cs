@@ -9,7 +9,9 @@ public class Quest : MonoBehaviour {
     public string questDescription;
     public QuestType questType;
     public string requirement;
+    [HideInInspector]
     public bool questCompleted = false;
+    [HideInInspector]
     public bool rewardHasBeenClaimed = false;
     public int questXpReward;
     public int questMoneyReward;
