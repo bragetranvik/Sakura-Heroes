@@ -47530,7 +47530,7 @@ GameObject:
   - component: {fileID: 1531048282}
   - component: {fileID: 1531048284}
   m_Layer: 0
-  m_Name: white_grey_Dog_0
+  m_Name: MayBonbonQuestGiver
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47548,11 +47548,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Fido
+  nameText: May Bonbon
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  - {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -47585,18 +47585,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.018828273, y: -0.014636993}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.40625, y: 1}
+    oldSize: {x: 2.6875, y: 5.75}
     newSize: {x: 1.40625, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.40625, y: 1}
+  m_Size: {x: 2.7418349, y: 5.5240974}
   m_EdgeRadius: 0
 --- !u!95 &1531048236
 Animator:
@@ -47656,7 +47656,8 @@ SpriteRenderer:
   m_SortingLayerID: -1781258809
   m_SortingLayer: 8
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3eb0057cd8f190441b63232bac4a52dd, type: 3}
+  m_Sprite: {fileID: -8207614510909917503, guid: d61f5ea27faaa614e9a3d5d56e2abf3e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -47676,7 +47677,7 @@ Transform:
   m_GameObject: {fileID: 1531048232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.64, y: -5.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 589791648}
   - {fileID: 1673344862}
@@ -47819,11 +47820,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 136.41626, y: -75.79192}
+  scrollPos: {x: 287.84445, y: 84.218895}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 404
-  zoom: 0.7899998
+  zoom: 0.7599998
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -47831,9 +47832,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1531048286}
+  - {fileID: 1531048256}
   selectedCommands:
-  - {fileID: 1531048283}
+  - {fileID: 1531048251}
   variables:
   - {fileID: 1531048262}
   description: 
@@ -47863,7 +47864,8 @@ MonoBehaviour:
   storyText: Pathetic..
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48120,8 +48122,9 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Could you go and defeat the enemy in the cave?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1531048233}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48165,7 +48168,8 @@ MonoBehaviour:
   storyText: You up for a battle?
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48191,7 +48195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 244.86725
     y: 87.23227
-    width: 160.12662
+    width: 151.31581
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -48289,7 +48293,8 @@ MonoBehaviour:
   storyText: Yo Cindy listen here...
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48343,7 +48348,8 @@ MonoBehaviour:
   storyText: Hello Cindy!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48442,7 +48448,8 @@ MonoBehaviour:
   storyText: Yo,  anyway I got a quest for you!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 0}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48513,7 +48520,8 @@ MonoBehaviour:
   storyText: Good luck!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48541,7 +48549,8 @@ MonoBehaviour:
     for you to defeat.
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 0}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48568,7 +48577,8 @@ MonoBehaviour:
   storyText: Nice, you're not the weakest batteler in the town!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48612,7 +48622,8 @@ MonoBehaviour:
   storyText: You rude girl!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48639,7 +48650,8 @@ MonoBehaviour:
   storyText: First you say no to battle and now you decline the quest!?
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48666,7 +48678,8 @@ MonoBehaviour:
   storyText: Well okey then...
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48742,7 +48755,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 239.3318
     y: 195.31522
-    width: 131.01268
+    width: 126.31581
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -48772,7 +48785,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -59.49176
     y: 196.49161
-    width: 128.48103
+    width: 123.68423
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -48899,7 +48912,8 @@ MonoBehaviour:
   storyText: Prepare yourself to be crushed!
   description: 
   character: {fileID: 1531048233}
-  portrait: {fileID: 21300000, guid: 8db309cb79f84964fa934ba145b67633, type: 3}
+  portrait: {fileID: 4367757618272088712, guid: e4de4184107541e40b95e6594d148548,
+    type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -48925,7 +48939,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 76.97889
     y: 222.37393
-    width: 148.7342
+    width: 142.10529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

@@ -1115,6 +1115,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2891843559243623779, guid: 7ae42c59884f5704fa16e9d761c0ba9e,
+        type: 3}
+      propertyPath: totalMoney
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2871708526557659350, guid: 7ae42c59884f5704fa16e9d761c0ba9e,
         type: 3}
       propertyPath: m_Name

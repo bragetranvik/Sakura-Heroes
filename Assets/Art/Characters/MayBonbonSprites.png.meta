@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+guid: d61f5ea27faaa614e9a3d5d56e2abf3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4371021701590487190
+    second: MayBonbonSprites_0
+  - first:
+      213: -6389837351706947867
+    second: MayBonbonSprites_1
+  - first:
+      213: 6234162026162106569
+    second: MayBonbonSprites_2
+  - first:
+      213: -3549313588205548400
+    second: MayBonbonSprites_3
+  - first:
+      213: 468260787936953194
+    second: MayBonbonSprites_4
+  - first:
+      213: 5244349077200507807
+    second: MayBonbonSprites_5
+  - first:
+      213: -729633386915132552
+    second: MayBonbonSprites_6
+  - first:
+      213: -8207614510909917503
+    second: MayBonbonSprites_7
+  - first:
+      213: -3370658667642077451
+    second: MayBonbonSprites_8
+  - first:
+      213: 3011824328753494994
+    second: MayBonbonSprites_9
+  - first:
+      213: 5198144804748274875
+    second: MayBonbonSprites_10
+  - first:
+      213: -686449008491255300
+    second: MayBonbonSprites_11
+  - first:
+      213: 8828437833575030844
+    second: MayBonbonSprites_12
+  - first:
+      213: 2110973951937489258
+    second: MayBonbonSprites_13
+  - first:
+      213: -106125642597933494
+    second: MayBonbonSprites_14
+  - first:
+      213: -365289735960015417
+    second: MayBonbonSprites_15
+  - first:
+      213: 3975972427303535705
+    second: MayBonbonSprites_16
+  - first:
+      213: -5073738193343840070
+    second: MayBonbonSprites_17
+  - first:
+      213: -6054456912137499677
+    second: MayBonbonSprites_18
+  - first:
+      213: -773486817387281105
+    second: MayBonbonSprites_19
+  - first:
+      213: 5677235648983167805
+    second: MayBonbonSprites_20
+  - first:
+      213: 9149423967397816788
+    second: MayBonbonSprites_21
+  - first:
+      213: -1407637576775965883
+    second: MayBonbonSprites_22
+  - first:
+      213: 1610338160778064388
+    second: MayBonbonSprites_23
+  - first:
+      213: -7238941954969635997
+    second: MayBonbonSprites_24
+  - first:
+      213: -1875324623523661216
+    second: MayBonbonSprites_25
+  - first:
+      213: 4450039082088162828
+    second: MayBonbonSprites_26
+  - first:
+      213: -2357954939354715207
+    second: MayBonbonSprites_27
+  - first:
+      213: 4901368320400201697
+    second: MayBonbonSprites_28
+  - first:
+      213: -8230773394374930268
+    second: MayBonbonSprites_29
+  - first:
+      213: -1568138229923643099
+    second: MayBonbonSprites_0
+  - first:
+      213: 6074321264809880657
+    second: MayBonbonSprites_1
+  - first:
+      213: -7115759868958296224
+    second: MayBonbonSprites_2
+  - first:
+      213: 3295782843777464081
+    second: MayBonbonSprites_3
+  - first:
+      213: 925112583170061515
+    second: MayBonbonSprites_4
+  - first:
+      213: -6952357870431038855
+    second: MayBonbonSprites_5
+  - first:
+      213: 1031821652193414727
+    second: MayBonbonSprites_6
+  - first:
+      213: 384631479537068727
+    second: MayBonbonSprites_7
+  - first:
+      213: -2070013298941507084
+    second: MayBonbonSprites_8
+  - first:
+      213: -7723144907706912144
+    second: MayBonbonSprites_9
+  - first:
+      213: 781287419119708485
+    second: MayBonbonSprites_10
+  - first:
+      213: -5601199532602479512
+    second: MayBonbonSprites_11
+  - first:
+      213: 7907012303408242174
+    second: MayBonbonSprites_12
+  - first:
+      213: -1045241191252829346
+    second: MayBonbonSprites_13
+  - first:
+      213: 8249847465804463942
+    second: MayBonbonSprites_14
+  - first:
+      213: 8989226028873948961
+    second: MayBonbonSprites_15
+  - first:
+      213: 2166133841389868823
+    second: MayBonbonSprites_16
+  - first:
+      213: 7152195234802950339
+    second: MayBonbonSprites_17
+  - first:
+      213: -6002602616033315559
+    second: MayBonbonSprites_18
+  - first:
+      213: 1968751473686725797
+    second: MayBonbonSprites_19
+  - first:
+      213: -2255608612659916087
+    second: MayBonbonSprites_20
+  - first:
+      213: 145242193322731016
+    second: MayBonbonSprites_21
+  - first:
+      213: 6354001873435296719
+    second: MayBonbonSprites_22
+  - first:
+      213: 3102471306600916828
+    second: MayBonbonSprites_23
+  - first:
+      213: 422523397037356086
+    second: MayBonbonSprites_24
+  - first:
+      213: 6347381099099576766
+    second: MayBonbonSprites_25
+  - first:
+      213: 2483896015773380916
+    second: MayBonbonSprites_26
+  - first:
+      213: 1233201973223359615
+    second: MayBonbonSprites_27
+  - first:
+      213: 1242953569267678445
+    second: MayBonbonSprites_28
+  - first:
+      213: 209355119005546521
+    second: MayBonbonSprites_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MayBonbonSprites_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 477
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52101b6969adc3ae0800000000000000
+      internalID: -1568138229923643099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 477
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c2898d1035c4450800000000000000
+      internalID: 6074321264809880657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 477
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067b2cf991ebf3d90800000000000000
+      internalID: -7115759868958296224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 477
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117be2cd809fcbd20800000000000000
+      internalID: 3295782843777464081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 382
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc478113ef8a6dc00800000000000000
+      internalID: 925112583170061515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 382
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972119d1a53448f90800000000000000
+      internalID: -6952357870431038855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 382
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e8b8a6354c15e00800000000000000
+      internalID: 1031821652193414727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 382
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba6d33fa4c765500800000000000000
+      internalID: 384631479537068727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 287
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9c14c3fd5d543e0800000000000000
+      internalID: -2070013298941507084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 285
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072334b10a0e1d490800000000000000
+      internalID: -7723144907706912144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 285
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549ac1ca4c0b7da00800000000000000
+      internalID: 781287419119708485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_11
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 44
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c252793ba8442b0800000000000000
+      internalID: -5601199532602479512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 285
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd9a4bfbc95bbd60800000000000000
+      internalID: 7907012303408242174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 285
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bd4caacae8e71f0800000000000000
+      internalID: -1045241191252829346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_14
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 44
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f7e628f885d7270800000000000000
+      internalID: 8249847465804463942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 192
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f1ab0427520cc70800000000000000
+      internalID: 8989226028873948961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 190
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717def78047af0e10800000000000000
+      internalID: 2166133841389868823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_17
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 190
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0ebae0ca3b14360800000000000000
+      internalID: 7152195234802950339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 190
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915f08f49b872bca0800000000000000
+      internalID: -6002602616033315559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 190
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4cf10d809625b10800000000000000
+      internalID: 1968751473686725797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 97
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c21812eae772b0e0800000000000000
+      internalID: -2255608612659916087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 95
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806666b5101040200800000000000000
+      internalID: 145242193322731016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 95
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc30748f903fd2850800000000000000
+      internalID: 6354001873435296719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 95
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c572acb37313e0b20800000000000000
+      internalID: 3102471306600916828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_24
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 95
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634f3bd7aca1dd500800000000000000
+      internalID: 422523397037356086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_25
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9dbd1da7d661850800000000000000
+      internalID: 6347381099099576766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4313e2f1442987220800000000000000
+      internalID: 2483896015773380916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_27
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f740a4e29a63d1110800000000000000
+      internalID: 1233201973223359615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decf0809fabdf3110800000000000000
+      internalID: 1242953569267678445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MayBonbonSprites_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 49
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9183c3c1f57c7e200800000000000000
+      internalID: 209355119005546521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
