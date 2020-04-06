@@ -291,12 +291,12 @@ PrefabInstance:
     - target: {fileID: 808777295285434110, guid: c68ee2b86b1a9724a9a5e19cc1eb4a2a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.66
+      value: 15.6
       objectReference: {fileID: 0}
     - target: {fileID: 808777295285434110, guid: c68ee2b86b1a9724a9a5e19cc1eb4a2a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.75
+      value: -4.26
       objectReference: {fileID: 0}
     - target: {fileID: 808777295285434110, guid: c68ee2b86b1a9724a9a5e19cc1eb4a2a,
         type: 3}
@@ -578,6 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToOpenAndClose: {fileID: 1334838013}
   keyToOpenAndClose: 105
+  notOpenAnywhere: 0
 --- !u!1001 &298960002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3704,7 +3705,7 @@ Tilemap:
       - {fileID: 21300002, guid: f8571296c2cb2b34ebdfca5490f4f127, type: 3}
       - {fileID: 21300004, guid: f8571296c2cb2b34ebdfca5490f4f127, type: 3}
       - {fileID: 21300006, guid: f8571296c2cb2b34ebdfca5490f4f127, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -96370,7 +96371,7 @@ Tilemap:
       - {fileID: 21300168, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300174, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300180, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 17, z: 0}
@@ -96750,7 +96751,7 @@ Tilemap:
       - {fileID: 21300062, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300068, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300074, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 21, y: 27, z: 0}
@@ -96850,7 +96851,7 @@ Tilemap:
       - {fileID: 21300008, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300014, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300020, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 18, y: 29, z: 0}
