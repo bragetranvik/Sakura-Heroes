@@ -96451,7 +96451,7 @@ Tilemap:
       - {fileID: 21300062, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300068, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300074, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: 20, z: 0}
@@ -96851,7 +96851,7 @@ Tilemap:
       - {fileID: 21300008, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300014, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300020, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 18, y: 29, z: 0}
@@ -97309,6 +97309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventoryUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365748877181968401, guid: 36840bdc463e0ad45b36e06933fc4426,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1365748877181968402, guid: 36840bdc463e0ad45b36e06933fc4426,
         type: 3}

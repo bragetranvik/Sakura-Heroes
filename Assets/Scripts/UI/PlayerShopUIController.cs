@@ -254,6 +254,7 @@ public class PlayerShopUIController : MonoBehaviour
         } else
         {
             feedbackText = chosenBattlePet.name + " purchased!";
+            DontDestroyOnLoad(chosenBattlePet);
             playerInventory.petList.Add(chosenBattlePet);
             playerInventory.totalMoney -= chosenBattlePet.GetComponent<Unit>().unitPriceInShop;
             playerShopInventory.petShopList.Remove(chosenBattlePet);

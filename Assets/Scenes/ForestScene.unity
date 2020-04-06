@@ -11767,6 +11767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1365748877181968401, guid: 36840bdc463e0ad45b36e06933fc4426,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1365748877181968402, guid: 36840bdc463e0ad45b36e06933fc4426,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11877,6 +11882,12 @@ PrefabInstance:
 --- !u!224 &322288357 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1365748877181968402, guid: 36840bdc463e0ad45b36e06933fc4426,
+    type: 3}
+  m_PrefabInstance: {fileID: 322288356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &322288358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1365748877181968401, guid: 36840bdc463e0ad45b36e06933fc4426,
     type: 3}
   m_PrefabInstance: {fileID: 322288356}
   m_PrefabAsset: {fileID: 0}
@@ -12511,8 +12522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7536ac879600f374db4df29137d42ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToOpenAndClose: {fileID: 1347447494}
+  objectToOpenAndClose: {fileID: 322288358}
   keyToOpenAndClose: 105
+  notOpenAnywhere: 0
 --- !u!1 &906645820
 GameObject:
   m_ObjectHideFlags: 0
@@ -13386,7 +13398,7 @@ Tilemap:
       - {fileID: 21300094, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300100, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300106, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -53, y: 19, z: 0}
@@ -29522,12 +29534,6 @@ PrefabInstance:
 --- !u!224 &1347447493 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4153636210509150565, guid: 94d40004a621f4c44b18cc904521868a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1347447492}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1347447494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4153636210509150586, guid: 94d40004a621f4c44b18cc904521868a,
     type: 3}
   m_PrefabInstance: {fileID: 1347447492}
   m_PrefabAsset: {fileID: 0}
@@ -106612,7 +106618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1666168520
 Animator:
   serializedVersion: 3
