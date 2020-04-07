@@ -50074,7 +50074,22 @@ PrefabInstance:
     - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
+        type: 3}
+      propertyPath: Mute
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 193b8477d2610304fbf7540c52155124, type: 3}
+    - target: {fileID: 6875094393823323281, guid: c54fee10705e7d4458aa70b76c8ec83f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6875094393823323282, guid: c54fee10705e7d4458aa70b76c8ec83f,
         type: 3}
