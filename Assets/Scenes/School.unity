@@ -6020,6 +6020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToOpenAndClose: {fileID: 148913948}
   keyToOpenAndClose: 105
+  notOpenAnywhere: 0
 --- !u!114 &480413005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11729,7 +11730,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7d3093a22f1c50f45bc5ec6950a78014, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20817,6 +20818,8 @@ MonoBehaviour:
   quest1: {fileID: 0}
   quest2: {fileID: 0}
   quest3: {fileID: 0}
+  questUI: {fileID: 0}
+  completeQuestUI: {fileID: 0}
 --- !u!114 &1925486478
 MonoBehaviour:
   m_ObjectHideFlags: 2
