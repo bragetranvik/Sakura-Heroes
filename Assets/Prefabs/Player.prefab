@@ -204,6 +204,8 @@ MonoBehaviour:
   level: 99
   questList: []
   totalMoney: 0
+  petList: []
+  battlePetList: []
 --- !u!114 &8996840570198114064
 MonoBehaviour:
   m_ObjectHideFlags: 0
