@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
@@ -12,10 +13,8 @@ public class MainMenu : MonoBehaviour
     public GameObject playerGO;
     public GameObject playerUnit;
 
-    public Sprite characterSprite1;
-    public Sprite characterSprite2;
-    public Sprite characterSprite3;
-    public Sprite characterSprite4;
+    public Sprite characterSprite1, characterSprite2, characterSprite3, characterSprite4;
+    public AnimatorController characterAnimatorController1, characterAnimatorController2, characterAnimatorController3, characterAnimatorController4;
 
     public string state;
 
@@ -145,17 +144,21 @@ public class MainMenu : MonoBehaviour
         if (characterID == 1)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite1;
+            playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController1;
         } else if (characterID == 2)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite2;
+            playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController2;
         }
         else if (characterID == 3)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite3;
+            playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController3;
         }
         else if (characterID == 4)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite4;
+            playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController4;
         }
     }
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,5 +69,10 @@ public class ToolTip : MonoBehaviour {
                 break;
         }
         return tooltipText;
+    }
+    
+    public void enableDisable(bool value)
+    {
+        toolTipIsOn = value;
     }
 }
