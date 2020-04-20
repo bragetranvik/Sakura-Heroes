@@ -1451,14 +1451,18 @@ MonoBehaviour:
   characterSprite1: {fileID: 21300000, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
   characterSprite2: {fileID: -4630174525881662268, guid: 51993ee7166eaa546b209982ac70a6b9,
     type: 3}
-  characterSprite3: {fileID: 0}
-  characterSprite4: {fileID: 0}
+  characterSprite3: {fileID: -3036416368411268975, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
+    type: 3}
+  characterSprite4: {fileID: 6648904196435134736, guid: ad510e44d6cb50447bdeb1338b3922d1,
+    type: 3}
   characterAnimatorController1: {fileID: 9100000, guid: 54256b6399152c0428b8b11d10f353d6,
     type: 2}
   characterAnimatorController2: {fileID: 9100000, guid: af4780eff5fd88a46a6da151ff0853c1,
     type: 2}
-  characterAnimatorController3: {fileID: 0}
-  characterAnimatorController4: {fileID: 0}
+  characterAnimatorController3: {fileID: 9100000, guid: 5f5ef07c0fbf0c349ad722ba80996d0c,
+    type: 2}
+  characterAnimatorController4: {fileID: 9100000, guid: 7ab2aaea29773854ead0397c81ed2ec5,
+    type: 2}
   state: MAIN
   mainStateGO: {fileID: 630488193}
   newGameSelectCharGO: {fileID: 851666177}
@@ -4110,7 +4114,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
+  m_Sprite: {fileID: -3036416368411268975, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4773,7 +4778,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
+  m_Sprite: {fileID: 6648904196435134736, guid: ad510e44d6cb50447bdeb1338b3922d1,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
