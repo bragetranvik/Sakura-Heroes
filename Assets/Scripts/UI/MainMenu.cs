@@ -1,6 +1,7 @@
 ﻿using Fungus;
 using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
@@ -9,6 +10,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public GameObject playerGO;
+    public GameObject playerUnit;
 
     public Sprite characterSprite1;
     public Sprite characterSprite2;
@@ -30,48 +32,61 @@ public class MainMenu : MonoBehaviour
     {
         playerGO.GetComponent<SpriteRenderer>().enabled = false;
         playerGO.GetComponent<Transform>().position = new Vector3(9f, 9f, 0f);
+        StartCoroutine(MenuSwitchCase());
     }
 
     void Update()
     {
-        if (hasChangedStates)
-        {
-            mainStateGO.SetActive(false);
-            newGameSelectCharGO.SetActive(false);
-            newGameSelectPetGO.SetActive(false);
-            optionsGO.SetActive(false);
-            loadGameGO.SetActive(false);
-            quitGameGO.SetActive(false);
-        }
-        switch (state)
-        {
-            // The main state of the menu
-            case "MAIN":
-                mainStateGO.SetActive(true);
-                break;
-            case "NEW_GAME_SELECT_CHAR":
-                newGameSelectCharGO.SetActive(true);
-                break;
-            case "NEW_GAME_SELECT_PET":
-                newGameSelectPetGO.SetActive(true);
-                // If the player has 3 objects in the player inventory, go to startHub
-                if (playerGO.GetComponent<PlayerInventory>().petList.Count >= 3)
-                {
-                    NewGame();
-                }
-                break;
-            case "OPTIONS":
-                optionsGO.SetActive(true);
-                break;
-            case "LOAD_GAME":
-                loadGameGO.SetActive(true);
-                break;
-            case "QUIT_GAME":
-                quitGameGO.SetActive(true);
-                break;
-            default:
-                state = "MAIN";
-                break;
+        
+    }
+
+    private IEnumerator MenuSwitchCase()
+    {
+        bool stillInMenu = true;
+        while (stillInMenu) {
+            if (hasChangedStates)
+            {
+                mainStateGO.SetActive(false);
+                newGameSelectCharGO.SetActive(false);
+                newGameSelectPetGO.SetActive(false);
+                optionsGO.SetActive(false);
+                loadGameGO.SetActive(false);
+                quitGameGO.SetActive(false);
+            }
+            switch (state)
+            {
+                // The main state of the menu
+                case "MAIN":
+                    mainStateGO.SetActive(true);
+                    break;
+                case "NEW_GAME_SELECT_CHAR":
+                    newGameSelectCharGO.SetActive(true);
+                    break;
+                case "NEW_GAME_SELECT_PET":
+                    newGameSelectPetGO.SetActive(true);
+                    // If the player has 3 objects in the player inventory, go to startHub
+                    if (playerGO.GetComponent<PlayerInventory>().petList.Count >= 3 && stillInMenu)
+                    {
+                        stillInMenu = false;
+                        SetBattlePetToChosenPets();
+                        yield return new WaitForSeconds(1f);
+                        NewGame();
+                    }
+                    break;
+                case "OPTIONS":
+                    optionsGO.SetActive(true);
+                    break;
+                case "LOAD_GAME":
+                    loadGameGO.SetActive(true);
+                    break;
+                case "QUIT_GAME":
+                    quitGameGO.SetActive(true);
+                    break;
+                default:
+                    state = "MAIN";
+                    break;
+            }
+            yield return new WaitForSeconds(0.01f);
         }
     }
     
@@ -125,7 +140,7 @@ public class MainMenu : MonoBehaviour
     /// Used to set the player object the right character sprite and animations
     /// </summary>
     /// <param name="characterID">The ID used to identify what character the player selected</param>
-    public void setCurrentCharacter(int characterID)
+    public void SetCurrentCharacter(int characterID)
     {
         if (characterID == 1)
         {
@@ -144,12 +159,30 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void addPetToInventory(GameObject petToAdd)
+    public void AddPetToInventory(GameObject petToAdd)
     {
+        if (playerGO.GetComponent<PlayerInventory>().petList.Count == 0)
+        {
+            AddPlayerUnitToInventory();
+        }
         if (playerGO.GetComponent<PlayerInventory>().petList.Count < 3)
         {
             DontDestroyOnLoad(petToAdd);
             playerGO.GetComponent<PlayerInventory>().AddPetToList(petToAdd);
         }
+    }
+
+    private void AddPlayerUnitToInventory()
+    {
+        DontDestroyOnLoad(playerUnit);
+        playerGO.GetComponent<PlayerInventory>().AddPetToList(playerUnit);
+    }
+
+    private void SetBattlePetToChosenPets()
+    {
+        playerGO.GetComponent<PlayerInventory>().battlePetList.Clear();
+        playerGO.GetComponent<PlayerInventory>().battlePetList.Add(playerGO.GetComponent<PlayerInventory>().petList.ElementAt(0));
+        playerGO.GetComponent<PlayerInventory>().battlePetList.Add(playerGO.GetComponent<PlayerInventory>().petList.ElementAt(1));
+        playerGO.GetComponent<PlayerInventory>().battlePetList.Add(playerGO.GetComponent<PlayerInventory>().petList.ElementAt(2));
     }
 }

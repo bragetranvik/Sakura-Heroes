@@ -483,7 +483,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381090455}
-        m_MethodName: addPetToInventory
+        m_MethodName: AddPetToInventory
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 436571923}
@@ -1378,6 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGO: {fileID: 1302690786}
+  playerUnit: {fileID: 814977471}
   characterSprite1: {fileID: 0}
   characterSprite2: {fileID: 0}
   characterSprite3: {fileID: 0}
@@ -3200,7 +3201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381090455}
-        m_MethodName: addPetToInventory
+        m_MethodName: AddPetToInventory
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1083767440}
@@ -4721,7 +4722,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381090455}
-        m_MethodName: addPetToInventory
+        m_MethodName: AddPetToInventory
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1634115122}
