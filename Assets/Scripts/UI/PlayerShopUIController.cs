@@ -39,6 +39,8 @@ public class PlayerShopUIController : MonoBehaviour
     public Button selectPetButton0, selectPetButton1, selectPetButton2, selectPetButton3, selectPetButton4, selectPetButton5;
     public Button selectPetButton6, selectPetButton7, selectPetButton8, selectPetButton9, selectPetButton10, selectPetButton11;
     public List<Button> selectPetButtonList;
+
+    private bool feedbackTextIsShowing = false;
     
     // Start is called before the first frame update
     void Start()
@@ -260,7 +262,10 @@ public class PlayerShopUIController : MonoBehaviour
             playerShopInventory.petShopList.Remove(chosenBattlePet);
             chosenBattlePet = playerShopInventory.petShopList[0];
         }
-        StartCoroutine(playFeedbackText(feedbackText));
+        if (!feedbackTextIsShowing) {
+            feedbackTextIsShowing = true;
+            StartCoroutine(playFeedbackText(feedbackText));
+        }
     }
 
     private IEnumerator playFeedbackText(string stringToPlay)
@@ -278,5 +283,6 @@ public class PlayerShopUIController : MonoBehaviour
             feedbackTextBorder.color = newColorForBorder;
             yield return new WaitForSeconds(0.022f);
         }
+        feedbackTextIsShowing = false;
     }
 }
