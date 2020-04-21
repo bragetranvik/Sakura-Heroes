@@ -143,37 +143,50 @@ public class MainMenu : MonoBehaviour
     /// <param name="characterID">The ID used to identify what character the player selected</param>
     public void SetCurrentCharacter(int characterID)
     {
+        if (playerGO.GetComponent<PlayerInventory>().petList.Count == 0)
+        {
+            AddPlayerUnitToInventory();
+        }
         if (characterID == 1)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite1;
             playerGO.GetComponent<PlayerInventory>().characterPortrait = characterImage1;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().unitName = "Cindy Smith";
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<SpriteRenderer>().sprite = characterSprite1;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().portraitPicture = characterSprite1;
             playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController1;
-        } else if (characterID == 2)
+        }
+        else if (characterID == 2)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite2;
             playerGO.GetComponent<PlayerInventory>().characterPortrait = characterImage2;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().unitName = "Clarence Campbell";
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<SpriteRenderer>().sprite = characterSprite2;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().portraitPicture = characterSprite2;
             playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController2;
         }
         else if (characterID == 3)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite3;
             playerGO.GetComponent<PlayerInventory>().characterPortrait = characterImage3;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().unitName = "Elise Faircloth";
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<SpriteRenderer>().sprite = characterSprite3;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().portraitPicture = characterSprite3;
             playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController3;
         }
         else if (characterID == 4)
         {
             playerGO.GetComponent<SpriteRenderer>().sprite = characterSprite4;
             playerGO.GetComponent<PlayerInventory>().characterPortrait = characterImage4;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().unitName = "Mikey Pebalz";
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<SpriteRenderer>().sprite = characterSprite4;
+            playerGO.GetComponent<PlayerInventory>().petList[0].GetComponent<Unit>().portraitPicture = characterSprite4;
             playerGO.GetComponent<Animator>().runtimeAnimatorController = characterAnimatorController4;
         }
     }
 
     public void AddPetToInventory(GameObject petToAdd)
     {
-        if (playerGO.GetComponent<PlayerInventory>().petList.Count == 0)
-        {
-            AddPlayerUnitToInventory();
-        }
         if (playerGO.GetComponent<PlayerInventory>().petList.Count < 3)
         {
             DontDestroyOnLoad(petToAdd);

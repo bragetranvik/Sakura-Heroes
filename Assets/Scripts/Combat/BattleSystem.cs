@@ -588,10 +588,6 @@ public class BattleSystem : MonoBehaviour {
 
     public void EnablePlayerAndEnemyObjects() {
         friendlyTeamGO.SetActive(true);
-        foreach (GameObject pet in friendlyTeamGO.GetComponent<PlayerInventory>().petList)
-        {
-            pet.GetComponent<SpriteRenderer>().enabled = true;
-        }
         enemyTeamGO.SetActive(true);
     }
 

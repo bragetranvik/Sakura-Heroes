@@ -1449,13 +1449,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGO: {fileID: 1302690786}
   playerUnit: {fileID: 814977471}
-  characterSprite1: {fileID: -1087224702095710700, guid: 8a6786e85df537841a4b31c37943d26b,
+  characterSprite1: {fileID: 647079430881549764, guid: 8a6786e85df537841a4b31c37943d26b,
     type: 3}
-  characterSprite2: {fileID: -4630174525881662268, guid: 51993ee7166eaa546b209982ac70a6b9,
+  characterSprite2: {fileID: 4200199408509053483, guid: 51993ee7166eaa546b209982ac70a6b9,
     type: 3}
-  characterSprite3: {fileID: -3036416368411268975, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
+  characterSprite3: {fileID: -6055897387530424335, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
     type: 3}
-  characterSprite4: {fileID: 6648904196435134736, guid: ad510e44d6cb50447bdeb1338b3922d1,
+  characterSprite4: {fileID: 2575668634122192333, guid: ad510e44d6cb50447bdeb1338b3922d1,
     type: 3}
   characterImage1: {fileID: 21300012, guid: f04e6181296e85347bbd31d94f26945d, type: 3}
   characterImage2: {fileID: -7963602889416682383, guid: fe448c2801d1cdf43b4fa44a2eb2fccd,
@@ -2138,12 +2138,12 @@ PrefabInstance:
     - target: {fileID: 8792155558886238418, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8792155558886238419, guid: 9a7aa3418baac4749bcd4c39a72a6c8c,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a7aa3418baac4749bcd4c39a72a6c8c, type: 3}
