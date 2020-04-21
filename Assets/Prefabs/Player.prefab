@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7424425351036488913}
   - component: {fileID: -2891843559243623779}
   - component: {fileID: 8996840570198114064}
+  - component: {fileID: 901144631476555937}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -201,9 +202,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2871708526557659350}
-  level: 99
+  level: 88
   questList: []
   totalMoney: 0
+  petList: []
+  battlePetList: []
 --- !u!114 &8996840570198114064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +220,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObject: {fileID: 2871708526557659350}
+--- !u!114 &901144631476555937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871708526557659350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c457cc2ece44fce49a6eafc15120fcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2871708526557659373}
+  gameCharacter: {fileID: 0}
