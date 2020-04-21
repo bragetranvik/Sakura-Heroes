@@ -202,8 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1087224702095710700, guid: 8a6786e85df537841a4b31c37943d26b,
-    type: 3}
+  m_Sprite: {fileID: 647079430881549764, guid: 8a6786e85df537841a4b31c37943d26b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -483,7 +482,7 @@ GameObject:
   - component: {fileID: 252994114}
   - component: {fileID: 252994113}
   m_Layer: 5
-  m_Name: CharSlot2
+  m_Name: PetSlot2
   m_TagString: SelectUnitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1243,7 +1242,7 @@ GameObject:
   - component: {fileID: 379420774}
   - component: {fileID: 379420773}
   m_Layer: 5
-  m_Name: Char3
+  m_Name: Pet3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3384,7 +3383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912075857}
   m_Layer: 5
-  m_Name: CharacterSelection
+  m_Name: PetSelection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3649,7 +3648,7 @@ GameObject:
   - component: {fileID: 1151624466}
   - component: {fileID: 1151624465}
   m_Layer: 5
-  m_Name: CharSlot3
+  m_Name: PetSlot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4128,7 +4127,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3036416368411268975, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
+  m_Sprite: {fileID: -6055897387530424335, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -4626,7 +4625,7 @@ GameObject:
   - component: {fileID: 1428139930}
   - component: {fileID: 1428139929}
   m_Layer: 5
-  m_Name: Char1
+  m_Name: Pet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4792,7 +4791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6648904196435134736, guid: ad510e44d6cb50447bdeb1338b3922d1,
+  m_Sprite: {fileID: 2575668634122192333, guid: ad510e44d6cb50447bdeb1338b3922d1,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -5757,7 +5756,7 @@ GameObject:
   - component: {fileID: 1857012240}
   - component: {fileID: 1857012239}
   m_Layer: 5
-  m_Name: CharSlot1
+  m_Name: PetSlot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6167,7 +6166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4630174525881662268, guid: 51993ee7166eaa546b209982ac70a6b9,
+  m_Sprite: {fileID: 4200199408509053483, guid: 51993ee7166eaa546b209982ac70a6b9,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -6200,7 +6199,7 @@ GameObject:
   - component: {fileID: 2025740752}
   - component: {fileID: 2025740751}
   m_Layer: 5
-  m_Name: Char2
+  m_Name: Pet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
