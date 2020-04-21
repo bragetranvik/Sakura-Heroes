@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7548872714166628172}
   - component: {fileID: 1714789493392517326}
   - component: {fileID: 422110408868777174}
+  - component: {fileID: -3996925401251655907}
   m_Layer: 0
   m_Name: TeleportOnCollision
   m_TagString: Untagged
@@ -71,6 +72,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPos: {x: 0, y: 0, z: 0}
-  dialogBox: {fileID: 0}
-  boxText: {fileID: 0}
-  dialog: 
+--- !u!114 &-3996925401251655907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3200858167066279893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4dd23d729411c347a3b481c61b804da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: {fileID: 0}
+  tooltipBorder: {fileID: 0}
+  tooltipToShow: 1

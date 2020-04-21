@@ -618,12 +618,12 @@ PrefabInstance:
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: playerPosInNewScene.x
-      value: -14.5
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: playerPosInNewScene.y
-      value: 4.75
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2060924309237567745, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
@@ -20061,7 +20061,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 6.5625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1402163484
