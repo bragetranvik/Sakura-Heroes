@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour {
     public GameObject player;
+    public Sprite characterPortrait;
+
     private static int currentXP;
     public int level = 1;
-    public List<Quest> questList = new List<Quest>();
     public int totalMoney;
+
+    public List<Quest> questList = new List<Quest>();
     public List<GameObject> petList = new List<GameObject>();
     public List<GameObject> battlePetList = new List<GameObject>();
 
