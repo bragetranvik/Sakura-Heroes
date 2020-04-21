@@ -202,7 +202,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
+  m_Sprite: {fileID: -1087224702095710700, guid: 8a6786e85df537841a4b31c37943d26b,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1448,14 +1449,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGO: {fileID: 1302690786}
   playerUnit: {fileID: 814977471}
-  characterSprite1: {fileID: 21300000, guid: 1b469546fb387674982f1e97e56717ef, type: 3}
+  characterSprite1: {fileID: -1087224702095710700, guid: 8a6786e85df537841a4b31c37943d26b,
+    type: 3}
   characterSprite2: {fileID: -4630174525881662268, guid: 51993ee7166eaa546b209982ac70a6b9,
     type: 3}
   characterSprite3: {fileID: -3036416368411268975, guid: 9859e2e076d3aca4cb6ff35e8509ff75,
     type: 3}
   characterSprite4: {fileID: 6648904196435134736, guid: ad510e44d6cb50447bdeb1338b3922d1,
     type: 3}
-  characterAnimatorController1: {fileID: 9100000, guid: 54256b6399152c0428b8b11d10f353d6,
+  characterImage1: {fileID: 21300012, guid: f04e6181296e85347bbd31d94f26945d, type: 3}
+  characterImage2: {fileID: -7963602889416682383, guid: fe448c2801d1cdf43b4fa44a2eb2fccd,
+    type: 3}
+  characterImage3: {fileID: -626456323534884540, guid: fe448c2801d1cdf43b4fa44a2eb2fccd,
+    type: 3}
+  characterImage4: {fileID: -4443354589430478868, guid: fe448c2801d1cdf43b4fa44a2eb2fccd,
+    type: 3}
+  characterAnimatorController1: {fileID: 9100000, guid: 5627021fc667c6c448a10c636eca8641,
     type: 2}
   characterAnimatorController2: {fileID: 9100000, guid: af4780eff5fd88a46a6da151ff0853c1,
     type: 2}
