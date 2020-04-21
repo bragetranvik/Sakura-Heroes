@@ -1,0 +1,775 @@
+fileFormatVersion: 2
+guid: 8a6786e85df537841a4b31c37943d26b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1087224702095710700
+    second: Cindy Smith 1_0
+  - first:
+      213: -5840328069837518789
+    second: Cindy Smith 1_1
+  - first:
+      213: 7534954788935203874
+    second: Cindy Smith 1_2
+  - first:
+      213: 3507204770240552240
+    second: Cindy Smith 1_3
+  - first:
+      213: -7387162081981236222
+    second: Cindy Smith 1_4
+  - first:
+      213: -2279921286157491376
+    second: Cindy Smith 1_5
+  - first:
+      213: -5568468125429084815
+    second: Cindy Smith 1_6
+  - first:
+      213: 647079430881549764
+    second: Cindy Smith 1_7
+  - first:
+      213: -7546502935035224445
+    second: Cindy Smith 1_8
+  - first:
+      213: -1795339478455483622
+    second: Cindy Smith 1_9
+  - first:
+      213: -8403273498002647436
+    second: Cindy Smith 1_10
+  - first:
+      213: 8453470457177689989
+    second: Cindy Smith 1_11
+  - first:
+      213: -5509166454690180526
+    second: Cindy Smith 1_12
+  - first:
+      213: -1762033287347972536
+    second: Cindy Smith 1_13
+  - first:
+      213: -8859837993491529070
+    second: Cindy Smith 1_30
+  - first:
+      213: 6803613629007874985
+    second: Cindy Smith 1_29
+  - first:
+      213: -7468192883410330948
+    second: Cindy Smith 1_31
+  - first:
+      213: -3452147168051830982
+    second: Cindy Smith 1_32
+  - first:
+      213: 1992933020682879950
+    second: Cindy Smith 1_33
+  - first:
+      213: 1993500821162765450
+    second: Cindy Smith 1_34
+  - first:
+      213: -4843655937091125712
+    second: Cindy Smith 1_35
+  - first:
+      213: 7246089991996742427
+    second: Cindy Smith 1_28
+  - first:
+      213: 4823801731593285767
+    second: Cindy Smith 1_30
+  - first:
+      213: 8550194769837800902
+    second: Cindy Smith 1_31
+  - first:
+      213: 3887677285900279097
+    second: Cindy Smith 1_32
+  - first:
+      213: 5071120472345765126
+    second: Cindy Smith 1_33
+  - first:
+      213: -304255294563043487
+    second: Cindy Smith 1_34
+  - first:
+      213: -3656364819498130598
+    second: Cindy Smith 1_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cindy Smith 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 504
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162e80d4e669e0f0800000000000000
+      internalID: -1087224702095710700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 504
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b388799509cf2fea0800000000000000
+      internalID: -5840328069837518789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 505
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c7c196579819860800000000000000
+      internalID: 7534954788935203874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 505
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d5eb418281ca030800000000000000
+      internalID: 3507204770240552240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 505
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cf54da9378b7990800000000000000
+      internalID: -7387162081981236222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 505
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0532bb67ba71c50e0800000000000000
+      internalID: -2279921286157491376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 505
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dc6b03eb3d8b2b0800000000000000
+      internalID: -5568468125429084815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 392
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd18236053eaf800800000000000000
+      internalID: 647079430881549764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 392
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e58cc409f654790800000000000000
+      internalID: -7546502935035224445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 392
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a130d67a14ca517e0800000000000000
+      internalID: -1795339478455483622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 392
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4761919a643916b80800000000000000
+      internalID: -8403273498002647436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_11
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 392
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fc557a792c05570800000000000000
+      internalID: 8453470457177689989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_12
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 392
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25291bb5c428b83b0800000000000000
+      internalID: -5509166454690180526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_13
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 392
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846d5319f000c87e0800000000000000
+      internalID: -1762033287347972536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 98
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2928d6e49488b0580800000000000000
+      internalID: -8859837993491529070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab450a6c8a4b6e50800000000000000
+      internalID: 6803613629007874985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 99
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba1a360426ab5890800000000000000
+      internalID: -7468192883410330948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_24
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 99
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f56efd0728710d0800000000000000
+      internalID: -3452147168051830982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_25
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 98
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec303f6f50258ab10800000000000000
+      internalID: 1992933020682879950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_26
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 98
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c2bd05f665aab10800000000000000
+      internalID: 1993500821162765450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_27
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 98
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03eb8778690e7ccb0800000000000000
+      internalID: -4843655937091125712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_28
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 99
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b9a7fc4784f8460800000000000000
+      internalID: 7246089991996742427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_30
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78038860e1691f240800000000000000
+      internalID: 4823801731593285767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_31
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdb590a7d468a670800000000000000
+      internalID: 8550194769837800902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dd07bc4edc3f530800000000000000
+      internalID: 3887677285900279097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_33
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605616f933d306640800000000000000
+      internalID: 5071120472345765126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167b98eeb6117cbf0800000000000000
+      internalID: -304255294563043487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cindy Smith 1_35
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a532494a19bf14dc0800000000000000
+      internalID: -3656364819498130598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

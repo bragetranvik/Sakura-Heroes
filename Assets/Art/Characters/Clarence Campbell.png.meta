@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: 51993ee7166eaa546b209982ac70a6b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4630174525881662268
+    second: Clarence Campbell_0
+  - first:
+      213: 3461553505132178540
+    second: Clarence Campbell_1
+  - first:
+      213: -9023365365216159655
+    second: Clarence Campbell_2
+  - first:
+      213: -9038408266559786421
+    second: Clarence Campbell_3
+  - first:
+      213: 8504853063336264451
+    second: Clarence Campbell_4
+  - first:
+      213: 4937809798760691151
+    second: Clarence Campbell_5
+  - first:
+      213: 5671442800636351525
+    second: Clarence Campbell_6
+  - first:
+      213: 4200199408509053483
+    second: Clarence Campbell_7
+  - first:
+      213: 339642608966613671
+    second: Clarence Campbell_8
+  - first:
+      213: -4070134450171488046
+    second: Clarence Campbell_9
+  - first:
+      213: -5355335575589705711
+    second: Clarence Campbell_10
+  - first:
+      213: 8656224046727442383
+    second: Clarence Campbell_11
+  - first:
+      213: -8736929689062457490
+    second: Clarence Campbell_12
+  - first:
+      213: 7342951733954765548
+    second: Clarence Campbell_13
+  - first:
+      213: 2539950911031304709
+    second: Clarence Campbell_14
+  - first:
+      213: 3154800371866400559
+    second: Clarence Campbell_15
+  - first:
+      213: -3877478182384730724
+    second: Clarence Campbell_16
+  - first:
+      213: -3997695074946620781
+    second: Clarence Campbell_17
+  - first:
+      213: 1833362654781575168
+    second: Clarence Campbell_18
+  - first:
+      213: 2095488243518302177
+    second: Clarence Campbell_19
+  - first:
+      213: 6675812298570476379
+    second: Clarence Campbell_20
+  - first:
+      213: -5564000941069522596
+    second: Clarence Campbell_21
+  - first:
+      213: -1193079934638531773
+    second: Clarence Campbell_22
+  - first:
+      213: -7634720358862946897
+    second: Clarence Campbell_23
+  - first:
+      213: -7713418003101476357
+    second: Clarence Campbell_24
+  - first:
+      213: 8167369486980258443
+    second: Clarence Campbell_25
+  - first:
+      213: 3393157286485329009
+    second: Clarence Campbell_26
+  - first:
+      213: -2518071085222006085
+    second: Clarence Campbell_27
+  - first:
+      213: 455245842915936171
+    second: Clarence Campbell_28
+  - first:
+      213: -4470916780094566024
+    second: Clarence Campbell_29
+  - first:
+      213: 2193589206817372231
+    second: Clarence Campbell_30
+  - first:
+      213: 5170579216604396099
+    second: Clarence Campbell_31
+  - first:
+      213: 8203042498232898567
+    second: Clarence Campbell_32
+  - first:
+      213: 7557096034211329804
+    second: Clarence Campbell_33
+  - first:
+      213: -2965626851007661835
+    second: Clarence Campbell_34
+  - first:
+      213: 8832185363986658509
+    second: Clarence Campbell_35
+  - first:
+      213: 4515214760880831897
+    second: Clarence Campbell_36
+  - first:
+      213: -4038046176696432647
+    second: Clarence Campbell_37
+  - first:
+      213: 1028634703702670474
+    second: Clarence Campbell_38
+  - first:
+      213: 3557190405150942214
+    second: Clarence Campbell_39
+  - first:
+      213: 4174801932517335523
+    second: Clarence Campbell_40
+  - first:
+      213: -483111628515075152
+    second: Clarence Campbell_41
+  - first:
+      213: -1358788181879168931
+    second: Clarence Campbell_42
+  - first:
+      213: -3945950266043327113
+    second: Clarence Campbell_43
+  - first:
+      213: 961712642539897393
+    second: Clarence Campbell_44
+  - first:
+      213: 1308853404760586483
+    second: Clarence Campbell_45
+  - first:
+      213: 4647244945114307622
+    second: Clarence Campbell_46
+  - first:
+      213: 8154844984005089095
+    second: Clarence Campbell_47
+  - first:
+      213: -4360459395270843034
+    second: Clarence Campbell_48
+  - first:
+      213: -9000504435765470850
+    second: Clarence Campbell_49
+  - first:
+      213: -6273816334495250411
+    second: Clarence Campbell_50
+  - first:
+      213: 2288707411327697085
+    second: Clarence Campbell_51
+  - first:
+      213: 8694352667417360363
+    second: Clarence Campbell_52
+  - first:
+      213: -597630912034942250
+    second: Clarence Campbell_53
+  - first:
+      213: -4557700197880987
+    second: Clarence Campbell_54
+  - first:
+      213: 6583266529162103440
+    second: Clarence Campbell_55
+  - first:
+      213: -5028608579437430665
+    second: Clarence Campbell_56
+  - first:
+      213: -1902037948601088017
+    second: Clarence Campbell_57
+  - first:
+      213: 6060619732271066516
+    second: Clarence Campbell_58
+  - first:
+      213: 3986982530651286519
+    second: Clarence Campbell_59
+  - first:
+      213: 196866869026390645
+    second: Clarence Campbell_60
+  - first:
+      213: 5965391324960059481
+    second: Clarence Campbell_61
+  - first:
+      213: -172965534757038544
+    second: Clarence Campbell_62
+  - first:
+      213: -1881761443040427991
+    second: Clarence Campbell_63
+  - first:
+      213: 1517065918711380056
+    second: Clarence Campbell_64
+  - first:
+      213: 2231468599764263631
+    second: Clarence Campbell_65
+  - first:
+      213: -3656181271551351872
+    second: Clarence Campbell_66
+  - first:
+      213: 7535677444682608809
+    second: Clarence Campbell_67
+  - first:
+      213: 2507091862727916768
+    second: Clarence Campbell_68
+  - first:
+      213: 4262099079344816726
+    second: Clarence Campbell_69
+  - first:
+      213: 8008369733422641224
+    second: Clarence Campbell_70
+  - first:
+      213: -4573201313760304820
+    second: Clarence Campbell_71
+  - first:
+      213: 9121940511588289013
+    second: Clarence Campbell_72
+  - first:
+      213: -1165882445093639884
+    second: Clarence Campbell_73
+  - first:
+      213: 41937508299386577
+    second: Clarence Campbell_74
+  - first:
+      213: 456489371553867522
+    second: Clarence Campbell_75
+  - first:
+      213: 2034840134488221373
+    second: Clarence Campbell_76
+  - first:
+      213: 6681606774558276344
+    second: Clarence Campbell_77
+  - first:
+      213: -5069557364172636956
+    second: Clarence Campbell_78
+  - first:
+      213: -3457335638869846096
+    second: Clarence Campbell_79
+  - first:
+      213: 5587356780203522597
+    second: Clarence Campbell_80
+  - first:
+      213: 1702192872433929080
+    second: Clarence Campbell_81
+  - first:
+      213: 5436358430918258297
+    second: Clarence Campbell_82
+  - first:
+      213: 6273557790181581249
+    second: Clarence Campbell_83
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clarence Campbell_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 101
+        width: 45
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4c2c8ecc05ebfb0800000000000000
+      internalID: -4630174525881662268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 101
+        width: 63
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c6964a298e90030800000000000000
+      internalID: 3461553505132178540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9585ab7120196c280800000000000000
+      internalID: -9023365365216159655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 101
+        width: 55
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42ffb0b19f119280800000000000000
+      internalID: -9038408266559786421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 101
+        width: 64
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3030d0becce470670800000000000000
+      internalID: 8504853063336264451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 101
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5f29fa9df968440800000000000000
+      internalID: 4937809798760691151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 101
+        width: 55
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52450e7bd2305be40800000000000000
+      internalID: 5671442800636351525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 45
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2aecf1cb1b1a4a30800000000000000
+      internalID: 4200199408509053483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 63
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaba024727a6b400800000000000000
+      internalID: 339642608966613671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8d275384af387c0800000000000000
+      internalID: -4070134450171488046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a6f3faa60ea5b0800000000000000
+      internalID: -5355335575589705711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_11
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf226968e5112870800000000000000
+      internalID: 8656224046727442383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 55
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f3edfecb030c680800000000000000
+      internalID: -8736929689062457490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clarence Campbell_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 0
+        width: 55
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2663982b767e560800000000000000
+      internalID: 7342951733954765548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

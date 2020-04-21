@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using Fungus;
+using System.Linq;
 
 public class HUDController : MonoBehaviour
 {
@@ -16,7 +18,9 @@ public class HUDController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        GameObject playerGO = GameObject.FindGameObjectWithTag("Player");
+        playerInventory = playerGO.GetComponent<PlayerInventory>();
+        HUDCharacterIcon.sprite = playerInventory.characterPortrait;
     }
 
     // Update is called once per frame
