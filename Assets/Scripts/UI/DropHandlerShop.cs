@@ -27,39 +27,51 @@ public class DropHandlerShop : MonoBehaviour, IDropHandler
                 {
                     case "Pet0":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[0];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[0].GetComponent<Unit>());
                         break;
                     case "Pet1":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[1];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[1].GetComponent<Unit>());
                         break;
                     case "Pet2":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[2];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[2].GetComponent<Unit>());
                         break;
                     case "Pet3":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[3];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[3].GetComponent<Unit>());
                         break;
                     case "Pet4":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[4];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[4].GetComponent<Unit>());
                         break;
                     case "Pet5":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[5];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[5].GetComponent<Unit>());
                         break;
                     case "Pet6":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[6];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[6].GetComponent<Unit>());
                         break;
                     case "Pet7":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[7];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[7].GetComponent<Unit>());
                         break;
                     case "Pet8":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[8];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[8].GetComponent<Unit>());
                         break;
                     case "Pet9":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[9];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[9].GetComponent<Unit>());
                         break;
                     case "Pet10":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[10];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[10].GetComponent<Unit>());
                         break;
                     case "Pet11":
                         playerShopUIController.chosenBattlePet = playerShopInventory.petShopList[11];
+                        playerShopUIController.UpdatePetCost(playerShopInventory.petShopList[11].GetComponent<Unit>());
                         break;
                 }
             }

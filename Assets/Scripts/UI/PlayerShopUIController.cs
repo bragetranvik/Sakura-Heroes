@@ -47,25 +47,17 @@ public class PlayerShopUIController : MonoBehaviour
     {
         AddButtonsToList();
         playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
-        // Purely for testing purposes, and should be removed when the player is assigned a team normally!!!
-        if (playerInventory.petList.Count < 1)
-        {
-            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit1);
-            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit2);
-            playerInventory.AddPetToList(GameObject.FindGameObjectWithTag("Player").GetComponent<UnitTeam>().unit3);
-        }
+        UpdatePetCost(playerShopInventory.petShopList[0].GetComponent<Unit>());
     }
 
     // Update is called once per frame
     void Update()
     {
-        selectedPet = playerShopInventory.GetPetInShopList(selectedPetIndex);
+        if (!(selectedPetIndex > playerShopInventory.petShopList.Count))
+        {
+            selectedPet = playerShopInventory.GetPetInShopList(selectedPetIndex);
+        }
         UpdateUI(selectedPet);
-    }
-    // Awake is called when the object is loaded
-    private void Awake()
-    {
-        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
     }
 
     /// <summary>
@@ -87,7 +79,6 @@ public class PlayerShopUIController : MonoBehaviour
         {
             UpdateTooltip(selectedAbility, unit);
         }
-        UpdatePetCost(chosenBattlePet.GetComponent<Unit>());
     }
 
     /// <summary>
@@ -195,7 +186,7 @@ public class PlayerShopUIController : MonoBehaviour
         buySlot0.transform.GetChild(0).GetComponent<Image>().sprite = chosenBattlePet.GetComponent<Unit>().portraitPicture;
     }
 
-    private void UpdatePetCost(Unit unit)
+    public void UpdatePetCost(Unit unit)
     {
         petCostText.text = "Costs " + unit.unitPriceInShop + " gold";
     }
@@ -238,7 +229,7 @@ public class PlayerShopUIController : MonoBehaviour
         bool doesNotHavePet = true;
         foreach (GameObject petInInventory in playerInventory.petList)
         {
-            if (petInInventory == chosenBattlePet)
+            if (petInInventory.GetComponent<Unit>().unitName == chosenBattlePet.GetComponent<Unit>().unitName)
             {
                 doesNotHavePet = false;
             }
@@ -259,8 +250,7 @@ public class PlayerShopUIController : MonoBehaviour
             DontDestroyOnLoad(chosenBattlePet);
             playerInventory.petList.Add(chosenBattlePet);
             playerInventory.totalMoney -= chosenBattlePet.GetComponent<Unit>().unitPriceInShop;
-            playerShopInventory.petShopList.Remove(chosenBattlePet);
-            chosenBattlePet = playerShopInventory.petShopList[0];
+            chosenBattlePet = playerShopInventory.petShopList[0];            
         }
         if (!feedbackTextIsShowing) {
             feedbackTextIsShowing = true;
