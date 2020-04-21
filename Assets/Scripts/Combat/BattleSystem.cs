@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Fungus;
 
 public enum BattleState { START, FRIENDLY1TURN, ENEMY1TURN, FRIENDLY2TURN, ENEMY2TURN, FRIENDLY3TURN, ENEMY3TURN, WON, LOST }
 
@@ -575,18 +576,22 @@ public class BattleSystem : MonoBehaviour {
         enemyUnit1GO.GetComponent<Transform>().localPosition = enemyUnit1.GetPosition();
         enemyUnit2GO.GetComponent<Transform>().localPosition = enemyUnit2.GetPosition();
         enemyUnit3GO.GetComponent<Transform>().localPosition = enemyUnit3.GetPosition();
-        if (enemyTeam.teamType.Equals(TeamType.npcTeam)) {
-            //enemyTeamGO.GetComponent<Fungus.>();
-        }
     }
 
     private void HideImportedObjects() {
         friendlyTeamGO.SetActive(false);
+        foreach (GameObject pet in friendlyTeamGO.GetComponent<PlayerInventory>().petList) {
+            pet.GetComponent<SpriteRenderer>().enabled = false;
+        }
         enemyTeamGO.SetActive(false);
     }
 
     public void EnablePlayerAndEnemyObjects() {
         friendlyTeamGO.SetActive(true);
+        foreach (GameObject pet in friendlyTeamGO.GetComponent<PlayerInventory>().petList)
+        {
+            pet.GetComponent<SpriteRenderer>().enabled = true;
+        }
         enemyTeamGO.SetActive(true);
     }
 
