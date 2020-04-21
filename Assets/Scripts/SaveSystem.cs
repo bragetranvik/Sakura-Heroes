@@ -14,8 +14,6 @@ public static class SaveSystem
 
         PlayerData data = new PlayerData(player);
 
-        Debug.Log("SAVED: coordinates " + data.getCoordinates());
-
         formatter.Serialize(stream, data);
         stream.Close();
     }

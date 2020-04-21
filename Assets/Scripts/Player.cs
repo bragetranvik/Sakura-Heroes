@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     public GameObject gameCharacter;
 
-    private Button saveButton;
+    // private Button saveButton;
 
 
     //Awake is called when the script instance is being loaded.
@@ -18,11 +18,13 @@ public class Player : MonoBehaviour
         // target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         Debug.Log("AWAKE");
 
+        /*
         if (saveButton != null)
         {
             Debug.Log("LISTENER");
             saveButton.onClick.AddListener(() => { SavePlayer(); });
         }
+        */
     }
 
 
@@ -34,10 +36,22 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (saveButton == null)
         {
             Debug.Log("UPDATE");
-            saveButton = GameObject.Find("SaveGame button").GetComponent<Button>();
+            saveButton = GameObject.Find("Save Game").GetComponent<Button>();
+        }
+        */
+
+        if (Input.GetKeyDown("o"))
+        {
+            SavePlayer();
+        }
+
+        if (Input.GetKeyDown("l"))
+        {
+            LoadPlayer();
         }
     }
 
