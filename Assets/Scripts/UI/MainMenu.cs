@@ -1,12 +1,8 @@
-﻿using Fungus;
-using System;
+﻿
 using System.Collections;
 using System.Linq;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.XR;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public Sprite characterSprite1, characterSprite2, characterSprite3, characterSprite4;
     public Sprite characterImage1, characterImage2, characterImage3, characterImage4;
-    public AnimatorController characterAnimatorController1, characterAnimatorController2, characterAnimatorController3, characterAnimatorController4;
+    public RuntimeAnimatorController characterAnimatorController1, characterAnimatorController2, characterAnimatorController3, characterAnimatorController4;
 
     public string state;
 
