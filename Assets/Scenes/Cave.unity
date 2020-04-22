@@ -15556,6 +15556,11 @@ PrefabInstance:
       propertyPath: tooltipText
       value: 
       objectReference: {fileID: 79553928}
+    - target: {fileID: -3996925401251655907, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
+        type: 3}
+      propertyPath: tooltipToShow
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 422110408868777174, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
         type: 3}
       propertyPath: newPos.x
@@ -87015,13 +87020,18 @@ PrefabInstance:
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: playerPosInNewScene.y
-      value: 16.4
+      value: 15.5
       objectReference: {fileID: 0}
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1740760414}
+    - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
+        type: 3}
+      propertyPath: playerPosInNewScene.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2060924309237567745, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -87255,6 +87265,11 @@ PrefabInstance:
       propertyPath: tooltipText
       value: 
       objectReference: {fileID: 79553928}
+    - target: {fileID: -3996925401251655907, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
+        type: 3}
+      propertyPath: tooltipToShow
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 422110408868777174, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
         type: 3}
       propertyPath: dialog
@@ -96576,7 +96591,7 @@ Tilemap:
       - {fileID: 21300166, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300172, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300178, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: 17, z: 0}
@@ -96916,7 +96931,7 @@ Tilemap:
       - {fileID: 21300096, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300102, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300108, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 22, y: 26, z: 0}
@@ -97066,7 +97081,7 @@ Tilemap:
       - {fileID: 21300008, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300014, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
       - {fileID: 21300020, guid: bd89bafe78223c04dbf3cce82e101bf9, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 18, y: 29, z: 0}
@@ -114916,6 +114931,11 @@ PrefabInstance:
       propertyPath: tooltipText
       value: 
       objectReference: {fileID: 79553928}
+    - target: {fileID: -3996925401251655907, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
+        type: 3}
+      propertyPath: tooltipToShow
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 422110408868777174, guid: 22b4012e8dd3c8244bcdc8d85ef05d76,
         type: 3}
       propertyPath: dialog

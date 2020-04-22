@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum TooltipText { ClickToTalk, ClickToEnter, ClickToRead}
+public enum TooltipText { ClickToTalk, ClickToEnter, ClickToRead, ClickToClimbLadder}
 public class ToolTip : MonoBehaviour {
     public Text tooltipText;
     public Text tooltipBorder;
@@ -67,12 +65,15 @@ public class ToolTip : MonoBehaviour {
             case TooltipText.ClickToRead:
                 tooltipText = "Click 'E' to read.";
                 break;
+
+            case TooltipText.ClickToClimbLadder:
+                tooltipText = "Click 'E' to climb the ladder.";
+                break;
         }
         return tooltipText;
     }
     
-    public void enableDisable(bool value)
-    {
+    public void enableDisable(bool value) {
         toolTipIsOn = value;
     }
 }
