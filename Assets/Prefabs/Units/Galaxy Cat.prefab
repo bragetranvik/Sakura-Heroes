@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Maw
   unitLevel: 99
-  unitPriceInShop: 30
+  unitPriceInShop: 80000
   baseAttack: 12
   baseDefence: 8
   baseHP: 8
