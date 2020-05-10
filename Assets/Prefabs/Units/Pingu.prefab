@@ -105,7 +105,7 @@ MonoBehaviour:
   ability1: {fileID: 389282457694508274, guid: f6b4f5331f09357499bad1aa19ff8e3f, type: 3}
   ability2: {fileID: 2138584753493250750, guid: f1201fedd8ce5464594ce1dfb0c5c66a,
     type: 3}
-  ability3: {fileID: 6416144001938308987, guid: 14e198bbb54501a49af229a02f69fc3d,
+  ability3: {fileID: 2836134091093059200, guid: e9b8e244ec6b3744bb45183e830b2931,
     type: 3}
   ability4: {fileID: 7604629086963723520, guid: 4b27384151fb2fc4f8732282c138b9ba,
     type: 3}
