@@ -3336,7 +3336,7 @@ PrefabInstance:
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
       propertyPath: playerPosInNewScene.x
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2060924309237567744, guid: 57a7116515e8ae044bf2cd831d02b38b,
         type: 3}
