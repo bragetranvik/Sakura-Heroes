@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         // target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        Debug.Log("AWAKE");
 
         /*
         if (saveButton != null)
