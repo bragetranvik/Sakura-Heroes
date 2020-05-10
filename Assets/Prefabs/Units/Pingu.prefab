@@ -116,4 +116,4 @@ MonoBehaviour:
   isDead: 0
   portraitPicture: {fileID: 21300192, guid: 6c8f447ab65c4774baf61ab00889f7f1, type: 3}
   unitPosInBattle: {x: 0, y: 0}
-  unitScaleInBattle: {x: 1, y: 1, z: 1}
+  unitScaleInBattle: {x: 4, y: 4, z: 4}
