@@ -6,11 +6,16 @@ public class volumeController : MonoBehaviour
 {
     public AudioSource thisAudioSource;
     public static float volume;
+    public static bool startValueSet = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!startValueSet)
+        {
+            ChangeVolume(0.125f);
+            startValueSet = true;
+        }
     }
 
     // Update is called once per frame
@@ -22,6 +27,7 @@ public class volumeController : MonoBehaviour
     private void Awake()
     {
         thisAudioSource.volume = volume;
+        ChangeVolume(volume);
     }
 
     public void ChangeVolume(float newVolume)
